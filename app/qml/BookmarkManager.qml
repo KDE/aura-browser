@@ -1,0 +1,475 @@
+/*
+ *  Copyright 2019 Aditya Mehra <aix.m@outlook.com>
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
+ */
+
+import QtQuick 2.10
+import QtQuick.Window 2.10
+import QtWebEngine 1.7
+import QtQuick.Layouts 1.3
+import org.kde.kirigami 2.11 as Kirigami
+import QtQuick.Controls 2.10 as Controls
+import QtGraphicalEffects 1.0
+import QtQml.Models 2.3
+import QtQuick.LocalStorage 2.0
+import QtQuick.VirtualKeyboard 2.5
+import "code/BookmarkStorage.js" as BookmarkStorage
+
+Controls.Popup {
+    id: bookmarkPopupArea
+    property bool editMode: false
+    property alias model: delegateFilter.model
+    property var genericModel
+    width: parent.width / 2
+    height:  parent.height / 2
+    x: (parent.width - width) / 2
+    y: (parent.height - height) / 2
+    dim: true
+
+    Controls.Overlay.modeless: Rectangle {
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.97)
+    }
+
+    function deleteBookmarkByRowId(id){
+        BookmarkStorage.dbDeleteRow(id);
+        genericModel.clear();
+        delegateFilter.model.clear();
+        BookmarkStorage.dbReadAll();
+    }
+
+    onOpened: {
+        bookmarkManagerStackLayout.currentIndex = 0
+        bookmarkSearchField.forceActiveFocus()
+    }
+
+    DelegateModel {
+        id: delegateFilter
+        delegate: Kirigami.AbstractListItem {
+            contentItem: RowLayout {
+                id: layout
+                spacing: Kirigami.Units.largeSpacing
+                Rectangle {
+                    Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+                    color: model.rand_color;
+
+                    Controls.Label {
+                        text: model.recent_name.substring(0,1);
+                        anchors.centerIn: parent
+                    }
+                }
+
+                Controls.Label {
+                    text: model.recent_name
+                    Layout.preferredWidth: parent.width / 2
+                    elide: Text.ElideRight
+                }
+
+                Controls.Label {
+                    text: model.recent_url
+                    Layout.alignment: Qt.AlignRight
+                    horizontalAlignment: Text.AlignLeft
+                    Layout.fillWidth: true
+                }
+            }
+
+            onClicked: {
+                if(removeModeBox.checked){
+                    deleteBookmarkByRowId(id);
+                } else {
+                    createTab(recent_url);
+                    bookmarkPopupArea.close();
+                }
+            }
+
+            Keys.onReturnPressed: {
+                clicked();
+            }
+        }
+        groups: [
+            DelegateModelGroup {
+                name: "filterGroup"; includeByDefault: true
+            }
+        ]
+        filterOnGroup: "filterGroup"
+
+        function applyFilter(){
+            var numberOfFiles = genericModel.count;
+            for (var i = 0; i < numberOfFiles; i++){
+                var bookmarks = genericModel.get(i, "recent_name");
+                var bookmarkName = bookmarks.recent_name
+                if (bookmarkName.indexOf(bookmarkSearchFieldChild.text) != -1){
+                    items.addGroups(i, 1, "filterGroup");}
+                else {
+                    items.removeGroups(i, 1, "filterGroup");
+                }
+            }
+        }
+    }
+
+    StackLayout {
+        id: bookmarkManagerStackLayout
+        currentIndex: 0
+        anchors.fill: parent
+        anchors.margins: Kirigami.Units.largeSpacing
+
+        Item {
+            width: parent.width
+            height: parent.height
+
+            RowLayout {
+                id: headerAreaBMLPg1
+                anchors.top: parent.top
+                anchors.left: parent.left
+                anchors.right: parent.right
+
+                Kirigami.Heading {
+                    id: bookmarkMgrHeading
+                    level: 1
+                    text: "Bookmarks Manager"
+                    width: parent.width
+                    horizontalAlignment: Qt.AlignLeft
+                    Layout.alignment: Qt.AlignLeft
+                }
+
+                Controls.Label {
+                    id: backbtnlabelHeading
+                    text: "Press 'esc' or the [←] Back button to close"
+                    Layout.alignment: Qt.AlignRight
+                }
+            }
+
+            Kirigami.Separator {
+                id: headrSeptBml
+                anchors.top: headerAreaBMLPg1.bottom
+                width: parent.width
+                height: 1
+            }
+
+            ColumnLayout {
+                anchors.top: headrSeptBml.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+
+                    Item {
+                        id: bookmarkSearchField
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                        KeyNavigation.right: removeModeBox
+                        KeyNavigation.down: bookmarksManagerListView
+                        Keys.onEnterPressed: bookmarkSearchFieldChild.forceActiveFocus()
+
+                        Controls.TextField {
+                            id: bookmarkSearchFieldChild
+                            anchors.fill: parent
+                            placeholderText: "Search Bookmarks"
+                            background: Rectangle {
+                                Kirigami.Theme.colorSet: Kirigami.Theme.View
+                                color: Kirigami.Theme.backgroundColor
+                                border.color: bookmarkSearchField.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.Theme.disabledTextColor
+                                border.width: 1
+                            }
+                            onTextChanged:  {
+                                delegateFilter.applyFilter()
+                            }
+                            onAccepted: {
+                                bookmarkSearchField.forceActiveFocus()
+                            }
+                        }
+
+                        Keys.onReturnPressed: {
+                            bookmarkSearchFieldChild.forceActiveFocus();
+                        }
+                    }
+
+                    Controls.CheckBox {
+                        id: removeModeBox
+                        checkable: true
+                        checked: false
+                        text: "Remove Mode"
+                        KeyNavigation.right: addModeBox
+                        KeyNavigation.left: bookmarkSearchField
+                        KeyNavigation.down: bookmarksManagerListView
+
+                        Keys.onReturnPressed: {
+                            checked = !checked
+                        }
+                    }
+
+                    Controls.Button {
+                        id: addModeBox
+                        text: "Add"
+                        Layout.preferredWidth: Kirigami.Units.gridUnit * 6
+                        KeyNavigation.left: removeModeBox
+                        KeyNavigation.down: bookmarksManagerListView
+
+                        background: Rectangle {
+                            color: addModeBox.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+                            border.color: Kirigami.Theme.disabledTextColor
+                            radius: 20
+                        }
+
+                        onClicked: {
+                            bookmarkManagerStackLayout.currentIndex = 1
+                        }
+                        Keys.onReturnPressed: {
+                            clicked()
+                        }
+                    }
+                }
+
+                ListView {
+                    id: bookmarksManagerListView
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    model: delegateFilter
+                    clip: true
+                    keyNavigationEnabled: true
+                    KeyNavigation.up: bookmarkSearchField
+                }
+            }
+        }
+
+        Item {
+            id: addBookMarkLayout
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+
+            onVisibleChanged: {
+                if(visible){
+                    nameField.forceActiveFocus()
+                }
+            }
+
+            RowLayout {
+                id: headerAreaBML
+                anchors.top: parent.top
+                anchors.left: parent.left
+                anchors.right: parent.right
+
+                Kirigami.Heading {
+                    id: bookmarkAddHeading
+                    level: 1
+                    text: "Add Bookmark"
+                    width: parent.width
+                    horizontalAlignment: Qt.AlignLeft
+                    Layout.alignment: Qt.AlignLeft
+                }
+
+                Controls.Label {
+                    id: backbtnlabel
+                    text: "Press 'esc' or the [←] Back button to close"
+                    Layout.alignment: Qt.AlignRight
+                }
+            }
+
+            Kirigami.Separator {
+                id: headrSept
+                anchors.top: headerAreaBML.bottom
+                width: parent.width
+                height: 1
+            }
+
+            RowLayout {
+                id: nameRow
+                anchors.top: headrSept.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                height: Kirigami.Units.gridUnit * 4
+
+                Kirigami.Heading {
+                    level: 3
+                    text: "Name: "
+                    Layout.preferredWidth: Kirigami.Units.gridUnit * 5
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                }
+
+                Item {
+                    id: nameField
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                    KeyNavigation.down: urlField
+
+                    Keys.onReturnPressed: {
+                        nameFieldChild.forceActiveFocus()
+                    }
+
+                    Controls.TextField {
+                        id: nameFieldChild
+                        anchors.fill: parent
+
+                        background: Rectangle {
+                            Kirigami.Theme.colorSet: Kirigami.Theme.View
+                            color: Kirigami.Theme.backgroundColor
+                            border.color: nameField.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.Theme.disabledTextColor
+                            border.width: 1
+                        }
+
+                        onAccepted: {
+                            urlField.forceActiveFocus()
+                        }
+                    }
+                }
+            }
+
+            RowLayout {
+                id: urlRow
+                anchors.top: nameRow.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                height: Kirigami.Units.gridUnit * 4
+
+                Kirigami.Heading {
+                    level: 3
+                    text: "Url: "
+                    Layout.preferredWidth: Kirigami.Units.gridUnit * 5
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                }
+
+                Item {
+                    id: urlField
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                    KeyNavigation.up: nameField
+                    KeyNavigation.down: catField
+
+                    Keys.onReturnPressed: {
+                        urlFieldChild.forceActiveFocus()
+                    }
+
+                    Controls.TextField {
+                        id: urlFieldChild
+                        anchors.fill: parent
+
+                        background: Rectangle {
+                            Kirigami.Theme.colorSet: Kirigami.Theme.View
+                            color: Kirigami.Theme.backgroundColor
+                            border.color: urlField.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.Theme.disabledTextColor
+                            border.width: 1
+                        }
+
+                        onAccepted: {
+                            catRow.forceActiveFocus()
+                        }
+                    }
+                }
+            }
+
+            RowLayout {
+                id: catRow
+                anchors.top: urlRow.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                height: Kirigami.Units.gridUnit * 4
+                Kirigami.Heading {
+                    level: 3
+                    text: "Category: "
+                    Layout.preferredWidth: Kirigami.Units.gridUnit * 5
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                }
+
+                Item {
+                    id: catField
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                    KeyNavigation.up: urlField
+                    KeyNavigation.down: addBookMarkBtn
+
+                    Keys.onReturnPressed: {
+                        catFieldChild.forceActiveFocus()
+                    }
+
+                    Controls.ComboBox {
+                        id: catFieldChild
+                        model: ["News", "Entertainment", "Infotainment", "General"]
+                        currentIndex: 0
+                        anchors.fill: parent
+                        background: Rectangle {
+                            Kirigami.Theme.colorSet: Kirigami.Theme.View
+                            color: Kirigami.Theme.backgroundColor
+                            border.color: catField.activeFocus ? Kirigami.Theme.hoverColor : Kirigami.Theme.disabledTextColor
+                            border.width: 1
+                        }
+
+                        Keys.onReturnPressed: {
+                            addBookMarkBtn.forceActiveFocus()
+                        }
+                    }
+                }
+            }
+
+            RowLayout {
+                id: addBookMarkBtnRow
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                height: Kirigami.Units.gridUnit * 3
+
+                Controls.Button {
+                    id: backBookMarkBtn
+                    text: "Bookmarks"
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    KeyNavigation.right: addBookMarkBtn
+                    KeyNavigation.up: nameField
+                    background: Rectangle {
+                        color: backBookMarkBtn.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+                        border.color: Kirigami.Theme.disabledTextColor
+                        radius: 2
+                    }
+                    onClicked: {
+                        bookmarkManagerStackLayout.currentIndex = 0
+                        bookmarkSearchField.forceActiveFocus()
+                    }
+                    Keys.onReturnPressed: {
+                        clicked()
+                    }
+                }
+
+                Controls.Button {
+                    id: addBookMarkBtn
+                    text: "Add"
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    KeyNavigation.left: backBookMarkBtn
+                    KeyNavigation.up: nameField
+                    background: Rectangle {
+                        color: addBookMarkBtn.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+                        border.color: Kirigami.Theme.disabledTextColor
+                        radius: 2
+                    }
+                    onClicked: {
+                    }
+                    Keys.onReturnPressed: {
+                        clicked()
+                    }
+                }
+            }
+        }
+    }
+
+    InputPanel {
+        id: inputPanel
+        y: Qt.inputMethod.visible ? parent.height - inputPanel.height : parent.height
+        width: parent.width
+        visible: Qt.inputMethod.visible
+    }
+}

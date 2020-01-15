@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.cpp</file>
+        <file>plugins/virtualMouse.h</file>
+        <file>plugins/virtualKeypress.h</file>
+        <file>plugins/virtualKeypress.cpp</file>
+        <file>plugins/globalSettings.cpp</file>
+        <file>plugins/globalSettings.h</file>
+        <file>qml/delegates/RecentDelegate.qml</file>
+        <file>qml/delegates/background.svg</file>
+        <file>qml/views/TileView.qml</file>
+        <file>qml/views/LabelView.qml</file>
+        <file>qml/code/BookmarkStorage.js</file>
+        <file>qml/code/RecentStorage.js</file>
+        <file>qml/code/Utils.js</file>
+        <file>qml/code/qwebchannel.js</file>
+        <file>qml/images/remote.png</file>
+        <file>qml/images/logo-small.png</file>
+        <file>qml/images/logo-large.png</file>
+        <file>qml/images/logo-tiny.png</file>
+        <file>qml/main.qml</file>
+        <file>qml/StartPage.qml</file>
+        <file>qml/TopBar.qml</file>
+        <file>qml/WebLoader.qml</file>
+        <file>qml/BookmarkManager.qml</file>
+        <file>qml/delegates/TabDelegate.qml</file>
+        <file>qml/views/TileViewTabs.qml</file>
+        <file>qml/views/TileViewGrid.qml</file>
+        <file>qml/delegates/BookmarkDelegate.qml</file>
+        <file>qml/HistoryManager.qml</file>
+        <file>qml/HelpTab.qml</file>
+        <file>qml/LocalURLSearchHandler.qml</file>
+    </qresource>
+</RCC>
