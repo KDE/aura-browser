@@ -53,7 +53,7 @@ Item {
     }
 
     Component.onCompleted: {
-        Cursor.setStep(10)
+        Cursor.setStep(15)
         webChannel.registerObject("foo", myObject)
     }
 
@@ -137,7 +137,6 @@ Item {
                         webView.runJavaScript("document.title", function(title){
                             pageTitle = title
                             Utils.insertRecentToStorage(webView.url, pageTitle)
-                            cursorMover.forceActiveFocus()
                         });
 
                         webView.runJavaScript('var element = document.getElementsByTagName("INPUT"); var index; for(var index = 0; index < element.length; index++) {element[index].onfocus = function(){console.log(JSON.stringify({"inputFocus": "GotInput", "className": document.activeElement.form.className, "id": document.activeElement.id}))}};')
@@ -160,7 +159,7 @@ Item {
                                                     actualPageWidth, flickable.width);
                                         currentContentWidth = flickable.contentWidth
                                     });
-
+                        mouseCursor.forceActiveFocus()
                     } else {
                         console.log("Loading..")
                     }
@@ -256,7 +255,7 @@ Item {
 
                 InputPanel {
                     id: inputPanel
-                    y: Qt.inputMethod.visible ? parent.height - inputPanel.height : parent.height
+                    y: parent.height - inputPanel.height
                     anchors.left: parent.left
                     anchors.right: parent.right
 
@@ -275,6 +274,7 @@ Item {
         }
 
         Rectangle {
+            id: mouseCursor
             width: Kirigami.Units.gridUnit * 1.5
             height: Kirigami.Units.gridUnit * 1.5
             radius: 100

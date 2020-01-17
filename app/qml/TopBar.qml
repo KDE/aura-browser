@@ -102,6 +102,7 @@ Rectangle {
         }
 
         Rectangle {
+            id: urlBox
             anchors.left: homeButtonTopBar.right
             anchors.right: bookmarkButtonTopBar.left
             anchors.leftMargin: Kirigami.Units.largeSpacing
@@ -124,6 +125,7 @@ Rectangle {
             }
 
             Kirigami.Separator {
+                id: urlboxsept
                 width: 1
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
@@ -131,12 +133,25 @@ Rectangle {
                 anchors.margins: Kirigami.Units.smallSpacing
             }
 
-            Label {
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                maximumLineCount: 1
-                color: Kirigami.Theme.textColor
-                text: webView.url
+            Item {
+                anchors.left: urlboxsept.right
+                anchors.leftMargin: Kirigami.Units.largeSpacing
+                height: parent.height
+                width: urlBox.width - (websiteImgIcon.width + Kirigami.Units.largeSpacing * 4)
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.verticalCenter: parent.verticalCenter
+
+                    Label {
+                        maximumLineCount: 1
+                        Layout.maximumWidth: parent.width
+                        Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
+                        wrapMode: Text.WrapAnywhere
+                        color: Kirigami.Theme.textColor
+                        text: webView.url
+                    }
+                }
             }
 
             MouseArea {
