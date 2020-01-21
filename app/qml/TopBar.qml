@@ -31,6 +31,15 @@ Rectangle {
     width: parent.width
     height: Kirigami.Units.iconSizes.large + Kirigami.Units.largeSpacing
     color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+    layer.enabled: true
+    z: 1000
+    layer.effect: DropShadow {
+        horizontalOffset: 0
+        verticalOffset: 1
+        radius: 8.0
+        samples: 17
+        color: Qt.rgba(0,0,0,0.6)
+    }
 
     Item {
         id: tbarLayout
@@ -111,7 +120,7 @@ Rectangle {
             height: Kirigami.Units.iconSizes.medium
             radius: 20
             color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.5)
-            border.color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+            border.color: Kirigami.Theme.disabledTextColor
             border.width: 0.5
 
             Image {
@@ -137,7 +146,7 @@ Rectangle {
                 anchors.left: urlboxsept.right
                 anchors.leftMargin: Kirigami.Units.largeSpacing
                 height: parent.height
-                width: urlBox.width - (websiteImgIcon.width + Kirigami.Units.largeSpacing * 4)
+                width: urlBox.width - (websiteImgIcon.width + refreshbtn.width + Kirigami.Units.largeSpacing * 4)
 
                 RowLayout {
                     anchors.fill: parent
@@ -160,7 +169,29 @@ Rectangle {
                     localUrlEntryDrawer.open()
                 }
             }
+
+            Item {
+                id: refreshbtn
+                anchors.right: parent.right
+                width: Kirigami.Units.iconSizes.medium
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+
+                Kirigami.Icon {
+                    source: "refactor"
+                    width: Kirigami.Units.iconSizes.small
+                    height: Kirigami.Units.iconSizes.small
+                    anchors.centerIn: parent
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {webView.reload()}
+                }
+            }
         }
+
+
         Item {
             id: bookmarkButtonTopBar
             width: Kirigami.Units.iconSizes.large
