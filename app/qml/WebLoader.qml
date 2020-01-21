@@ -72,13 +72,19 @@ Item {
             anchors.top: parent.top
         }
 
+        RequestHandler {
+             id: interactionBar
+             anchors.top: topBarPage.bottom
+             z: 1001
+         }
+
         WebChannel {
             id: webChannel
         }
 
         Flickable {
             id: flickable
-            anchors.top: topBarPage.bottom
+            anchors.top: interactionBar.bottom
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
@@ -121,6 +127,34 @@ Item {
 
                 profile {
                     httpUserAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+
+                    onDownloadRequested: {
+                        download.accept()
+                        download.pause()
+                        var downloadFileName = download.path.split('/').pop(-1)
+                        interactionBar.setSource("DownloadRequest.qml")
+                        interactionBar.interactionItem.download = download
+                        interactionBar.interactionItem.actionsVisible = true
+                        interactionBar.interactionItem.downloadName = downloadFileName
+                        interactionBar.isRequested = true
+                    }
+
+                    onDownloadFinished: {
+                       if (download.state === WebEngineDownloadItem.DownloadCompleted) {
+                           interactionBar.interactionItem.actionsVisible = false
+                           interactionBar.interactionItem.isDownloading = false
+                           interactionBar.interactionItem.messageText = "Download finished"
+                       }
+                       else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
+                           interactionBar.interactionItem.actionsVisible = false
+                           interactionBar.interactionItem.isDownloading = false
+                           interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                       }
+                       else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
+                           interactionBar.interactionItem.isDownloading = false
+                           console.log("Download cancelled by the user")
+                       }
+                    }
                 }
 
                 userScripts: [
@@ -129,8 +163,23 @@ Item {
                         name: "QWebChannel"
                         worldId: WebEngineScript.MainWorld
                         sourceUrl: Qt.resolvedUrl("./code/qwebchannel.js")
+                    },
+                    WebEngineScript {
+                        injectionPoint: WebEngineScript.DocumentReady
+                        name: "QWebInput"
+                        worldId: WebEngineScript.MainWorld
+                        runOnSubframes: true
+                        sourceUrl: Qt.resolvedUrl("./code/qwebinput.js")
                     }
                 ]
+
+                onFeaturePermissionRequested: {
+                    console.log("feature permission requested");
+                    interactionBar.setSource("FeatureRequest.qml")
+                    interactionBar.interactionItem.securityOrigin = securityOrigin;
+                    interactionBar.interactionItem.requestedFeature = feature;
+                    interactionBar.isRequested = true;
+                }
 
                 onLoadingChanged: {
                     if(loadRequest.status == WebEngineView.LoadSucceededStatus){
@@ -138,8 +187,6 @@ Item {
                             pageTitle = title
                             Utils.insertRecentToStorage(webView.url, pageTitle)
                         });
-
-                        webView.runJavaScript('var element = document.getElementsByTagName("INPUT"); var index; for(var index = 0; index < element.length; index++) {element[index].onfocus = function(){console.log(JSON.stringify({"inputFocus": "GotInput", "className": document.activeElement.form.className, "id": document.activeElement.id}))}};')
 
                         flickable.contentHeight = 0;
                         flickable.contentWidth = flickable.width;
@@ -168,6 +215,7 @@ Item {
                 settings {
                     focusOnNavigationEnabled: false
                     pluginsEnabled: true
+                    showScrollBars: false
                 }
 
                 onFullScreenRequested: {
@@ -283,6 +331,7 @@ Item {
             color: Qt.rgba(Kirigami.Theme.linkColor.r, Kirigami.Theme.linkColor.g, Kirigami.Theme.linkColor.b, 0.8)
             x: Cursor.pos.x
             y: Cursor.pos.y
+            z: 1002
             visible: Cursor.visible
         }
     }
