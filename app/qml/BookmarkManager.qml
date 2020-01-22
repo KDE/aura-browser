@@ -27,12 +27,16 @@ import QtQml.Models 2.3
 import QtQuick.LocalStorage 2.0
 import QtQuick.VirtualKeyboard 2.5
 import "code/BookmarkStorage.js" as BookmarkStorage
+import "code/Utils.js" as Utils
 
 Controls.Popup {
     id: bookmarkPopupArea
     property bool editMode: false
     property alias model: delegateFilter.model
     property var genericModel
+    property alias bookmarkStack: bookmarkManagerStackLayout.currentIndex
+    property var preBookmarkName
+    property var preBookmarkUrl
     width: parent.width / 2
     height:  parent.height / 2
     x: (parent.width - width) / 2
@@ -43,6 +47,13 @@ Controls.Popup {
         color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.97)
     }
 
+    onPreBookmarkNameChanged: {
+        nameFieldChild.text = preBookmarkName
+    }
+    onPreBookmarkUrlChanged: {
+        urlFieldChild.text = preBookmarkUrl
+    }
+
     function deleteBookmarkByRowId(id){
         BookmarkStorage.dbDeleteRow(id);
         genericModel.clear();
@@ -51,8 +62,11 @@ Controls.Popup {
     }
 
     onOpened: {
-        bookmarkManagerStackLayout.currentIndex = 0
-        bookmarkSearchField.forceActiveFocus()
+        if(bookmarkStack == 0){
+            bookmarkSearchField.forceActiveFocus()
+        } else {
+            nameField.forceActiveFocus()
+        }
     }
 
     DelegateModel {
@@ -400,7 +414,7 @@ Controls.Popup {
                     Controls.ComboBox {
                         id: catFieldChild
                         model: ["News", "Entertainment", "Infotainment", "General"]
-                        currentIndex: 0
+                        currentIndex: 3
                         anchors.fill: parent
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -457,6 +471,8 @@ Controls.Popup {
                         radius: 2
                     }
                     onClicked: {
+                        Utils.insertBookmarkToManager(urlFieldChild.text, nameFieldChild.text, catFieldChild.currentText)
+                        bookmarkPopupArea.close()
                     }
                     Keys.onReturnPressed: {
                         clicked()

@@ -207,7 +207,12 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: {}
+                onClicked: {
+                    bookmarkTabManager.bookmarkStack = 1
+                    bookmarkTabManager.preBookmarkName = webView.title
+                    bookmarkTabManager.preBookmarkUrl = webView.url
+                    bookmarkTabManager.open()
+                }
             }
         }
 

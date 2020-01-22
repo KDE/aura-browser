@@ -77,25 +77,25 @@ Kirigami.AbstractApplicationWindow {
     }
 
     globalDrawer: Kirigami.GlobalDrawer {
-         id: gDrawer
-         handleVisible: false
+        id: gDrawer
+        handleVisible: false
 
-         onOpened:  {
+        onOpened:  {
             configureButton.forceActiveFocus();
-         }
+        }
 
-         Controls.Label {
-             id: bblabl
-             text: "Press 'esc' or the [←] Back button to close"
-             Layout.alignment: Qt.AlignRight
-         }
+        Controls.Label {
+            id: bblabl
+            text: "Press 'esc' or the [←] Back button to close"
+            Layout.alignment: Qt.AlignRight
+        }
 
-         Kirigami.Separator {
+        Kirigami.Separator {
             Layout.fillWidth: true
             Layout.preferredHeight: 1
-         }
+        }
 
-         Controls.Button {
+        Controls.Button {
             id: configureButton
             Layout.fillWidth: true
             KeyNavigation.down: quitButton
@@ -112,9 +112,9 @@ Kirigami.AbstractApplicationWindow {
                     text: "Settings"
                 }
             }
-         }
+        }
 
-         Controls.Button {
+        Controls.Button {
             id: quitButton
             Layout.fillWidth: true
             KeyNavigation.up: configureButton
@@ -131,11 +131,15 @@ Kirigami.AbstractApplicationWindow {
                     text: "Quit"
                 }
             }
-         }
+        }
     }
 
     ListModel {
         id: tabBarViewModel
+    }
+
+    ListModel {
+        id: bookmarksModel
     }
 
     StackLayout {

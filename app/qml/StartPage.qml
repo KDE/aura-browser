@@ -50,6 +50,7 @@ Kirigami.Page {
 
     Component.onCompleted: {
         recentPagesView.forceActiveFocus()
+        BookmarkStorage.dbReadAll()
     }
 
     function checkURL(value) {
@@ -63,11 +64,6 @@ Kirigami.Page {
     ListModel {
         id: recentPagesModel
         Component.onCompleted: RecentStorage.dbReadAll()
-    }
-
-    ListModel {
-        id: bookmarksModel
-        Component.onCompleted: BookmarkStorage.dbReadAll()
     }
 
     function insertRecentLink(url){
@@ -183,6 +179,7 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    bookmarkTabManager.bookmarkStack = 0
                     bookmarkTabManager.open()
                 }
 
