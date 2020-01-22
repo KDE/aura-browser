@@ -38,6 +38,7 @@ Kirigami.AbstractApplicationWindow {
     title: qsTr("Aura-Browser")
     property alias showStack: auraStack.currentIndex
     property int virtualMouseMoveSpeed: 10
+    signal settingsTabRequested
     visibility: "Maximized"
 
     function switchToTab(index){
@@ -81,7 +82,7 @@ Kirigami.AbstractApplicationWindow {
         handleVisible: false
 
         onOpened:  {
-            configureButton.forceActiveFocus();
+            quitButton.forceActiveFocus();
         }
 
         Controls.Label {
@@ -96,28 +97,14 @@ Kirigami.AbstractApplicationWindow {
         }
 
         Controls.Button {
-            id: configureButton
-            Layout.fillWidth: true
-            KeyNavigation.down: quitButton
-
-            contentItem: RowLayout {
-                Kirigami.Icon {
-                    source: "configure"
-                    Layout.preferredWidth: Kirigami.Units.iconSizes.medium
-                    Layout.preferredHeight: Kirigami.Units.iconSizes.medium
-                }
-
-                Controls.Label {
-                    Layout.fillWidth: true
-                    text: "Settings"
-                }
-            }
-        }
-
-        Controls.Button {
             id: quitButton
             Layout.fillWidth: true
-            KeyNavigation.up: configureButton
+            Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+
+            background: Rectangle {
+                color: quitButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
+                border.color: Kirigami.Theme.disabledTextColor
+            }
 
             contentItem: RowLayout {
                 Kirigami.Icon {
@@ -130,6 +117,14 @@ Kirigami.AbstractApplicationWindow {
                     Layout.fillWidth: true
                     text: "Quit"
                 }
+            }
+
+            onClicked: {
+                root.close();
+            }
+
+            Keys.onReturnPressed: {
+                clicked()
             }
         }
     }
@@ -247,6 +242,8 @@ Kirigami.AbstractApplicationWindow {
 
     Component.onCompleted: {
         console.log(Aura.GlobalSettings.firstRun);
+        console.log(Aura.GlobalSettings.virtualMouseSpeed);
+        Cursor.setStep(Aura.GlobalSettings.virtualMouseSpeed);
         if(Aura.GlobalSettings.firstRun){
             RecentStorage.dbInit();
             BookmarkStorage.dbInit();

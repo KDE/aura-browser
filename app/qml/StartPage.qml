@@ -53,6 +53,13 @@ Kirigami.Page {
         BookmarkStorage.dbReadAll()
     }
 
+    Connections {
+        target: root
+        onSettingsTabRequested: {
+            settingsTabArea.open()
+        }
+    }
+
     function checkURL(value) {
         var urlregex = new RegExp("^(http|https|ftp)\://([a-zA-Z0-9\.\-]+(\:[a-zA-Z0-9\.&amp;%\$\-]+)*@)*((25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9])\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[0-9])|([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(\:[0-9]+)*(/($|[a-zA-Z0-9\.\,\?\'\\\+&amp;%\$#\=~_\-]+))*$");
         if (urlregex.test(value)) {
@@ -169,7 +176,7 @@ Kirigami.Page {
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignLeft
                 KeyNavigation.left: startPageHistoryButton
-                KeyNavigation.right: startPageHelpButton
+                KeyNavigation.right: startPageSettingsButton
                 KeyNavigation.down: searchandurlfield
 
                 background: Rectangle {
@@ -189,12 +196,37 @@ Kirigami.Page {
             }
 
             Controls.Button {
+                id: startPageSettingsButton
+                text: "Settings"
+                Layout.preferredWidth: Kirigami.Units.gridUnit * 5
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+                Layout.alignment: Qt.AlignRight
+                KeyNavigation.left: startPageBookmarksButton
+                KeyNavigation.right: startPageHelpButton
+                KeyNavigation.down: searchandurlfield
+
+                background: Rectangle {
+                    color: startPageSettingsButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+                    border.color: Kirigami.Theme.disabledTextColor
+                    radius: 20
+                }
+
+                onClicked: {
+                    settingsTabArea.open()
+                }
+
+                Keys.onReturnPressed: {
+                    clicked();
+                }
+            }
+
+            Controls.Button {
                 id: startPageHelpButton
                 text: "Help"
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignRight
-                KeyNavigation.left: startPageBookmarksButton
+                KeyNavigation.left: startPageSettingsButton
                 KeyNavigation.down: searchandurlfield
 
                 background: Rectangle {
@@ -449,5 +481,9 @@ Kirigami.Page {
 
     HelpTab{
         id: helpTabManager
+    }
+
+    SettingsTab {
+        id: settingsTabArea
     }
 }

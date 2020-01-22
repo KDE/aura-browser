@@ -17,6 +17,7 @@
 
 #include <QDebug>
 #include <QFile>
+#include <QtWebEngine/QQuickWebEngineProfile>
 #include "globalSettings.h"
 
 GlobalSettings::GlobalSettings(QObject *parent) :
@@ -37,4 +38,26 @@ void GlobalSettings::setFirstRun(bool firstRun)
 
     m_settings.setValue(QStringLiteral("firstRun"), firstRun);
     emit firstRunChanged();
+}
+
+int GlobalSettings::virtualMouseSpeed() const
+{
+    return m_settings.value(QStringLiteral("virtualMouseSpeed"), 10).toInt();
+}
+
+void GlobalSettings::setVirtualMouseSpeed(int virtualMouseSpeed)
+{
+    if (GlobalSettings::virtualMouseSpeed() == virtualMouseSpeed) {
+        return;
+    }
+
+    m_settings.setValue(QStringLiteral("virtualMouseSpeed"), virtualMouseSpeed);
+    emit virtualMouseSpeedChanged(virtualMouseSpeed);
+}
+
+void GlobalSettings::clearDefaultProfileCache()
+{
+    auto *profile = QQuickWebEngineProfile::defaultProfile();
+    profile->clearHttpCache();
+    qDebug() << "in Clear Cache";
 }

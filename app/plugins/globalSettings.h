@@ -32,17 +32,22 @@ class GlobalSettings : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool firstRun READ firstRun WRITE setFirstRun NOTIFY firstRunChanged)
+    Q_PROPERTY(int virtualMouseSpeed READ virtualMouseSpeed WRITE setVirtualMouseSpeed NOTIFY virtualMouseSpeedChanged)
 
 public:
     explicit GlobalSettings(QObject *parent=0);
     
     bool firstRun() const;
+    int virtualMouseSpeed() const;
     
 public Q_SLOTS:
     void setFirstRun(bool firstRun);
+    void setVirtualMouseSpeed(int virtualMouseSpeed);
+    void clearDefaultProfileCache();
 
 Q_SIGNALS:
     void firstRunChanged();
+    void virtualMouseSpeedChanged(int virtualMouseSpeed);
 
 private:
     QSettings m_settings;

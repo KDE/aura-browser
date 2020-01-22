@@ -47,13 +47,18 @@ Item {
         webView.url = pageUrl
     }
 
+    BookmarkManager{
+        id: bookmarkTabManager
+        model: bookmarksModel
+        genericModel: bookmarksModel
+    }
+
     onToRemoveChanged: {
         removeFromTabView(parent.currentIndex);
         mItem.destroy()
     }
 
     Component.onCompleted: {
-        Cursor.setStep(15)
         webChannel.registerObject("foo", myObject)
     }
 
