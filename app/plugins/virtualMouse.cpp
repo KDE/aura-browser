@@ -32,8 +32,8 @@ void FakeCursor::move(int d){
     switch (d) {
     case Up: if(_pos.ry() > 1) { _pos.ry() -= step; } break;
     case Down: if(_pos.ry() < w->height() - 5) { _pos.ry() += step; } break;
-    case Left: _pos.rx() -= step; break;
-    case Right: _pos.rx() += step; break;
+    case Left: if(_pos.rx() > 1) { _pos.rx() -= step; } break;
+    case Right: if(_pos.rx() < w->width() - 20) { _pos.rx() += step; } break;
     }
     emit posChanged();
 }

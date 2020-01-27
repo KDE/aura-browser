@@ -30,5 +30,10 @@
         <file>qml/HistoryManager.qml</file>
         <file>qml/HelpTab.qml</file>
         <file>qml/LocalURLSearchHandler.qml</file>
+        <file>qml/RequestHandler.qml</file>
+        <file>qml/FeatureRequest.qml</file>
+        <file>qml/code/qwebinput.js</file>
+        <file>qml/DownloadRequest.qml</file>
+        <file>qml/SettingsTab.qml</file>
     </qresource>
 </RCC>
