@@ -34,6 +34,7 @@ Controls.Popup {
     height: headerAreaHelpPage.implicitHeight + helperContent.implicitHeight + Kirigami.Units.largeSpacing
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
+    padding: Kirigami.Units.largeSpacing
     dim: true
 
     Controls.Overlay.modeless: Rectangle {
