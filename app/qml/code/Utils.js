@@ -66,7 +66,6 @@ function navigateKeyClick(){
 function insertRecentToStorage(pUrl, pTitle){
     var date = new Date()
     var pColor = Utils.genRandomColor();
-    console.log("here in insert")
     RecentStorage.dbInsert(date, pUrl, pTitle, pColor)
 }
 

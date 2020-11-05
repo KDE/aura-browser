@@ -16,12 +16,12 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.10
-import QtQuick.Window 2.10
-import QtQuick.Layouts 1.3
-import QtWebEngine 1.7
-import QtQuick.Controls 2.10 as Controls
-import QtQuick.LocalStorage 2.0
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtQuick.Layouts 1.12
+import QtWebEngine 1.8
+import QtQuick.Controls 2.12 as Controls
+import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
 import "views" as Views
 import "delegates" as Delegates
@@ -29,6 +29,8 @@ import "code/RecentStorage.js" as RecentStorage
 import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
+import QtQuick.VirtualKeyboard 2.4
+import QtQuick.VirtualKeyboard.Settings 2.4
 
 Kirigami.AbstractApplicationWindow {
     id: root
@@ -39,6 +41,7 @@ Kirigami.AbstractApplicationWindow {
     property alias showStack: auraStack.currentIndex
     property int virtualMouseMoveSpeed: 10
     signal settingsTabRequested
+    signal blurFieldRequested
     visibility: "Maximized"
 
     function switchToTab(index){
@@ -251,5 +254,41 @@ Kirigami.AbstractApplicationWindow {
             Aura.GlobalSettings.setFirstRun(false);
         }
         prependStartPage();
+    }
+
+    InputPanel {
+        id: inputPanel
+        z: 99
+        x: 0
+        y: root.height
+        width: root.width
+
+        onActiveChanged: {
+            if(!active){
+                blurFieldRequested();
+            }
+        }
+
+        states: State {
+            name: "visible"
+            when: inputPanel.active
+            PropertyChanges {
+                target: inputPanel
+                y: parent.height - inputPanel.height
+            }
+        }
+
+        transitions: Transition {
+            from: ""
+            to: "visible"
+            reversible: true
+            ParallelAnimation {
+                NumberAnimation {
+                    properties: "y"
+                    duration: 250
+                    easing.type: Easing.InOutQuad
+                }
+            }
+        }
     }
 }

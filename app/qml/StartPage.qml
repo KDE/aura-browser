@@ -16,15 +16,15 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.10
-import QtQuick.Window 2.10
-import QtWebEngine 1.7
-import QtQuick.Layouts 1.3
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtWebEngine 1.8
+import QtQuick.Layouts 1.12
 import org.kde.kirigami 2.11 as Kirigami
-import QtQuick.Controls 2.10 as Controls
+import QtQuick.Controls 2.12 as Controls
 import QtGraphicalEffects 1.0
-import QtQuick.LocalStorage 2.0
-import QtQuick.VirtualKeyboard 2.5
+import QtQuick.LocalStorage 2.12
+import QtQuick.VirtualKeyboard 2.4
 import "views" as Views
 import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
@@ -94,6 +94,8 @@ Kirigami.Page {
                 Layout.alignment: Qt.AlignLeft
                 KeyNavigation.right: startPageTabsButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
                 background: Rectangle {
                     color: startPageMenuButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -128,6 +130,9 @@ Kirigami.Page {
                 KeyNavigation.right: startPageHistoryButton
                 KeyNavigation.left: startPageMenuButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
+
 
                 background: Rectangle {
                     color: startPageTabsButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -153,6 +158,8 @@ Kirigami.Page {
                 KeyNavigation.left: startPageTabsButton
                 KeyNavigation.right: startPageBookmarksButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
                 background: Rectangle {
                     color: startPageHistoryButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -178,6 +185,8 @@ Kirigami.Page {
                 KeyNavigation.left: startPageHistoryButton
                 KeyNavigation.right: startPageSettingsButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
                 background: Rectangle {
                     color: startPageBookmarksButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -204,6 +213,8 @@ Kirigami.Page {
                 KeyNavigation.left: startPageBookmarksButton
                 KeyNavigation.right: startPageHelpButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
                 background: Rectangle {
                     color: startPageSettingsButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -228,6 +239,8 @@ Kirigami.Page {
                 Layout.alignment: Qt.AlignRight
                 KeyNavigation.left: startPageSettingsButton
                 KeyNavigation.down: searchandurlfield
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
                 background: Rectangle {
                     color: startPageHelpButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -456,13 +469,6 @@ Kirigami.Page {
                     }
                     urlEntryDrawer.close()
                 }
-            }
-
-            InputPanel {
-                id: inputPanel
-                y: Qt.inputMethod.visible ? parent.height - inputPanel.height : parent.height
-                anchors.left: parent.left
-                anchors.right: parent.right
             }
         }
     }

@@ -16,18 +16,17 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.10
-import QtQuick.Controls 2.10
-import QtQuick.Window 2.10
+import QtQuick 2.12
+import QtQuick.Controls 2.12
+import QtQuick.Window 2.12
 import QtWebEngine 1.8
 import QtWebChannel 1.0
-import QtQuick.Layouts 1.3
+import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
-import QtQuick.LocalStorage 2.0
+import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
-import QtQuick.VirtualKeyboard 2.5
 
 Item {
     id: mItem
@@ -42,6 +41,15 @@ Item {
     property var navMode: "vMouse"
     signal flickDown
     signal flickUp
+
+    Connections {
+        target: root
+        onBlurFieldRequested: {
+            if(mItem.visible) {
+                webView.runJavaScript('document.activeElement.blur()');
+            }
+        }
+    }
 
     onPageUrlChanged: {
         webView.url = pageUrl
@@ -283,40 +291,8 @@ Item {
                     myObject.cName = jsonMessage.className
                     pageId = jsonMessage.id
                     if(jsonMessage.inputFocus == "GotInput"){
-                        inputDrawer.open()
-                    }
-                }
-            }
-        }
-
-        Dialog {
-            id: inputDrawer
-            width: parent.width
-            height: parent.height
-            modal: false
-            background: Rectangle{
-                color: 'transparent'
-            }
-
-            onClosed: {
-               webView.runJavaScript('document.activeElement.blur()');
-            }
-
-            Item {
-                width: parent.width
-                height: parent.height
-
-                InputPanel {
-                    id: inputPanel
-                    y: parent.height - inputPanel.height
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-
-                    onActiveChanged: {
-                        if(!active){
-                            webView.runJavaScript('document.activeElement.blur()');
-                            inputDrawer.close()
-                        }
+                        console.log("I GOT INPUT HERE")
+                        root.inputPanel.active = true
                     }
                 }
             }

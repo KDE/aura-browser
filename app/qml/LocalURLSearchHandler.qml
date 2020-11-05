@@ -16,18 +16,18 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.10
-import QtQuick.Controls 2.10
-import QtQuick.Window 2.10
+import QtQuick 2.12
+import QtQuick.Controls 2.12
+import QtQuick.Window 2.12
 import QtWebEngine 1.8
 import QtWebChannel 1.0
-import QtQuick.Layouts 1.3
+import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
-import QtQuick.LocalStorage 2.0
+import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
-import QtQuick.VirtualKeyboard 2.5
+import QtQuick.VirtualKeyboard 2.4
 
 Kirigami.OverlayDrawer {
     id: webpageUrlEntryDrawer
@@ -98,13 +98,6 @@ Kirigami.OverlayDrawer {
                 }
                 webpageUrlEntryDrawer.close()
             }
-        }
-
-        InputPanel {
-            id: inputPanelLocal
-            y: Qt.inputMethod.visible ? parent.height - inputPanelLocal.height : parent.height
-            anchors.left: parent.left
-            anchors.right: parent.right
         }
     }
 }

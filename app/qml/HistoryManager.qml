@@ -16,16 +16,16 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.10
-import QtQuick.Window 2.10
-import QtWebEngine 1.7
-import QtQuick.Layouts 1.3
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtWebEngine 1.8
+import QtQuick.Layouts 1.12
 import org.kde.kirigami 2.11 as Kirigami
-import QtQuick.Controls 2.10 as Controls
+import QtQuick.Controls 2.12 as Controls
 import QtGraphicalEffects 1.0
-import QtQml.Models 2.3
-import QtQuick.LocalStorage 2.0
-import QtQuick.VirtualKeyboard 2.5
+import QtQml.Models 2.12
+import QtQuick.LocalStorage 2.12
+import QtQuick.VirtualKeyboard 2.4
 import "code/RecentStorage.js" as RecentStorage
 
 Controls.Popup {
@@ -226,12 +226,5 @@ Controls.Popup {
                 visible: genericModel.count == 0 ? 1 : 0
             }
         }
-    }
-
-    InputPanel {
-        id: inputPanel
-        y: Qt.inputMethod.visible ? parent.height - inputPanel.height : parent.height
-        width: parent.width
-        visible: Qt.inputMethod.visible
     }
 }

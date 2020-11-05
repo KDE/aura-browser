@@ -34,6 +34,7 @@ static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *s
 
 int main(int argc, char *argv[])
 {
+    qputenv("QT_VIRTUALKEYBOARD_DESKTOP_DISABLE", QByteArray("0"));
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
     QCoreApplication::setOrganizationName("AuraBrowser");
     QCoreApplication::setApplicationName("AuraBrowser");
