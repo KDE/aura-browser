@@ -30,7 +30,7 @@ import "code/BookmarkStorage.js" as BookmarkStorage
 
 Controls.Popup {
     id: helpPopupArea
-    width: parent.width / 2
+    width: Math.max((parent.width / 2), (remotenavheading.contentWidth + Kirigami.Units.largeSpacing))
     height: headerAreaHelpPage.implicitHeight + helperContent.implicitHeight + Kirigami.Units.largeSpacing
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2

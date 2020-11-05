@@ -100,6 +100,7 @@ Controls.Popup {
                 level: 2
                 text: "Virtual Cursor Speed Control"
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: virtualMouseMoveSpeedSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
 
             Kirigami.Separator {
@@ -164,6 +165,7 @@ Controls.Popup {
                 level: 2
                 text: "Virtual Scroll Speed Control"
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: virtualScrollMoveSpeedSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
 
             Kirigami.Separator {
