@@ -267,7 +267,7 @@ Item {
 
                 Action {
                     shortcut: "Left"
-                    enabled: mItem.visible && navMode == "vMouse"
+                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
                     onTriggered: {
                         Utils.navigateKeyLeft()
                     }
@@ -275,7 +275,7 @@ Item {
 
                 Action {
                     shortcut: "Right"
-                    enabled: mItem.visible && navMode == "vMouse"
+                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
                     onTriggered: {
                         Utils.navigateKeyRight()
                     }
@@ -283,7 +283,7 @@ Item {
 
                 Action {
                     shortcut: "Up"
-                    enabled: mItem.visible && navMode == "vMouse"
+                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
                     onTriggered: {
                         Utils.navigateKeyUp()
                     }
@@ -291,7 +291,7 @@ Item {
 
                 Action {
                     shortcut: "Down"
-                    enabled: mItem.visible && navMode == "vMouse"
+                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
                     onTriggered: {
                         Utils.navigateKeyDown()
                     }
@@ -299,7 +299,7 @@ Item {
 
                 Action {
                     shortcut: "Return"
-                    enabled: mItem.visible && navMode == "vMouse"
+                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
                     onTriggered: {
                         Cursor.click();
                     }
