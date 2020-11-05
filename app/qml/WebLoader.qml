@@ -40,6 +40,7 @@ Item {
     property var currentContentHeight
     property var currentContentWidth
     property var navMode: "vMouse"
+    property bool vMouseEnabled: false
     signal flickDown
     signal flickUp
 
@@ -52,13 +53,18 @@ Item {
         }
         onMouseActivationRequested: {
             if(mItem.visible) {
-                mouseCursor.enabled = true
+                vMouseEnabled = true
                 mouseCursor.forceActiveFocus();
             }
         }
         onMouseDeActivationRequested: {
             if(mItem.visible) {
-                mouseCursor.enabled = false
+                vMouseEnabled = false
+            }
+        }
+        onIgnoreInputRequested: {
+            if(mItem.visible){
+                webView.forceActiveFocus()
             }
         }
     }
@@ -232,7 +238,8 @@ Item {
                                                     actualPageWidth, flickable.width);
                                         currentContentWidth = flickable.contentWidth
                                     });
-                        mouseCursor.forceActiveFocus()
+                        vMouseEnabled = true;
+                        Aura.GlobalSettings.focusOffVKeyboard();
                     } else {
                         console.log("Loading..")
                     }
@@ -326,6 +333,7 @@ Item {
             y: Cursor.pos.y
             z: 1002
             visible: Cursor.visible
+            enabled: vMouseEnabled
         }
     }
 }

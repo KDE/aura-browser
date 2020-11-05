@@ -44,6 +44,7 @@ Kirigami.AbstractApplicationWindow {
     signal blurFieldRequested
     signal mouseActivationRequested
     signal mouseDeActivationRequested
+    signal ignoreInputRequested
     visibility: "Maximized"
 
     function switchToTab(index){
@@ -262,6 +263,9 @@ Kirigami.AbstractApplicationWindow {
         target: Aura.GlobalSettings
         onFocusOnVKeyboard: {
            mouseDeActivationRequested();
+         }
+        onFocusOffVKeyboard: {
+           ignoreInputRequested();
         }
     }
 
