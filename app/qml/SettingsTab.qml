@@ -31,13 +31,19 @@ import Aura 1.0 as Aura
 Controls.Popup {
     id: settingsPopupArea
     width: parent.width / 2
-    height:  parent.height / 2
+    height: settingContents.implicitHeight + headerAreaSettingsPage.implicitHeight + Kirigami.Units.gridUnit * 5 //parent.height / 2
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
     dim: true
 
     Controls.Overlay.modeless: Rectangle {
-        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.97)
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.77)
+    }
+
+    background: Rectangle {
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Kirigami.Theme.backgroundColor
+        border.color: "black"
     }
 
     onOpened: {
@@ -47,7 +53,7 @@ Controls.Popup {
     Connections {
         target: Aura.GlobalSettings
         onVirtualMouseSpeedChanged: {
-            console.log("Speed: " + virtualMouseSpeed);
+            console.log("Mouse Speed: " + virtualMouseSpeed);
             Cursor.setStep(virtualMouseSpeed);
         }
     }
@@ -85,6 +91,7 @@ Controls.Popup {
         }
 
         ColumnLayout {
+            id: settingContents
             anchors.centerIn: parent
 
             Kirigami.Heading {
@@ -109,7 +116,7 @@ Controls.Popup {
                 value: Aura.GlobalSettings.virtualMouseSpeed
                 Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
                 Layout.alignment: Qt.AlignTop
-                KeyNavigation.down: clearCacheButton
+                KeyNavigation.down: virtualScrollMoveSpeedSlider
 
                 background: Rectangle {
                     x: virtualMouseMoveSpeedSlider.leftPadding
@@ -152,6 +159,71 @@ Controls.Popup {
             }
 
             Kirigami.Heading {
+                id: virtualScrollSpeedSettingLabel
+                level: 2
+                text: "Virtual Scroll Speed Control"
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            Controls.Slider {
+                id: virtualScrollMoveSpeedSlider
+                Layout.fillWidth:  true
+                snapMode: Controls.Slider.SnapAlways
+                stepSize: 5
+                from: 5
+                to: 100
+                value: Aura.GlobalSettings.virtualScrollSpeed
+                Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+                Layout.alignment: Qt.AlignTop
+                KeyNavigation.up: virtualMouseMoveSpeedSlider
+                KeyNavigation.down: clearCacheButton
+
+                background: Rectangle {
+                    x: virtualScrollMoveSpeedSlider.leftPadding
+                    y: virtualScrollMoveSpeedSlider.topPadding + virtualScrollMoveSpeedSlider.availableHeight / 2 - height / 2
+                    implicitWidth: width
+                    width: virtualScrollMoveSpeedSlider.availableWidth
+                    height: Kirigami.Units.smallSpacing
+                    radius: 2
+                    color: virtualScrollMoveSpeedSlider.activeFocus ? Kirigami.Theme.disabledTextColor : Kirigami.Theme.textColor
+
+                    Rectangle {
+                        width: virtualScrollMoveSpeedSlider.visualPosition * parent.width
+                        height: parent.height
+                        color: Kirigami.Theme.linkColor
+                        radius: 2
+                    }
+                }
+
+                onValueChanged: {
+                    console.log(virtualScrollMoveSpeedSlider.value)
+                    Aura.GlobalSettings.setVirtualScrollSpeed(value);
+                }
+            }
+
+            Kirigami.Heading {
+                id: currentVirtualScrollSpeedLabel
+                level: 3
+                text: "Current Speed: " + virtualScrollMoveSpeedSlider.value
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+            }
+
+            Item {
+                Layout.preferredHeight: Kirigami.Units.gridUnit
+                Layout.fillWidth: true
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            Kirigami.Heading {
                 id: miscSettingLabel
                 level: 2
                 text: "General"
@@ -169,7 +241,7 @@ Controls.Popup {
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                 Layout.alignment: Qt.AlignLeft
                 text: "Clear Cache"
-                KeyNavigation.up: virtualMouseMoveSpeedSlider
+                KeyNavigation.up: virtualScrollMoveSpeedSlider
 
                 background: Rectangle {
                     color: clearCacheButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor

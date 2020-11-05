@@ -44,7 +44,13 @@ Controls.Popup {
     dim: true
 
     Controls.Overlay.modeless: Rectangle {
-        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.97)
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.77)
+    }
+
+    background: Rectangle {
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Kirigami.Theme.backgroundColor
+        border.color: "black"
     }
 
     onPreBookmarkNameChanged: {

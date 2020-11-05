@@ -39,7 +39,7 @@ Item {
     property var pageId
     property var navMode: "vMouse"
     property bool vMouseEnabled: false
-    property var currentScrollH: 0
+    property int currentScrollSpeed: Aura.GlobalSettings.virtualScrollSpeed
 
     Connections {
         target: root
@@ -149,7 +149,6 @@ Item {
                     }
                     else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
                         interactionBar.interactionItem.isDownloading = false
-                        console.log("Download cancelled by the user")
                     }
                 }
             }
@@ -171,7 +170,6 @@ Item {
             ]
 
             onFeaturePermissionRequested: {
-                console.log("feature permission requested");
                 interactionBar.setSource("FeatureRequest.qml")
                 interactionBar.interactionItem.securityOrigin = securityOrigin;
                 interactionBar.interactionItem.requestedFeature = feature;
@@ -200,14 +198,14 @@ Item {
             }
 
             onFullScreenRequested: {
-                request.accept()
+                request.accept()                
                 if (root.visibility !== Window.FullScreen) {
                     topBarPage.viewFullscreenMode = true
                     root.showFullScreen()
-                }
-                else {
+                } else if (root.visibility == Window.FullScreen && !topBarPage.viewFullscreenMode){
+                    topBarPage.viewFullscreenMode = true
+                } else {
                     topBarPage.viewFullscreenMode = false
-                    root.showMaximized()
                 }
             }
 
@@ -252,7 +250,6 @@ Item {
             }
 
             onJavaScriptConsoleMessage: {
-                console.log(message)
                 try {
                     var jsonMessage = JSON.parse(message);
                 } catch(err) {

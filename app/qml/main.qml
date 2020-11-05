@@ -45,7 +45,7 @@ Kirigami.AbstractApplicationWindow {
     signal mouseActivationRequested
     signal mouseDeActivationRequested
     signal ignoreInputRequested
-    visibility: "Maximized"
+    visibility: "FullScreen"
 
     function switchToTab(index){
         auraStack.currentIndex = index
@@ -247,8 +247,6 @@ Kirigami.AbstractApplicationWindow {
     }
 
     Component.onCompleted: {
-        console.log(Aura.GlobalSettings.firstRun);
-        console.log(Aura.GlobalSettings.virtualMouseSpeed);
         Cursor.setStep(Aura.GlobalSettings.virtualMouseSpeed);
         if(Aura.GlobalSettings.firstRun){
             RecentStorage.dbInit();

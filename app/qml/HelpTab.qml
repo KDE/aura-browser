@@ -31,13 +31,19 @@ import "code/BookmarkStorage.js" as BookmarkStorage
 Controls.Popup {
     id: helpPopupArea
     width: parent.width / 2
-    height:  parent.height / 2
+    height: headerAreaHelpPage.implicitHeight + helperContent.implicitHeight + Kirigami.Units.largeSpacing
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
     dim: true
 
     Controls.Overlay.modeless: Rectangle {
-        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.97)
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.77)
+    }
+
+    background: Rectangle {
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Kirigami.Theme.backgroundColor
+        border.color: "black"
     }
 
     Item {
@@ -73,6 +79,7 @@ Controls.Popup {
         }
 
         ColumnLayout {
+            id: helperContent
             anchors.top: headerSeparator.bottom
             anchors.left: parent.left
             anchors.right: parent.right
@@ -100,7 +107,10 @@ Controls.Popup {
                     level: 3
                     anchors.bottom: remoteImage.top
                     font.bold: true
-                    text: "Here are all the buttons required to get you navigating:"
+                    width: parent.width
+                    horizontalAlignment: Text.AlignHCenter
+                    font.capitalization: Font.SmallCaps
+                    text: "Here are all the buttons required to help you get started with using aura browser"
                 }
 
                 Image {

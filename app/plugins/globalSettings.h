@@ -33,21 +33,25 @@ class GlobalSettings : public QObject
     Q_OBJECT
     Q_PROPERTY(bool firstRun READ firstRun WRITE setFirstRun NOTIFY firstRunChanged)
     Q_PROPERTY(int virtualMouseSpeed READ virtualMouseSpeed WRITE setVirtualMouseSpeed NOTIFY virtualMouseSpeedChanged)
+    Q_PROPERTY(int virtualScrollSpeed READ virtualScrollSpeed WRITE setVirtualScrollSpeed NOTIFY virtualScrollSpeedChanged)
 
 public:
     explicit GlobalSettings(QObject *parent=0);
     
     bool firstRun() const;
     int virtualMouseSpeed() const;
-    
+    int virtualScrollSpeed() const;
+
 public Q_SLOTS:
     void setFirstRun(bool firstRun);
     void setVirtualMouseSpeed(int virtualMouseSpeed);
+    void setVirtualScrollSpeed(int virtualScrollSpeed);
     void clearDefaultProfileCache();
 
 Q_SIGNALS:
     void firstRunChanged();
     void virtualMouseSpeedChanged(int virtualMouseSpeed);
+    void virtualScrollSpeedChanged(int virtualScrollSpeed);
     void focusOnVKeyboard();
     void focusOffVKeyboard();
 

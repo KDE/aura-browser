@@ -55,6 +55,22 @@ void GlobalSettings::setVirtualMouseSpeed(int virtualMouseSpeed)
     emit virtualMouseSpeedChanged(virtualMouseSpeed);
 }
 
+int GlobalSettings::virtualScrollSpeed() const
+{
+    return m_settings.value(QStringLiteral("virtualScrollSpeed"), 15).toInt();
+}
+
+void GlobalSettings::setVirtualScrollSpeed(int virtualScrollSpeed)
+{
+    if (GlobalSettings::virtualScrollSpeed() == virtualScrollSpeed) {
+        return;
+    }
+
+    m_settings.setValue(QStringLiteral("virtualScrollSpeed"), virtualScrollSpeed);
+    emit virtualScrollSpeedChanged(virtualScrollSpeed);
+}
+
+
 void GlobalSettings::clearDefaultProfileCache()
 {
     auto *profile = QQuickWebEngineProfile::defaultProfile();
