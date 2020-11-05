@@ -48,6 +48,7 @@ public Q_SLOTS:
 Q_SIGNALS:
     void firstRunChanged();
     void virtualMouseSpeedChanged(int virtualMouseSpeed);
+    void focusOnVKeyboard();
 
 private:
     QSettings m_settings;

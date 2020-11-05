@@ -42,6 +42,8 @@ Kirigami.AbstractApplicationWindow {
     property int virtualMouseMoveSpeed: 10
     signal settingsTabRequested
     signal blurFieldRequested
+    signal mouseActivationRequested
+    signal mouseDeActivationRequested
     visibility: "Maximized"
 
     function switchToTab(index){
@@ -256,6 +258,13 @@ Kirigami.AbstractApplicationWindow {
         prependStartPage();
     }
 
+    Connections {
+        target: Aura.GlobalSettings
+        onFocusOnVKeyboard: {
+           mouseDeActivationRequested();
+        }
+    }
+
     InputPanel {
         id: inputPanel
         z: 99
@@ -265,6 +274,7 @@ Kirigami.AbstractApplicationWindow {
 
         onActiveChanged: {
             if(!active){
+                mouseActivationRequested()
                 blurFieldRequested();
             }
         }

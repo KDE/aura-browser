@@ -25,6 +25,7 @@ import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
+import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
 
@@ -49,7 +50,19 @@ Item {
                 webView.runJavaScript('document.activeElement.blur()');
             }
         }
+        onMouseActivationRequested: {
+            if(mItem.visible) {
+                mouseCursor.enabled = true
+                mouseCursor.forceActiveFocus();
+            }
+        }
+        onMouseDeActivationRequested: {
+            if(mItem.visible) {
+                mouseCursor.enabled = false
+            }
+        }
     }
+
 
     onPageUrlChanged: {
         webView.url = pageUrl
@@ -86,10 +99,10 @@ Item {
         }
 
         RequestHandler {
-             id: interactionBar
-             anchors.top: topBarPage.bottom
-             z: 1001
-         }
+            id: interactionBar
+            anchors.top: topBarPage.bottom
+            z: 1001
+        }
 
         WebChannel {
             id: webChannel
@@ -153,20 +166,20 @@ Item {
                     }
 
                     onDownloadFinished: {
-                       if (download.state === WebEngineDownloadItem.DownloadCompleted) {
-                           interactionBar.interactionItem.actionsVisible = false
-                           interactionBar.interactionItem.isDownloading = false
-                           interactionBar.interactionItem.messageText = "Download finished"
-                       }
-                       else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
-                           interactionBar.interactionItem.actionsVisible = false
-                           interactionBar.interactionItem.isDownloading = false
-                           interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
-                       }
-                       else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
-                           interactionBar.interactionItem.isDownloading = false
-                           console.log("Download cancelled by the user")
-                       }
+                        if (download.state === WebEngineDownloadItem.DownloadCompleted) {
+                            interactionBar.interactionItem.actionsVisible = false
+                            interactionBar.interactionItem.isDownloading = false
+                            interactionBar.interactionItem.messageText = "Download finished"
+                        }
+                        else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
+                            interactionBar.interactionItem.actionsVisible = false
+                            interactionBar.interactionItem.isDownloading = false
+                            interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                        }
+                        else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
+                            interactionBar.interactionItem.isDownloading = false
+                            console.log("Download cancelled by the user")
+                        }
                     }
                 }
 
@@ -291,8 +304,7 @@ Item {
                     myObject.cName = jsonMessage.className
                     pageId = jsonMessage.id
                     if(jsonMessage.inputFocus == "GotInput"){
-                        console.log("I GOT INPUT HERE")
-                        root.inputPanel.active = true
+                        Aura.GlobalSettings.focusOnVKeyboard();
                     }
                 }
             }
