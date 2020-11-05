@@ -29,9 +29,13 @@ function navigateKeyLeft(){
 function navigateKeyUp(){
     if(navMode == "vMouse"){
        Cursor.move(0);
-        var topH = flickable.height * (20/100)
-        if(Cursor.pos.y < topH / 2 && flickable.height < flickable.contentHeight) {
-            flickDown()
+        var topH = webView.height * (50/100)
+        if(Cursor.pos.y < topH) {
+            if(currentScrollH !== 0) {
+                currentScrollH = currentScrollH - 5
+                webView.runJavaScript("window.scrollBy(0, -" + currentScrollH + ");")
+            }
+            console.log(currentScrollH)
         }
     }
     if(navMode == "vKey"){
@@ -42,9 +46,10 @@ function navigateKeyUp(){
 function navigateKeyDown(){
     if(navMode == "vMouse"){
         Cursor.move(1);
-        var bottomH = flickable.height - (flickable.height * (20/100))
-        if(Cursor.pos.y > bottomH  && flickable.height < flickable.contentHeight) {
-            flickUp()
+        var bottomH = webView.height - (webView.height * 50/100)
+        if(Cursor.pos.y > bottomH) {
+            currentScrollH = currentScrollH + 5
+            webView.runJavaScript("window.scrollBy(0, " + currentScrollH + ");")
         }
     }
     if(navMode == "vKey"){

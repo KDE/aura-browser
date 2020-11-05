@@ -35,8 +35,8 @@ import QtQuick.VirtualKeyboard.Settings 2.4
 Kirigami.AbstractApplicationWindow {
     id: root
     visible: true
-    width: 640
-    height: 480
+    width:  Screen.desktopAvailableWidth
+    height: Screen.desktopAvailableHeight
     title: qsTr("Aura-Browser")
     property alias showStack: auraStack.currentIndex
     property int virtualMouseMoveSpeed: 10

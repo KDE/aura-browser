@@ -28,8 +28,9 @@ import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
 
 Rectangle {
+    property bool viewFullscreenMode: false
     width: parent.width
-    height: Kirigami.Units.iconSizes.large + Kirigami.Units.largeSpacing
+    height: viewFullscreenMode ? 0 : Kirigami.Units.iconSizes.large + Kirigami.Units.largeSpacing
     color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
     layer.enabled: true
     z: 1000
@@ -44,6 +45,8 @@ Rectangle {
     Item {
         id: tbarLayout
         width: parent.width
+        visible: viewFullscreenMode ? 0 : 1
+        enabled: viewFullscreenMode ? 0 : 1
         height: Kirigami.Units.iconSizes.large
         anchors.centerIn: parent
 

@@ -37,12 +37,9 @@ Item {
     property var pageUrl
     property bool toRemove: false
     property var pageId
-    property var currentContentHeight
-    property var currentContentWidth
     property var navMode: "vMouse"
     property bool vMouseEnabled: false
-    signal flickDown
-    signal flickUp
+    property var currentScrollH: 0
 
     Connections {
         target: root
@@ -114,206 +111,157 @@ Item {
             id: webChannel
         }
 
-        Flickable {
-            id: flickable
+        WebEngineView {
+            id: webView
             anchors.top: interactionBar.bottom
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            boundsBehavior: Flickable.StopAtBounds
-            clip: true
 
-            ScrollBar.vertical: ScrollBar{
-                width: Kirigami.Units.gridUnit * 1
-                policy: flickable.contentHeight > flickable.height ? ScrollBar.AlwaysOn : ScrollBar.AsNeeded
+            focus: true
+            objectName: "webengineview"
+            webChannel: webChannel
+
+            profile {
+                httpUserAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+
+                onDownloadRequested: {
+                    download.accept()
+                    download.pause()
+                    var downloadFileName = download.path.split('/').pop(-1)
+                    interactionBar.setSource("DownloadRequest.qml")
+                    interactionBar.interactionItem.download = download
+                    interactionBar.interactionItem.actionsVisible = true
+                    interactionBar.interactionItem.downloadName = downloadFileName
+                    interactionBar.isRequested = true
+                }
+
+                onDownloadFinished: {
+                    if (download.state === WebEngineDownloadItem.DownloadCompleted) {
+                        interactionBar.interactionItem.actionsVisible = false
+                        interactionBar.interactionItem.isDownloading = false
+                        interactionBar.interactionItem.messageText = "Download finished"
+                    }
+                    else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
+                        interactionBar.interactionItem.actionsVisible = false
+                        interactionBar.interactionItem.isDownloading = false
+                        interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                    }
+                    else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
+                        interactionBar.interactionItem.isDownloading = false
+                        console.log("Download cancelled by the user")
+                    }
+                }
             }
 
-            onMovementEnded: {
-                if(atYEnd){
-                    //Try Fixing Parallax WebPage Scrolling
-                    webView.runJavaScript('window.scrollTo(0,document.scrollingElement.scrollHeight);')
-                    webView.runJavaScript('document.documentElement.scrollHeight;', function(e){
-                        if(flickable.contentHeight < e){
-                            flickable.contentHeight = e
-                        };
-                    })
+            userScripts: [
+                WebEngineScript {
+                    injectionPoint: WebEngineScript.DocumentCreation
+                    name: "QWebChannel"
+                    worldId: WebEngineScript.MainWorld
+                    sourceUrl: Qt.resolvedUrl("./code/qwebchannel.js")
+                },
+                WebEngineScript {
+                    injectionPoint: WebEngineScript.DocumentReady
+                    name: "QWebInput"
+                    worldId: WebEngineScript.MainWorld
+                    runOnSubframes: true
+                    sourceUrl: Qt.resolvedUrl("./code/qwebinput.js")
+                }
+            ]
+
+            onFeaturePermissionRequested: {
+                console.log("feature permission requested");
+                interactionBar.setSource("FeatureRequest.qml")
+                interactionBar.interactionItem.securityOrigin = securityOrigin;
+                interactionBar.interactionItem.requestedFeature = feature;
+                interactionBar.isRequested = true;
+            }
+
+            onLoadingChanged: {
+                if(loadRequest.status == WebEngineView.LoadSucceededStatus){
+                    webView.runJavaScript("document.title", function(title){
+                        pageTitle = title
+                        Utils.insertRecentToStorage(webView.url, pageTitle)
+                    });
+                } else {
+                    console.log("Loading..")
+                }
+
+                vMouseEnabled = true;
+                Aura.GlobalSettings.focusOffVKeyboard();
+                mouseCursor.forceActiveFocus();
+            }
+
+            settings {
+                focusOnNavigationEnabled: false
+                pluginsEnabled: true
+                showScrollBars: false
+            }
+
+            onFullScreenRequested: {
+                request.accept()
+                if (root.visibility !== Window.FullScreen) {
+                    topBarPage.viewFullscreenMode = true
+                    root.showFullScreen()
+                }
+                else {
+                    topBarPage.viewFullscreenMode = false
+                    root.showMaximized()
                 }
             }
 
-            Connections {
-                target: mItem
-                onFlickUp:{
-                    flickable.flick(0, -1000)
-                }
-                onFlickDown: {
-                    flickable.flick(0, +1000)
+            Action {
+                shortcut: "Left"
+                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
+                onTriggered: {
+                    Utils.navigateKeyLeft()
                 }
             }
 
-            WebEngineView {
-                id: webView
-                anchors.fill: parent
-                focus: true
-                objectName: "webengineview"
-                webChannel: webChannel
-
-                profile {
-                    httpUserAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
-
-                    onDownloadRequested: {
-                        download.accept()
-                        download.pause()
-                        var downloadFileName = download.path.split('/').pop(-1)
-                        interactionBar.setSource("DownloadRequest.qml")
-                        interactionBar.interactionItem.download = download
-                        interactionBar.interactionItem.actionsVisible = true
-                        interactionBar.interactionItem.downloadName = downloadFileName
-                        interactionBar.isRequested = true
-                    }
-
-                    onDownloadFinished: {
-                        if (download.state === WebEngineDownloadItem.DownloadCompleted) {
-                            interactionBar.interactionItem.actionsVisible = false
-                            interactionBar.interactionItem.isDownloading = false
-                            interactionBar.interactionItem.messageText = "Download finished"
-                        }
-                        else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
-                            interactionBar.interactionItem.actionsVisible = false
-                            interactionBar.interactionItem.isDownloading = false
-                            interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
-                        }
-                        else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
-                            interactionBar.interactionItem.isDownloading = false
-                            console.log("Download cancelled by the user")
-                        }
-                    }
+            Action {
+                shortcut: "Right"
+                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
+                onTriggered: {
+                    Utils.navigateKeyRight()
                 }
+            }
 
-                userScripts: [
-                    WebEngineScript {
-                        injectionPoint: WebEngineScript.DocumentCreation
-                        name: "QWebChannel"
-                        worldId: WebEngineScript.MainWorld
-                        sourceUrl: Qt.resolvedUrl("./code/qwebchannel.js")
-                    },
-                    WebEngineScript {
-                        injectionPoint: WebEngineScript.DocumentReady
-                        name: "QWebInput"
-                        worldId: WebEngineScript.MainWorld
-                        runOnSubframes: true
-                        sourceUrl: Qt.resolvedUrl("./code/qwebinput.js")
-                    }
-                ]
-
-                onFeaturePermissionRequested: {
-                    console.log("feature permission requested");
-                    interactionBar.setSource("FeatureRequest.qml")
-                    interactionBar.interactionItem.securityOrigin = securityOrigin;
-                    interactionBar.interactionItem.requestedFeature = feature;
-                    interactionBar.isRequested = true;
+            Action {
+                shortcut: "Up"
+                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
+                onTriggered: {
+                    Utils.navigateKeyUp()
                 }
+            }
 
-                onLoadingChanged: {
-                    if(loadRequest.status == WebEngineView.LoadSucceededStatus){
-                        webView.runJavaScript("document.title", function(title){
-                            pageTitle = title
-                            Utils.insertRecentToStorage(webView.url, pageTitle)
-                        });
-
-                        flickable.contentHeight = 0;
-                        flickable.contentWidth = flickable.width;
-
-                        runJavaScript (
-                                    "document.documentElement.scrollHeight;",
-                                    function (actualPageHeight) {
-                                        flickable.contentHeight = Math.max (
-                                                    actualPageHeight, flickable.height);
-                                        currentContentHeight = flickable.contentHeight
-                                    });
-
-                        runJavaScript (
-                                    "document.documentElement.scrollWidth;",
-                                    function (actualPageWidth) {
-                                        flickable.contentWidth = Math.max (
-                                                    actualPageWidth, flickable.width);
-                                        currentContentWidth = flickable.contentWidth
-                                    });
-                        vMouseEnabled = true;
-                        Aura.GlobalSettings.focusOffVKeyboard();
-                        mouseCursor.forceActiveFocus();
-                    } else {
-                        console.log("Loading..")
-                    }
+            Action {
+                shortcut: "Down"
+                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
+                onTriggered: {
+                    Utils.navigateKeyDown()
                 }
+            }
 
-                settings {
-                    focusOnNavigationEnabled: false
-                    pluginsEnabled: true
-                    showScrollBars: false
+            Action {
+                shortcut: "Return"
+                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
+                onTriggered: {
+                    Cursor.click();
                 }
+            }
 
-                onFullScreenRequested: {
-                    request.accept()
-                    if (root.visibility !== Window.FullScreen) {
-                        root.showFullScreen()
-                        flickable.contentHeight = flickable.height + topBarPage.height
-                        flickable.contentWidth = flickable.width
-                    }
-                    else {
-                        root.showNormal()
-                        flickable.contentHeight = currentContentHeight
-                        flickable.contentWidth = currentContentWidth
-                    }
-                }
-
-                Action {
-                    shortcut: "Left"
-                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                    onTriggered: {
-                        Utils.navigateKeyLeft()
-                    }
-                }
-
-                Action {
-                    shortcut: "Right"
-                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                    onTriggered: {
-                        Utils.navigateKeyRight()
-                    }
-                }
-
-                Action {
-                    shortcut: "Up"
-                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                    onTriggered: {
-                        Utils.navigateKeyUp()
-                    }
-                }
-
-                Action {
-                    shortcut: "Down"
-                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                    onTriggered: {
-                        Utils.navigateKeyDown()
-                    }
-                }
-
-                Action {
-                    shortcut: "Return"
-                    enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                    onTriggered: {
-                        Cursor.click();
-                    }
-                }
-
-                onJavaScriptConsoleMessage: {
-                    console.log(message)
+            onJavaScriptConsoleMessage: {
+                console.log(message)
+                try {
                     var jsonMessage = JSON.parse(message);
-                    myObject.cName = jsonMessage.className
-                    pageId = jsonMessage.id
-                    if(jsonMessage.inputFocus == "GotInput"){
-                        Aura.GlobalSettings.focusOnVKeyboard();
-                    }
+                } catch(err) {
+                    jsonMessage = JSON.parse('{"className": "None", "id": "None", "inputFocus": "None"}');
+                }
+                myObject.cName = jsonMessage.className
+                pageId = jsonMessage.id
+                if(jsonMessage.inputFocus == "GotInput"){
+                    Aura.GlobalSettings.focusOnVKeyboard();
                 }
             }
         }
