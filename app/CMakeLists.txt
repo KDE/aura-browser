@@ -14,6 +14,7 @@ target_link_libraries(AuraBrowser
     Qt5::QuickControls2
     Qt5::WebEngine 
     Qt5::Test
+    Qt5::Multimedia
     KF5::Kirigami2
 )
 

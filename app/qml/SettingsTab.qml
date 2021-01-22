@@ -51,6 +51,21 @@ Controls.Popup {
         virtualMouseMoveSpeedSlider.forceActiveFocus()
     }
 
+    function playKeySounds(event){
+        switch (event.key) {
+            case Qt.Key_Down:
+            case Qt.Key_Right:
+            case Qt.Key_Left:
+            case Qt.Key_Up:
+            case Qt.Key_Tab:
+            case Qt.Key_Backtab:
+                Aura.NavigationSoundEffects.playMovingSound();
+                break;
+            default:
+                break;
+        }
+    }
+
     Connections {
         target: Aura.GlobalSettings
         onVirtualMouseSpeedChanged: {
@@ -141,6 +156,10 @@ Controls.Popup {
                     console.log(virtualMouseMoveSpeedSlider.value)
                     Aura.GlobalSettings.setVirtualMouseSpeed(value);
                 }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
+                }
             }
 
             Kirigami.Heading {
@@ -184,7 +203,7 @@ Controls.Popup {
                 Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
                 Layout.alignment: Qt.AlignTop
                 KeyNavigation.up: virtualMouseMoveSpeedSlider
-                KeyNavigation.down: clearCacheButton
+                KeyNavigation.down: soundEffectsButton
 
                 background: Rectangle {
                     x: virtualScrollMoveSpeedSlider.leftPadding
@@ -206,6 +225,10 @@ Controls.Popup {
                 onValueChanged: {
                     console.log(virtualScrollMoveSpeedSlider.value)
                     Aura.GlobalSettings.setVirtualScrollSpeed(value);
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -239,12 +262,47 @@ Controls.Popup {
             }
 
             Controls.Button {
+                id: soundEffectsButton
+                Layout.fillWidth: true
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                Layout.alignment: Qt.AlignLeft
+                text: "Disable Button Sounds"
+                KeyNavigation.up: virtualScrollMoveSpeedSlider
+                KeyNavigation.down: clearCacheButton
+
+                background: Rectangle {
+                    color: soundEffectsButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
+                    border.color: Kirigami.Theme.disabledTextColor
+                    radius: 2
+                }
+
+                onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
+                    if(Aura.GlobalSettings.soundEffects){
+                        Aura.GlobalSettings.setSoundEffects(false);
+                        text = "Enable Button Sounds"
+                    } else {
+                        Aura.GlobalSettings.setSoundEffects(true);
+                        text = "Disable Button Sounds"
+                    }
+                }
+
+                Keys.onReturnPressed: {
+                    clicked()
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
+                }
+            }
+
+            Controls.Button {
                 id: clearCacheButton
                 Layout.fillWidth: true
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                 Layout.alignment: Qt.AlignLeft
                 text: "Clear Cache"
-                KeyNavigation.up: virtualScrollMoveSpeedSlider
+                KeyNavigation.up: soundEffectsButton
 
                 background: Rectangle {
                     color: clearCacheButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
@@ -253,11 +311,16 @@ Controls.Popup {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     Aura.GlobalSettings.clearDefaultProfileCache();
                 }
 
                 Keys.onReturnPressed: {
                     clicked()
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
         }

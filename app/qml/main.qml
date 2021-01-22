@@ -231,6 +231,7 @@ Kirigami.AbstractApplicationWindow {
                     }
 
                     onClicked: {
+                        Aura.NavigationSoundEffects.playClickedSound()
                         if(tabsListView.currentItem.isRemovable){
                             removeTab()
                         } else {
@@ -240,6 +241,21 @@ Kirigami.AbstractApplicationWindow {
 
                     Keys.onReturnPressed: {
                         clicked()
+                    }
+
+                    Keys.onPressed: {
+                        switch (event.key) {
+                            case Qt.Key_Down:
+                            case Qt.Key_Right:
+                            case Qt.Key_Left:
+                            case Qt.Key_Up:
+                            case Qt.Key_Tab:
+                            case Qt.Key_Backtab:
+                                Aura.NavigationSoundEffects.playMovingSound();
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }
             }

@@ -23,6 +23,7 @@ import QtQuick.Window 2.10
 import QtQuick.Controls 2.10 as Controls
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.11 as Kirigami
+import Aura 1.0 as Aura
 
 GridView {
     id: view
@@ -121,6 +122,21 @@ GridView {
         SmoothedAnimation {
             property: "x"
             duration: Kirigami.Units.longDuration
+        }
+    }
+
+    Keys.onPressed: {
+        switch (event.key) {
+            case Qt.Key_Down:
+            case Qt.Key_Right:
+            case Qt.Key_Left:
+            case Qt.Key_Up:
+            case Qt.Key_Tab:
+            case Qt.Key_Backtab:
+                Aura.NavigationSoundEffects.playMovingSound();
+                break;
+            default:
+                break;
         }
     }
 }

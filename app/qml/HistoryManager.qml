@@ -26,6 +26,7 @@ import QtGraphicalEffects 1.0
 import QtQml.Models 2.12
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
+import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
 
 Controls.Popup {
@@ -50,6 +51,21 @@ Controls.Popup {
     }
 
     function deleteAllHistory(){
+    }
+
+    function playKeySounds(event){
+        switch (event.key) {
+            case Qt.Key_Down:
+            case Qt.Key_Right:
+            case Qt.Key_Left:
+            case Qt.Key_Up:
+            case Qt.Key_Tab:
+            case Qt.Key_Backtab:
+                Aura.NavigationSoundEffects.playMovingSound();
+                break;
+            default:
+                break;
+        }
     }
 
     onOpened: {
@@ -88,6 +104,7 @@ Controls.Popup {
             }
 
             onClicked: {
+                Aura.NavigationSoundEffects.playClickedSound()
                 createTab(recent_url);
                 historyPopupArea.close();
             }
@@ -189,6 +206,10 @@ Controls.Popup {
                     Keys.onReturnPressed: {
                         historySearchFieldChild.forceActiveFocus();
                     }
+
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
                 }
 
                 Controls.Button {
@@ -210,6 +231,10 @@ Controls.Popup {
                     Keys.onReturnPressed: {
                         clicked()
                     }
+
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
                 }
             }
 
@@ -223,6 +248,10 @@ Controls.Popup {
                 KeyNavigation.up: historySearchField
                 visible: genericModel.count > 0 ? 1 : 0
                 enabled: genericModel.count > 0 ? 1 : 0
+
+                Keys.onPressed: {
+                    playKeySounds(event)
+                }
             }
 
             Kirigami.Heading {

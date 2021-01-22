@@ -25,6 +25,7 @@ import QtQuick.Controls 2.12 as Controls
 import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
+import Aura 1.0 as Aura
 import "views" as Views
 import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
@@ -57,6 +58,21 @@ Kirigami.Page {
         target: root
         onSettingsTabRequested: {
             settingsTabArea.open()
+        }
+    }
+
+    function playKeySounds(event){
+        switch (event.key) {
+            case Qt.Key_Down:
+            case Qt.Key_Right:
+            case Qt.Key_Left:
+            case Qt.Key_Up:
+            case Qt.Key_Tab:
+            case Qt.Key_Backtab:
+                Aura.NavigationSoundEffects.playMovingSound();
+                break;
+            default:
+                break;
         }
     }
 
@@ -113,11 +129,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     gDrawer.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -141,11 +162,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                   Aura.NavigationSoundEffects.playClickedSound();
                    tabBarView.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -168,11 +194,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     historyTabManager.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -195,12 +226,17 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     bookmarkTabManager.bookmarkStack = 0
                     bookmarkTabManager.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -223,11 +259,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     settingsTabArea.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -249,11 +290,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     helpTabManager.open()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -318,12 +364,20 @@ Kirigami.Page {
             }
 
             Keys.onReturnPressed: {
+                Aura.NavigationSoundEffects.playClickedSound();
                 urlEntryDrawer.open()
             }
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: urlEntryDrawer.open()
+                onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
+                    urlEntryDrawer.open()
+                }
+            }
+
+            Keys.onPressed: {
+                playKeySounds(event)
             }
         }
 
@@ -357,11 +411,16 @@ Kirigami.Page {
                 }
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound();
                     RecentStorage.dbClearTable()
                 }
 
                 Keys.onReturnPressed: {
                     clicked();
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
                 }
             }
 
@@ -458,6 +517,7 @@ Kirigami.Page {
                 onAccepted: {
                     //urlEntryDrawer.close()
                     //root.showStack = 1
+                    Aura.NavigationSoundEffects.playClickedSound();
                     var setUrl = checkURL(urlEntrie.text)
                     if(setUrl){
                         //root.showUrl = urlEntrie.text

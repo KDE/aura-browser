@@ -24,6 +24,7 @@ import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
+import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
 
@@ -65,7 +66,10 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: {webView.goBack()}
+                onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
+                    webView.goBack()
+                }
             }
         }
 
@@ -84,7 +88,10 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: {webView.goForward()}
+                onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
+                    webView.goForward()
+                }
             }
         }
 
@@ -106,6 +113,7 @@ Rectangle {
                 anchors.fill: parent
 
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
                     auraStack.currentIndex = 0
                     auraStack.itemAt(0).focus = true
                     auraStack.itemAt(0).forceActiveFocus();
@@ -169,6 +177,7 @@ Rectangle {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
                     localUrlEntryDrawer.open()
                 }
             }
@@ -189,7 +198,10 @@ Rectangle {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: {webView.reload()}
+                    onClicked: {
+                        Aura.NavigationSoundEffects.playClickedSound()
+                        webView.reload()
+                    }
                 }
             }
         }
@@ -211,6 +223,7 @@ Rectangle {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
                     bookmarkTabManager.bookmarkStack = 1
                     bookmarkTabManager.preBookmarkName = webView.title
                     bookmarkTabManager.preBookmarkUrl = webView.url
@@ -234,7 +247,10 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: {tabBarView.open()}
+                onClicked: {
+                    Aura.NavigationSoundEffects.playClickedSound()
+                    tabBarView.open()
+                }
             }
         }
     }

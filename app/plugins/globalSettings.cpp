@@ -77,3 +77,18 @@ void GlobalSettings::clearDefaultProfileCache()
     profile->clearHttpCache();
     qDebug() << "in Clear Cache";
 }
+
+bool GlobalSettings::soundEffects() const
+{
+    return m_settings.value(QStringLiteral("soundEffects"), true).toBool();
+}
+
+void GlobalSettings::setSoundEffects(bool soundEffects)
+{
+    if (GlobalSettings::soundEffects() == soundEffects) {
+        return;
+    }
+
+    m_settings.setValue(QStringLiteral("soundEffects"), soundEffects);
+    emit soundEffectsChanged();
+}

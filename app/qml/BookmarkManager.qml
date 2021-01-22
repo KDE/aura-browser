@@ -27,6 +27,7 @@ import QtQml.Models 2.12
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
 import "code/BookmarkStorage.js" as BookmarkStorage
+import Aura 1.0 as Aura
 import "code/Utils.js" as Utils
 
 Controls.Popup {
@@ -65,6 +66,21 @@ Controls.Popup {
         genericModel.clear();
         delegateFilter.model.clear();
         BookmarkStorage.dbReadAll();
+    }
+
+    function playKeySounds(event){
+        switch (event.key) {
+            case Qt.Key_Down:
+            case Qt.Key_Right:
+            case Qt.Key_Left:
+            case Qt.Key_Up:
+            case Qt.Key_Tab:
+            case Qt.Key_Backtab:
+                Aura.NavigationSoundEffects.playMovingSound();
+                break;
+            default:
+                break;
+        }
     }
 
     onOpened: {
@@ -107,6 +123,7 @@ Controls.Popup {
             }
 
             onClicked: {
+                Aura.NavigationSoundEffects.playClickedSound()
                 if(removeModeBox.checked){
                     deleteBookmarkByRowId(id);
                 } else {
@@ -218,6 +235,10 @@ Controls.Popup {
                         Keys.onReturnPressed: {
                             bookmarkSearchFieldChild.forceActiveFocus();
                         }
+
+                        Keys.onPressed: {
+                            playKeySounds(event)
+                        }
                     }
 
                     Controls.CheckBox {
@@ -231,6 +252,10 @@ Controls.Popup {
 
                         Keys.onReturnPressed: {
                             checked = !checked
+                        }
+
+                        Keys.onPressed: {
+                            playKeySounds(event)
                         }
                     }
 
@@ -253,6 +278,10 @@ Controls.Popup {
                         Keys.onReturnPressed: {
                             clicked()
                         }
+
+                        Keys.onPressed: {
+                            playKeySounds(event)
+                        }
                     }
                 }
 
@@ -264,6 +293,10 @@ Controls.Popup {
                     clip: true
                     keyNavigationEnabled: true
                     KeyNavigation.up: bookmarkSearchField
+
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
                 }
             }
         }
@@ -332,6 +365,10 @@ Controls.Popup {
                         nameFieldChild.forceActiveFocus()
                     }
 
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
+
                     Controls.TextField {
                         id: nameFieldChild
                         anchors.fill: parent
@@ -343,7 +380,12 @@ Controls.Popup {
                             border.width: 1
                         }
 
+                        Keys.onPressed: {
+                            playKeySounds(event)
+                        }
+
                         onAccepted: {
+                            Aura.NavigationSoundEffects.playClickedSound()
                             urlField.forceActiveFocus()
                         }
                     }
@@ -375,6 +417,10 @@ Controls.Popup {
                         urlFieldChild.forceActiveFocus()
                     }
 
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
+
                     Controls.TextField {
                         id: urlFieldChild
                         anchors.fill: parent
@@ -386,7 +432,12 @@ Controls.Popup {
                             border.width: 1
                         }
 
+                        Keys.onPressed: {
+                            playKeySounds(event)
+                        }
+
                         onAccepted: {
+                            Aura.NavigationSoundEffects.playClickedSound()
                             catRow.forceActiveFocus()
                         }
                     }
@@ -417,6 +468,10 @@ Controls.Popup {
                         catFieldChild.forceActiveFocus()
                     }
 
+                    Keys.onPressed: {
+                        playKeySounds(event)
+                    }
+
                     Controls.ComboBox {
                         id: catFieldChild
                         model: ["News", "Entertainment", "Infotainment", "General"]
@@ -431,6 +486,10 @@ Controls.Popup {
 
                         Keys.onReturnPressed: {
                             addBookMarkBtn.forceActiveFocus()
+                        }
+
+                        Keys.onPressed: {
+                            playKeySounds(event)
                         }
                     }
                 }
@@ -456,11 +515,15 @@ Controls.Popup {
                         radius: 2
                     }
                     onClicked: {
+                        Aura.NavigationSoundEffects.playClickedSound()
                         bookmarkManagerStackLayout.currentIndex = 0
                         bookmarkSearchField.forceActiveFocus()
                     }
                     Keys.onReturnPressed: {
                         clicked()
+                    }
+                    Keys.onPressed: {
+                        playKeySounds(event)
                     }
                 }
 
@@ -477,11 +540,15 @@ Controls.Popup {
                         radius: 2
                     }
                     onClicked: {
+                        Aura.NavigationSoundEffects.playClickedSound()
                         Utils.insertBookmarkToManager(urlFieldChild.text, nameFieldChild.text, catFieldChild.currentText)
                         bookmarkPopupArea.close()
                     }
                     Keys.onReturnPressed: {
                         clicked()
+                    }
+                    Keys.onPressed: {
+                        playKeySounds(event)
                     }
                 }
             }

@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
     auto offlineStoragePath = QUrl::fromLocalFile(engine.offlineStoragePath());
     engine.rootContext()->setContextProperty("offlineStoragePath", offlineStoragePath);
     qmlRegisterSingletonType<GlobalSettings>("Aura", 1, 0, "GlobalSettings", globalSettingsSingletonProvider);
+    qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/qml/NavigationSoundEffects.qml")), "Aura", 1, 0, "NavigationSoundEffects");
     const QUrl url(QStringLiteral("qrc:/qml/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {

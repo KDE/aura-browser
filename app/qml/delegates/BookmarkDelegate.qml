@@ -22,6 +22,7 @@ import QtQuick.Controls 2.10 as Controls
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.11 as Kirigami
+import Aura 1.0 as Aura
 
 Controls.Control {
     id: delegate
@@ -98,6 +99,7 @@ Controls.Control {
     }
 
     Keys.onReturnPressed: {
+        Aura.NavigationSoundEffects.playClickedSound()
         urlEntryDrawer.close()
         createTab(model.recent_url)
     }
@@ -106,6 +108,7 @@ Controls.Control {
         id: mouseAreaRecent
         anchors.fill: delegate
         onClicked: {
+            Aura.NavigationSoundEffects.playClickedSound()
             urlEntryDrawer.close()
             createTab(model.recent_url)
         }

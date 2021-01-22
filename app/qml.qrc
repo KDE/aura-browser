@@ -35,5 +35,8 @@
         <file>qml/code/qwebinput.js</file>
         <file>qml/DownloadRequest.qml</file>
         <file>qml/SettingsTab.qml</file>
+        <file>qml/NavigationSoundEffects.qml</file>
+        <file>qml/sounds/clicked.wav</file>
+        <file>qml/sounds/moving.wav</file>
     </qresource>
 </RCC>
