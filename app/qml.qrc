@@ -38,5 +38,7 @@
         <file>qml/NavigationSoundEffects.qml</file>
         <file>qml/sounds/clicked.wav</file>
         <file>qml/sounds/moving.wav</file>
+        <file>qml/SuggestionsBox.qml</file>
+        <file>qml/SuggestionsLogic.qml</file>
     </qresource>
 </RCC>

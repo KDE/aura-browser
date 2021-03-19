@@ -37,8 +37,27 @@ Kirigami.OverlayDrawer {
     dragMargin: 0
     dim: true
 
+    function autoAppend(model, getinputstring, setinputstring) {
+        for(var i = 0; i < model.count; ++i)
+            if (getinputstring(model.get(i))){
+                return true
+            }
+        return null
+    }
+
+    function evalAutoLogic() {
+        if (suggestionsBox.currentIndex === -1) {
+        } else {
+            suggestionsBox.complete(suggestionsBox.currentItem)
+        }
+    }
+
     onOpened: {
         localurlEntrie.forceActiveFocus()
+    }
+
+    ListModel {
+        id: completionItems
     }
 
     Item {
@@ -89,6 +108,12 @@ Kirigami.OverlayDrawer {
             }
 
             onAccepted: {
+                var evaluateExist = webpageUrlEntryDrawer.autoAppend(completionItems, function(item) { return item.name === localurlEntrie.text }, localurlEntrie.text)
+                console.log(evaluateExist)
+                if(evaluateExist === null){
+                    console.log("Appending Item to AutoComp")
+                    completionItems.append({"name": localurlEntrie.text, "randcolor": Utils.genRandomColor().toString()});
+                }
                 var setUrl = Utils.checkURL(localurlEntrie.text)
                 if(setUrl){
                     webView.url = localurlEntrie.text
@@ -97,6 +122,35 @@ Kirigami.OverlayDrawer {
                     webView.url = searchTypeUrl
                 }
                 webpageUrlEntryDrawer.close()
+            }
+
+            onTextChanged: {
+                webpageUrlEntryDrawer.evalAutoLogic();
+            }
+
+            Keys.onDownPressed: {
+                if(!inputPanel.active && suggestionsBox.visible){
+                    suggestionsBox.forceActiveFocus()
+                }
+            }
+        }
+
+        SuggestionsBox {
+            id: suggestionsBox
+            model: completionItems
+            width: parent.width
+            anchors.top: localurlEntrie.bottom
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            filter: localurlEntrie.text
+            property: "name"
+            onItemSelected: complete(item)
+
+            function complete(item) {
+                if (item !== undefined) {
+                    localurlEntrie.text = item.name
+                }
             }
         }
     }
