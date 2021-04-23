@@ -27,6 +27,7 @@ import QtQuick.LocalStorage 2.12
 import org.kde.kirigami 2.11 as Kirigami
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
+import Aura 1.0 as Aura
 import QtQuick.VirtualKeyboard 2.4
 
 Kirigami.OverlayDrawer {
@@ -118,7 +119,12 @@ Kirigami.OverlayDrawer {
                 if(setUrl){
                     webView.url = localurlEntrie.text
                 } else {
-                    var searchTypeUrl = "https://www.google.com/search?q=" + localurlEntrie.text
+                    var searchTypeUrl
+                    if(Aura.GlobalSettings.defaultSearchEngine == "Google"){
+                        searchTypeUrl = "https://www.google.com/search?q=" + localurlEntrie.text
+                    } else if (Aura.GlobalSettings.defaultSearchEngine == "DDG") {
+                        searchTypeUrl = "https://duckduckgo.com/?q=" + localurlEntrie.text
+                    }
                     webView.url = searchTypeUrl
                 }
                 webpageUrlEntryDrawer.close()

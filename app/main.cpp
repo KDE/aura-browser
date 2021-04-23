@@ -22,6 +22,7 @@
 #include "plugins/virtualMouse.h"
 #include "plugins/virtualKeypress.h"
 #include "plugins/globalSettings.h"
+#include "plugins/audiorecorder.h"
 #include <QQmlContext>
 
 static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
@@ -30,6 +31,14 @@ static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *s
     Q_UNUSED(scriptEngine)
 
     return new GlobalSettings;
+}
+
+static QObject *audioRecorderSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    return new AudioRecorder;
 }
 
 int main(int argc, char *argv[])
@@ -53,6 +62,7 @@ int main(int argc, char *argv[])
     auto offlineStoragePath = QUrl::fromLocalFile(engine.offlineStoragePath());
     engine.rootContext()->setContextProperty("offlineStoragePath", offlineStoragePath);
     qmlRegisterSingletonType<GlobalSettings>("Aura", 1, 0, "GlobalSettings", globalSettingsSingletonProvider);
+    qmlRegisterSingletonType<AudioRecorder>("Aura", 1, 0, "AudioRecorder", audioRecorderSingletonProvider);
     qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/qml/NavigationSoundEffects.qml")), "Aura", 1, 0, "NavigationSoundEffects");
     const QUrl url(QStringLiteral("qrc:/qml/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

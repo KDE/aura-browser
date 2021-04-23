@@ -35,6 +35,7 @@ class GlobalSettings : public QObject
     Q_PROPERTY(int virtualMouseSpeed READ virtualMouseSpeed WRITE setVirtualMouseSpeed NOTIFY virtualMouseSpeedChanged)
     Q_PROPERTY(int virtualScrollSpeed READ virtualScrollSpeed WRITE setVirtualScrollSpeed NOTIFY virtualScrollSpeedChanged)
     Q_PROPERTY(bool soundEffects READ soundEffects WRITE setSoundEffects NOTIFY soundEffectsChanged)
+    Q_PROPERTY(QString defaultSearchEngine READ defaultSearchEngine WRITE setDefaultSearchEngine NOTIFY defaultSearchEngineChanged)
 
 public:
     explicit GlobalSettings(QObject *parent=0);
@@ -43,12 +44,14 @@ public:
     int virtualMouseSpeed() const;
     int virtualScrollSpeed() const;
     bool soundEffects() const;
+    QString defaultSearchEngine() const;
 
 public Q_SLOTS:
     void setFirstRun(bool firstRun);
     void setVirtualMouseSpeed(int virtualMouseSpeed);
     void setVirtualScrollSpeed(int virtualScrollSpeed);
     void setSoundEffects(bool soundEffects);
+    void setDefaultSearchEngine(QString defaultSearchEngine);
     void clearDefaultProfileCache();
 
 Q_SIGNALS:
@@ -58,6 +61,7 @@ Q_SIGNALS:
     void soundEffectsChanged();
     void focusOnVKeyboard();
     void focusOffVKeyboard();
+    void defaultSearchEngineChanged();
 
 private:
     QSettings m_settings;

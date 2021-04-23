@@ -1,4 +1,4 @@
-/*
+﻿/*
  *  Copyright 2019 Aditya Mehra <aix.m@outlook.com>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -33,6 +33,7 @@ import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
 
 Kirigami.Page {
+    id: startPageComp
     Layout.fillWidth: true
     Layout.fillHeight: true
 
@@ -328,56 +329,69 @@ Kirigami.Page {
             }
         }
 
-        Rectangle {
-            id: searchandurlfield
+        RowLayout {
             Layout.fillWidth: true
             Layout.preferredHeight: Kirigami.Units.gridUnit * 4
-            color: activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
-            border.color: Kirigami.Theme.disabledTextColor
-            radius: 20
-            KeyNavigation.down: recentPagesView
-            layer.enabled: true
-            layer.effect: DropShadow {
-                horizontalOffset: 0
-                verticalOffset: 2
-                radius: 8.0
-                samples: 17
-                color: Qt.rgba(0,0,0,0.6)
-            }
 
-            RowLayout {
-                anchors.centerIn: parent
-                height: parent.height
-                anchors.margins: Kirigami.Units.smallSpacing
-
-                Kirigami.Icon {
-                    Layout.preferredWidth: Kirigami.Units.iconSizes.medium
-                    Layout.preferredHeight: Kirigami.Units.iconSizes.medium
-                    source: "search"
+            Rectangle {
+                id: searchandurlfield
+                Layout.fillWidth: true
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+                color: activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
+                border.color: Kirigami.Theme.disabledTextColor
+                radius: 20
+                KeyNavigation.down: recentPagesView
+                KeyNavigation.right: micBtnLoader
+                layer.enabled: true
+                layer.effect: DropShadow {
+                    horizontalOffset: 0
+                    verticalOffset: 2
+                    radius: 8.0
+                    samples: 17
+                    color: Qt.rgba(0,0,0,0.6)
                 }
 
-                Kirigami.Heading {
-                    level: 2
-                    text: "Search or type url"
-                    font.bold: true
+                RowLayout {
+                    anchors.centerIn: parent
+                    height: parent.height
+                    anchors.margins: Kirigami.Units.smallSpacing
+
+                    Kirigami.Icon {
+                        Layout.preferredWidth: Kirigami.Units.iconSizes.medium
+                        Layout.preferredHeight: Kirigami.Units.iconSizes.medium
+                        source: "search"
+                    }
+
+                    Kirigami.Heading {
+                        level: 2
+                        text: "Search or type url"
+                        font.bold: true
+                    }
                 }
-            }
 
-            Keys.onReturnPressed: {
-                Aura.NavigationSoundEffects.playClickedSound();
-                urlEntryDrawer.open()
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
+                Keys.onReturnPressed: {
                     Aura.NavigationSoundEffects.playClickedSound();
                     urlEntryDrawer.open()
                 }
-            }
 
-            Keys.onPressed: {
-                playKeySounds(event)
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Aura.NavigationSoundEffects.playClickedSound();
+                        urlEntryDrawer.open()
+                    }
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
+                }
+            }
+            InputLoader {
+                id: micBtnLoader
+                Layout.preferredWidth: parent.width * 0.10
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+                rootTarget: startPageComp
+                KeyNavigation.left: searchandurlfield
             }
         }
 
@@ -524,7 +538,12 @@ Kirigami.Page {
                         createTab(urlEntrie.text)
                     } else {
                         //root.showUrl = "https://www.google.com/search?q=" + urlEntrie.text
-                        var searchTypeUrl = "https://www.google.com/search?q=" + urlEntrie.text
+                        var searchTypeUrl
+                        if(Aura.GlobalSettings.defaultSearchEngine == "Google"){
+                            searchTypeUrl = "https://www.google.com/search?q=" + urlEntrie.text
+                        } else if (Aura.GlobalSettings.defaultSearchEngine == "DDG") {
+                            searchTypeUrl = "https://duckduckgo.com/?q=" + urlEntrie.text
+                        }
                         createTab(searchTypeUrl)
                     }
                     urlEntryDrawer.close()

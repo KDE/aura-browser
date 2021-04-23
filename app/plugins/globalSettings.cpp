@@ -92,3 +92,17 @@ void GlobalSettings::setSoundEffects(bool soundEffects)
     m_settings.setValue(QStringLiteral("soundEffects"), soundEffects);
     emit soundEffectsChanged();
 }
+
+QString GlobalSettings::defaultSearchEngine() const
+{
+    return m_settings.value(QStringLiteral("defaultSearchEgnine"), "Google").toString();
+}
+
+void GlobalSettings::setDefaultSearchEngine(QString defaultSearchEngine)
+{
+    if (GlobalSettings::defaultSearchEngine() == defaultSearchEngine) {
+        return;
+    }
+    m_settings.setValue(QStringLiteral("defaultSearchEgnine"), defaultSearchEngine);
+    emit defaultSearchEngineChanged();
+}

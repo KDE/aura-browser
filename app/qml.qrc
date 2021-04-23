@@ -40,5 +40,11 @@
         <file>qml/sounds/moving.wav</file>
         <file>qml/SuggestionsBox.qml</file>
         <file>qml/SuggestionsLogic.qml</file>
+        <file>qml/InputLoader.qml</file>
+        <file>qml/MycroftInput.qml</file>
+        <file>plugins/audiorecorder.h</file>
+        <file>plugins/audiorecorder.cpp</file>
+        <file>qml/AudioBox.qml</file>
+        <file>qml/images/microphone.svg</file>
     </qresource>
 </RCC>

@@ -203,7 +203,7 @@ Controls.Popup {
                 Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
                 Layout.alignment: Qt.AlignTop
                 KeyNavigation.up: virtualMouseMoveSpeedSlider
-                KeyNavigation.down: soundEffectsButton
+                KeyNavigation.down: defSearchBtn1
 
                 background: Rectangle {
                     x: virtualScrollMoveSpeedSlider.leftPadding
@@ -250,10 +250,86 @@ Controls.Popup {
             }
 
             Kirigami.Heading {
+                id: defSearchSettingLabel
+                level: 2
+                text: "Search Engine"
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: defSearchBtn1.activeFocus || defSearchBtn2.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            RowLayout {
+                Layout.fillWidth: true
+                Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+
+                Controls.Button {
+                    id: defSearchBtn1
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                    Layout.alignment: Qt.AlignLeft
+                    text: "Google"
+                    KeyNavigation.up: virtualScrollMoveSpeedSlider
+                    KeyNavigation.down: soundEffectsButton
+                    KeyNavigation.right: defSearchBtn2
+
+                    background: Rectangle {
+                        color: defSearchBtn1.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
+                        border.color: Aura.GlobalSettings.defaultSearchEngine == "Google" ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
+                        border.width: Aura.GlobalSettings.defaultSearchEngine == "Google" ? 4 : 1
+                        radius: 2
+                    }
+
+                    Keys.onReturnPressed: {
+                        clicked()
+                    }
+
+                    onClicked: {
+                        Aura.GlobalSettings.setDefaultSearchEngine("Google")
+                    }
+                }
+
+                Controls.Button {
+                    id: defSearchBtn2
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Kirigami.Units.gridUnit * 2
+                    Layout.alignment: Qt.AlignLeft
+                    text: "Duck Duck Go"
+                    KeyNavigation.up: virtualScrollMoveSpeedSlider
+                    KeyNavigation.down: soundEffectsButton
+                    KeyNavigation.left: defSearchBtn1
+
+                    background: Rectangle {
+                        color: defSearchBtn2.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
+                        border.color: Aura.GlobalSettings.defaultSearchEngine == "DDG" ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
+                        border.width: Aura.GlobalSettings.defaultSearchEngine == "DDG" ? 4 : 1
+                        radius: 2
+                    }
+
+                    Keys.onReturnPressed: {
+                        clicked()
+                    }
+
+                    onClicked: {
+                        Aura.GlobalSettings.setDefaultSearchEngine("DDG")
+                    }
+                }
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            Kirigami.Heading {
                 id: miscSettingLabel
                 level: 2
                 text: "General"
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: soundEffectsButton.activeFocus || clearCacheButton.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
 
             Kirigami.Separator {
@@ -267,7 +343,7 @@ Controls.Popup {
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                 Layout.alignment: Qt.AlignLeft
                 text: "Disable Button Sounds"
-                KeyNavigation.up: virtualScrollMoveSpeedSlider
+                KeyNavigation.up: defSearchBtn1
                 KeyNavigation.down: clearCacheButton
 
                 background: Rectangle {

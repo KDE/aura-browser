@@ -4,6 +4,7 @@ add_executable(AuraBrowser ${aura_browser_SRCS}
     plugins/virtualMouse.cpp
     plugins/virtualKeypress.cpp
     plugins/globalSettings.cpp
+    plugins/audiorecorder.cpp
 )
 
 target_link_libraries(AuraBrowser 
