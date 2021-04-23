@@ -13,7 +13,7 @@ Item {
 
     WebSocket {
         id: socket
-        url: "ws://227.0.0.1:8181/core"
+        url: "ws://127.0.0.1:8181/core"
         onTextMessageReceived: {
             var somemessage = JSON.parse(message)
             if (somemessage.type == "aura.browser.request.result"){
