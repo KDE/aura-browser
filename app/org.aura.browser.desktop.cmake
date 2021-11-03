@@ -3,6 +3,7 @@ Name=AuraBrowser
 Name[ca]=Navegador Aura
 Name[ca@valencia]=Navegador Aura
 Name[cs]=AuraBrowser
+Name[de]=AuraBrowser
 Name[en_GB]=AuraBrowser
 Name[es]=AuraBrowser
 Name[eu]=AuraBrowser
