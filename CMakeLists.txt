@@ -10,6 +10,7 @@ set(AUTORCC_OPTIONS "/app/qml.qrc")
 
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} "${CMAKE_SOURCE_DIR}/cmake")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -34,3 +35,4 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
 
 add_subdirectory(app)
 add_subdirectory(icons)
+add_definitions(-w)

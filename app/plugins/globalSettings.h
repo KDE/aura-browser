@@ -36,6 +36,7 @@ class GlobalSettings : public QObject
     Q_PROPERTY(int virtualScrollSpeed READ virtualScrollSpeed WRITE setVirtualScrollSpeed NOTIFY virtualScrollSpeedChanged)
     Q_PROPERTY(bool soundEffects READ soundEffects WRITE setSoundEffects NOTIFY soundEffectsChanged)
     Q_PROPERTY(QString defaultSearchEngine READ defaultSearchEngine WRITE setDefaultSearchEngine NOTIFY defaultSearchEngineChanged)
+    Q_PROPERTY(bool adblockEnabled READ adblockEnabled WRITE setAdblockEnabled NOTIFY adBlockEnabledChanged)
 
 public:
     explicit GlobalSettings(QObject *parent=0);
@@ -45,6 +46,7 @@ public:
     int virtualScrollSpeed() const;
     bool soundEffects() const;
     QString defaultSearchEngine() const;
+    bool adblockEnabled() const;
 
 public Q_SLOTS:
     void setFirstRun(bool firstRun);
@@ -53,6 +55,7 @@ public Q_SLOTS:
     void setSoundEffects(bool soundEffects);
     void setDefaultSearchEngine(QString defaultSearchEngine);
     void clearDefaultProfileCache();
+    void setAdblockEnabled(bool adblockEnabled);
 
 Q_SIGNALS:
     void firstRunChanged();
@@ -62,6 +65,7 @@ Q_SIGNALS:
     void focusOnVKeyboard();
     void focusOffVKeyboard();
     void defaultSearchEngineChanged();
+    void adBlockEnabledChanged();
 
 private:
     QSettings m_settings;

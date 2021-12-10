@@ -106,3 +106,18 @@ void GlobalSettings::setDefaultSearchEngine(QString defaultSearchEngine)
     m_settings.setValue(QStringLiteral("defaultSearchEgnine"), defaultSearchEngine);
     emit defaultSearchEngineChanged();
 }
+
+bool GlobalSettings::adblockEnabled() const
+{
+    return m_settings.value(QStringLiteral("adblockEnabled"), true).toBool();
+}
+
+void GlobalSettings::setAdblockEnabled(bool adblockEnabled)
+{
+    if (GlobalSettings::adblockEnabled() == adblockEnabled) {
+        return;
+    }
+
+    m_settings.setValue(QStringLiteral("adblockEnabled"), adblockEnabled);
+    emit adBlockEnabledChanged();
+}
