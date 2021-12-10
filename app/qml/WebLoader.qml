@@ -40,9 +40,11 @@ Item {
     property var navMode: "vMouse"
     property bool vMouseEnabled: false
     property int currentScrollSpeed: Aura.GlobalSettings.virtualScrollSpeed
+    signal returnFocus
 
     Connections {
         target: root
+
         onBlurFieldRequested: {
             if(mItem.visible) {
                 webView.runJavaScript('document.activeElement.blur()');
@@ -121,8 +123,43 @@ Item {
             focus: true
             objectName: "webengineview"
             webChannel: webChannel
+            profile: Aura.GlobalSettings.adblockEnabled == 1 ? adblockProfile : defaultProfile
 
-            profile {
+            Connections {
+                target: adblockProfile
+
+                onDownloadRequested: {
+                    console.log("In download request")
+                    download.accept()
+                    download.pause()
+                    var downloadFileName = download.path.split('/').pop(-1)
+                    interactionBar.setSource("DownloadRequest.qml")
+                    interactionBar.interactionItem.download = download
+                    interactionBar.interactionItem.actionsVisible = true
+                    interactionBar.interactionItem.downloadName = downloadFileName
+                    interactionBar.isRequested = true
+                }
+
+                onDownloadFinished: {
+                    console.log("In download finished")
+                    if (download.state === WebEngineDownloadItem.DownloadCompleted) {
+                        interactionBar.interactionItem.actionsVisible = false
+                        interactionBar.interactionItem.isDownloading = false
+                        interactionBar.interactionItem.messageText = "Download finished"
+                    }
+                    else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
+                        interactionBar.interactionItem.actionsVisible = false
+                        interactionBar.interactionItem.isDownloading = false
+                        interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                    }
+                    else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
+                        interactionBar.interactionItem.isDownloading = false
+                    }
+                }
+            }
+
+            WebEngineProfile {
+                id: defaultProfile
                 httpUserAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
 
                 onDownloadRequested: {
