@@ -19,55 +19,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <qtwebengineglobal.h>
-#include <QtWebEngine/qquickwebengineprofile.h>
-#include <QtWebEngineCore/qwebengineurlrequestinterceptor.h>
 #include "plugins/virtualMouse.h"
 #include "plugins/virtualKeypress.h"
 #include "plugins/globalSettings.h"
 #include "plugins/audiorecorder.h"
 #include <QQmlContext>
-
-// Add Adblock Implementation
-#include <QThread>
-#include <QFile>
-#include <QDebug>
-#include "third-party/ad-block/ad_block_client.h"
-
-class WebIntercept : public QWebEngineUrlRequestInterceptor
-{
-    Q_OBJECT
-public:
-    WebIntercept(QObject *parent = nullptr) : QWebEngineUrlRequestInterceptor(parent)
-    {
-        QThread *thread = QThread::create([this]{
-            QFile file(":/third-party/easylist.txt");
-            QString easyListTxt;
-
-            if(!file.exists()) {
-                qDebug() << "No easylist.txt file found.";
-            } else {
-                if (file.open(QIODevice::ReadOnly | QIODevice::Text)){
-                    easyListTxt = file.readAll();
-                }
-                file.close();
-                client.parse(easyListTxt.toStdString().c_str());
-            }
-        });
-        thread->start();
-    }
-
-    void interceptRequest(QWebEngineUrlRequestInfo &info) override
-    {
-        if (client.matches(info.requestUrl().toString().toStdString().c_str(),
-                           FONoFilterOption, info.requestUrl().host().toStdString().c_str())) {
-            qDebug() << "Blocked: " << info.requestUrl();
-            info.block(true);
-        }
-    }
-
-private:
-    AdBlockClient client;
-};
 
 static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
@@ -98,16 +54,6 @@ int main(int argc, char *argv[])
     app.setWindowIcon(QIcon(":/qml/images/logo-small.png"));
 
     QQmlApplicationEngine engine;
-
-    // Adblock Implementation
-    WebIntercept interceptor;
-    QQuickWebEngineProfile adblockProfile;
-    adblockProfile.setUrlRequestInterceptor(&interceptor);
-    adblockProfile.setHttpUserAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36");
-    adblockProfile.setStorageName("Profile");
-    adblockProfile.setOffTheRecord(false);
-    engine.rootContext()->setContextProperty("adblockProfile", &adblockProfile);
-
     FakeCursor fakeCursor;
     engine.rootContext()->setContextProperty("Cursor", &fakeCursor);
     QQmlContext* ctx = engine.rootContext();
@@ -128,5 +74,3 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
-
-#include "main.moc"

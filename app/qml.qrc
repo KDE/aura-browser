@@ -46,6 +46,5 @@
         <file>plugins/audiorecorder.cpp</file>
         <file>qml/AudioBox.qml</file>
         <file>qml/images/microphone.svg</file>
-        <file>third-party/easylist.txt</file>
     </qresource>
 </RCC>

@@ -5,15 +5,6 @@ add_executable(AuraBrowser ${aura_browser_SRCS}
     plugins/virtualKeypress.cpp
     plugins/globalSettings.cpp
     plugins/audiorecorder.cpp
-    third-party/ad-block/ad_block_client.cc
-    third-party/ad-block/no_fingerprint_domain.cc
-    third-party/ad-block/filter.cc
-    third-party/ad-block/protocol.cc
-    third-party/ad-block/context_domain.cc
-    third-party/ad-block/cosmetic_filter.cc
-    third-party/bloom-filter-cpp/BloomFilter.cpp
-    third-party/hashset-cpp/hash_set.cc
-    third-party/hashset-cpp/hashFn.cc
 )
 
 target_link_libraries(AuraBrowser 

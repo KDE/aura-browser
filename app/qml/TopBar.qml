@@ -211,7 +211,7 @@ Rectangle {
             id: bookmarkButtonTopBar
             width: Kirigami.Units.iconSizes.large
             height: Kirigami.Units.iconSizes.large
-            anchors.right: adblockButtonTopBar.left
+            anchors.right: tabButtonTopBar.left
 
             Kirigami.Icon {
                 width: Kirigami.Units.iconSizes.medium
@@ -228,47 +228,6 @@ Rectangle {
                     bookmarkTabManager.preBookmarkName = webView.title
                     bookmarkTabManager.preBookmarkUrl = webView.url
                     bookmarkTabManager.open()
-                }
-            }
-        }
-
-        Item {
-            id: adblockButtonTopBar
-            width: Kirigami.Units.iconSizes.large
-            height: Kirigami.Units.iconSizes.large
-            anchors.right: tabButtonTopBar.left
-
-            Kirigami.Icon {
-                width: Kirigami.Units.iconSizes.medium
-                height: Kirigami.Units.iconSizes.medium
-                anchors.centerIn: parent
-                source: "draw-polygon"
-                color: Aura.GlobalSettings.adblockEnabled ? "green" : "red"
-
-                Label {
-                    color: Kirigami.Theme.textColor
-                    width: parent.width
-                    height: parent.height
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    fontSizeMode: Text.Fit
-                    minimumPixelSize: 2
-                    font.bold: true
-                    font.pixelSize: parent.height * 0.5
-                    font.strikeout: !Aura.GlobalSettings.adblockEnabled
-                    text: "A"
-                }
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    Aura.NavigationSoundEffects.playClickedSound()
-                    if(Aura.GlobalSettings.adblockEnabled){
-                        Aura.GlobalSettings.setAdblockEnabled(false);
-                    } else {
-                        Aura.GlobalSettings.setAdblockEnabled(true);
-                    }
                 }
             }
         }
