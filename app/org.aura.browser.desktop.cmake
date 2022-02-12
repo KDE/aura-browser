@@ -22,6 +22,7 @@ Name[sl]=AuraBrowser
 Name[sv]=Aura webbläsare
 Name[uk]=AuraBrowser
 Name[x-test]=xxAuraBrowserxx
+Name[zh_CN]=AuraBrowser
 MimeType=@DesktopMimeType@
 Exec=@DesktopExec@
 Icon=aura-browser
