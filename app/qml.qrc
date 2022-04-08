@@ -47,5 +47,8 @@
         <file>qml/AudioBox.qml</file>
         <file>qml/images/microphone.svg</file>
         <file>third-party/easylist.txt</file>
+        <file>qml/mainSandbox.qml</file>
+        <file>qml/SandboxLoader.qml</file>
+        <file>qml/TopBarSandbox.qml</file>
     </qresource>
 </RCC>
