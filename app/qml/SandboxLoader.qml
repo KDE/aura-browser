@@ -34,8 +34,7 @@ Item {
     Layout.fillWidth: true
     Layout.fillHeight: true
     property var pageTitle
-    property var pageUrl
-    property bool toRemove: false
+    property var pageUrl: sandboxURL
     property var pageId
     property var navMode: "vMouse"
     property bool vMouseEnabled: false
@@ -68,20 +67,8 @@ Item {
         }
     }
 
-
     onPageUrlChanged: {
         webView.url = pageUrl
-    }
-
-    BookmarkManager{
-        id: bookmarkTabManager
-        model: bookmarksModel
-        genericModel: bookmarksModel
-    }
-
-    onToRemoveChanged: {
-        removeFromTabView(parent.currentIndex);
-        mItem.destroy()
     }
 
     Component.onCompleted: {
@@ -98,7 +85,7 @@ Item {
     FocusScope {
         anchors.fill: parent
 
-        TopBar{
+        TopBarSandbox{
             id: topBarPage
             anchors.top: parent.top
         }
@@ -214,15 +201,6 @@ Item {
             }
 
             onLoadingChanged: {
-                if(loadRequest.status == WebEngineView.LoadSucceededStatus){
-                    webView.runJavaScript("document.title", function(title){
-                        pageTitle = title
-                        Utils.insertRecentToStorage(webView.url, pageTitle)
-                    });
-                } else {
-                    console.log("Loading..")
-                }
-
                 vMouseEnabled = true;
                 Aura.GlobalSettings.focusOffVKeyboard();
                 mouseCursor.forceActiveFocus();
@@ -298,10 +276,6 @@ Item {
                     Aura.GlobalSettings.focusOnVKeyboard();
                 }
             }
-        }
-
-        LocalURLSearchHandler{
-            id: localUrlEntryDrawer
         }
 
         Rectangle {

@@ -86,6 +86,7 @@ Kirigami.AbstractApplicationWindow {
     globalDrawer: Kirigami.GlobalDrawer {
         id: gDrawer
         handleVisible: false
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
 
         onOpened:  {
             quitButton.forceActiveFocus();
@@ -154,6 +155,7 @@ Kirigami.AbstractApplicationWindow {
         width: parent.width
         height: parent.height / 3
         edge: Qt.TopEdge
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
 
         onOpened: {
             tabsListView.forceActiveFocus()

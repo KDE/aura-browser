@@ -31,7 +31,7 @@ import Aura 1.0 as Aura
 Controls.Popup {
     id: settingsPopupArea
     width: parent.width / 2
-    height: settingContents.implicitHeight + headerAreaSettingsPage.implicitHeight + Kirigami.Units.gridUnit * 5 //parent.height / 2
+    height: settingContents.implicitHeight + headerAreaSettingsPage.implicitHeight + Kirigami.Units.gridUnit * 5
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
     padding: Kirigami.Units.largeSpacing

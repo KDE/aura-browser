@@ -26,6 +26,8 @@
 #include "plugins/globalSettings.h"
 #include "plugins/audiorecorder.h"
 #include <QQmlContext>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
 // Add Adblock Implementation
 #include <QThread>
@@ -87,6 +89,18 @@ static QObject *audioRecorderSingletonProvider(QQmlEngine *engine, QJSEngine *sc
 
 int main(int argc, char *argv[])
 {
+    QStringList arguments;
+    for (int a = 0; a < argc; ++a) {
+        arguments << QString::fromLocal8Bit(argv[a]);
+    }
+
+    QCommandLineParser parser;
+    auto urlOption = QCommandLineOption(QStringLiteral("url"), QStringLiteral("Single url to load in sandbox"), QStringLiteral("url"));
+    auto sandboxOption = QCommandLineOption(QStringLiteral("sandbox"), QStringLiteral("Sandbox Mode"));
+    auto helpOption = QCommandLineOption(QStringLiteral("help"), QStringLiteral("Show this help message"));
+    parser.addOptions({urlOption, sandboxOption, helpOption});
+    parser.process(arguments);
+
     qputenv("QT_VIRTUALKEYBOARD_DESKTOP_DISABLE", QByteArray("0"));
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
     QCoreApplication::setOrganizationName("AuraBrowser");
@@ -96,6 +110,11 @@ int main(int argc, char *argv[])
     QtWebEngine::initialize();
     QGuiApplication app(argc, argv);
     app.setWindowIcon(QIcon(":/qml/images/logo-small.png"));
+
+    if (parser.isSet(helpOption)) {
+        parser.showHelp();
+        return 0;
+    }
 
     QQmlApplicationEngine engine;
 
@@ -118,7 +137,21 @@ int main(int argc, char *argv[])
     qmlRegisterSingletonType<GlobalSettings>("Aura", 1, 0, "GlobalSettings", globalSettingsSingletonProvider);
     qmlRegisterSingletonType<AudioRecorder>("Aura", 1, 0, "AudioRecorder", audioRecorderSingletonProvider);
     qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/qml/NavigationSoundEffects.qml")), "Aura", 1, 0, "NavigationSoundEffects");
-    const QUrl url(QStringLiteral("qrc:/qml/main.qml"));
+
+    QString sandboxURL = parser.value(urlOption);
+    bool sandboxMode = parser.isSet(sandboxOption);
+
+    engine.rootContext()->setContextProperty(QStringLiteral("sandboxURL"), sandboxURL);
+    engine.rootContext()->setContextProperty(QStringLiteral("sandboxMode"), sandboxMode);
+
+    // Define const QUrl url here, if the user is in sandbox mode, we want to load the sandbox qml file, if not, we want to load the main qml file
+    QUrl url;
+    if (sandboxMode) {
+        url = QUrl(QStringLiteral("qrc:/qml/mainSandbox.qml"));
+    } else {
+        url = QUrl(QStringLiteral("qrc:/qml/main.qml"));
+    }
+
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)
