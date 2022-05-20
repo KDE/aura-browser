@@ -206,7 +206,7 @@ Controls.Popup {
                 Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
                 Layout.alignment: Qt.AlignTop
                 KeyNavigation.up: virtualMouseMoveSpeedSlider
-                KeyNavigation.down: defSearchBtn1
+                KeyNavigation.down: virtualCursorSizeSlider
 
                 background: Rectangle {
                     x: virtualScrollMoveSpeedSlider.leftPadding
@@ -254,6 +254,77 @@ Controls.Popup {
             }
 
             Kirigami.Heading {
+                id: virtualCursorSizeSettingLabel
+                level: 2
+                text: "Virtual Cursor Size Control"
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: virtualCursorSizeSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            Controls.Slider {
+                id: virtualCursorSizeSlider
+                Layout.fillWidth:  true
+                snapMode: Controls.Slider.SnapAlways
+                stepSize: 0.1
+                from: 0.8
+                to: 1
+                value: Aura.GlobalSettings.virtualMouseSize
+                Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+                Layout.alignment: Qt.AlignTop
+                KeyNavigation.up: virtualScrollMoveSpeedSlider
+                KeyNavigation.down: defSearchBtn1
+
+                background: Rectangle {
+                    x: virtualCursorSizeSlider.leftPadding
+                    y: virtualCursorSizeSlider.topPadding + virtualCursorSizeSlider.availableHeight / 2 - height / 2
+                    implicitWidth: width
+                    width: virtualCursorSizeSlider.availableWidth
+                    height: Kirigami.Units.smallSpacing
+                    radius: 2
+                    color: virtualCursorSizeSlider.activeFocus ? Kirigami.Theme.disabledTextColor : Kirigami.Theme.textColor
+
+                    Rectangle {
+                        width: virtualCursorSizeSlider.visualPosition * parent.width
+                        height: parent.height
+                        color: Kirigami.Theme.linkColor
+                        radius: 2
+                    }
+                }
+
+                onValueChanged: {
+                    console.log(virtualCursorSizeSlider.value)
+                    Aura.GlobalSettings.setVirtualMouseSize(value);
+                }
+
+                Keys.onPressed: {
+                    playKeySounds(event)
+                }
+            }
+
+            Kirigami.Heading {
+                id: currentVirtualCursorSizeLabel
+                level: 3
+                text: "Current Size: " + Aura.GlobalSettings.virtualMouseSize == 1 ? "Large" : (Aura.GlobalSettings.virtualMouseSize == 0.9 ? "Medium" : (Aura.GlobalSettings.virtualMouseSize == 0.8 ? "Small": "Large")) 
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: Kirigami.Theme.textColor
+            }
+
+            Item {
+                Layout.preferredHeight: Kirigami.Units.gridUnit
+                Layout.fillWidth: true
+            }
+
+            Kirigami.Separator {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 1
+            }
+
+            Kirigami.Heading {
                 id: defSearchSettingLabel
                 level: 2
                 text: "Search Engine"
@@ -276,7 +347,7 @@ Controls.Popup {
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     Layout.alignment: Qt.AlignLeft
                     text: "Google"
-                    KeyNavigation.up: virtualScrollMoveSpeedSlider
+                    KeyNavigation.up: virtualCursorSizeSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.right: defSearchBtn2
                     palette.buttonText: Kirigami.Theme.textColor
@@ -303,7 +374,7 @@ Controls.Popup {
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     Layout.alignment: Qt.AlignLeft
                     text: "Duck Duck Go"
-                    KeyNavigation.up: virtualScrollMoveSpeedSlider
+                    KeyNavigation.up: virtualCursorSizeSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.left: defSearchBtn1
                     palette.buttonText: Kirigami.Theme.textColor

@@ -70,6 +70,20 @@ void GlobalSettings::setVirtualScrollSpeed(int virtualScrollSpeed)
     emit virtualScrollSpeedChanged(virtualScrollSpeed);
 }
 
+double GlobalSettings::virtualMouseSize() const
+{
+    return m_settings.value(QStringLiteral("virtualMouseSize"), 1).toDouble();
+}
+
+void GlobalSettings::setVirtualMouseSize(double virtualMouseSize)
+{
+    if (GlobalSettings::virtualMouseSize() == virtualMouseSize) {
+        return;
+    }
+
+    m_settings.setValue(QStringLiteral("virtualMouseSize"), virtualMouseSize);
+    emit virtualMouseSizeChanged(virtualMouseSize);
+}
 
 void GlobalSettings::clearDefaultProfileCache()
 {

@@ -310,8 +310,8 @@ Item {
 
         Rectangle {
             id: mouseCursor
-            width: Kirigami.Units.gridUnit * 1.5
-            height: Kirigami.Units.gridUnit * 1.5
+            width: (Kirigami.Units.gridUnit * 1.5) * Aura.GlobalSettings.virtualMouseSize
+            height: (Kirigami.Units.gridUnit * 1.5) * Aura.GlobalSettings.virtualMouseSize
             radius: 100
             border.width: Kirigami.Units.smallSpacing
             border.color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
