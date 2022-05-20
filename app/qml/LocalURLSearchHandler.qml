@@ -30,13 +30,32 @@ import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
 import QtQuick.VirtualKeyboard 2.4
 
-Kirigami.OverlayDrawer {
+Popup {
     id: webpageUrlEntryDrawer
-    width: parent.width
-    height: parent.height
-    edge: Qt.TopEdge
-    dragMargin: 0
+    width: parent.width * 0.8
+    height: parent.height * 0.8
+    x: (parent.width - width) / 2
+    y: (parent.height - height) / 2
+    padding: Kirigami.Units.largeSpacing
+    modal: true
     dim: true
+
+    Overlay.modal: Rectangle {
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
+    }
+
+    background: Rectangle {
+        color: Kirigami.Theme.backgroundColor
+        layer.enabled: true
+        layer.effect: DropShadow {
+            horizontalOffset: 0
+            verticalOffset: 2
+            radius: 8.0
+            samples: 17
+            color: Qt.rgba(0,0,0,0.6)
+        }
+    }
 
     function autoAppend(model, getinputstring, setinputstring) {
         for(var i = 0; i < model.count; ++i)
@@ -61,20 +80,21 @@ Kirigami.OverlayDrawer {
         id: completionItems
     }
 
-    Item {
+    contentItem: Item {
         id: entryLayout
-        anchors.fill: parent
 
         RowLayout {
             id: localHeaderAreaURLandSearchField
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.margins: Kirigami.Units.smallSpacing
 
             Kirigami.Heading {
                 id: localUrlSearchFieldLabel
                 level: 1
                 text: "Enter URL / Search Term"
+                color: Kirigami.Theme.textColor
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
                 Layout.alignment: Qt.AlignLeft
@@ -84,6 +104,7 @@ Kirigami.OverlayDrawer {
                 id: localUrlSearchFieldBackBtnLabel
                 text: "Press 'esc' or the [←] Back button to close"
                 Layout.alignment: Qt.AlignRight
+                color: Kirigami.Theme.textColor
             }
         }
 
@@ -101,10 +122,11 @@ Kirigami.OverlayDrawer {
             anchors.topMargin: Kirigami.Units.largeSpacing
             height: Kirigami.Units.gridUnit * 5
             placeholderText: "Enter Search Term or URL"
+            color: Kirigami.Theme.textColor
             inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
             background: Rectangle {
                 color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
-                border.color: Kirigami.Theme.disabledTextColor
+                border.color: localurlEntrie.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
                 border.width: 1
             }
 

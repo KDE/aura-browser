@@ -24,6 +24,7 @@ Item {
             id: message
             Layout.fillWidth: true
             Layout.leftMargin: Kirigami.Units.largeSpacing
+            color: Kirigami.Theme.textColor
 
             function textForFeature(feature) {
                 if (feature === WebEngineView.MediaAudioCapture)
@@ -40,6 +41,7 @@ Item {
         Button {
             id: acceptButton
             text: "Accept"
+            palette.buttonText: Kirigami.Theme.textColor
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
 
@@ -61,6 +63,7 @@ Item {
             text: "Deny"
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
+            palette.buttonText: Kirigami.Theme.textColor
 
             background: Rectangle {
                 color: denyButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -81,6 +84,7 @@ Item {
             Layout.preferredWidth: Kirigami.Units.iconSizes.large - (Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing)
             Layout.preferredHeight: Kirigami.Units.iconSizes.large - (Kirigami.Units.largeSpacing + Kirigami.Units.smallSpacing)
             Layout.leftMargin: Kirigami.Units.largeSpacing
+            palette.buttonText: Kirigami.Theme.textColor
 
             background: Rectangle {
                 color: denyButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)

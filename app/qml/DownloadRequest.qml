@@ -32,6 +32,7 @@ Item {
             Layout.fillWidth: true
             Layout.leftMargin: Kirigami.Units.largeSpacing
             text: "Do you want to download " + downloadName + " file ?"
+            color: Kirigami.Theme.textColor
         }
 
         Button {
@@ -40,6 +41,7 @@ Item {
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
             visible: actionsVisible && !isDownloading
+            palette.buttonText: Kirigami.Theme.textColor
 
             background: Rectangle {
                 color: downloadButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -76,6 +78,7 @@ Item {
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
             visible: actionsVisible
+            palette.buttonText: Kirigami.Theme.textColor
 
             background: Rectangle {
                 color: cancleButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)

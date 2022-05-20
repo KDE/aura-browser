@@ -31,6 +31,7 @@ import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
 import QtQuick.VirtualKeyboard 2.4
 import QtQuick.VirtualKeyboard.Settings 2.4
+import QtGraphicalEffects 1.0
 
 Kirigami.AbstractApplicationWindow {
     id: root
@@ -86,7 +87,6 @@ Kirigami.AbstractApplicationWindow {
     globalDrawer: Kirigami.GlobalDrawer {
         id: gDrawer
         handleVisible: false
-        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
 
         onOpened:  {
             quitButton.forceActiveFocus();
@@ -95,6 +95,7 @@ Kirigami.AbstractApplicationWindow {
         Controls.Label {
             id: bblabl
             text: "Press 'esc' or the [←] Back button to close"
+            color: Kirigami.Theme.textColor
             Layout.alignment: Qt.AlignRight
         }
 
@@ -107,6 +108,7 @@ Kirigami.AbstractApplicationWindow {
             id: quitButton
             Layout.fillWidth: true
             Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+            KeyNavigation.down: closeMenuButton
 
             background: Rectangle {
                 color: quitButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
@@ -122,12 +124,46 @@ Kirigami.AbstractApplicationWindow {
 
                 Controls.Label {
                     Layout.fillWidth: true
+                    color: Kirigami.Theme.textColor
                     text: "Quit"
                 }
             }
 
             onClicked: {
                 root.close();
+            }
+
+            Keys.onReturnPressed: {
+                clicked()
+            }
+        }
+        Controls.Button {
+            id: closeMenuButton
+            Layout.fillWidth: true
+            Layout.preferredHeight: Kirigami.Units.gridUnit * 4
+            KeyNavigation.up: quitButton
+
+            background: Rectangle {
+                color: closeMenuButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
+                border.color: Kirigami.Theme.disabledTextColor
+            }
+
+            contentItem: RowLayout {
+                Kirigami.Icon {
+                    source: "application-menu"
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.medium
+                    Layout.preferredHeight: Kirigami.Units.iconSizes.medium
+                }
+
+                Controls.Label {
+                    Layout.fillWidth: true
+                    color: Kirigami.Theme.textColor
+                    text: "Close Menu"
+                }
+            }
+
+            onClicked: {
+                gDrawer.close();
             }
 
             Keys.onReturnPressed: {
@@ -150,12 +186,13 @@ Kirigami.AbstractApplicationWindow {
         currentIndex: tabsListView.currentIndex
     }
 
-    Kirigami.OverlayDrawer {
+    Controls.Drawer {
         id: tabBarView
         width: parent.width
         height: parent.height / 3
         edge: Qt.TopEdge
-        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+        interactive: true
+        dragMargin: 0
 
         onOpened: {
             tabsListView.forceActiveFocus()
@@ -166,8 +203,21 @@ Kirigami.AbstractApplicationWindow {
             auraStack.itemAt(auraStack.currentIndex).focus = true
         }
 
+        background: Rectangle {
+            color: Kirigami.Theme.backgroundColor
+            layer.enabled: true
+            layer.effect: DropShadow {
+                horizontalOffset: 0
+                verticalOffset: 2
+                radius: 8.0
+                samples: 17
+                color: Qt.rgba(0,0,0,0.6)
+            } 
+        }
+
         Rectangle {
             anchors.fill: parent
+            anchors.margins: Kirigami.Units.largeSpacing
             color: Kirigami.Theme.backgroundColor
 
             RowLayout {
@@ -184,6 +234,7 @@ Kirigami.AbstractApplicationWindow {
                 Controls.Label {
                     id: backbtnlabelHeading
                     text: "Press 'esc' or the [←] Back button to close"
+                    color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
             }
@@ -224,6 +275,7 @@ Kirigami.AbstractApplicationWindow {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     text: "Remove Tab"
+                    palette.buttonText: Kirigami.Theme.textColor
                     KeyNavigation.up: tabsListView
 
                     background: Rectangle {

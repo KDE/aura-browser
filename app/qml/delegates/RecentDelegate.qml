@@ -81,6 +81,7 @@ Controls.Control {
                 anchors.centerIn: parent
                 text: model.recent_name.substring(0,1)
                 font.bold: true
+                color: Kirigami.Theme.textColor
             }
         }
 
@@ -94,6 +95,7 @@ Controls.Control {
             maximumLineCount: 2
             elide: Text.ElideRight
             text: model.recent_name
+            color: Kirigami.Theme.textColor
         }
     }
 

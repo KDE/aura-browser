@@ -48,7 +48,7 @@ Controls.TabButton {
             anchors {
                 fill: parent
             }
-            color: Kirigami.Theme.backgroundColor
+            color: listView.currentIndex == index && delegate.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
             width: listView.currentIndex == index && delegate.activeFocus ? parent.width : parent.width - Kirigami.Units.gridUnit
             height: listView.currentIndex == index && delegate.activeFocus ? parent.height : parent.height - Kirigami.Units.gridUnit
             opacity: 0.8
@@ -78,6 +78,7 @@ Controls.TabButton {
             Kirigami.Heading {
                 anchors.centerIn: parent
                 text: model.pageName.replace(/(^\w+:|^)\/\//, '').substring(0,1)
+                color: Kirigami.Theme.textColor
                 font.bold: true
             }
         }
@@ -92,6 +93,7 @@ Controls.TabButton {
             maximumLineCount: 2
             elide: Text.ElideRight
             text: model.pageName
+            color: Kirigami.Theme.textColor
         }
     }
 

@@ -27,6 +27,7 @@ Kirigami.Heading {
     id: header
     property string title
     text: title
+    color: Kirigami.Theme.textColor
     layer.enabled: true
     layer.effect: DropShadow {
         horizontalOffset: 0

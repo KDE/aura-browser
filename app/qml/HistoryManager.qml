@@ -86,6 +86,7 @@ Controls.Popup {
                     Controls.Label {
                         text: model.recent_name.substring(0,1);
                         anchors.centerIn: parent
+                        color: Kirigami.Theme.textColor
                     }
                 }
 
@@ -93,6 +94,7 @@ Controls.Popup {
                     text: model.recent_name
                     Layout.preferredWidth: parent.width / 2
                     elide: Text.ElideRight
+                    color: Kirigami.Theme.textColor
                 }
 
                 Controls.Label {
@@ -100,6 +102,7 @@ Controls.Popup {
                     Layout.alignment: Qt.AlignRight
                     horizontalAlignment: Text.AlignLeft
                     Layout.fillWidth: true
+                    color: Kirigami.Theme.textColor
                 }
             }
 
@@ -147,6 +150,7 @@ Controls.Popup {
                 id: historyMgrHeading
                 level: 1
                 text: "History"
+                color: Kirigami.Theme.textColor
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
                 Layout.alignment: Qt.AlignLeft
@@ -155,6 +159,7 @@ Controls.Popup {
             Controls.Label {
                 id: backbtnlabelHeading
                 text: "Press 'esc' or the [←] Back button to close"
+                color: Kirigami.Theme.textColor
                 Layout.alignment: Qt.AlignRight
             }
         }
@@ -189,6 +194,7 @@ Controls.Popup {
                         id: historySearchFieldChild
                         anchors.fill: parent
                         placeholderText: "Search History"
+                        color: Kirigami.Theme.textColor
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
                             color: Kirigami.Theme.backgroundColor
@@ -218,6 +224,7 @@ Controls.Popup {
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 8
                     KeyNavigation.left: historySearchField
                     KeyNavigation.down: historyManagerListView
+                    palette.buttonText: Kirigami.Theme.textColor
 
                     background: Rectangle {
                         color: clearHistoryButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -257,6 +264,7 @@ Controls.Popup {
             Kirigami.Heading {
                 level: 3
                 text: "No Recent History"
+                color: Kirigami.Theme.textColor
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 visible: genericModel.count == 0 ? 1 : 0

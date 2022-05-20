@@ -105,6 +105,7 @@ Controls.Popup {
                     Controls.Label {
                         text: model.recent_name.substring(0,1);
                         anchors.centerIn: parent
+                        color: Kirigami.Theme.textColor
                     }
                 }
 
@@ -112,6 +113,7 @@ Controls.Popup {
                     text: model.recent_name
                     Layout.preferredWidth: parent.width / 2
                     elide: Text.ElideRight
+                    color: Kirigami.Theme.textColor
                 }
 
                 Controls.Label {
@@ -119,6 +121,7 @@ Controls.Popup {
                     Layout.alignment: Qt.AlignRight
                     horizontalAlignment: Text.AlignLeft
                     Layout.fillWidth: true
+                    color: Kirigami.Theme.textColor
                 }
             }
 
@@ -177,6 +180,7 @@ Controls.Popup {
                     id: bookmarkMgrHeading
                     level: 1
                     text: "Bookmarks Manager"
+                    color: Kirigami.Theme.textColor
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
                     Layout.alignment: Qt.AlignLeft
@@ -185,6 +189,7 @@ Controls.Popup {
                 Controls.Label {
                     id: backbtnlabelHeading
                     text: "Press 'esc' or the [←] Back button to close"
+                    color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
             }
@@ -218,6 +223,7 @@ Controls.Popup {
                             id: bookmarkSearchFieldChild
                             anchors.fill: parent
                             placeholderText: "Search Bookmarks"
+                            color: Kirigami.Theme.textColor
                             background: Rectangle {
                                 Kirigami.Theme.colorSet: Kirigami.Theme.View
                                 color: Kirigami.Theme.backgroundColor
@@ -249,6 +255,8 @@ Controls.Popup {
                         KeyNavigation.right: addModeBox
                         KeyNavigation.left: bookmarkSearchField
                         KeyNavigation.down: bookmarksManagerListView
+                        Kirigami.Theme.inherit: false
+                        Kirigami.Theme.colorSet: Kirigami.Theme.View
 
                         Keys.onReturnPressed: {
                             checked = !checked
@@ -262,6 +270,7 @@ Controls.Popup {
                     Controls.Button {
                         id: addModeBox
                         text: "Add"
+                        palette.buttonText: Kirigami.Theme.textColor
                         Layout.preferredWidth: Kirigami.Units.gridUnit * 6
                         KeyNavigation.left: removeModeBox
                         KeyNavigation.down: bookmarksManagerListView
@@ -322,6 +331,7 @@ Controls.Popup {
                     id: bookmarkAddHeading
                     level: 1
                     text: "Add Bookmark"
+                    color: Kirigami.Theme.textColor
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
                     Layout.alignment: Qt.AlignLeft
@@ -330,6 +340,7 @@ Controls.Popup {
                 Controls.Label {
                     id: backbtnlabel
                     text: "Press 'esc' or the [←] Back button to close"
+                    color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
             }
@@ -351,6 +362,7 @@ Controls.Popup {
                 Kirigami.Heading {
                     level: 3
                     text: "Name: "
+                    color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                 }
@@ -372,7 +384,7 @@ Controls.Popup {
                     Controls.TextField {
                         id: nameFieldChild
                         anchors.fill: parent
-
+                        color: Kirigami.Theme.textColor
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
                             color: Kirigami.Theme.backgroundColor
@@ -402,6 +414,7 @@ Controls.Popup {
                 Kirigami.Heading {
                     level: 3
                     text: "Url: "
+                    color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                 }
@@ -424,7 +437,7 @@ Controls.Popup {
                     Controls.TextField {
                         id: urlFieldChild
                         anchors.fill: parent
-
+                        color: Kirigami.Theme.textColor
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
                             color: Kirigami.Theme.backgroundColor
@@ -453,6 +466,7 @@ Controls.Popup {
                 Kirigami.Heading {
                     level: 3
                     text: "Category: "
+                    color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                 }
@@ -477,6 +491,8 @@ Controls.Popup {
                         model: ["News", "Entertainment", "Infotainment", "General"]
                         currentIndex: 3
                         anchors.fill: parent
+                        palette.buttonText: Kirigami.Theme.textColor
+                        
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
                             color: Kirigami.Theme.backgroundColor
@@ -509,6 +525,8 @@ Controls.Popup {
                     Layout.fillHeight: true
                     KeyNavigation.right: addBookMarkBtn
                     KeyNavigation.up: nameField
+                    palette.buttonText: Kirigami.Theme.textColor
+
                     background: Rectangle {
                         color: backBookMarkBtn.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
                         border.color: Kirigami.Theme.disabledTextColor
@@ -530,6 +548,8 @@ Controls.Popup {
                 Controls.Button {
                     id: addBookMarkBtn
                     text: "Add"
+                    palette.buttonText: Kirigami.Theme.textColor
+
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     KeyNavigation.left: backBookMarkBtn

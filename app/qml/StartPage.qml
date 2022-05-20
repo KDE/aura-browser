@@ -113,6 +113,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: startPageMenuButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -154,6 +155,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
 
                 background: Rectangle {
@@ -187,6 +189,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: startPageHistoryButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -219,6 +222,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: startPageBookmarksButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -252,6 +256,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: startPageSettingsButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -283,6 +288,7 @@ Kirigami.Page {
                 KeyNavigation.down: searchandurlfield
                 Kirigami.Theme.inherit: false
                 Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: startPageHelpButton.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -322,6 +328,7 @@ Kirigami.Page {
                 Kirigami.Heading {
                     id: browserHeading
                     text: "Aura Browser - Start Page"
+                    color: Kirigami.Theme.textColor
                     horizontalAlignment: Text.AlignRight
                     anchors.right: parent.right
                     font.bold: true
@@ -366,6 +373,7 @@ Kirigami.Page {
                         level: 2
                         text: "Search or type url"
                         font.bold: true
+                        color: Kirigami.Theme.textColor
                     }
                 }
 
@@ -379,6 +387,7 @@ Kirigami.Page {
                     onClicked: {
                         Aura.NavigationSoundEffects.playClickedSound();
                         urlEntryDrawer.open()
+                        urlEntrie.forceActiveFocus()
                     }
                 }
 
@@ -417,6 +426,8 @@ Kirigami.Page {
                 Layout.alignment: Qt.AlignRight
                 KeyNavigation.up: searchandurlfield
                 KeyNavigation.right: recentPagesView
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: clearRecentBtn.activeFocus ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
@@ -469,27 +480,47 @@ Kirigami.Page {
         }
     }
 
-    Kirigami.OverlayDrawer {
+    Controls.Popup {
         id: urlEntryDrawer
-        width: parent.width
-        height: parent.height
-        edge: Qt.TopEdge
-        dragMargin: 0
+        width: parent.width * 0.8
+        height: parent.height * 0.8
+        x: (parent.width - width) / 2
+        y: (parent.height - height) / 2
+        modal: true
+        //closePolicy: Controls.Popup.CloseOnEscape | Controls.Popup.CloseOnReleaseOutside
         dim: true
+        padding: Kirigami.Units.largeSpacing
 
         onOpened: {
             urlEntrie.forceActiveFocus()
         }
 
-        Item {
+        Controls.Overlay.modal: Rectangle {
+            Kirigami.Theme.colorSet: Kirigami.Theme.View
+            color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
+        }
+
+        background: Rectangle {
+            color: Kirigami.Theme.backgroundColor
+            layer.enabled: true
+            layer.effect: DropShadow {
+                horizontalOffset: 0
+                verticalOffset: 2
+                radius: 8.0
+                samples: 17
+                color: Qt.rgba(0,0,0,0.6)
+            }
+        }
+        
+        contentItem: FocusScope {
             id: entryLayout
-            anchors.fill: parent
 
             RowLayout {
                 id: headerAreaURLandSearchField
                 anchors.top: parent.top
                 anchors.left: parent.left
-                anchors.right: parent.right
+                anchors.right: parent.right                
+                anchors.margins: Kirigami.Units.smallSpacing
 
                 Kirigami.Heading {
                     id: urlSearchFieldLabel
@@ -498,12 +529,14 @@ Kirigami.Page {
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
                     Layout.alignment: Qt.AlignLeft
+                    color: Kirigami.Theme.textColor
                 }
 
                 Controls.Label {
                     id: urlSearchFieldBackBtnLabel
                     text: "Press 'esc' or the [←] Back button to close"
                     Layout.alignment: Qt.AlignRight
+                    color: Kirigami.Theme.textColor
                 }
             }
 
@@ -522,15 +555,18 @@ Kirigami.Page {
                 height: Kirigami.Units.gridUnit * 5
                 inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 placeholderText: "Enter Search Term or URL"
+                color: Kirigami.Theme.textColor
+                focus: true
                 background: Rectangle {
                     color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
-                    border.color: Kirigami.Theme.disabledTextColor
+                    border.color: urlEntrie.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
                     border.width: 1
                 }
 
                 onAccepted: {
                     //urlEntryDrawer.close()
                     //root.showStack = 1
+                    console.log("Accepted Here")
                     Aura.NavigationSoundEffects.playClickedSound();
                     var setUrl = checkURL(urlEntrie.text)
                     if(setUrl){

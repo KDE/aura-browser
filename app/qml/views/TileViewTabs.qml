@@ -54,6 +54,7 @@ FocusScope {
             top: parent.top
         }
         text: title
+        color: Kirigami.Theme.textColor
         layer.enabled: true
         layer.effect: DropShadow {
             horizontalOffset: 0

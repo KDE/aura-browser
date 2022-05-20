@@ -31,7 +31,7 @@ import Aura 1.0 as Aura
 Controls.Popup {
     id: settingsPopupArea
     width: parent.width / 2
-    height: settingContents.implicitHeight + headerAreaSettingsPage.implicitHeight + Kirigami.Units.gridUnit * 5
+    height: settingContents.implicitHeight + headerAreaSettingsPage.implicitHeight + Kirigami.Units.gridUnit * 5 //parent.height / 2
     x: (parent.width - width) / 2
     y: (parent.height - height) / 2
     padding: Kirigami.Units.largeSpacing
@@ -87,6 +87,7 @@ Controls.Popup {
                 id: settingsTabHeading
                 level: 1
                 text: "Settings"
+                color: Kirigami.Theme.textColor
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
                 Layout.alignment: Qt.AlignLeft
@@ -95,6 +96,7 @@ Controls.Popup {
             Controls.Label {
                 id: backbtnlabelHeading
                 text: "Press 'esc' or the [←] Back button to close"
+                color: Kirigami.Theme.textColor
                 Layout.alignment: Qt.AlignRight
             }
         }
@@ -167,6 +169,7 @@ Controls.Popup {
                 level: 3
                 text: "Current Speed: " + virtualMouseMoveSpeedSlider.value
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: Kirigami.Theme.textColor
             }
 
             Item {
@@ -237,6 +240,7 @@ Controls.Popup {
                 level: 3
                 text: "Current Speed: " + virtualScrollMoveSpeedSlider.value
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                color: Kirigami.Theme.textColor
             }
 
             Item {
@@ -275,6 +279,7 @@ Controls.Popup {
                     KeyNavigation.up: virtualScrollMoveSpeedSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.right: defSearchBtn2
+                    palette.buttonText: Kirigami.Theme.textColor
 
                     background: Rectangle {
                         color: defSearchBtn1.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
@@ -301,6 +306,7 @@ Controls.Popup {
                     KeyNavigation.up: virtualScrollMoveSpeedSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.left: defSearchBtn1
+                    palette.buttonText: Kirigami.Theme.textColor
 
                     background: Rectangle {
                         color: defSearchBtn2.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
@@ -345,6 +351,7 @@ Controls.Popup {
                 text: "Disable Button Sounds"
                 KeyNavigation.up: defSearchBtn1
                 KeyNavigation.down: clearCacheButton
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: soundEffectsButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
@@ -379,6 +386,7 @@ Controls.Popup {
                 Layout.alignment: Qt.AlignLeft
                 text: "Clear Cache"
                 KeyNavigation.up: soundEffectsButton
+                palette.buttonText: Kirigami.Theme.textColor
 
                 background: Rectangle {
                     color: clearCacheButton.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor

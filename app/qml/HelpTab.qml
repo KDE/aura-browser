@@ -63,12 +63,14 @@ Controls.Popup {
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
                 Layout.alignment: Qt.AlignLeft
+                color: Kirigami.Theme.textColor
             }
 
             Controls.Label {
                 id: backbtnlabelHeading
                 text: "Press 'esc' or the [←] Back button to close"
                 Layout.alignment: Qt.AlignRight
+                color: Kirigami.Theme.textColor
             }
         }
 
@@ -90,6 +92,7 @@ Controls.Popup {
             Controls.Label {
                 Layout.fillWidth: true
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                color: Kirigami.Theme.textColor
                 text: "Aura Browser adapts the traditional web browser UI for a fully immersed Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as possible for navigating the world wide web using just your remote control."
             }
 
@@ -111,6 +114,7 @@ Controls.Popup {
                     width: parent.width
                     horizontalAlignment: Text.AlignHCenter
                     font.capitalization: Font.SmallCaps
+                    color: Kirigami.Theme.textColor
                     text: "Here are all the buttons required to help you get started with using aura browser"
                 }
 

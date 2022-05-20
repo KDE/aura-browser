@@ -55,15 +55,18 @@ Rectangle {
     Kirigami.Heading {
         id: suggstheading
         level: 1
-        text: "Suggestions"
+        text: "Suggestions:"
+        color: Kirigami.Theme.textColor
         width: parent.width
         anchors.top: parent.top
+        anchors.topMargin: Kirigami.Units.smallSpacing
         horizontalAlignment: Qt.AlignLeft
     }
 
     ListView {
         id: autoCompListView
         anchors.top: suggstheading.bottom
+        anchors.topMargin: Kirigami.Units.smallSpacing
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom

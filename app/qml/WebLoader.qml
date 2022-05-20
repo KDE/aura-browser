@@ -246,6 +246,10 @@ Item {
                 }
             }
 
+            onNewViewRequested: function(req) {
+                createTab(req.requestedUrl)
+            }
+
             Action {
                 shortcut: "Left"
                 enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
