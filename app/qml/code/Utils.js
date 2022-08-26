@@ -1,3 +1,8 @@
+/**
+ * SPDX-FileCopyrightText: 2022 Aditya Mehra
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
 function updateTabName(){
     tabsListView.currentItem.tabName = "123"
 }

@@ -38,3 +38,5 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
 add_subdirectory(app)
 add_subdirectory(icons)
 add_definitions(-w)
+
+install(FILES org.kde.invent.aura_browser.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

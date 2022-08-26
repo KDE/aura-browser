@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.kde.invent.aura_browser</id>
+
+  <name>Aura Browser</name>
+  <summary>Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later and LGPL-2.0-or-later and MPL-2.0</project_license>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>gamepad</control>
+  </supports>
+
+  <description>
+    <p>
+      Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control
+    </p>
+  </description>
+  <project_group>KDE</project_group>
+
+  <launchable type="desktop-id">org.aura.browser.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://imgur.com/a/gc49158</image>
+    </screenshot>
+  </screenshots>
+</component>

@@ -1,3 +1,9 @@
+/**
+ * SPDX-FileCopyrightText: 2022 Aditya Mehra
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+
 var prebookmarklist = [{ "url": "https://www.nytimes.com", "name": "NY Times", "color": "black", "category": "News" },
                        { "url": "https://www.bbc.com", "name": "BBC News", "color": "firebrick", "category": "News" },
                        { "url": "https://www.bloomberg.com", "name": "Bloomberg", "color": "dodgerblue", "category": "News" },

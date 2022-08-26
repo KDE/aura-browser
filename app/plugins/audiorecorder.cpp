@@ -1,3 +1,8 @@
+/*
+    SPDX-FileCopyrightText: 2022 Aditya Mehra <aix.m@outlook.com>
+    SPDX-License-Identifier: LGPL-2.0-or-later
+*/
+
 #include "audiorecorder.h"
 #include <QDebug>
 

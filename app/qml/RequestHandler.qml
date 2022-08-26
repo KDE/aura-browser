@@ -1,3 +1,9 @@
+/*
+    SPDX-FileCopyrightText: 2022 Aditya Mehra <aix.m@outlook.com>
+
+    SPDX-License-Identifier: GPL-2.0-or-later
+*/
+
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtWebEngine 1.7
