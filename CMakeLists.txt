@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.16.0)
 
 project(aura-browser)
+set(PROJECT_VERSION "5.25.80")
+set(PROJECT_VERSION_MAJOR 5)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(QT_MIN_VERSION "5.10.0")
+set(QT_MIN_VERSION "5.15.2")
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(AUTORCC_OPTIONS "/app/qml.qrc")
