@@ -4,19 +4,16 @@ project(aura-browser)
 set(PROJECT_VERSION "5.25.80")
 set(PROJECT_VERSION_MAJOR 5)
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(QT_MIN_VERSION "5.15.2")
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(AUTORCC_OPTIONS "/app/qml.qrc")
+set(KF5_MIN_VERSION "5.97.0")
+set(KDE_COMPILERSETTINGS_LEVEL "5.84.0")
 
-find_package(ECM REQUIRED NO_MODULE)
-set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} "${CMAKE_SOURCE_DIR}/cmake")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDECompilerSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(FeatureSummary)
 
@@ -37,6 +34,5 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
 
 add_subdirectory(app)
 add_subdirectory(icons)
-add_definitions(-w)
 
 install(FILES org.kde.invent.aura_browser.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})

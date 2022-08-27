@@ -1,4 +1,3 @@
-qt5_add_resources(aura_browser_SRCS qml.qrc)
 add_executable(AuraBrowser ${aura_browser_SRCS}
     main.cpp
     plugins/virtualMouse.cpp
@@ -14,6 +13,7 @@ add_executable(AuraBrowser ${aura_browser_SRCS}
     third-party/bloom-filter-cpp/BloomFilter.cpp
     third-party/hashset-cpp/hash_set.cc
     third-party/hashset-cpp/hashFn.cc
+    qml.qrc
 )
 
 target_link_libraries(AuraBrowser 
@@ -28,10 +28,10 @@ target_link_libraries(AuraBrowser
     KF5::Kirigami2
 )
 
-install(TARGETS AuraBrowser ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS AuraBrowser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 set(DesktopNoDisplay "false")
 set(DesktopMimeType "application/vnd.debian.binary-package;application/x-rpm;")
 set(DesktopExec "AuraBrowser %F")
 configure_file(org.aura.browser.desktop.cmake ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop)
-install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop DESTINATION ${KDE_INSTALL_APPDIR})
