@@ -11,6 +11,7 @@
   <name xml:lang="nl">Aura-bladerprogramma</name>
   <name xml:lang="pt">Navegador Aura</name>
   <name xml:lang="sk">Prehliadač Aura</name>
+  <name xml:lang="sl">Brskalnik Aura</name>
   <name xml:lang="tr">Aura Tarayıcı</name>
   <name xml:lang="uk">Браузер Aura</name>
   <name xml:lang="x-test">xxAura Browserxx</name>
@@ -23,6 +24,7 @@
   <summary xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</summary>
   <summary xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</summary>
   <summary xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</summary>
+  <summary xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</summary>
   <summary xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</summary>
   <summary xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</summary>
   <summary xml:lang="x-test">xxBrowser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote controlxx</summary>
@@ -45,6 +47,7 @@
     <p xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</p>
     <p xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</p>
     <p xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</p>
+    <p xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</p>
     <p xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
     <p xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</p>
     <p xml:lang="x-test">xxBrowser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote controlxx</p>
