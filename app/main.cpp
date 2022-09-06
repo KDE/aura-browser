@@ -16,6 +16,10 @@
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 
+#include <KLocalizedContext>
+#include <KLocalizedString>
+
+
 // Add Adblock Implementation
 #include <QThread>
 #include <QFile>
@@ -97,6 +101,7 @@ int main(int argc, char *argv[])
     QtWebEngine::initialize();
     QGuiApplication app(argc, argv);
     app.setWindowIcon(QIcon(":/qml/images/logo-small.png"));
+    KLocalizedString::setApplicationDomain("aura-browser");
 
     if (parser.isSet(helpOption)) {
         parser.showHelp();
@@ -104,6 +109,7 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     // Adblock Implementation
     WebIntercept interceptor;

@@ -47,7 +47,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: helpTabHeading
                 level: 1
-                text: "Help"
+                text: i18n("Help")
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
                 Layout.alignment: Qt.AlignLeft
@@ -56,7 +56,7 @@ Controls.Popup {
 
             Controls.Label {
                 id: backbtnlabelHeading
-                text: "Press 'esc' or the [←] Back button to close"
+                text: i18n("Press 'esc' or the [←] Back button to close")
                 Layout.alignment: Qt.AlignRight
                 color: Kirigami.Theme.textColor
             }
@@ -81,7 +81,7 @@ Controls.Popup {
                 Layout.fillWidth: true
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 color: Kirigami.Theme.textColor
-                text: "Aura Browser adapts the traditional web browser UI for a fully immersed Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as possible for navigating the world wide web using just your remote control."
+                text: i18n("Aura Browser adapts the traditional web browser UI for a fully immersed Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as possible for navigating the world wide web using just your remote control.")
             }
 
             Kirigami.Separator {
@@ -103,7 +103,7 @@ Controls.Popup {
                     horizontalAlignment: Text.AlignHCenter
                     font.capitalization: Font.SmallCaps
                     color: Kirigami.Theme.textColor
-                    text: "Here are all the buttons required to help you get started with using aura browser"
+                    text: i18n("Here are all the buttons required to help you get started with using aura browser")
                 }
 
                 Image {

@@ -46,7 +46,7 @@ Item {
 
         Button {
             id: acceptButton
-            text: "Accept"
+            text: i18n("Accept")
             palette.buttonText: Kirigami.Theme.textColor
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
@@ -66,7 +66,7 @@ Item {
 
         Button {
             id: denyButton
-            text: "Deny"
+            text: i18n("Deny")
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
             palette.buttonText: Kirigami.Theme.textColor

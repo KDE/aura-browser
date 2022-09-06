@@ -134,7 +134,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: startPageTabsButton
-                text: "Tabs"
+                text: i18n("Tabs")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignLeft
@@ -168,7 +168,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: startPageHistoryButton
-                text: "History"
+                text: i18n("History")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignLeft
@@ -201,7 +201,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: startPageBookmarksButton
-                text: "Bookmarks"
+                text: i18n("Bookmarks")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignLeft
@@ -235,7 +235,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: startPageSettingsButton
-                text: "Settings"
+                text: i18n("Settings")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignRight
@@ -268,7 +268,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: startPageHelpButton
-                text: "Help"
+                text: i18n("Help")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignRight
@@ -315,7 +315,7 @@ Kirigami.Page {
 
                 Kirigami.Heading {
                     id: browserHeading
-                    text: "Aura Browser - Start Page"
+                    text: i18n("Aura Browser - Start Page")
                     color: Kirigami.Theme.textColor
                     horizontalAlignment: Text.AlignRight
                     anchors.right: parent.right
@@ -359,7 +359,7 @@ Kirigami.Page {
 
                     Kirigami.Heading {
                         level: 2
-                        text: "Search or type url"
+                        text: i18n("Search or type url")
                         font.bold: true
                         color: Kirigami.Theme.textColor
                     }
@@ -398,7 +398,7 @@ Kirigami.Page {
         }
 
         Views.LabelView  {
-            title: "Recent Pages"
+            title: i18n("Recent Pages")
         }
 
         RowLayout {
@@ -408,7 +408,7 @@ Kirigami.Page {
 
             Controls.Button {
                 id: clearRecentBtn
-                text: "Clear"
+                text: i18n("Clear")
                 Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 3
                 Layout.alignment: Qt.AlignRight
@@ -450,7 +450,7 @@ Kirigami.Page {
         }
 
         Views.LabelView  {
-            title: "Bookmarks"
+            title: i18n("Bookmarks")
         }
 
         FocusScope {
@@ -513,7 +513,7 @@ Kirigami.Page {
                 Kirigami.Heading {
                     id: urlSearchFieldLabel
                     level: 1
-                    text: "Enter URL / Search Term"
+                    text: i18n("Enter URL / Search Term")
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
                     Layout.alignment: Qt.AlignLeft
@@ -522,7 +522,7 @@ Kirigami.Page {
 
                 Controls.Label {
                     id: urlSearchFieldBackBtnLabel
-                    text: "Press 'esc' or the [←] Back button to close"
+                    text: i18n("Press 'esc' or the [←] Back button to close")
                     Layout.alignment: Qt.AlignRight
                     color: Kirigami.Theme.textColor
                 }
@@ -542,7 +542,7 @@ Kirigami.Page {
                 width: parent.width
                 height: Kirigami.Units.gridUnit * 5
                 inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                placeholderText: "Enter Search Term or URL"
+                placeholderText: i18n("Enter Search Term or URL")
                 color: Kirigami.Theme.textColor
                 focus: true
                 background: Rectangle {
@@ -552,16 +552,11 @@ Kirigami.Page {
                 }
 
                 onAccepted: {
-                    //urlEntryDrawer.close()
-                    //root.showStack = 1
-                    console.log("Accepted Here")
                     Aura.NavigationSoundEffects.playClickedSound();
                     var setUrl = checkURL(urlEntrie.text)
                     if(setUrl){
-                        //root.showUrl = urlEntrie.text
                         createTab(urlEntrie.text)
                     } else {
-                        //root.showUrl = "https://www.google.com/search?q=" + urlEntrie.text
                         var searchTypeUrl
                         if(Aura.GlobalSettings.defaultSearchEngine == "Google"){
                             searchTypeUrl = "https://www.google.com/search?q=" + urlEntrie.text

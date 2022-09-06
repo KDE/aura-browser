@@ -26,6 +26,7 @@ target_link_libraries(AuraBrowser
     Qt5::Test
     Qt5::Multimedia
     KF5::Kirigami2
+    KF5::I18n
     ${CMAKE_THREAD_LIBS_INIT}
 )
 

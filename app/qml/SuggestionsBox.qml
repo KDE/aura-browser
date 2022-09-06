@@ -23,7 +23,6 @@ Rectangle {
 
     onActiveFocusChanged: {
         if(activeFocus){
-            console.log("Suggest Box Has Active Focus")
             autoCompListView.forceActiveFocus()
         }
     }
@@ -42,7 +41,7 @@ Rectangle {
     Kirigami.Heading {
         id: suggstheading
         level: 1
-        text: "Suggestions:"
+        text: i18n("Suggestions:")
         color: Kirigami.Theme.textColor
         width: parent.width
         anchors.top: parent.top

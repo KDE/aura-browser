@@ -37,7 +37,7 @@ Item {
             id: message
             Layout.fillWidth: true
             Layout.leftMargin: Kirigami.Units.largeSpacing
-            text: "Do you want to download " + downloadName + " file ?"
+            text: i18n("Do you want to download %1 file ?", downloadName)
             color: Kirigami.Theme.textColor
         }
 
@@ -57,7 +57,7 @@ Item {
 
             onClicked: {
                 download.resume();
-                message.text = "Downloading.." + downloadName
+                message.text = i18n("Downloading.. %1", downloadName)
                 isDownloading = true;
                 if(download.totalBytes != -1){
                     downloadProgressBar.indeterminate = false
@@ -80,7 +80,7 @@ Item {
 
         Button {
             id: cancleButton
-            text: "Cancle"
+            text: i18n("Cancel")
             Layout.alignment: Qt.AlignRight
             Layout.preferredWidth: Kirigami.Units.iconSizes.large
             visible: actionsVisible

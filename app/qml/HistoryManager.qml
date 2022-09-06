@@ -137,7 +137,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: historyMgrHeading
                 level: 1
-                text: "History"
+                text: i18n("History")
                 color: Kirigami.Theme.textColor
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
@@ -146,7 +146,7 @@ Controls.Popup {
 
             Controls.Label {
                 id: backbtnlabelHeading
-                text: "Press 'esc' or the [←] Back button to close"
+                text: i18n("Press 'esc' or the [←] Back button to close")
                 color: Kirigami.Theme.textColor
                 Layout.alignment: Qt.AlignRight
             }
@@ -181,7 +181,7 @@ Controls.Popup {
                     Controls.TextField {
                         id: historySearchFieldChild
                         anchors.fill: parent
-                        placeholderText: "Search History"
+                        placeholderText: i18n("Search History")
                         color: Kirigami.Theme.textColor
                         background: Rectangle {
                             Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -208,7 +208,7 @@ Controls.Popup {
 
                 Controls.Button {
                     id: clearHistoryButton
-                    text: "Clear History"
+                    text: i18n("Clear History")
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 8
                     KeyNavigation.left: historySearchField
                     KeyNavigation.down: historyManagerListView
@@ -251,7 +251,7 @@ Controls.Popup {
 
             Kirigami.Heading {
                 level: 3
-                text: "No Recent History"
+                text: i18n("No Recent History")
                 color: Kirigami.Theme.textColor
                 Layout.fillWidth: true
                 Layout.fillHeight: true

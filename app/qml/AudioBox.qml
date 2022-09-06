@@ -40,7 +40,7 @@ Popup {
 
         Kirigami.Heading {
             id: lbl1
-            text: "Listening"
+            text: i18n("Listening")
             Kirigami.Theme.colorSet: Kirigami.Theme.View
             level: 2
             font.bold: true
@@ -84,7 +84,7 @@ Popup {
             maximumLineCount: 2
             level: 3
             horizontalAlignment: Text.AlignHCenter
-            text: "Performing Search With Mycroft"
+            text: i18n("Performing Search With Mycroft")
         }
 
         Item {
@@ -138,7 +138,7 @@ Popup {
 
             Kirigami.Heading {
                 level: 2
-                text: "Close"
+                text: i18n("Close")
                 anchors.centerIn: parent
                 anchors.margins: Kirigami.Units.largeSpacing
             }

@@ -167,7 +167,7 @@ Controls.Popup {
                 Kirigami.Heading {
                     id: bookmarkMgrHeading
                     level: 1
-                    text: "Bookmarks Manager"
+                    text: i18n("Bookmarks Manager")
                     color: Kirigami.Theme.textColor
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
@@ -176,7 +176,7 @@ Controls.Popup {
 
                 Controls.Label {
                     id: backbtnlabelHeading
-                    text: "Press 'esc' or the [←] Back button to close"
+                    text: i18n("Press 'esc' or the [←] Back button to close")
                     color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
@@ -210,7 +210,7 @@ Controls.Popup {
                         Controls.TextField {
                             id: bookmarkSearchFieldChild
                             anchors.fill: parent
-                            placeholderText: "Search Bookmarks"
+                            placeholderText: i18n("Search Bookmarks")
                             color: Kirigami.Theme.textColor
                             background: Rectangle {
                                 Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -239,7 +239,7 @@ Controls.Popup {
                         id: removeModeBox
                         checkable: true
                         checked: false
-                        text: "Remove Mode"
+                        text: i18n("Remove Mode")
                         KeyNavigation.right: addModeBox
                         KeyNavigation.left: bookmarkSearchField
                         KeyNavigation.down: bookmarksManagerListView
@@ -257,7 +257,7 @@ Controls.Popup {
 
                     Controls.Button {
                         id: addModeBox
-                        text: "Add"
+                        text: i18n("Add")
                         palette.buttonText: Kirigami.Theme.textColor
                         Layout.preferredWidth: Kirigami.Units.gridUnit * 6
                         KeyNavigation.left: removeModeBox
@@ -318,7 +318,7 @@ Controls.Popup {
                 Kirigami.Heading {
                     id: bookmarkAddHeading
                     level: 1
-                    text: "Add Bookmark"
+                    text: i18n("Add Bookmark")
                     color: Kirigami.Theme.textColor
                     width: parent.width
                     horizontalAlignment: Qt.AlignLeft
@@ -327,7 +327,7 @@ Controls.Popup {
 
                 Controls.Label {
                     id: backbtnlabel
-                    text: "Press 'esc' or the [←] Back button to close"
+                    text: i18n("Press 'esc' or the [←] Back button to close")
                     color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
@@ -349,7 +349,7 @@ Controls.Popup {
 
                 Kirigami.Heading {
                     level: 3
-                    text: "Name: "
+                    text: i18n("Name: ")
                     color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
@@ -401,7 +401,7 @@ Controls.Popup {
 
                 Kirigami.Heading {
                     level: 3
-                    text: "Url: "
+                    text: i18n("Url: ")
                     color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
@@ -453,7 +453,7 @@ Controls.Popup {
                 height: Kirigami.Units.gridUnit * 4
                 Kirigami.Heading {
                     level: 3
-                    text: "Category: "
+                    text: i18n("Category: ")
                     color: Kirigami.Theme.textColor
                     Layout.preferredWidth: Kirigami.Units.gridUnit * 5
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
@@ -508,7 +508,7 @@ Controls.Popup {
 
                 Controls.Button {
                     id: backBookMarkBtn
-                    text: "Bookmarks"
+                    text: i18n("Bookmarks")
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     KeyNavigation.right: addBookMarkBtn
@@ -535,7 +535,7 @@ Controls.Popup {
 
                 Controls.Button {
                     id: addBookMarkBtn
-                    text: "Add"
+                    text: i18n("Add")
                     palette.buttonText: Kirigami.Theme.textColor
 
                     Layout.fillWidth: true

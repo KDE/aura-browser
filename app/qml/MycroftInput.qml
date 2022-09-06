@@ -13,7 +13,6 @@ Item {
     signal sendRequest
 
     onSendRequest: {
-        console.log("Sending request to mycroft")
         sendMsg();
     }
 

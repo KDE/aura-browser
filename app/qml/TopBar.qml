@@ -244,7 +244,7 @@ Rectangle {
                     font.bold: true
                     font.pixelSize: parent.height * 0.5
                     font.strikeout: !Aura.GlobalSettings.adblockEnabled
-                    text: "A"
+                    text: i18n("A")
                 }
             }
 

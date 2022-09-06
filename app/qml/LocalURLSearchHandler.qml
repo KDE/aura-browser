@@ -81,7 +81,7 @@ Popup {
             Kirigami.Heading {
                 id: localUrlSearchFieldLabel
                 level: 1
-                text: "Enter URL / Search Term"
+                text: i18n("Enter URL / Search Term")
                 color: Kirigami.Theme.textColor
                 width: parent.width
                 horizontalAlignment: Qt.AlignLeft
@@ -90,7 +90,7 @@ Popup {
 
             Label {
                 id: localUrlSearchFieldBackBtnLabel
-                text: "Press 'esc' or the [←] Back button to close"
+                text: i18n("Press 'esc' or the [←] Back button to close")
                 Layout.alignment: Qt.AlignRight
                 color: Kirigami.Theme.textColor
             }
@@ -109,7 +109,7 @@ Popup {
             anchors.top: localUrlSearchFieldheaderSept.bottom
             anchors.topMargin: Kirigami.Units.largeSpacing
             height: Kirigami.Units.gridUnit * 5
-            placeholderText: "Enter Search Term or URL"
+            placeholderText: i18n("Enter Search Term or URL")
             color: Kirigami.Theme.textColor
             inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
             background: Rectangle {
@@ -122,7 +122,6 @@ Popup {
                 var evaluateExist = webpageUrlEntryDrawer.autoAppend(completionItems, function(item) { return item.name === localurlEntrie.text }, localurlEntrie.text)
                 console.log(evaluateExist)
                 if(evaluateExist === null){
-                    console.log("Appending Item to AutoComp")
                     completionItems.append({"name": localurlEntrie.text, "randcolor": Utils.genRandomColor().toString()});
                 }
                 var setUrl = Utils.checkURL(localurlEntrie.text)

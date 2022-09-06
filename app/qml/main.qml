@@ -26,7 +26,7 @@ Kirigami.AbstractApplicationWindow {
     visible: true
     width:  Screen.desktopAvailableWidth
     height: Screen.desktopAvailableHeight
-    title: qsTr("Aura-Browser")
+    title: i18n("Aura-Browser")
     property alias showStack: auraStack.currentIndex
     property int virtualMouseMoveSpeed: 10
     signal settingsTabRequested
@@ -82,7 +82,7 @@ Kirigami.AbstractApplicationWindow {
 
         Controls.Label {
             id: bblabl
-            text: "Press 'esc' or the [←] Back button to close"
+            text: i18n("Press 'esc' or the [←] Back button to close")
             color: Kirigami.Theme.textColor
             Layout.alignment: Qt.AlignRight
         }
@@ -146,7 +146,7 @@ Kirigami.AbstractApplicationWindow {
                 Controls.Label {
                     Layout.fillWidth: true
                     color: Kirigami.Theme.textColor
-                    text: "Close Menu"
+                    text: i18n("Close Menu")
                 }
             }
 
@@ -216,12 +216,12 @@ Kirigami.AbstractApplicationWindow {
                 anchors.right: parent.right
 
                 Views.LabelView  {
-                    title: "Current Tabs"
+                    title: i18n("Current Tabs")
                 }
 
                 Controls.Label {
                     id: backbtnlabelHeading
-                    text: "Press 'esc' or the [←] Back button to close"
+                    text: i18n("Press 'esc' or the [←] Back button to close")
                     color: Kirigami.Theme.textColor
                     Layout.alignment: Qt.AlignRight
                 }
@@ -262,7 +262,7 @@ Kirigami.AbstractApplicationWindow {
                     id: tabRemoveBtn
                     Layout.fillWidth: true
                     Layout.fillHeight: true
-                    text: "Remove Tab"
+                    text: i18n("Remove Tab")
                     palette.buttonText: Kirigami.Theme.textColor
                     KeyNavigation.up: tabsListView
 

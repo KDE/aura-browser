@@ -57,7 +57,6 @@ Controls.Popup {
     Connections {
         target: Aura.GlobalSettings
         onVirtualMouseSpeedChanged: {
-            console.log("Mouse Speed: " + virtualMouseSpeed);
             Cursor.setStep(virtualMouseSpeed);
         }
     }
@@ -83,7 +82,7 @@ Controls.Popup {
 
             Controls.Label {
                 id: backbtnlabelHeading
-                text: "Press 'esc' or the [←] Back button to close"
+                text: i18n("Press 'esc' or the [←] Back button to close")
                 color: Kirigami.Theme.textColor
                 Layout.alignment: Qt.AlignRight
             }
@@ -103,7 +102,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: virtualMouseSpeedSettingLabel
                 level: 2
-                text: "Virtual Cursor Speed Control"
+                text: i18n("Virtual Cursor Speed Control")
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: virtualMouseMoveSpeedSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
@@ -143,7 +142,6 @@ Controls.Popup {
                 }
 
                 onValueChanged: {
-                    console.log(virtualMouseMoveSpeedSlider.value)
                     Aura.GlobalSettings.setVirtualMouseSpeed(value);
                 }
 
@@ -155,7 +153,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: currentVirtualMouseSpeedLabel
                 level: 3
-                text: "Current Speed: " + virtualMouseMoveSpeedSlider.value
+                text: i18n("Current Speed: %1", virtualMouseMoveSpeedSlider.value)
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: Kirigami.Theme.textColor
             }
@@ -173,7 +171,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: virtualScrollSpeedSettingLabel
                 level: 2
-                text: "Virtual Scroll Speed Control"
+                text: i18n("Virtual Scroll Speed Control")
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: virtualScrollMoveSpeedSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
@@ -214,7 +212,6 @@ Controls.Popup {
                 }
 
                 onValueChanged: {
-                    console.log(virtualScrollMoveSpeedSlider.value)
                     Aura.GlobalSettings.setVirtualScrollSpeed(value);
                 }
 
@@ -226,7 +223,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: currentVirtualScrollSpeedLabel
                 level: 3
-                text: "Current Speed: " + virtualScrollMoveSpeedSlider.value
+                text: i18n("Current Speed: %1", virtualScrollMoveSpeedSlider.value)
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: Kirigami.Theme.textColor
             }
@@ -244,7 +241,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: virtualCursorSizeSettingLabel
                 level: 2
-                text: "Virtual Cursor Size Control"
+                text: i18n("Virtual Cursor Size Control")
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: virtualCursorSizeSlider.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
@@ -285,7 +282,6 @@ Controls.Popup {
                 }
 
                 onValueChanged: {
-                    console.log(virtualCursorSizeSlider.value)
                     Aura.GlobalSettings.setVirtualMouseSize(value);
                 }
 
@@ -297,7 +293,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: currentVirtualCursorSizeLabel
                 level: 3
-                text: "Current Size: " + Aura.GlobalSettings.virtualMouseSize == 1 ? "Large" : (Aura.GlobalSettings.virtualMouseSize == 0.9 ? "Medium" : (Aura.GlobalSettings.virtualMouseSize == 0.8 ? "Small": "Large")) 
+                text: i18n("Current Size: ") + Aura.GlobalSettings.virtualMouseSize == 1 ? i18n("Large") : (Aura.GlobalSettings.virtualMouseSize == 0.9 ? i18n("Medium") : (Aura.GlobalSettings.virtualMouseSize == 0.8 ? i18n("Small"): i18n("Large"))) 
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: Kirigami.Theme.textColor
             }
@@ -315,7 +311,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: defSearchSettingLabel
                 level: 2
-                text: "Search Engine"
+                text: i18n("Search Engine")
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: defSearchBtn1.activeFocus || defSearchBtn2.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
@@ -334,7 +330,7 @@ Controls.Popup {
                     Layout.fillWidth: true
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     Layout.alignment: Qt.AlignLeft
-                    text: "Google"
+                    text: i18n("Google")
                     KeyNavigation.up: virtualCursorSizeSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.right: defSearchBtn2
@@ -361,7 +357,7 @@ Controls.Popup {
                     Layout.fillWidth: true
                     Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                     Layout.alignment: Qt.AlignLeft
-                    text: "Duck Duck Go"
+                    text: i18n("Duck Duck Go")
                     KeyNavigation.up: virtualCursorSizeSlider
                     KeyNavigation.down: soundEffectsButton
                     KeyNavigation.left: defSearchBtn1
@@ -392,7 +388,7 @@ Controls.Popup {
             Kirigami.Heading {
                 id: miscSettingLabel
                 level: 2
-                text: "General"
+                text: i18n("General")
                 Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 color: soundEffectsButton.activeFocus || clearCacheButton.activeFocus ? Kirigami.Theme.linkColor : Kirigami.Theme.textColor
             }
@@ -407,7 +403,7 @@ Controls.Popup {
                 Layout.fillWidth: true
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                 Layout.alignment: Qt.AlignLeft
-                text: "Disable Button Sounds"
+                text: i18n("Disable Button Sounds")
                 KeyNavigation.up: defSearchBtn1
                 KeyNavigation.down: clearCacheButton
                 palette.buttonText: Kirigami.Theme.textColor
@@ -422,10 +418,10 @@ Controls.Popup {
                     Aura.NavigationSoundEffects.playClickedSound();
                     if(Aura.GlobalSettings.soundEffects){
                         Aura.GlobalSettings.setSoundEffects(false);
-                        text = "Enable Button Sounds"
+                        text = i18n("Enable Button Sounds")
                     } else {
                         Aura.GlobalSettings.setSoundEffects(true);
-                        text = "Disable Button Sounds"
+                        text = i18n("Disable Button Sounds")
                     }
                 }
 
@@ -443,7 +439,7 @@ Controls.Popup {
                 Layout.fillWidth: true
                 Layout.preferredHeight: Kirigami.Units.gridUnit * 2
                 Layout.alignment: Qt.AlignLeft
-                text: "Clear Cache"
+                text: i18n("Clear Cache")
                 KeyNavigation.up: soundEffectsButton
                 palette.buttonText: Kirigami.Theme.textColor
 

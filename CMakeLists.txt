@@ -30,6 +30,7 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED 
     Kirigami2
+    I18n
 )
 
 find_package(Threads)

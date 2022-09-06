@@ -133,12 +133,12 @@ Item {
                     if (download.state === WebEngineDownloadItem.DownloadCompleted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
-                        interactionBar.interactionItem.messageText = "Download finished"
+                        interactionBar.interactionItem.messageText = i18n("Download finished")
                     }
                     else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
-                        interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                        interactionBar.interactionItem.messageText = i18n("Download failed: %1", download.interruptReason)
                     }
                     else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
                         interactionBar.interactionItem.isDownloading = false
@@ -165,12 +165,12 @@ Item {
                     if (download.state === WebEngineDownloadItem.DownloadCompleted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
-                        interactionBar.interactionItem.messageText = "Download finished"
+                        interactionBar.interactionItem.messageText = i18n("Download finished")
                     }
                     else if (download.state === WebEngineDownloadItem.DownloadInterrupted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
-                        interactionBar.interactionItem.messageText = "Download failed: " + download.interruptReason
+                        interactionBar.interactionItem.messageText = i18n("Download failed: %1", download.interruptReason)
                     }
                     else if (download.state === WebEngineDownloadItem.DownloadCancelled) {
                         interactionBar.interactionItem.isDownloading = false

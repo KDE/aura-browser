@@ -25,7 +25,7 @@ Kirigami.AbstractApplicationWindow {
     visible: true
     width:  Screen.desktopAvailableWidth
     height: Screen.desktopAvailableHeight
-    title: qsTr("Aura-Browser")
+    title: i18n("Aura-Browser")
     property int virtualMouseMoveSpeed: 10
     signal settingsTabRequested
     signal blurFieldRequested
@@ -44,7 +44,7 @@ Kirigami.AbstractApplicationWindow {
 
         Controls.Label {
             id: bblabl
-            text: "Press 'esc' or the [←] Back button to close"
+            text: i18n("Press 'esc' or the [←] Back button to close")
             Layout.alignment: Qt.AlignRight
         }
 
@@ -72,7 +72,7 @@ Kirigami.AbstractApplicationWindow {
 
                 Controls.Label {
                     Layout.fillWidth: true
-                    text: "Quit"
+                    text: i18n("Quit")
                 }
             }
 

@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-$XGETTEXT *.cpp plugins/*.cpp plugins/*.h -o $podir/aura-browser.pot
+$XGETTEXT  $(find . -name \*.cpp -o -name \*.h -o -name \*.qml) -o $podir/aura-browser.pot
