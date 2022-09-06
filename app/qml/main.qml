@@ -36,6 +36,10 @@ Kirigami.AbstractApplicationWindow {
     signal ignoreInputRequested
     visibility: "FullScreen"
 
+    onClosing: {
+        auraStack.destroy()
+    }
+
     function switchToTab(index){
         auraStack.currentIndex = index
     }
