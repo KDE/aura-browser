@@ -26,6 +26,7 @@ target_link_libraries(AuraBrowser
     Qt5::Test
     Qt5::Multimedia
     KF5::Kirigami2
+    ${CMAKE_THREAD_LIBS_INIT}
 )
 
 install(TARGETS AuraBrowser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

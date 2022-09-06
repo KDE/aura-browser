@@ -32,6 +32,8 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
     Kirigami2
 )
 
+find_package(Threads)
+
 add_subdirectory(app)
 add_subdirectory(icons)
 
