@@ -1,4 +1,4 @@
-add_executable(AuraBrowser ${aura_browser_SRCS}
+add_executable(aura-browser ${aura_browser_SRCS}
     main.cpp
     plugins/virtualMouse.cpp
     plugins/virtualKeypress.cpp
@@ -16,7 +16,7 @@ add_executable(AuraBrowser ${aura_browser_SRCS}
     qml.qrc
 )
 
-target_link_libraries(AuraBrowser 
+target_link_libraries(aura-browser
     Qt5::Quick
     Qt5::Widgets
     Qt5::Core 
@@ -30,10 +30,10 @@ target_link_libraries(AuraBrowser
     ${CMAKE_THREAD_LIBS_INIT}
 )
 
-install(TARGETS AuraBrowser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS aura-browser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 set(DesktopNoDisplay "false")
-set(DesktopMimeType "application/vnd.debian.binary-package;application/x-rpm;")
-set(DesktopExec "AuraBrowser %F")
+set(DesktopMimeType "text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;")
+set(DesktopExec "aura-browser %F")
 configure_file(org.aura.browser.desktop.cmake ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop DESTINATION ${KDE_INSTALL_APPDIR})
