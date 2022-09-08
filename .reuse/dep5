@@ -1,0 +1,59 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aura Browser
+Upstream-Contact: Aditya Mehra <aix.m@outlook.com>
+Source: https://invent.kde.org/plasma-bigscreen/aura-browser
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
+
+Files: app/third-party/*
+Copyright: 2015 Brian R. Bondy
+License: MPL-2.0
+
+Files: icons/*
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: app/qml/sounds/*
+Copyright: 2021 Noah Davis
+License: CC0-1.0
+
+Files: app/qml/images/*
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: app/qml/delegates/background.svg
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: CMakeLists.txt
+Copyright: 2022 Aditya Mehra
+License: BSD-2-Clause
+
+Files: app/CMakeLists.txt
+Copyright: 2022 Aditya Mehra
+License: BSD-2-Clause
+
+Files: app/org.aura.browser.desktop.cmake
+Copyright: 2022 Aditya Mehra
+License: BSD-2-Clause
+
+Files: app/qml.qrc
+Copyright: 2022 Aditya Mehra
+License: GPL-2.0-or-later
+
+Files: README.md
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: app/Messages.sh
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: org.kde.invent.aura_browser.metainfo.xml
+Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
