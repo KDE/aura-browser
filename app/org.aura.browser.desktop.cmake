@@ -4,6 +4,7 @@ Name[ar]=متصفح أورا
 Name[ca]=Navegador Aura
 Name[ca@valencia]=Navegador Aura
 Name[en_GB]=Aura Browser
+Name[eu]=Aura Arakatzailea
 Name[fr]=Navigateur Aura
 Name[nl]=Aura-browser
 Name[pt]=Navegador Aura
