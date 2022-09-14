@@ -59,6 +59,7 @@
   <launchable type="desktop-id">org.aura.browser.desktop</launchable>
   <screenshots>
     <screenshot type="default">
+      <caption>Aura Browser</caption>
       <image>https://cdn.kde.org/screenshots/aura-browser/aura-browser.png</image>
     </screenshot>
   </screenshots>
