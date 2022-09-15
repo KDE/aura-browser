@@ -60,6 +60,20 @@
   <screenshots>
     <screenshot type="default">
       <caption>Aura Browser</caption>
+      <caption xml:lang="ca">Navegador Aura</caption>
+      <caption xml:lang="ca-valencia">Navegador Aura</caption>
+      <caption xml:lang="en-GB">Aura Browser</caption>
+      <caption xml:lang="es">Navegador Aura</caption>
+      <caption xml:lang="eu">Aura arakatzailea</caption>
+      <caption xml:lang="fr">Navigateur Aura</caption>
+      <caption xml:lang="ka">Aura ბრაუზერი</caption>
+      <caption xml:lang="nl">Aura-bladerprogramma</caption>
+      <caption xml:lang="pt">Navegador Aura</caption>
+      <caption xml:lang="sk">Prehliadač Aura</caption>
+      <caption xml:lang="sl">Brskalnik Aura</caption>
+      <caption xml:lang="tr">Aura Tarayıcı</caption>
+      <caption xml:lang="uk">Браузер Aura</caption>
+      <caption xml:lang="x-test">xxAura Browserxx</caption>
       <image>https://cdn.kde.org/screenshots/aura-browser/aura-browser.png</image>
     </screenshot>
   </screenshots>
