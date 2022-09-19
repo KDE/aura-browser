@@ -11,6 +11,7 @@ Name[ka]=Aura ბრაუზერი
 Name[nl]=Aura-browser
 Name[pt]=Navegador Aura
 Name[sl]=Brskalnik Aura
+Name[sv]=Aura webbläsare
 Name[tr]=Aura Tarayıcı
 Name[uk]=Браузер Aura
 Name[x-test]=xxAura Browserxx
