@@ -7,6 +7,7 @@ Name[en_GB]=Aura Browser
 Name[es]=Navegador Aura
 Name[eu]=Aura Arakatzailea
 Name[fr]=Navigateur Aura
+Name[it]=Aura Browser
 Name[ka]=Aura ბრაუზერი
 Name[nl]=Aura-browser
 Name[pt]=Navegador Aura
