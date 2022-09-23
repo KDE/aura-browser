@@ -133,6 +133,14 @@ int main(int argc, char *argv[])
 
     QString sandboxURL = parser.value(urlOption);
     bool sandboxMode = parser.isSet(sandboxOption);
+    
+    if (arguments.count() > 1) {
+        QUrl url = QUrl::fromUserInput(arguments.at(1));
+        if (url.isValid()) {
+            sandboxURL = url.toString();
+            sandboxMode = true;
+        }
+    }
 
     engine.rootContext()->setContextProperty(QStringLiteral("sandboxURL"), sandboxURL);
     engine.rootContext()->setContextProperty(QStringLiteral("sandboxMode"), sandboxMode);

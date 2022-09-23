@@ -34,6 +34,6 @@ install(TARGETS aura-browser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 set(DesktopNoDisplay "false")
 set(DesktopMimeType "text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;")
-set(DesktopExec "aura-browser %F")
+set(DesktopExec "aura-browser %u")
 configure_file(org.aura.browser.desktop.cmake ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.aura.browser.desktop DESTINATION ${KDE_INSTALL_APPDIR})
