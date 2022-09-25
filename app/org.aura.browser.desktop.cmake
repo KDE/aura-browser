@@ -13,6 +13,7 @@ Name[nl]=Aura-browser
 Name[pl]=Przeglądarka Aura
 Name[pt]=Navegador Aura
 Name[sl]=Brskalnik Aura
+Name[sv]=Aura webbläsare
 Name[tr]=Aura Tarayıcı
 Name[uk]=Браузер Aura
 Name[x-test]=xxAura Browserxx
