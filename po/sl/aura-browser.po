@@ -1,0 +1,319 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the aura-browser package.
+#
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: aura-browser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:50+0000\n"
+"PO-Revision-Date: 2022-09-08 07:11+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Lokalize 22.04.1\n"
+
+#: qml/AudioBox.qml:43
+#, kde-format
+msgid "Listening"
+msgstr "Poslušanje"
+
+#: qml/AudioBox.qml:87
+#, kde-format
+msgid "Performing Search With Mycroft"
+msgstr "Izvajanje iskanja z Mycroft"
+
+#: qml/AudioBox.qml:141
+#, kde-format
+msgid "Close"
+msgstr "Zapri"
+
+#: qml/BookmarkManager.qml:170
+#, kde-format
+msgid "Bookmarks Manager"
+msgstr "Upravljalnik zaznamkov"
+
+#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
+#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
+#: qml/StartPage.qml:525
+#, kde-format
+msgid "Press 'esc' or the [←] Back button to close"
+msgstr "Pritisnite 'esc' ali gumb [←] nazaj za zapiranje"
+
+#: qml/BookmarkManager.qml:213
+#, kde-format
+msgid "Search Bookmarks"
+msgstr "Išči zaznamke"
+
+#: qml/BookmarkManager.qml:242
+#, kde-format
+msgid "Remove Mode"
+msgstr "Odstrani način"
+
+#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#, kde-format
+msgid "Add"
+msgstr "Dodaj"
+
+#: qml/BookmarkManager.qml:321
+#, kde-format
+msgid "Add Bookmark"
+msgstr "Dodaj zaznamek"
+
+#: qml/BookmarkManager.qml:352
+#, kde-format
+msgid "Name: "
+msgstr "Ime: "
+
+#: qml/BookmarkManager.qml:404
+#, kde-format
+msgid "Url: "
+msgstr "Url: "
+
+#: qml/BookmarkManager.qml:456
+#, kde-format
+msgid "Category: "
+msgstr "Kategorija: "
+
+#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#, kde-format
+msgid "Bookmarks"
+msgstr "Zaznamki"
+
+#: qml/DownloadRequest.qml:40
+#, kde-format
+msgid "Do you want to download %1 file ?"
+msgstr "Ali želite prenesti %1 datoteko ?"
+
+#: qml/DownloadRequest.qml:60
+#, kde-format
+msgid "Downloading.. %1"
+msgstr "Prenašanje.. %1"
+
+#: qml/DownloadRequest.qml:83
+#, kde-format
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: qml/FeatureRequest.qml:49
+#, kde-format
+msgid "Accept"
+msgstr "Sprejmi"
+
+#: qml/FeatureRequest.qml:69
+#, kde-format
+msgid "Deny"
+msgstr "Zanikaj"
+
+#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#, kde-format
+msgid "Help"
+msgstr "Pomoč"
+
+#: qml/HelpTab.qml:84
+#, kde-format
+msgid ""
+"Aura Browser adapts the traditional web browser UI for a fully immersed "
+"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
+"possible for navigating the world wide web using just your remote control."
+msgstr ""
+"Brskalnik Aura prilagodi tradicionalni uporabniški vmesnik spletnega "
+"brskalnika za izkušnjo popolnoma potopljeno v velikem zaslonu. Uporabnik "
+"brskalnika Aura je ohranjen kot subtilen in intuitiven kot je le možno za "
+"krmarjenje po svetovnem spletu samo z daljinskim upravljalnikom."
+
+#: qml/HelpTab.qml:106
+#, kde-format
+msgid ""
+"Here are all the buttons required to help you get started with using aura "
+"browser"
+msgstr ""
+"Tukaj so vsi zahtevani gumbi, ki vam pomagajo uporabljati brskalnik Aura"
+
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#, kde-format
+msgid "History"
+msgstr "Zgodovina"
+
+#: qml/HistoryManager.qml:184
+#, kde-format
+msgid "Search History"
+msgstr "Poišči zgodovino"
+
+#: qml/HistoryManager.qml:211
+#, kde-format
+msgid "Clear History"
+msgstr "Počisti zgodovino"
+
+#: qml/HistoryManager.qml:254
+#, kde-format
+msgid "No Recent History"
+msgstr "Ni nedavne zgodovine"
+
+#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#, kde-format
+msgid "Enter URL / Search Term"
+msgstr "Vnesite URL / termin iskanja"
+
+#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#, kde-format
+msgid "Enter Search Term or URL"
+msgstr "Vnesite termin iskanja ali URL"
+
+#: qml/main.qml:29 qml/mainSandbox.qml:28
+#, kde-format
+msgid "Aura-Browser"
+msgstr "Brskalnik Aura"
+
+#: qml/main.qml:153
+#, kde-format
+msgid "Close Menu"
+msgstr "Zapri meni"
+
+#: qml/main.qml:223
+#, kde-format
+msgid "Current Tabs"
+msgstr "Trenutni zavihki"
+
+#: qml/main.qml:269
+#, kde-format
+msgid "Remove Tab"
+msgstr "Odstrani zavihek"
+
+#: qml/mainSandbox.qml:75
+#, kde-format
+msgid "Quit"
+msgstr "Zapusti"
+
+#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
+#: qml/WebLoader.qml:168
+#, kde-format
+msgid "Download finished"
+msgstr "Prenos končan"
+
+#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
+#: qml/WebLoader.qml:173
+#, kde-format
+msgid "Download failed: %1"
+msgstr "Prenos ni uspel: %1"
+
+#: qml/SettingsTab.qml:105
+#, kde-format
+msgid "Virtual Cursor Speed Control"
+msgstr "Kontrola hitrosti navidezne kazalke"
+
+#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#, kde-format
+msgid "Current Speed: %1"
+msgstr "Trenutna hitrost: %1"
+
+#: qml/SettingsTab.qml:174
+#, kde-format
+msgid "Virtual Scroll Speed Control"
+msgstr "Kontrola hitrosti navideznega drsenja"
+
+#: qml/SettingsTab.qml:244
+#, kde-format
+msgid "Virtual Cursor Size Control"
+msgstr "Kontrola velikosti navidezne kazalke"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Current Size: "
+msgstr "Trenutna velikost: "
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Large"
+msgstr "Velika"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Medium"
+msgstr "Srednja"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Small"
+msgstr "Majhna"
+
+#: qml/SettingsTab.qml:314
+#, kde-format
+msgid "Search Engine"
+msgstr "Iskalnik"
+
+#: qml/SettingsTab.qml:333
+#, kde-format
+msgid "Google"
+msgstr "Google"
+
+#: qml/SettingsTab.qml:360
+#, kde-format
+msgid "Duck Duck Go"
+msgstr "Duck Duck Go"
+
+#: qml/SettingsTab.qml:391
+#, kde-format
+msgid "General"
+msgstr "Splošno"
+
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#, kde-format
+msgid "Disable Button Sounds"
+msgstr "Onemogoči zvoke gumbov"
+
+#: qml/SettingsTab.qml:421
+#, kde-format
+msgid "Enable Button Sounds"
+msgstr "Omogoči zvoke gumbov"
+
+#: qml/SettingsTab.qml:442
+#, kde-format
+msgid "Clear Cache"
+msgstr "Počisti medpomnilnik"
+
+#: qml/StartPage.qml:137
+#, kde-format
+msgid "Tabs"
+msgstr "Zavihki"
+
+#: qml/StartPage.qml:238
+#, kde-format
+msgid "Settings"
+msgstr "Nastavitve"
+
+#: qml/StartPage.qml:318
+#, kde-format
+msgid "Aura Browser - Start Page"
+msgstr "Brskalnik Aura - začetna stran"
+
+#: qml/StartPage.qml:362
+#, kde-format
+msgid "Search or type url"
+msgstr "Išči ali vnesi url"
+
+#: qml/StartPage.qml:401
+#, kde-format
+msgid "Recent Pages"
+msgstr "Nedavne strani"
+
+#: qml/StartPage.qml:411
+#, kde-format
+msgid "Clear"
+msgstr "Očisti"
+
+#: qml/SuggestionsBox.qml:44
+#, kde-format
+msgid "Suggestions:"
+msgstr "Namigi:"
+
+#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#, kde-format
+msgid "A"
+msgstr "A"

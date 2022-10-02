@@ -1,0 +1,319 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the aura-browser package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: aura-browser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:50+0000\n"
+"PO-Revision-Date: 2022-09-23 10:25+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 22.04.1\n"
+
+#: qml/AudioBox.qml:43
+#, kde-format
+msgid "Listening"
+msgstr "Słuchanie"
+
+#: qml/AudioBox.qml:87
+#, kde-format
+msgid "Performing Search With Mycroft"
+msgstr "Wykonywanie wyszukiwania przy użyciu Mycroft"
+
+#: qml/AudioBox.qml:141
+#, kde-format
+msgid "Close"
+msgstr "Zamknij"
+
+#: qml/BookmarkManager.qml:170
+#, kde-format
+msgid "Bookmarks Manager"
+msgstr "Zarządzanie zakładkami"
+
+#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
+#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
+#: qml/StartPage.qml:525
+#, kde-format
+msgid "Press 'esc' or the [←] Back button to close"
+msgstr "Naciśnij 'esc' lub przycisk [←], aby zamknąć"
+
+#: qml/BookmarkManager.qml:213
+#, kde-format
+msgid "Search Bookmarks"
+msgstr "Zakładki wyszukiwania"
+
+#: qml/BookmarkManager.qml:242
+#, kde-format
+msgid "Remove Mode"
+msgstr "Tryb usuwania"
+
+#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#, kde-format
+msgid "Add"
+msgstr "Dodaj"
+
+#: qml/BookmarkManager.qml:321
+#, kde-format
+msgid "Add Bookmark"
+msgstr "Dodaj zakładkę"
+
+#: qml/BookmarkManager.qml:352
+#, kde-format
+msgid "Name: "
+msgstr "Nazwa: "
+
+#: qml/BookmarkManager.qml:404
+#, kde-format
+msgid "Url: "
+msgstr "Adres URL: "
+
+#: qml/BookmarkManager.qml:456
+#, kde-format
+msgid "Category: "
+msgstr "Kategoria: "
+
+#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#, kde-format
+msgid "Bookmarks"
+msgstr "Zakładki"
+
+#: qml/DownloadRequest.qml:40
+#, kde-format
+msgid "Do you want to download %1 file ?"
+msgstr "Czy chcesz pobrać plik %1 ?"
+
+#: qml/DownloadRequest.qml:60
+#, kde-format
+msgid "Downloading.. %1"
+msgstr "Pobieranie.. %1"
+
+#: qml/DownloadRequest.qml:83
+#, kde-format
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: qml/FeatureRequest.qml:49
+#, kde-format
+msgid "Accept"
+msgstr "Przyjmij"
+
+#: qml/FeatureRequest.qml:69
+#, kde-format
+msgid "Deny"
+msgstr "Odmów"
+
+#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#, kde-format
+msgid "Help"
+msgstr "Pomoc"
+
+#: qml/HelpTab.qml:84
+#, kde-format
+msgid ""
+"Aura Browser adapts the traditional web browser UI for a fully immersed "
+"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
+"possible for navigating the world wide web using just your remote control."
+msgstr ""
+"Przeglądarki Aura dostosowuje tradycyjny interfejs przeglądarki sieciowej do "
+"Dużego Ekranu. Interfejs Przeglądarki Aura jest tak subtelny i intuicyjny "
+"jak to możliwe tak, aby mógł przeglądać sieć przy użyciu swojego pilota."
+
+#: qml/HelpTab.qml:106
+#, kde-format
+msgid ""
+"Here are all the buttons required to help you get started with using aura "
+"browser"
+msgstr ""
+"Tutaj znajdują się wszystkie przyciski, które pomogą ci rozpocząć używanie "
+"przeglądarki Aura"
+
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#, kde-format
+msgid "History"
+msgstr "Historia"
+
+#: qml/HistoryManager.qml:184
+#, kde-format
+msgid "Search History"
+msgstr "Historia wyszukiwania"
+
+#: qml/HistoryManager.qml:211
+#, kde-format
+msgid "Clear History"
+msgstr "Wyczyść historię"
+
+#: qml/HistoryManager.qml:254
+#, kde-format
+msgid "No Recent History"
+msgstr "Nie ma żadnej ostatniej historii"
+
+#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#, kde-format
+msgid "Enter URL / Search Term"
+msgstr "Wpisz adres URL / wyrażenie do znalezienia"
+
+#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#, kde-format
+msgid "Enter Search Term or URL"
+msgstr "Wpisz wyrażenie do znalezienia lub adres URL"
+
+#: qml/main.qml:29 qml/mainSandbox.qml:28
+#, kde-format
+msgid "Aura-Browser"
+msgstr "Przeglądarka Aura"
+
+#: qml/main.qml:153
+#, kde-format
+msgid "Close Menu"
+msgstr "Zamknij menu"
+
+#: qml/main.qml:223
+#, kde-format
+msgid "Current Tabs"
+msgstr "Bieżące karty"
+
+#: qml/main.qml:269
+#, kde-format
+msgid "Remove Tab"
+msgstr "Usuń kartę"
+
+#: qml/mainSandbox.qml:75
+#, kde-format
+msgid "Quit"
+msgstr "Zakończ"
+
+#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
+#: qml/WebLoader.qml:168
+#, kde-format
+msgid "Download finished"
+msgstr "Ukończono pobieranie"
+
+#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
+#: qml/WebLoader.qml:173
+#, kde-format
+msgid "Download failed: %1"
+msgstr "Nie udało się pobrać: %1"
+
+#: qml/SettingsTab.qml:105
+#, kde-format
+msgid "Virtual Cursor Speed Control"
+msgstr "Sterowanie szybkością wskaźnika wirtualnego"
+
+#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#, kde-format
+msgid "Current Speed: %1"
+msgstr "Bieżąca szybkość: %1"
+
+#: qml/SettingsTab.qml:174
+#, kde-format
+msgid "Virtual Scroll Speed Control"
+msgstr "Sterowanie szybkością przewijania wirtualnego"
+
+#: qml/SettingsTab.qml:244
+#, kde-format
+msgid "Virtual Cursor Size Control"
+msgstr "Sterowanie rozmiarem wskaźnika wirtualnego"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Current Size: "
+msgstr "Bieżący rozmiar: "
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Large"
+msgstr "Duże"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Medium"
+msgstr "Średni"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Small"
+msgstr "Małe"
+
+#: qml/SettingsTab.qml:314
+#, kde-format
+msgid "Search Engine"
+msgstr "Wyszukiwarka"
+
+#: qml/SettingsTab.qml:333
+#, kde-format
+msgid "Google"
+msgstr "Google"
+
+#: qml/SettingsTab.qml:360
+#, kde-format
+msgid "Duck Duck Go"
+msgstr "Duck Duck Go"
+
+#: qml/SettingsTab.qml:391
+#, kde-format
+msgid "General"
+msgstr "Ogólne"
+
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#, kde-format
+msgid "Disable Button Sounds"
+msgstr "Wyłącz odgłosy przycisków"
+
+#: qml/SettingsTab.qml:421
+#, kde-format
+msgid "Enable Button Sounds"
+msgstr "Włącz odgłosy przycisków"
+
+#: qml/SettingsTab.qml:442
+#, kde-format
+msgid "Clear Cache"
+msgstr "Wyczyść pamięć podręczną"
+
+#: qml/StartPage.qml:137
+#, kde-format
+msgid "Tabs"
+msgstr "Karty"
+
+#: qml/StartPage.qml:238
+#, kde-format
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: qml/StartPage.qml:318
+#, kde-format
+msgid "Aura Browser - Start Page"
+msgstr "Przeglądarka Aura - Strona początkowa"
+
+#: qml/StartPage.qml:362
+#, kde-format
+msgid "Search or type url"
+msgstr "Poszukaj lub wpisz adres URL"
+
+#: qml/StartPage.qml:401
+#, kde-format
+msgid "Recent Pages"
+msgstr "Ostatnie strony"
+
+#: qml/StartPage.qml:411
+#, kde-format
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: qml/SuggestionsBox.qml:44
+#, kde-format
+msgid "Suggestions:"
+msgstr "Podpowiedzi:"
+
+#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#, kde-format
+msgid "A"
+msgstr "A"

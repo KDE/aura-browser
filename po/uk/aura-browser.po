@@ -1,0 +1,320 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the aura-browser package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: aura-browser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:50+0000\n"
+"PO-Revision-Date: 2022-09-07 16:42+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: qml/AudioBox.qml:43
+#, kde-format
+msgid "Listening"
+msgstr "Очікуємо на дані"
+
+#: qml/AudioBox.qml:87
+#, kde-format
+msgid "Performing Search With Mycroft"
+msgstr "Виконуємо пошук за допомогою Mycroft"
+
+#: qml/AudioBox.qml:141
+#, kde-format
+msgid "Close"
+msgstr "Закрити"
+
+#: qml/BookmarkManager.qml:170
+#, kde-format
+msgid "Bookmarks Manager"
+msgstr "Керування закладками"
+
+#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
+#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
+#: qml/StartPage.qml:525
+#, kde-format
+msgid "Press 'esc' or the [←] Back button to close"
+msgstr "Натисніть Esc або кнопку [←] Назад, щоб закрити"
+
+#: qml/BookmarkManager.qml:213
+#, kde-format
+msgid "Search Bookmarks"
+msgstr "Шукати у закладках"
+
+#: qml/BookmarkManager.qml:242
+#, kde-format
+msgid "Remove Mode"
+msgstr "Режим вилучення"
+
+#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#, kde-format
+msgid "Add"
+msgstr "Додати"
+
+#: qml/BookmarkManager.qml:321
+#, kde-format
+msgid "Add Bookmark"
+msgstr "Додати закладку"
+
+#: qml/BookmarkManager.qml:352
+#, kde-format
+msgid "Name: "
+msgstr "Назва: "
+
+#: qml/BookmarkManager.qml:404
+#, kde-format
+msgid "Url: "
+msgstr "Адреса: "
+
+#: qml/BookmarkManager.qml:456
+#, kde-format
+msgid "Category: "
+msgstr "Категорія: "
+
+#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#, kde-format
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: qml/DownloadRequest.qml:40
+#, kde-format
+msgid "Do you want to download %1 file ?"
+msgstr "Хочете отримати файл %1?"
+
+#: qml/DownloadRequest.qml:60
+#, kde-format
+msgid "Downloading.. %1"
+msgstr "Отримуємо… %1"
+
+#: qml/DownloadRequest.qml:83
+#, kde-format
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: qml/FeatureRequest.qml:49
+#, kde-format
+msgid "Accept"
+msgstr "Прийняти"
+
+#: qml/FeatureRequest.qml:69
+#, kde-format
+msgid "Deny"
+msgstr "Відмовити"
+
+#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#, kde-format
+msgid "Help"
+msgstr "Довідка"
+
+#: qml/HelpTab.qml:84
+#, kde-format
+msgid ""
+"Aura Browser adapts the traditional web browser UI for a fully immersed "
+"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
+"possible for navigating the world wide web using just your remote control."
+msgstr ""
+"Браузер Aura пристосовує традиційний інтерфейс браузерів інтернету до "
+"практик Bigscreen. Інтерфейс браузера Aura створено ненав'язливим і "
+"інтуїтивно зрозумілим для навігації інтернетом за допомогою пристрою "
+"дистанційного керування."
+
+#: qml/HelpTab.qml:106
+#, kde-format
+msgid ""
+"Here are all the buttons required to help you get started with using aura "
+"browser"
+msgstr ""
+"Тут усі кнопки, які знадобляться вам на початковому рівні користування "
+"браузером aura"
+
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#, kde-format
+msgid "History"
+msgstr "Журнал"
+
+#: qml/HistoryManager.qml:184
+#, kde-format
+msgid "Search History"
+msgstr "Шукати у журналі"
+
+#: qml/HistoryManager.qml:211
+#, kde-format
+msgid "Clear History"
+msgstr "Спорожнити журнал"
+
+#: qml/HistoryManager.qml:254
+#, kde-format
+msgid "No Recent History"
+msgstr "Немає свіжого журналу"
+
+#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#, kde-format
+msgid "Enter URL / Search Term"
+msgstr "Введіть адресу або критерій пошуку"
+
+#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#, kde-format
+msgid "Enter Search Term or URL"
+msgstr "Введіть критерій пошуку або адресу"
+
+#: qml/main.qml:29 qml/mainSandbox.qml:28
+#, kde-format
+msgid "Aura-Browser"
+msgstr "Браузер Aura"
+
+#: qml/main.qml:153
+#, kde-format
+msgid "Close Menu"
+msgstr "Закрити меню"
+
+#: qml/main.qml:223
+#, kde-format
+msgid "Current Tabs"
+msgstr "Поточні вкладки"
+
+#: qml/main.qml:269
+#, kde-format
+msgid "Remove Tab"
+msgstr "Вилучити вкладку"
+
+#: qml/mainSandbox.qml:75
+#, kde-format
+msgid "Quit"
+msgstr "Вийти"
+
+#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
+#: qml/WebLoader.qml:168
+#, kde-format
+msgid "Download finished"
+msgstr "Отримання завершено"
+
+#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
+#: qml/WebLoader.qml:173
+#, kde-format
+msgid "Download failed: %1"
+msgstr "Невдала спроба отримання: %1"
+
+#: qml/SettingsTab.qml:105
+#, kde-format
+msgid "Virtual Cursor Speed Control"
+msgstr "Керування швидкістю віртуального курсора"
+
+#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#, kde-format
+msgid "Current Speed: %1"
+msgstr "Поточна швидкість: %1"
+
+#: qml/SettingsTab.qml:174
+#, kde-format
+msgid "Virtual Scroll Speed Control"
+msgstr "Керування швидкістю віртуального гортання"
+
+#: qml/SettingsTab.qml:244
+#, kde-format
+msgid "Virtual Cursor Size Control"
+msgstr "Керування розміром віртуального курсора"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Current Size: "
+msgstr "Поточний розмір: "
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Large"
+msgstr "Великий"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Medium"
+msgstr "Середній"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Small"
+msgstr "Малий"
+
+#: qml/SettingsTab.qml:314
+#, kde-format
+msgid "Search Engine"
+msgstr "Рушій пошуку"
+
+#: qml/SettingsTab.qml:333
+#, kde-format
+msgid "Google"
+msgstr "Google"
+
+#: qml/SettingsTab.qml:360
+#, kde-format
+msgid "Duck Duck Go"
+msgstr "Duck Duck Go"
+
+#: qml/SettingsTab.qml:391
+#, kde-format
+msgid "General"
+msgstr "Загальне"
+
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#, kde-format
+msgid "Disable Button Sounds"
+msgstr "Вимкнути звук кнопок"
+
+#: qml/SettingsTab.qml:421
+#, kde-format
+msgid "Enable Button Sounds"
+msgstr "Увімкнути звук кнопок"
+
+#: qml/SettingsTab.qml:442
+#, kde-format
+msgid "Clear Cache"
+msgstr "Спорожнити кеш"
+
+#: qml/StartPage.qml:137
+#, kde-format
+msgid "Tabs"
+msgstr "Вкладки"
+
+#: qml/StartPage.qml:238
+#, kde-format
+msgid "Settings"
+msgstr "Параметри"
+
+#: qml/StartPage.qml:318
+#, kde-format
+msgid "Aura Browser - Start Page"
+msgstr "Браузер Aura — початкова сторінка"
+
+#: qml/StartPage.qml:362
+#, kde-format
+msgid "Search or type url"
+msgstr "Пошук або введення адреси"
+
+#: qml/StartPage.qml:401
+#, kde-format
+msgid "Recent Pages"
+msgstr "Нещодавні сторінки"
+
+#: qml/StartPage.qml:411
+#, kde-format
+msgid "Clear"
+msgstr "Очистити"
+
+#: qml/SuggestionsBox.qml:44
+#, kde-format
+msgid "Suggestions:"
+msgstr "Пропозиції:"
+
+#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#, kde-format
+msgid "A"
+msgstr "A"

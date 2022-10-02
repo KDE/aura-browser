@@ -1,0 +1,323 @@
+# Translation for aura-browser to Euskara/Basque (eu).
+# Copyright (C) 2022 This file is copyright:
+# This file is distributed under the same license as the aura-browser package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: aura-browser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:50+0000\n"
+"PO-Revision-Date: 2022-09-11 16:59+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.08.0\n"
+
+#: qml/AudioBox.qml:43
+#, kde-format
+msgid "Listening"
+msgstr "Entzuten"
+
+#: qml/AudioBox.qml:87
+#, kde-format
+msgid "Performing Search With Mycroft"
+msgstr "Mycroft-ekin bilaketa egiten"
+
+#: qml/AudioBox.qml:141
+#, kde-format
+msgid "Close"
+msgstr "Itxi"
+
+#: qml/BookmarkManager.qml:170
+#, kde-format
+msgid "Bookmarks Manager"
+msgstr "Laster-marka kudeatzailea"
+
+#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
+#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
+#: qml/StartPage.qml:525
+#, kde-format
+msgid "Press 'esc' or the [←] Back button to close"
+msgstr "Sakatu 'ihes' edo [←] atzera-botoia ixteko"
+
+#: qml/BookmarkManager.qml:213
+#, kde-format
+msgid "Search Bookmarks"
+msgstr "Bilatu laster-markak"
+
+#: qml/BookmarkManager.qml:242
+#, kde-format
+msgid "Remove Mode"
+msgstr "Kentzeko modua"
+
+#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#, kde-format
+msgid "Add"
+msgstr "Gehitu"
+
+#: qml/BookmarkManager.qml:321
+#, kde-format
+msgid "Add Bookmark"
+msgstr "Gehitu laster-marka"
+
+#: qml/BookmarkManager.qml:352
+#, kde-format
+msgid "Name: "
+msgstr "Izena: "
+
+#: qml/BookmarkManager.qml:404
+#, kde-format
+msgid "Url: "
+msgstr "URLa: "
+
+#: qml/BookmarkManager.qml:456
+#, kde-format
+msgid "Category: "
+msgstr "Kategoria:"
+
+#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#, kde-format
+msgid "Bookmarks"
+msgstr "Laster-markak"
+
+#: qml/DownloadRequest.qml:40
+#, kde-format
+msgid "Do you want to download %1 file ?"
+msgstr "%1 fitxategia zama-jaitsi nahi duzu?"
+
+#: qml/DownloadRequest.qml:60
+#, kde-format
+msgid "Downloading.. %1"
+msgstr "Zama-jaisten... %1"
+
+#: qml/DownloadRequest.qml:83
+#, kde-format
+msgid "Cancel"
+msgstr "Utzi"
+
+#: qml/FeatureRequest.qml:49
+#, kde-format
+msgid "Accept"
+msgstr "Onartu"
+
+#: qml/FeatureRequest.qml:69
+#, kde-format
+msgid "Deny"
+msgstr "Ukatu"
+
+#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#, kde-format
+msgid "Help"
+msgstr "Laguntza"
+
+#: qml/HelpTab.qml:84
+#, kde-format
+msgid ""
+"Aura Browser adapts the traditional web browser UI for a fully immersed "
+"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
+"possible for navigating the world wide web using just your remote control."
+msgstr ""
+"Aura Arakatzaileak web arakatzailearen ohiko erabiltzaile-interfazea "
+"(UI)moldatzen du, «Bigscreen» pantaila handian guztiz murgildutako "
+"esperientzia izateko. Aura Arakatzailearen erabiltzaile-interfazea (UI) "
+"ahalik sotil eta intuitiboena mantentzen da, mundu zabaleko amaraunean (www) "
+"zure urrutiko agintea bakarrik erabiliz nabigatzeko."
+
+#: qml/HelpTab.qml:106
+#, kde-format
+msgid ""
+"Here are all the buttons required to help you get started with using aura "
+"browser"
+msgstr ""
+"Hemen daude Aura arakatzailearekin hastapenean laguntzeko beharrezkoak diren "
+"botoi guztiak"
+
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#, kde-format
+msgid "History"
+msgstr "Historia"
+
+#: qml/HistoryManager.qml:184
+#, kde-format
+msgid "Search History"
+msgstr "Bilatu historian"
+
+#: qml/HistoryManager.qml:211
+#, kde-format
+msgid "Clear History"
+msgstr "Garbitu historia"
+
+#: qml/HistoryManager.qml:254
+#, kde-format
+msgid "No Recent History"
+msgstr "Ez dago azken aldiko historiarik"
+
+#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#, kde-format
+msgid "Enter URL / Search Term"
+msgstr "Sartu URLa / Bilatzeko terminoa"
+
+#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#, kde-format
+msgid "Enter Search Term or URL"
+msgstr "Sartu bilatzeko terminoa edo URLa"
+
+#: qml/main.qml:29 qml/mainSandbox.qml:28
+#, kde-format
+msgid "Aura-Browser"
+msgstr "Aura Arakatzailea"
+
+#: qml/main.qml:153
+#, kde-format
+msgid "Close Menu"
+msgstr "Itxi menua"
+
+#: qml/main.qml:223
+#, kde-format
+msgid "Current Tabs"
+msgstr "Uneko fitxak"
+
+#: qml/main.qml:269
+#, kde-format
+msgid "Remove Tab"
+msgstr "Kendu fitxa"
+
+#: qml/mainSandbox.qml:75
+#, kde-format
+msgid "Quit"
+msgstr "Irten"
+
+#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
+#: qml/WebLoader.qml:168
+#, kde-format
+msgid "Download finished"
+msgstr "Zama-jaistea amaitu da"
+
+#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
+#: qml/WebLoader.qml:173
+#, kde-format
+msgid "Download failed: %1"
+msgstr "Zama-jaistea huts egin du: %1"
+
+#: qml/SettingsTab.qml:105
+#, kde-format
+msgid "Virtual Cursor Speed Control"
+msgstr "Alegiazko kurtsorearen abiadura-kontrola"
+
+#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#, kde-format
+msgid "Current Speed: %1"
+msgstr "Uneko abiadura: %1"
+
+#: qml/SettingsTab.qml:174
+#, kde-format
+msgid "Virtual Scroll Speed Control"
+msgstr "Alegiazko kiribiltzearen abiadura-kontrola"
+
+#: qml/SettingsTab.qml:244
+#, kde-format
+msgid "Virtual Cursor Size Control"
+msgstr "Alegiazko kurtsorearen neurriaren kontrola"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Current Size: "
+msgstr "Uneko neurria:"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Large"
+msgstr "Handia"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Medium"
+msgstr "Ertaina"
+
+#: qml/SettingsTab.qml:296
+#, kde-format
+msgid "Small"
+msgstr "Txikia"
+
+#: qml/SettingsTab.qml:314
+#, kde-format
+msgid "Search Engine"
+msgstr "Bilatzailea"
+
+#: qml/SettingsTab.qml:333
+#, kde-format
+msgid "Google"
+msgstr "Google"
+
+#: qml/SettingsTab.qml:360
+#, kde-format
+msgid "Duck Duck Go"
+msgstr "Duck Duck Go"
+
+#: qml/SettingsTab.qml:391
+#, kde-format
+msgid "General"
+msgstr "Orokorra"
+
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#, kde-format
+msgid "Disable Button Sounds"
+msgstr "Ezgaitu botoien soinuak"
+
+#: qml/SettingsTab.qml:421
+#, kde-format
+msgid "Enable Button Sounds"
+msgstr "Gaitu botoien soinuak"
+
+#: qml/SettingsTab.qml:442
+#, kde-format
+msgid "Clear Cache"
+msgstr "Garbitu cachea"
+
+#: qml/StartPage.qml:137
+#, kde-format
+msgid "Tabs"
+msgstr "Fitxak"
+
+#: qml/StartPage.qml:238
+#, kde-format
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: qml/StartPage.qml:318
+#, kde-format
+msgid "Aura Browser - Start Page"
+msgstr "Aura Arakatzailea - Hasierako orria"
+
+#: qml/StartPage.qml:362
+#, kde-format
+msgid "Search or type url"
+msgstr "Bilatu edo tekleatu URL bat"
+
+#: qml/StartPage.qml:401
+#, kde-format
+msgid "Recent Pages"
+msgstr "Alken aldiko orriak"
+
+#: qml/StartPage.qml:411
+#, kde-format
+msgid "Clear"
+msgstr "Garbitu"
+
+#: qml/SuggestionsBox.qml:44
+#, kde-format
+msgid "Suggestions:"
+msgstr "Iradokizunak:"
+
+#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#, kde-format
+msgid "A"
+msgstr "A"
