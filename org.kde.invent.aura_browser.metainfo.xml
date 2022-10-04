@@ -11,6 +11,7 @@
   <name xml:lang="fr">Navigateur Aura</name>
   <name xml:lang="it">Aura Browser</name>
   <name xml:lang="ka">Aura ბრაუზერი</name>
+  <name xml:lang="ko">Aura 브라우저</name>
   <name xml:lang="nl">Aura-bladerprogramma</name>
   <name xml:lang="pl">Przeglądarka Aura</name>
   <name xml:lang="pt">Navegador Aura</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</summary>
   <summary xml:lang="it">Browser per un'esperienza Big Screen completamente immersa che ti consente di navigare nel World Wide Web usando solo il tuo telecomando</summary>
   <summary xml:lang="ka">ბრაუზერი, რომელი დიდი ეკრანებისთვისაა შექმნილი და საშუალებას გაძლევთ, ინტერნეტში თქვენი პულტით იმუშაოთ</summary>
+  <summary xml:lang="ko">리모콘을 사용하여 웹을 탐색할 수 있는 큰 화면용 몰입형 웹 브라우저</summary>
   <summary xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</summary>
   <summary xml:lang="pl">Przeglądarka dająca pełnię doświadczeń na Dużym Ekranie, która umożliwia przeglądanie internetu przy użyciu tylko pilota</summary>
   <summary xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</summary>
@@ -58,6 +60,7 @@
     <p xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</p>
     <p xml:lang="it">Browser per un'esperienza Big Screen completamente immersa che ti consente di navigare nel World Wide Web usando solo il tuo telecomando</p>
     <p xml:lang="ka">ბრაუზერი, რომელი დიდი ეკრანებისთვისაა შექმნილი და საშუალებას გაძლევთ, ინტერნეტში თქვენი პულტით იმუშაოთ</p>
+    <p xml:lang="ko">리모콘을 사용하여 웹을 탐색할 수 있는 큰 화면용 몰입형 웹 브라우저</p>
     <p xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</p>
     <p xml:lang="pl">Przeglądarka dająca pełnię doświadczeń na Dużym Ekranie, która umożliwia przeglądanie internetu przy użyciu tylko pilota</p>
     <p xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</p>
@@ -81,6 +84,7 @@
       <caption xml:lang="fr">Navigateur Aura</caption>
       <caption xml:lang="it">Aura Browser</caption>
       <caption xml:lang="ka">Aura ბრაუზერი</caption>
+      <caption xml:lang="ko">Aura 브라우저</caption>
       <caption xml:lang="nl">Aura-bladerprogramma</caption>
       <caption xml:lang="pl">Przeglądarka Aura</caption>
       <caption xml:lang="pt">Navegador Aura</caption>
