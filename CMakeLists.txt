@@ -39,3 +39,7 @@ add_subdirectory(app)
 add_subdirectory(icons)
 
 install(FILES org.kde.invent.aura_browser.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+
+ki18n_install(po)
+
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
