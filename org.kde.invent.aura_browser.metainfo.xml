@@ -15,6 +15,7 @@
   <name xml:lang="nl">Aura-bladerprogramma</name>
   <name xml:lang="pl">Przeglądarka Aura</name>
   <name xml:lang="pt">Navegador Aura</name>
+  <name xml:lang="pt-BR">Navegador Aura</name>
   <name xml:lang="sk">Prehliadač Aura</name>
   <name xml:lang="sl">Brskalnik Aura</name>
   <name xml:lang="sv">Aura webbläsare</name>
@@ -88,6 +89,7 @@
       <caption xml:lang="nl">Aura-bladerprogramma</caption>
       <caption xml:lang="pl">Przeglądarka Aura</caption>
       <caption xml:lang="pt">Navegador Aura</caption>
+      <caption xml:lang="pt-BR">Navegador Aura</caption>
       <caption xml:lang="sk">Prehliadač Aura</caption>
       <caption xml:lang="sl">Brskalnik Aura</caption>
       <caption xml:lang="sv">Aura webbläsare</caption>
