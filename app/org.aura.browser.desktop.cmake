@@ -6,6 +6,7 @@ Name[ca@valencia]=Navegador Aura
 Name[en_GB]=Aura Browser
 Name[es]=Navegador Aura
 Name[eu]=Aura Arakatzailea
+Name[fi]=Aura-selain
 Name[fr]=Navigateur Aura
 Name[it]=Aura Browser
 Name[ka]=Aura ბრაუზერი
