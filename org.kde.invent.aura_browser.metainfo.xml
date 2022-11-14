@@ -5,6 +5,7 @@
   <name xml:lang="ar">متصفح أورا</name>
   <name xml:lang="ca">Navegador Aura</name>
   <name xml:lang="ca-valencia">Navegador Aura</name>
+  <name xml:lang="de">Aura Browser</name>
   <name xml:lang="en-GB">Aura Browser</name>
   <name xml:lang="es">Navegador Aura</name>
   <name xml:lang="eu">Aura arakatzailea</name>
@@ -28,6 +29,7 @@
   <summary xml:lang="ar">متصفح لتجربة شاشة كبيرة رائعة مما يتيح لك التنقل في شبكة الويب العالمية باستخدام جهاز التحكم عن بُعد فقط</summary>
   <summary xml:lang="ca">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web usant només el control remot</summary>
   <summary xml:lang="ca-valencia">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web utilitzant només el control remot</summary>
+  <summary xml:lang="de">Browser für ein ganzheitliches Big-Screen-Erlebnis, bei dem Sie mit Ihrer Fernbedienung durch das World Wide Web navigieren können</summary>
   <summary xml:lang="en-GB">Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</summary>
   <summary xml:lang="es">Navegador para una experiencia inmersiva completa a gran pantalla, que le permite navegar por la web usando solo el mando a distancia</summary>
   <summary xml:lang="eu">Pantaila handian erabat murgiltzeko arakatze esperientzia bat, urruneko agintea bakarrik erabiliz mundu zabaleko amaraunean nabigatzeko</summary>
@@ -59,6 +61,7 @@
     <p xml:lang="ar">متصفح لتجربة شاشة كبيرة رائعة مما يتيح لك التنقل في شبكة الويب العالمية باستخدام جهاز التحكم عن بُعد فقط</p>
     <p xml:lang="ca">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web usant només el control remot</p>
     <p xml:lang="ca-valencia">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web utilitzant només el control remot</p>
+    <p xml:lang="de">Browser für ein ganzheitliches Big-Screen-Erlebnis, bei dem Sie mit Ihrer Fernbedienung durch das World Wide Web navigieren können</p>
     <p xml:lang="en-GB">Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</p>
     <p xml:lang="es">Navegador para una experiencia inmersiva completa a gran pantalla, que le permite navegar por la web usando solo el mando a distancia</p>
     <p xml:lang="eu">Pantaila handian erabat murgiltzeko arakatze esperientzia bat, urruneko agintea bakarrik erabiliz mundu zabaleko amaraunean nabigatzeko</p>
@@ -85,6 +88,7 @@
       <caption xml:lang="ar">متصفح أورا</caption>
       <caption xml:lang="ca">Navegador Aura</caption>
       <caption xml:lang="ca-valencia">Navegador Aura</caption>
+      <caption xml:lang="de">Aura Browser</caption>
       <caption xml:lang="en-GB">Aura Browser</caption>
       <caption xml:lang="es">Navegador Aura</caption>
       <caption xml:lang="eu">Aura arakatzailea</caption>
