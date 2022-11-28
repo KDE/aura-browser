@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-09-08 05:29+0200\n"
+"PO-Revision-Date: 2022-11-27 06:53+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -44,7 +44,7 @@ msgstr "სანიშნეების მმართველი"
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "დასახურად 'esc' ან [←] ღილაკს დააწექით"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
@@ -123,6 +123,9 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"ბრაუზერი Aura ტრადიციულ ვებ-ბრაუზერის ინტერფეისს დიდ ეკრანს უხამებს. Aura "
+"Browser-ის ინტერფეისი რაც შეიძლება ადვილი და ინტუიტიურია ინტერნეტში "
+"ტელევიზორის პულტით მუშაობისთვის."
 
 #: qml/HelpTab.qml:106
 #, kde-format
@@ -130,6 +133,8 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"აქ მოცემულია ყველა ღილაკი, რომელიც დაგეხმარებათ AuraBrower-თან მუშაობის "
+"დაწყებაში"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
