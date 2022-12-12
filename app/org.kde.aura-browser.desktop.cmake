@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Aura Browser
 Name[ar]=متصفح أورا
+Name[ast]=Restolador Aura
 Name[ca]=Navegador Aura
 Name[ca@valencia]=Navegador Aura
 Name[de]=Aura Browser
@@ -29,6 +30,7 @@ Type=Application
 NoDisplay=@DesktopNoDisplay@
 GenericName=Aura Browser
 GenericName[ar]=متصفح أورا
+GenericName[ast]=Restolador Aura
 GenericName[ca]=Navegador Aura
 GenericName[ca@valencia]=Navegador Aura
 GenericName[cs]=Prohlížeč Aura
@@ -60,6 +62,7 @@ GenericName[zh_CN]=光环浏览器
 Categories=Qt;KDE;WebBrowser;Internet;
 Keywords=program;software;Internet;
 Keywords[ar]=برنامج;تطبيق;إنترنت;
+Keywords[ast]=programa;software;Internet;aplicación;restolar;restolador;web
 Keywords[ca]=programa;programari;Internet;
 Keywords[ca@valencia]=programa;programari;Internet;
 Keywords[cs]=program;software;Internet;
