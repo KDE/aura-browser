@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-10-19 16:15-0300\n"
+"PO-Revision-Date: 2022-12-20 09:45-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -93,27 +93,27 @@ msgstr ""
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr ""
+msgstr "Baixando.. %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: qml/FeatureRequest.qml:49
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Aceitar"
 
 #: qml/FeatureRequest.qml:69
 #, kde-format
 msgid "Deny"
-msgstr ""
+msgstr "Recusar"
 
 #: qml/HelpTab.qml:50 qml/StartPage.qml:271
 #, kde-format
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: qml/HelpTab.qml:84
 #, kde-format
@@ -133,17 +133,17 @@ msgstr ""
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
 msgid "History"
-msgstr ""
+msgstr "Histórico"
 
 #: qml/HistoryManager.qml:184
 #, kde-format
 msgid "Search History"
-msgstr ""
+msgstr "Pesquisar no histórico"
 
 #: qml/HistoryManager.qml:211
 #, kde-format
 msgid "Clear History"
-msgstr ""
+msgstr "Limpar histórico"
 
 #: qml/HistoryManager.qml:254
 #, kde-format
@@ -168,34 +168,34 @@ msgstr ""
 #: qml/main.qml:153
 #, kde-format
 msgid "Close Menu"
-msgstr ""
+msgstr "Fechar menu"
 
 #: qml/main.qml:223
 #, kde-format
 msgid "Current Tabs"
-msgstr ""
+msgstr "Abas atuais"
 
 #: qml/main.qml:269
 #, kde-format
 msgid "Remove Tab"
-msgstr ""
+msgstr "Remover aba"
 
 #: qml/mainSandbox.qml:75
 #, kde-format
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
 
 #: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
 #: qml/WebLoader.qml:168
 #, kde-format
 msgid "Download finished"
-msgstr ""
+msgstr "Download concluído"
 
 #: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
 #: qml/WebLoader.qml:173
 #, kde-format
 msgid "Download failed: %1"
-msgstr ""
+msgstr "Falha ao baixar: %1"
 
 #: qml/SettingsTab.qml:105
 #, kde-format
@@ -205,7 +205,7 @@ msgstr ""
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
 msgid "Current Speed: %1"
-msgstr ""
+msgstr "Velocidade atual: %1"
 
 #: qml/SettingsTab.qml:174
 #, kde-format
@@ -220,42 +220,42 @@ msgstr ""
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Current Size: "
-msgstr ""
+msgstr "Tamanho atual: "
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Médio"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Small"
-msgstr ""
+msgstr "Pequeno"
 
 #: qml/SettingsTab.qml:314
 #, kde-format
 msgid "Search Engine"
-msgstr ""
+msgstr "Mecanismo de pesquisa"
 
 #: qml/SettingsTab.qml:333
 #, kde-format
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: qml/SettingsTab.qml:360
 #, kde-format
 msgid "Duck Duck Go"
-msgstr ""
+msgstr "Duck Duck Go"
 
 #: qml/SettingsTab.qml:391
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
 #, kde-format
@@ -270,17 +270,17 @@ msgstr ""
 #: qml/SettingsTab.qml:442
 #, kde-format
 msgid "Clear Cache"
-msgstr ""
+msgstr "Limpar cache"
 
 #: qml/StartPage.qml:137
 #, kde-format
 msgid "Tabs"
-msgstr ""
+msgstr "Abas"
 
 #: qml/StartPage.qml:238
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: qml/StartPage.qml:318
 #, kde-format
@@ -300,14 +300,14 @@ msgstr ""
 #: qml/StartPage.qml:411
 #, kde-format
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: qml/SuggestionsBox.qml:44
 #, kde-format
 msgid "Suggestions:"
-msgstr ""
+msgstr "Sugestões:"
 
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr ""
+msgstr "A"
