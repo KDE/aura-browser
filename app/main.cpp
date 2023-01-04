@@ -5,8 +5,12 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <qtwebengineglobal.h>
-#include <QtWebEngine/qquickwebengineprofile.h>
+//#include <qtwebengineglobal.h>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#include <QtWebEngine/QQuickWebEngineProfile>
+#else
+#include <QtWebEngineQuick/QQuickWebEngineProfile>
+#endif
 #include <QtWebEngineCore/qwebengineurlrequestinterceptor.h>
 #include "plugins/virtualMouse.h"
 #include "plugins/virtualKeypress.h"
@@ -96,9 +100,15 @@ int main(int argc, char *argv[])
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
     QCoreApplication::setOrganizationName("AuraBrowser");
     QCoreApplication::setApplicationName("AuraBrowser");
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#endif
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QtWebEngine::initialize();
+#else
+    QtWebEngineQuick::initialize();
+#endif
     QGuiApplication app(argc, argv);
     app.setWindowIcon(QIcon(":/qml/images/logo-small.png"));
     KLocalizedString::setApplicationDomain("aura-browser");
