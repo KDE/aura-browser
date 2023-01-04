@@ -17,18 +17,23 @@ add_executable(aura-browser ${aura_browser_SRCS}
 )
 
 target_link_libraries(aura-browser
-    Qt5::Quick
-    Qt5::Widgets
-    Qt5::Core 
-    Qt5::Qml
-    Qt5::QuickControls2
-    Qt5::WebEngine 
-    Qt5::Test
-    Qt5::Multimedia
+    Qt::Quick
+    Qt::Widgets
+    Qt::Core 
+    Qt::Qml
+    Qt::QuickControls2
+    #Qt::WebEngine
+    Qt::Test
+    Qt::Multimedia
     KF5::Kirigami2
     KF5::I18n
     ${CMAKE_THREAD_LIBS_INIT}
 )
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(aura-browser Qt::WebEngineQuick)
+else ()
+    target_link_libraries(aura-browser Qt::WebEngine)
+endif()
 
 install(TARGETS aura-browser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

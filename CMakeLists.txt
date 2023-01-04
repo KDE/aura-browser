@@ -17,16 +17,20 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(FeatureSummary)
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS 
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS 
     Core
     Qml
     Quick 
-    WebEngine 
     Test
     Widgets
     QuickControls2
     Multimedia
 )
+if (QT_MAJOR_VERSION STREQUAL "6")
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS WebEngineQuick)
+else ()
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS WebEngine)
+endif()
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED 
     Kirigami2
