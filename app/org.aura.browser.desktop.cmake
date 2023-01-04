@@ -3,6 +3,7 @@ Name=Aura Browser
 Name[ar]=متصفح أورا
 Name[ca]=Navegador Aura
 Name[ca@valencia]=Navegador Aura
+Name[cs]=Prohlížeč Aura
 Name[de]=Aura Browser
 Name[en_GB]=Aura Browser
 Name[es]=Navegador Aura
