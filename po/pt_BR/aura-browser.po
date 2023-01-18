@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 #
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2022.
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-12-20 09:45-0300\n"
+"PO-Revision-Date: 2023-01-16 23:39-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: qml/AudioBox.qml:43
 #, kde-format
 msgid "Listening"
-msgstr ""
+msgstr "Ouvindo"
 
 #: qml/AudioBox.qml:87
 #, kde-format
@@ -35,7 +35,7 @@ msgstr "Fechar"
 #: qml/BookmarkManager.qml:170
 #, kde-format
 msgid "Bookmarks Manager"
-msgstr ""
+msgstr "Gerenciador de favoritos"
 
 #: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
@@ -48,7 +48,7 @@ msgstr ""
 #: qml/BookmarkManager.qml:213
 #, kde-format
 msgid "Search Bookmarks"
-msgstr ""
+msgstr "Pesquisar favoritos"
 
 #: qml/BookmarkManager.qml:242
 #, kde-format
@@ -88,7 +88,7 @@ msgstr ""
 #: qml/DownloadRequest.qml:40
 #, kde-format
 msgid "Do you want to download %1 file ?"
-msgstr ""
+msgstr "Deseja baixar o arquivo %1?"
 
 #: qml/DownloadRequest.qml:60
 #, kde-format
@@ -148,7 +148,7 @@ msgstr "Limpar histórico"
 #: qml/HistoryManager.qml:254
 #, kde-format
 msgid "No Recent History"
-msgstr ""
+msgstr "Sem histórico recente"
 
 #: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
 #, kde-format
@@ -163,7 +163,7 @@ msgstr ""
 #: qml/main.qml:29 qml/mainSandbox.qml:28
 #, kde-format
 msgid "Aura-Browser"
-msgstr ""
+msgstr "Navegador Aura"
 
 #: qml/main.qml:153
 #, kde-format
@@ -295,7 +295,7 @@ msgstr ""
 #: qml/StartPage.qml:401
 #, kde-format
 msgid "Recent Pages"
-msgstr ""
+msgstr "Páginas recentes"
 
 #: qml/StartPage.qml:411
 #, kde-format
