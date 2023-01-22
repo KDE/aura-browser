@@ -1,16 +1,16 @@
 add_executable(aura-browser ${aura_browser_SRCS}
     main.cpp
-    plugins/virtualMouse.cpp
-    plugins/virtualKeypress.cpp
-    plugins/globalSettings.cpp
-    plugins/audiorecorder.cpp
+    plugins/virtualMouse.cpp plugins/virtualMouse.h
+    plugins/virtualKeypress.cpp plugins/virtualKeypress.h
+    plugins/globalSettings.cpp plugins/globalSettings.h
+    plugins/audiorecorder.cpp plugins/audiorecorder.h
     third-party/ad-block/ad_block_client.cc
     third-party/ad-block/no_fingerprint_domain.cc
     third-party/ad-block/filter.cc
     third-party/ad-block/protocol.cc
     third-party/ad-block/context_domain.cc
     third-party/ad-block/cosmetic_filter.cc
-    third-party/bloom-filter-cpp/BloomFilter.cpp
+    third-party/bloom-filter-cpp/BloomFilter.cpp third-party/bloom-filter-cpp/BloomFilter.h
     third-party/hashset-cpp/hash_set.cc
     third-party/hashset-cpp/hashFn.cc
     qml.qrc
