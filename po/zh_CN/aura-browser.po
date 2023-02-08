@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2023-01-12 10:32\n"
+"PO-Revision-Date: 2023-02-07 11:03\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -20,22 +20,22 @@ msgstr ""
 #: qml/AudioBox.qml:43
 #, kde-format
 msgid "Listening"
-msgstr ""
+msgstr "监听中"
 
 #: qml/AudioBox.qml:87
 #, kde-format
 msgid "Performing Search With Mycroft"
-msgstr ""
+msgstr "使用 Mycroft 进行搜索"
 
 #: qml/AudioBox.qml:141
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: qml/BookmarkManager.qml:170
 #, kde-format
 msgid "Bookmarks Manager"
-msgstr ""
+msgstr "书签管理"
 
 #: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
@@ -43,77 +43,77 @@ msgstr ""
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "按 ESC 或后退键以关闭"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
 msgid "Search Bookmarks"
-msgstr ""
+msgstr "搜索书签"
 
 #: qml/BookmarkManager.qml:242
 #, kde-format
 msgid "Remove Mode"
-msgstr ""
+msgstr "移除模式"
 
 #: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: qml/BookmarkManager.qml:321
 #, kde-format
 msgid "Add Bookmark"
-msgstr ""
+msgstr "添加书签"
 
 #: qml/BookmarkManager.qml:352
 #, kde-format
 msgid "Name: "
-msgstr ""
+msgstr "名字："
 
 #: qml/BookmarkManager.qml:404
 #, kde-format
 msgid "Url: "
-msgstr ""
+msgstr "URL："
 
 #: qml/BookmarkManager.qml:456
 #, kde-format
 msgid "Category: "
-msgstr ""
+msgstr "类别："
 
 #: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "书签"
 
 #: qml/DownloadRequest.qml:40
 #, kde-format
 msgid "Do you want to download %1 file ?"
-msgstr ""
+msgstr "你想下载 %1 吗？"
 
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr ""
+msgstr "正在下载 %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: qml/FeatureRequest.qml:49
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "同意"
 
 #: qml/FeatureRequest.qml:69
 #, kde-format
 msgid "Deny"
-msgstr ""
+msgstr "拒绝"
 
 #: qml/HelpTab.qml:50 qml/StartPage.qml:271
 #, kde-format
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #: qml/HelpTab.qml:84
 #, kde-format
@@ -122,192 +122,194 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"Aura 浏览器采用传统的网络浏览器UI，实现完全沉浸式的大屏幕体验。Aura浏览器用户"
+"界面保持尽可能灵活和直观，只需使用远程控制即可浏览全球网络。"
 
 #: qml/HelpTab.qml:106
 #, kde-format
 msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
-msgstr ""
+msgstr "这里是帮助您开始使用 Aura 浏览器所需的所有按钮"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
 msgid "History"
-msgstr ""
+msgstr "历史记录"
 
 #: qml/HistoryManager.qml:184
 #, kde-format
 msgid "Search History"
-msgstr ""
+msgstr "搜索历史记录"
 
 #: qml/HistoryManager.qml:211
 #, kde-format
 msgid "Clear History"
-msgstr ""
+msgstr "清除历史记录"
 
 #: qml/HistoryManager.qml:254
 #, kde-format
 msgid "No Recent History"
-msgstr ""
+msgstr "没有最近的历史记录"
 
 #: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
 #, kde-format
 msgid "Enter URL / Search Term"
-msgstr ""
+msgstr "输入 URL / 搜索条件"
 
 #: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
 #, kde-format
 msgid "Enter Search Term or URL"
-msgstr ""
+msgstr "输入搜索条件或者 URL"
 
 #: qml/main.qml:29 qml/mainSandbox.qml:28
 #, kde-format
 msgid "Aura-Browser"
-msgstr ""
+msgstr "Aura 浏览器"
 
 #: qml/main.qml:153
 #, kde-format
 msgid "Close Menu"
-msgstr ""
+msgstr "关闭菜单"
 
 #: qml/main.qml:223
 #, kde-format
 msgid "Current Tabs"
-msgstr ""
+msgstr "当前标签页"
 
 #: qml/main.qml:269
 #, kde-format
 msgid "Remove Tab"
-msgstr ""
+msgstr "关闭标签页"
 
 #: qml/mainSandbox.qml:75
 #, kde-format
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
 #: qml/WebLoader.qml:168
 #, kde-format
 msgid "Download finished"
-msgstr ""
+msgstr "下载完成"
 
 #: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
 #: qml/WebLoader.qml:173
 #, kde-format
 msgid "Download failed: %1"
-msgstr ""
+msgstr "下载失败：%1"
 
 #: qml/SettingsTab.qml:105
 #, kde-format
 msgid "Virtual Cursor Speed Control"
-msgstr ""
+msgstr "虚拟光标速度控制"
 
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
 msgid "Current Speed: %1"
-msgstr ""
+msgstr "当前速度：%1"
 
 #: qml/SettingsTab.qml:174
 #, kde-format
 msgid "Virtual Scroll Speed Control"
-msgstr ""
+msgstr "虚拟滚轮速度控制"
 
 #: qml/SettingsTab.qml:244
 #, kde-format
 msgid "Virtual Cursor Size Control"
-msgstr ""
+msgstr "虚拟光标大小控制"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Current Size: "
-msgstr ""
+msgstr "当前大小："
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "中等"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #: qml/SettingsTab.qml:314
 #, kde-format
 msgid "Search Engine"
-msgstr ""
+msgstr "搜索引擎"
 
 #: qml/SettingsTab.qml:333
 #, kde-format
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: qml/SettingsTab.qml:360
 #, kde-format
 msgid "Duck Duck Go"
-msgstr ""
+msgstr "Duck Duck Go"
 
 #: qml/SettingsTab.qml:391
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "通用"
 
 #: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
 #, kde-format
 msgid "Disable Button Sounds"
-msgstr ""
+msgstr "禁用按键音"
 
 #: qml/SettingsTab.qml:421
 #, kde-format
 msgid "Enable Button Sounds"
-msgstr ""
+msgstr "启用按键音"
 
 #: qml/SettingsTab.qml:442
 #, kde-format
 msgid "Clear Cache"
-msgstr ""
+msgstr "清空缓存"
 
 #: qml/StartPage.qml:137
 #, kde-format
 msgid "Tabs"
-msgstr ""
+msgstr "标签页"
 
 #: qml/StartPage.qml:238
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: qml/StartPage.qml:318
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr ""
+msgstr "Aura 浏览器 - 开始页面"
 
 #: qml/StartPage.qml:362
 #, kde-format
 msgid "Search or type url"
-msgstr ""
+msgstr "搜索或输入网址"
 
 #: qml/StartPage.qml:401
 #, kde-format
 msgid "Recent Pages"
-msgstr ""
+msgstr "最近页面"
 
 #: qml/StartPage.qml:411
 #, kde-format
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: qml/SuggestionsBox.qml:44
 #, kde-format
 msgid "Suggestions:"
-msgstr ""
+msgstr "建议："
 
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr ""
+msgstr "A"
