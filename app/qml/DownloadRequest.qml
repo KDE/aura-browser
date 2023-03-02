@@ -4,12 +4,12 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 import QtWebEngine 1.7
 import QtWebChannel 1.0
-import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
 
 Item {
     property var download
@@ -55,7 +55,7 @@ Item {
                 radius: 20
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 download.resume();
                 message.text = i18n("Downloading.. %1", downloadName)
                 isDownloading = true;
@@ -92,7 +92,7 @@ Item {
                 radius: 20
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 download.cancel()
                 interactionBar.isRequested = false
             }
@@ -118,7 +118,7 @@ Item {
                 source: "window-close"
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 interactionBar.isRequested = false
             }
         }

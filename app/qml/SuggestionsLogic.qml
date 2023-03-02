@@ -4,7 +4,7 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
+import QtQuick 2.15
 
 Item {
     id: logicComponent
@@ -14,11 +14,9 @@ Item {
     property string filter: ""
     property string property: ""
 
-    Connections {
-        onFilterChanged: invalidateFilter()
-        onPropertyChanged: invalidateFilter()
-        onSourceModelChanged: invalidateFilter()
-    }
+    onFilterChanged: invalidateFilter()
+    onPropertyChanged: invalidateFilter()
+    onSourceModelChanged: invalidateFilter()
 
     Component.onCompleted: invalidateFilter()
 

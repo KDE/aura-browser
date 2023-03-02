@@ -5,12 +5,12 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.10
-import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
-import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.11 as Kirigami
+import QtQuick 2.15
+import QtQuick.Controls 2.15 as Controls
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
 import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
 
 Controls.Control {
     id: delegate
@@ -88,7 +88,7 @@ Controls.Control {
         }
     }
 
-    Keys.onReturnPressed: {
+    Keys.onReturnPressed: (event)=> {
         Aura.NavigationSoundEffects.playClickedSound()
         urlEntryDrawer.close()
         createTab(model.recent_url)
@@ -97,7 +97,7 @@ Controls.Control {
     MouseArea {
         id: mouseAreaRecent
         anchors.fill: delegate
-        onClicked: {
+        onClicked: (mouse)=> {
             Aura.NavigationSoundEffects.playClickedSound()
             urlEntryDrawer.close()
             createTab(model.recent_url)

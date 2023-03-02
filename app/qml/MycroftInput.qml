@@ -4,7 +4,7 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
+import QtQuick 2.15
 import QtWebSockets 1.1
 import Aura 1.0 as Aura
 

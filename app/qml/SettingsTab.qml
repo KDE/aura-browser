@@ -4,17 +4,17 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick 2.15
+import QtQuick.Window 2.15
 import QtWebEngine 1.7
-import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
-import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
-import QtQml.Models 2.12
-import QtQuick.LocalStorage 2.12
-import QtQuick.VirtualKeyboard 2.4
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
+import QtQuick.Controls 2.15 as Controls
+import QtQml.Models 2.15
+import QtQuick.LocalStorage 2.15
+import QtQuick.VirtualKeyboard 2.15
 import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
 
 Controls.Popup {
     id: settingsPopupArea
@@ -56,7 +56,7 @@ Controls.Popup {
 
     Connections {
         target: Aura.GlobalSettings
-        onVirtualMouseSpeedChanged: {
+        function onVirtualMouseSpeedChanged(virtualMouseSpeed) {
             Cursor.setStep(virtualMouseSpeed);
         }
     }
@@ -145,7 +145,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualMouseSpeed(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -215,7 +215,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualScrollSpeed(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -285,7 +285,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualMouseSize(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -343,11 +343,11 @@ Controls.Popup {
                         radius: 2
                     }
 
-                    Keys.onReturnPressed: {
+                    Keys.onReturnPressed: (event)=> {
                         clicked()
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.GlobalSettings.setDefaultSearchEngine("Google")
                     }
                 }
@@ -370,11 +370,11 @@ Controls.Popup {
                         radius: 2
                     }
 
-                    Keys.onReturnPressed: {
+                    Keys.onReturnPressed: (event)=> {
                         clicked()
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.GlobalSettings.setDefaultSearchEngine("DDG")
                     }
                 }
@@ -414,7 +414,7 @@ Controls.Popup {
                     radius: 2
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     if(Aura.GlobalSettings.soundEffects){
                         Aura.GlobalSettings.setSoundEffects(false);
@@ -425,11 +425,11 @@ Controls.Popup {
                     }
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -449,16 +449,16 @@ Controls.Popup {
                     radius: 2
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     Aura.GlobalSettings.clearDefaultProfileCache();
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }

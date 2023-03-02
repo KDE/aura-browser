@@ -5,11 +5,11 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.10
-import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
-import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.11 as Kirigami
+import QtQuick 2.15
+import QtQuick.Controls 2.15 as Controls
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
+import Qt5Compat.GraphicalEffects
 
 Controls.TabButton {
     id: delegate
@@ -85,13 +85,11 @@ Controls.TabButton {
         }
     }
 
-    Keys.onReturnPressed: {
-        console.log("hereinClick2")
+    Keys.onReturnPressed: (event)=> {
         switchToTab(index);
     }
 
-    onClicked: {
-        console.log("hereinClick")
+    onClicked: (mouse)=> {
         switchToTab(index);
     }
 }

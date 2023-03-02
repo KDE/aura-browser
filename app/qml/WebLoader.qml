@@ -4,18 +4,18 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Window 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Window 2.15
 import QtWebEngine 1.7
 import QtWebChannel 1.0
-import QtQuick.Layouts 1.12
-import QtGraphicalEffects 1.0
-import QtQuick.LocalStorage 2.12
-import org.kde.kirigami 2.11 as Kirigami
+import QtQuick.Layouts 1.15
+import QtQuick.LocalStorage 2.15
+import org.kde.kirigami 2.19 as Kirigami
 import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
+import Qt5Compat.GraphicalEffects
 
 Item {
     id: mItem
@@ -33,23 +33,23 @@ Item {
     Connections {
         target: root
 
-        onBlurFieldRequested: {
+        function onBlurFieldRequested() {
             if(mItem.visible) {
                 webView.runJavaScript('document.activeElement.blur()');
             }
         }
-        onMouseActivationRequested: {
+        function onMouseActivationRequested() {
             if(mItem.visible) {
                 vMouseEnabled = true
                 mouseCursor.forceActiveFocus();
             }
         }
-        onMouseDeActivationRequested: {
+        function onMouseDeActivationRequested() {
             if(mItem.visible) {
                 vMouseEnabled = false
             }
         }
-        onIgnoreInputRequested: {
+        function onIgnoreInputRequested() {
             if(mItem.visible){
                 webView.forceActiveFocus()
             }

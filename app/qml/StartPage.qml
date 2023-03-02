@@ -4,21 +4,21 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick 2.15
+import QtQuick.Window 2.15
 import QtWebEngine 1.7
-import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
-import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
-import QtQuick.LocalStorage 2.12
-import QtQuick.VirtualKeyboard 2.4
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
+import QtQuick.Controls 2.15 as Controls
+import QtQuick.LocalStorage 2.15
+import QtQuick.VirtualKeyboard 2.15
 import Aura 1.0 as Aura
 import "views" as Views
 import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
 import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
+import Qt5Compat.GraphicalEffects
 
 Kirigami.Page {
     id: startPageComp
@@ -45,7 +45,7 @@ Kirigami.Page {
 
     Connections {
         target: root
-        onSettingsTabRequested: {
+        function onSettingsTabRequested() {
             settingsTabArea.open()
         }
     }
@@ -118,16 +118,16 @@ Kirigami.Page {
                     }
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     gDrawer.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -152,16 +152,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                    Aura.NavigationSoundEffects.playClickedSound();
                    tabBarView.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -185,16 +185,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     historyTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -218,17 +218,17 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     bookmarkTabManager.bookmarkStack = 0
                     bookmarkTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -252,16 +252,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     settingsTabArea.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -284,16 +284,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     helpTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -365,21 +365,21 @@ Kirigami.Page {
                     }
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     urlEntryDrawer.open()
                 }
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.NavigationSoundEffects.playClickedSound();
                         urlEntryDrawer.open()
                         urlEntrie.forceActiveFocus()
                     }
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -423,16 +423,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     RecentStorage.dbClearTable()
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     clicked();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }

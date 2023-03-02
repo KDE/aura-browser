@@ -6,12 +6,12 @@
 
 
 
-import QtQuick 2.10
-import QtQuick.Window 2.10
+import QtQuick 2.15
+import QtQuick.Window 2.15
 import QtWebEngine 1.7
-import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.0
-import org.kde.kirigami 2.11 as Kirigami
+import QtQuick.Layouts 1.15
+import org.kde.kirigami 2.19 as Kirigami
+import Qt5Compat.GraphicalEffects
 
 Kirigami.Heading {
     id: header

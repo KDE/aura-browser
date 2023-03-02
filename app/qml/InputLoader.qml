@@ -4,11 +4,11 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.12 as Controls
-import org.kde.kirigami 2.11 as Kirigami
-import QtGraphicalEffects 1.0
+import QtQuick 2.15
+import QtQuick.Controls 2.15 as Controls
+import org.kde.kirigami 2.19 as Kirigami
 import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
 
 Controls.Control {
     id: inptLoader
@@ -66,7 +66,7 @@ Controls.Control {
         }
     }
 
-    Keys.onReturnPressed: {
+    Keys.onReturnPressed: (event)=> {
         audRecBox.open()
         Aura.AudioRecorder.start()
         delay(8000, function() {
@@ -77,7 +77,7 @@ Controls.Control {
     MouseArea {
         id: inputLoaderMArea
         anchors.fill: parent
-        onClicked: {
+        onClicked: (mouse)=> {
             audRecBox.open()
             Aura.AudioRecorder.start()
             delay(10000, function() {

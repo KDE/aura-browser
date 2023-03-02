@@ -4,9 +4,9 @@
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-import QtQuick 2.12
-import QtMultimedia 5.12
+import QtQuick 2.15
 import Aura 1.0 as Aura
+import QtMultimedia
 
 pragma Singleton
 
