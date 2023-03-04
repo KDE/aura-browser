@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2023-01-16 23:39-0300\n"
+"PO-Revision-Date: 2023-03-03 09:19-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -25,7 +25,7 @@ msgstr "Ouvindo"
 #: qml/AudioBox.qml:87
 #, kde-format
 msgid "Performing Search With Mycroft"
-msgstr ""
+msgstr "Faça pesquisas com o Mycroft"
 
 #: qml/AudioBox.qml:141
 #, kde-format
@@ -43,7 +43,7 @@ msgstr "Gerenciador de favoritos"
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "Pressione 'Esc' ou o botão Voltar [←] para fechar"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
@@ -53,37 +53,37 @@ msgstr "Pesquisar favoritos"
 #: qml/BookmarkManager.qml:242
 #, kde-format
 msgid "Remove Mode"
-msgstr ""
+msgstr "Remover modo"
 
 #: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: qml/BookmarkManager.qml:321
 #, kde-format
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Adicionar favorito"
 
 #: qml/BookmarkManager.qml:352
 #, kde-format
 msgid "Name: "
-msgstr ""
+msgstr "Nome: "
 
 #: qml/BookmarkManager.qml:404
 #, kde-format
 msgid "Url: "
-msgstr ""
+msgstr "URL: "
 
 #: qml/BookmarkManager.qml:456
 #, kde-format
 msgid "Category: "
-msgstr ""
+msgstr "Categoria: "
 
 #: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Favoritos"
 
 #: qml/DownloadRequest.qml:40
 #, kde-format
@@ -122,6 +122,10 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"O Navegador Aura adapta a interface tradicional do navegador Web para uma "
+"experiência de tela grande totalmente imersa. A interface do navegador Aura "
+"é mantida o mais sutil e intuitiva possível para navegar na rede mundial de "
+"computadores usando apenas o controle remoto."
 
 #: qml/HelpTab.qml:106
 #, kde-format
@@ -129,6 +133,8 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"Aqui estão todos os botões necessários para ajudá-lo a começar a usar o "
+"navegador Aura"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
@@ -153,12 +159,12 @@ msgstr "Sem histórico recente"
 #: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
 #, kde-format
 msgid "Enter URL / Search Term"
-msgstr ""
+msgstr "Digitar URL/termo de pesquisa"
 
 #: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
 #, kde-format
 msgid "Enter Search Term or URL"
-msgstr ""
+msgstr "Digitar termo de pesquisa ou URL"
 
 #: qml/main.qml:29 qml/mainSandbox.qml:28
 #, kde-format
@@ -200,7 +206,7 @@ msgstr "Falha ao baixar: %1"
 #: qml/SettingsTab.qml:105
 #, kde-format
 msgid "Virtual Cursor Speed Control"
-msgstr ""
+msgstr "Controle de velocidade do cursor virtual"
 
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
@@ -210,12 +216,12 @@ msgstr "Velocidade atual: %1"
 #: qml/SettingsTab.qml:174
 #, kde-format
 msgid "Virtual Scroll Speed Control"
-msgstr ""
+msgstr "Controle de velocidade da rolagem virtual"
 
 #: qml/SettingsTab.qml:244
 #, kde-format
 msgid "Virtual Cursor Size Control"
-msgstr ""
+msgstr "Controle do tamanho do cursor virtual"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
@@ -260,12 +266,12 @@ msgstr "Geral"
 #: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
 #, kde-format
 msgid "Disable Button Sounds"
-msgstr ""
+msgstr "Desabilitar botões de som"
 
 #: qml/SettingsTab.qml:421
 #, kde-format
 msgid "Enable Button Sounds"
-msgstr ""
+msgstr "Habilitar botões de som"
 
 #: qml/SettingsTab.qml:442
 #, kde-format
@@ -285,12 +291,12 @@ msgstr "Configurações"
 #: qml/StartPage.qml:318
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr ""
+msgstr "Navegador Aura - página inicial"
 
 #: qml/StartPage.qml:362
 #, kde-format
 msgid "Search or type url"
-msgstr ""
+msgstr "Pesquisar ou digitar URL"
 
 #: qml/StartPage.qml:401
 #, kde-format
