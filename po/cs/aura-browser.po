@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2023-01-12 16:06+0100\n"
+"PO-Revision-Date: 2023-03-03 16:13+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -168,7 +168,7 @@ msgstr "Prohlížeč Aura"
 #: qml/main.qml:153
 #, kde-format
 msgid "Close Menu"
-msgstr ""
+msgstr "Uzavřít nabídku"
 
 #: qml/main.qml:223
 #, kde-format
@@ -285,7 +285,7 @@ msgstr "Nastavení"
 #: qml/StartPage.qml:318
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr ""
+msgstr "Prohlížeč Aura - Úvodní stránka"
 
 #: qml/StartPage.qml:362
 #, kde-format
