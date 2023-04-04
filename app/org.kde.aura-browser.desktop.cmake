@@ -11,6 +11,7 @@ Name[es]=Navegador Aura
 Name[eu]=Aura Arakatzailea
 Name[fi]=Aura-selain
 Name[fr]=Navigateur Aura
+Name[ia]=Aura Browser (Navigator Aura)
 Name[it]=Aura Browser
 Name[ka]=Aura ბრაუზერი
 Name[ko]=Aura 브라우저
