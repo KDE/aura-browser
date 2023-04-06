@@ -77,6 +77,7 @@ Keywords[fi]=ohjelma;sovellus;internet;verkko;
 Keywords[fr]=Internet;programme;logiciel;
 Keywords[hi]=अनुप्रयोग;सॉफ्टवेयर;इंटरनेट;
 Keywords[hu]=program;szoftver;Internet;
+Keywords[ia]=program;software;Internet;
 Keywords[it]=programma;software;Internet;
 Keywords[ka]=პროგრამა;ინტერნეტი;
 Keywords[ko]=program;software;Internet;프로그램;소프트웨어;인터넷;
