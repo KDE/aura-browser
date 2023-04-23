@@ -123,9 +123,8 @@ msgid ""
 msgstr ""
 "Le navigateur Aura adapte son interface utilisateur traditionnelle de "
 "navigateurs Internet pour une expérience totalement immersive sur grand "
-"écran.  Son interface utilisateur est aussi subtile et intuitive que "
-"possible pour une navigation sur Internet utilisant simplement votre "
-"télécommande."
+"écran. Son interface utilisateur est aussi subtile et intuitive que possible "
+"pour une navigation sur Internet utilisant simplement votre télécommande."
 
 #: qml/HelpTab.qml:106
 #, kde-format
