@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 #
-# Enol P. <enolp@softastur.org>, 2022.
+# Enol P. <enolp@softastur.org>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-12-08 13:25+0100\n"
+"PO-Revision-Date: 2023-04-28 12:51+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -122,7 +122,7 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
-"El restolador Aura adauta a la IU tradicional de los restoladores web pa "
+"El restolador Aura adáuta la IU tradicional de los restoladores web pa "
 "consiguir una esperiencia Bigscreen inmersiva al completu. La IU d'esti "
 "restolador caltiénse tan sutil ya intuitiva como seya posible pa restolar "
 "internet con namás el mandu a distancia."
@@ -133,6 +133,7 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"Equi tienes tolos botones riquíos p'ayudate a comenzar con Aura Browser"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
