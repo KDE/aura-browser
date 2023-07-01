@@ -9,6 +9,7 @@
   <name xml:lang="cs">Prohlížeč Aura</name>
   <name xml:lang="de">Aura Browser</name>
   <name xml:lang="en-GB">Aura Browser</name>
+  <name xml:lang="eo">Aura Browser</name>
   <name xml:lang="es">Navegador Aura</name>
   <name xml:lang="eu">Aura arakatzailea</name>
   <name xml:lang="fi">Aura-selain</name>
@@ -110,6 +111,7 @@
       <caption xml:lang="cs">Prohlížeč Aura</caption>
       <caption xml:lang="de">Aura Browser</caption>
       <caption xml:lang="en-GB">Aura Browser</caption>
+      <caption xml:lang="eo">Aura Browser</caption>
       <caption xml:lang="es">Navegador Aura</caption>
       <caption xml:lang="eu">Aura arakatzailea</caption>
       <caption xml:lang="fi">Aura-selain</caption>
