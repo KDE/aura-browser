@@ -25,8 +25,8 @@ target_link_libraries(aura-browser
     #Qt::WebEngine
     Qt::Test
     Qt::Multimedia
-    KF5::Kirigami2
-    KF5::I18n
+    KF${QT_MAJOR_VERSION}::Kirigami2
+    KF${QT_MAJOR_VERSION}::I18n
     ${CMAKE_THREAD_LIBS_INIT}
 )
 if (QT_MAJOR_VERSION STREQUAL "6")

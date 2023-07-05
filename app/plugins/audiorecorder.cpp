@@ -5,6 +5,7 @@
 
 #include "audiorecorder.h"
 #include <QDebug>
+#include <QAudioFormat>
 
 AudioRecorder::AudioRecorder(QObject *parent):
     QObject(parent)

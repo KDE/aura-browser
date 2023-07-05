@@ -32,7 +32,7 @@ else ()
     find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS WebEngine)
 endif()
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED 
+find_package(KF${QT_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED 
     Kirigami2
     I18n
 )
