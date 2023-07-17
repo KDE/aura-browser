@@ -7,6 +7,9 @@
 #include <QGuiApplication>
 #include <QObject>
 #include <QCursor>
+#if QT_VERSION_MAJOR >= 6
+#include <QInputDevice>
+#endif
 
 class FakeCursor : public QObject {
   Q_OBJECT
@@ -44,6 +47,10 @@ public slots:
       }
 
 private:
+#if QT_VERSION_MAJOR < 6
       QTouchDevice *device;
+#else
+      QInputDevice *device;
+#endif
       //QCursor cursor;
 };

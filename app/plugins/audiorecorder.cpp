@@ -17,10 +17,11 @@ void AudioRecorder::start()
     destinationFile.setFileName(QStringLiteral("/tmp/aura_in.raw"));
     destinationFile.open( QIODevice::WriteOnly | QIODevice::Truncate );
     QAudioFormat format;
-    format.setCodec(QStringLiteral("audio/PCM"));
     format.setSampleRate(16000);
-    format.setSampleSize(16);
     format.setChannelCount(1);
+#if QT_VERSION_MAJOR < 6
+    format.setCodec(QStringLiteral("audio/PCM"));
+    format.setSampleSize(16);
     format.setByteOrder(QAudioFormat::LittleEndian);
     format.setSampleType(QAudioFormat::SignedInt);
 
@@ -32,6 +33,11 @@ void AudioRecorder::start()
     }
 
     m_audioInput = new QAudioInput(format, this);
+#else
+    format.setSampleFormat(QAudioFormat::Int16);
+
+    m_audioInput = new QAudioSource(format, this);
+#endif
     m_audioInput->start(&destinationFile);
 }
 
