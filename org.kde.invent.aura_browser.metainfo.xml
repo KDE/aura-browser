@@ -30,7 +30,6 @@
   <name xml:lang="sv">Aura webbläsare</name>
   <name xml:lang="tr">Aura Tarayıcı</name>
   <name xml:lang="uk">Браузер Aura</name>
-  <name xml:lang="x-test">xxAura Browserxx</name>
   <name xml:lang="zh-CN">Aura 浏览器</name>
   <summary>Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</summary>
   <summary xml:lang="ar">متصفح لتجربة شاشة كبيرة رائعة مما يتيح لك التنقل في شبكة الويب العالمية باستخدام جهاز التحكم عن بُعد فقط</summary>
@@ -59,7 +58,6 @@
   <summary xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</summary>
   <summary xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</summary>
   <summary xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</summary>
-  <summary xml:lang="x-test">xxBrowser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote controlxx</summary>
   <summary xml:lang="zh-CN">浏览器提供完全沉浸式大屏幕体验，让您只需使用遥控器即可浏览全球网络</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later and LGPL-2.0-or-later and MPL-2.0</project_license>
@@ -98,7 +96,6 @@
     <p xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</p>
     <p xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
     <p xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</p>
-    <p xml:lang="x-test">xxBrowser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote controlxx</p>
     <p xml:lang="zh-CN">浏览器提供完全沉浸式大屏幕体验，让您只需使用遥控器即可浏览全球网络</p>
   </description>
   <project_group>KDE</project_group>
@@ -134,7 +131,6 @@
       <caption xml:lang="sv">Aura webbläsare</caption>
       <caption xml:lang="tr">Aura Tarayıcı</caption>
       <caption xml:lang="uk">Браузер Aura</caption>
-      <caption xml:lang="x-test">xxAura Browserxx</caption>
       <caption xml:lang="zh-CN">Aura 浏览器</caption>
       <image>https://cdn.kde.org/screenshots/aura-browser/aura-browser.png</image>
     </screenshot>
