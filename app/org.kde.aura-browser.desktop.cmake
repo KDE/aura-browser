@@ -101,4 +101,4 @@ Keywords[sv]=program;programvara;Internet;
 Keywords[tr]=program;yazılım;internet;
 Keywords[uk]=program;software;Internet;програма;інтернет;
 Keywords[x-test]=xxprogramxx;xxsoftwarexx;xxInternetxx;
-Keywords[zh_CN]=program;software;Internet;
+Keywords[zh_CN]=program;software;Internet;程序;软件;互联网;上网;网页;网站;浏览;chengxu;ruanjian;hulianwang;shangwang;wangye;wangzhan;liulan;
