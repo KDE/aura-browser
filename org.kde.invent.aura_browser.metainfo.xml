@@ -64,7 +64,7 @@
   <summary xml:lang="zh-CN">浏览器提供完全沉浸式大屏幕体验，让您只需使用遥控器即可浏览全球网络</summary>
   <summary xml:lang="zh-TW">大螢幕用的瀏覽器，提供在大螢幕上的沉浸體驗，讓您透過您的遙控器瀏覽網際網路</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0-or-later and LGPL-2.0-or-later and MPL-2.0</project_license>
+  <project_license>GPL-2.0-or-later</project_license>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
