@@ -1,15 +1,15 @@
 # Translation of aura-browser.po to Catalan
-# Copyright (C) 2022 This_file_is_part_of_KDE
+# Copyright (C) 2022-2024 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-09-07 16:24+0200\n"
+"PO-Revision-Date: 2024-01-28 18:27+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -45,7 +45,7 @@ msgstr "Gestor d'adreces d'interès"
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr "Premeu «Esc» o el botó Enrere [←] per tancar"
+msgstr "Premeu «Esc» o el botó Enrere [←] per a tancar"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
@@ -127,7 +127,7 @@ msgstr ""
 "El navegador Aura adapta la interfície d'usuari del navegador web "
 "tradicional a una experiència de Bigscreen completament immersiva. La "
 "interfície d'usuari del navegador Aura es manté tan subtil i intuïtiva com "
-"sigui possible per navegar per la web de tot el món usant només el control "
+"sigui possible per a navegar per la web de tot el món usant només el control "
 "remot."
 
 #: qml/HelpTab.qml:106
@@ -136,7 +136,7 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
-"Aquí hi ha tots els botons necessaris per ajudar-vos a començar a usar el "
+"Aquí hi ha tots els botons necessaris per a ajudar-vos a començar a usar el "
 "navegador Aura"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
