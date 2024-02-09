@@ -28,7 +28,7 @@ class GlobalSettings : public QObject
     Q_PROPERTY(bool adblockEnabled READ adblockEnabled WRITE setAdblockEnabled NOTIFY adBlockEnabledChanged)
 
 public:
-    explicit GlobalSettings(QObject *parent=0);
+    explicit GlobalSettings(QObject *parent=nullptr);
     
     bool firstRun() const;
     int virtualMouseSpeed() const;

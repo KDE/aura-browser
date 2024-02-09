@@ -9,6 +9,7 @@
 
 #ifndef CONTEXT_DOMAIN_H_
 #define CONTEXT_DOMAIN_H_
+#define UNUSED(x) ( (void)(x) )
 
 #include <string.h>
 #include "./base.h"
@@ -50,13 +51,18 @@ class ContextDomain {
   }
 
   void Update(const ContextDomain &other) {
+    // unused function
+    UNUSED(other);
   }
 
   uint32_t Serialize(char* buffer) {
+    UNUSED(buffer);
     return 0;
   }
 
   uint32_t Deserialize(char* buffer, uint32_t buffer_size) {
+    UNUSED(buffer);
+    UNUSED(buffer_size);
     return 0;
   }
 

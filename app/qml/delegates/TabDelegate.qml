@@ -7,9 +7,10 @@
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.11 as Kirigami
+import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Controls.TabButton {
     id: delegate
@@ -85,13 +86,17 @@ Controls.TabButton {
         }
     }
 
-    Keys.onReturnPressed: {
-        console.log("hereinClick2")
+    Keys.onReturnPressed: (event)=> {
         switchToTab(index);
+        if(index > 0) {
+            keyFilter.startFilter();
+        }
     }
 
-    onClicked: {
-        console.log("hereinClick")
+    onClicked: (mouse)=> {
         switchToTab(index);
+        if(index > 0) {
+            keyFilter.startFilter();
+        }
     }
 }

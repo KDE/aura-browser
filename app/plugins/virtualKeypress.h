@@ -16,7 +16,7 @@ public:
     VirtualKeyPress();
     ~VirtualKeyPress();
 
-public slots:
+public Q_SLOTS:
     void emitKey(QString stringkey);
 
 };

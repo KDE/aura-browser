@@ -7,9 +7,9 @@
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.11 as Kirigami
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Controls.Control {
     id: delegate
@@ -87,16 +87,16 @@ Controls.Control {
         }
     }
 
-    Keys.onReturnPressed: {
-        urlEntryDrawer.close()
+    Keys.onReturnPressed: (event)=> {
+        urlEntryBox.close()
         createTab(model.recent_url)
     }
 
     MouseArea {
         id: mouseAreaRecent
         anchors.fill: delegate
-        onClicked: {
-            urlEntryDrawer.close()
+        onClicked: (mouse)=> {
+            urlEntryBox.close()
             createTab(model.recent_url)
         }
     }

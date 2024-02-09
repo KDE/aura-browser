@@ -1,6 +1,5 @@
 ﻿/*
     SPDX-FileCopyrightText: 2022 Aditya Mehra <aix.m@outlook.com>
-
     SPDX-License-Identifier: GPL-2.0-or-later
 */
 
@@ -8,9 +7,7 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtWebEngine 1.7
 import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
 import Aura 1.0 as Aura
@@ -19,6 +16,8 @@ import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
 import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Kirigami.Page {
     id: startPageComp
@@ -28,6 +27,7 @@ Kirigami.Page {
     onFocusChanged: {
         if(focus){
             recentPagesView.forceActiveFocus()
+            keyFilter.stopFilter()
         }
     }
 
@@ -45,7 +45,7 @@ Kirigami.Page {
 
     Connections {
         target: root
-        onSettingsTabRequested: {
+        function onSettingsTabRequested() {
             settingsTabArea.open()
         }
     }
@@ -118,16 +118,17 @@ Kirigami.Page {
                     }
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     gDrawer.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    Aura.NavigationSoundEffects.playClickedSound();
+                    gDrawer.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -152,16 +153,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                    Aura.NavigationSoundEffects.playClickedSound();
                    tabBarView.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                   tabBarView.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -185,16 +186,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     historyTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    historyTabManager.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -218,17 +219,18 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     bookmarkTabManager.bookmarkStack = 0
                     bookmarkTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    bookmarkTabManager.bookmarkStack = 0
+                    bookmarkTabManager.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -252,16 +254,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     settingsTabArea.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    settingsTabArea.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -284,16 +286,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     helpTabManager.open()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    helpTabManager.open()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -336,7 +338,6 @@ Kirigami.Page {
                 border.color: Kirigami.Theme.disabledTextColor
                 radius: 20
                 KeyNavigation.down: recentPagesView
-                KeyNavigation.right: micBtnLoader
                 layer.enabled: true
                 layer.effect: DropShadow {
                     horizontalOffset: 0
@@ -365,30 +366,23 @@ Kirigami.Page {
                     }
                 }
 
-                Keys.onReturnPressed: {
+                Keys.onReturnPressed: (event)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
-                    urlEntryDrawer.open()
+                    urlEntryBox.open()
                 }
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.NavigationSoundEffects.playClickedSound();
-                        urlEntryDrawer.open()
+                        urlEntryBox.open()
                         urlEntrie.forceActiveFocus()
                     }
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
-            }
-            InputLoader {
-                id: micBtnLoader
-                Layout.preferredWidth: parent.width * 0.10
-                Layout.preferredHeight: Kirigami.Units.gridUnit * 4
-                rootTarget: startPageComp
-                KeyNavigation.left: searchandurlfield
             }
         }
 
@@ -423,16 +417,16 @@ Kirigami.Page {
                     radius: 20
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     RecentStorage.dbClearTable()
                 }
 
-                Keys.onReturnPressed: {
-                    clicked();
+                Keys.onReturnPressed: (event)=> {
+                    RecentStorage.dbClearTable()
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -464,109 +458,6 @@ Kirigami.Page {
                 KeyNavigation.up: recentPagesView
                 focus: false
                 delegate: Delegates.BookmarkDelegate{}
-            }
-        }
-    }
-
-    Controls.Popup {
-        id: urlEntryDrawer
-        width: parent.width * 0.8
-        height: parent.height * 0.8
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        modal: true
-        //closePolicy: Controls.Popup.CloseOnEscape | Controls.Popup.CloseOnReleaseOutside
-        dim: true
-        padding: Kirigami.Units.largeSpacing
-
-        onOpened: {
-            urlEntrie.forceActiveFocus()
-        }
-
-        Controls.Overlay.modal: Rectangle {
-            Kirigami.Theme.colorSet: Kirigami.Theme.View
-            color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
-        }
-
-        background: Rectangle {
-            color: Kirigami.Theme.backgroundColor
-            layer.enabled: true
-            layer.effect: DropShadow {
-                horizontalOffset: 0
-                verticalOffset: 2
-                radius: 8.0
-                samples: 17
-                color: Qt.rgba(0,0,0,0.6)
-            }
-        }
-        
-        contentItem: FocusScope {
-            id: entryLayout
-
-            RowLayout {
-                id: headerAreaURLandSearchField
-                anchors.top: parent.top
-                anchors.left: parent.left
-                anchors.right: parent.right                
-                anchors.margins: Kirigami.Units.smallSpacing
-
-                Kirigami.Heading {
-                    id: urlSearchFieldLabel
-                    level: 1
-                    text: i18n("Enter URL / Search Term")
-                    width: parent.width
-                    horizontalAlignment: Qt.AlignLeft
-                    Layout.alignment: Qt.AlignLeft
-                    color: Kirigami.Theme.textColor
-                }
-
-                Controls.Label {
-                    id: urlSearchFieldBackBtnLabel
-                    text: i18n("Press 'esc' or the [←] Back button to close")
-                    Layout.alignment: Qt.AlignRight
-                    color: Kirigami.Theme.textColor
-                }
-            }
-
-            Kirigami.Separator {
-                id: urlSearchFieldheaderSept
-                anchors.top: headerAreaURLandSearchField.bottom
-                width: parent.width
-                height: 1
-            }
-
-            Controls.TextField {
-                id: urlEntrie
-                anchors.top: urlSearchFieldheaderSept.bottom
-                anchors.topMargin: Kirigami.Units.largeSpacing
-                width: parent.width
-                height: Kirigami.Units.gridUnit * 5
-                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                placeholderText: i18n("Enter Search Term or URL")
-                color: Kirigami.Theme.textColor
-                focus: true
-                background: Rectangle {
-                    color: Qt.lighter(Kirigami.Theme.backgroundColor, 1.2)
-                    border.color: urlEntrie.activeFocus ? Kirigami.Theme.highlightColor : Kirigami.Theme.disabledTextColor
-                    border.width: 1
-                }
-
-                onAccepted: {
-                    Aura.NavigationSoundEffects.playClickedSound();
-                    var setUrl = checkURL(urlEntrie.text)
-                    if(setUrl){
-                        createTab(urlEntrie.text)
-                    } else {
-                        var searchTypeUrl
-                        if(Aura.GlobalSettings.defaultSearchEngine == "Google"){
-                            searchTypeUrl = "https://www.google.com/search?q=" + urlEntrie.text
-                        } else if (Aura.GlobalSettings.defaultSearchEngine == "DDG") {
-                            searchTypeUrl = "https://duckduckgo.com/?q=" + urlEntrie.text
-                        }
-                        createTab(searchTypeUrl)
-                    }
-                    urlEntryDrawer.close()
-                }
             }
         }
     }

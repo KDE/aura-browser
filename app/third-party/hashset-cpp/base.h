@@ -11,7 +11,6 @@
 #define BASE_H_
 
 #if !defined(nullptr) && !defined(_MSC_VER)
-#define nullptr 0
 #endif
 
 #if defined(_MSC_VER) && _MSC_VER < 1900

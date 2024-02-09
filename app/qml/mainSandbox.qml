@@ -7,18 +7,18 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.12
-import QtWebEngine 1.7
 import QtQuick.Controls 2.12 as Controls
 import QtQuick.LocalStorage 2.12
-import org.kde.kirigami 2.11 as Kirigami
 import "views" as Views
 import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
 import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
-import QtQuick.VirtualKeyboard 2.4
-import QtQuick.VirtualKeyboard.Settings 2.4
+import QtWebEngine 1.7
+import QtQuick.VirtualKeyboard
+import QtQuick.VirtualKeyboard.Settings
+import org.kde.kirigami as Kirigami
 
 Kirigami.AbstractApplicationWindow {
     id: root
@@ -38,7 +38,7 @@ Kirigami.AbstractApplicationWindow {
         id: gDrawer
         handleVisible: false
 
-        onOpened:  {
+        onOpened: {
             quitButton.forceActiveFocus();
         }
 
@@ -76,12 +76,12 @@ Kirigami.AbstractApplicationWindow {
                 }
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 root.close();
             }
 
-            Keys.onReturnPressed: {
-                clicked()
+            Keys.onReturnPressed: (event)=> {
+                root.close();
             }
         }
     }
@@ -94,14 +94,16 @@ Kirigami.AbstractApplicationWindow {
             BookmarkStorage.prePopulateBookmarks();
             Aura.GlobalSettings.setFirstRun(false);
         }
+        keyFilter.startFilter();
     }
 
     Connections {
         target: Aura.GlobalSettings
-        onFocusOnVKeyboard: {
+        
+        function onFocusOnVKeyboard() {
            mouseDeActivationRequested();
          }
-        onFocusOffVKeyboard: {
+        function onFocusOffVKeyboard() {
            ignoreInputRequested();
         }
     }
@@ -119,8 +121,10 @@ Kirigami.AbstractApplicationWindow {
 
         onActiveChanged: {
             if(!active){
-                mouseActivationRequested()
+                keyFilter.startFilter();
                 blurFieldRequested();
+            } else {
+                keyFilter.stopFilter();
             }
         }
 

@@ -7,15 +7,15 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
-import QtWebEngine 1.7
 import QtWebChannel 1.0
 import QtQuick.Layouts 1.12
-import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
-import org.kde.kirigami 2.11 as Kirigami
 import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
+import QtWebEngine
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Item {
     id: mItem
@@ -29,26 +29,41 @@ Item {
     property int currentScrollSpeed: Aura.GlobalSettings.virtualScrollSpeed
     signal returnFocus
 
+    Rectangle {
+        id: mouseCursor
+        width: Kirigami.Units.gridUnit * 1.5
+        height: Kirigami.Units.gridUnit * 1.5
+        radius: 100
+        border.width: Kirigami.Units.smallSpacing
+        border.color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
+        color: Qt.rgba(Kirigami.Theme.linkColor.r, Kirigami.Theme.linkColor.g, Kirigami.Theme.linkColor.b, 0.8)
+        x: Cursor.pos.x
+        y: Cursor.pos.y
+        z: 1002
+        visible: Cursor.visible
+        enabled: vMouseEnabled
+    }
+
     Connections {
         target: root
 
-        onBlurFieldRequested: {
+        function onBlurFieldRequested() {
             if(mItem.visible) {
                 webView.runJavaScript('document.activeElement.blur()');
             }
         }
-        onMouseActivationRequested: {
+        function onMouseActivationRequested() {
             if(mItem.visible) {
                 vMouseEnabled = true
                 mouseCursor.forceActiveFocus();
             }
         }
-        onMouseDeActivationRequested: {
+        function onMouseDeActivationRequested() {
             if(mItem.visible) {
                 vMouseEnabled = false
             }
         }
-        onIgnoreInputRequested: {
+        function onIgnoreInputRequested() {
             if(mItem.visible){
                 webView.forceActiveFocus()
             }
@@ -60,6 +75,21 @@ Item {
     }
 
     Component.onCompleted: {
+        var scriptFoo = WebEngine.script()
+        scriptFoo.injectionPoint = WebEngineScript.DocumentCreation
+        scriptFoo.name = "QWebChannel"
+        scriptFoo.worldId = WebEngineScript.MainWorld
+        scriptFoo.sourceUrl = Qt.resolvedUrl("./code/qwebchannel.js")
+        webView.userScripts.insert(scriptFoo)
+
+        var scriptRoo = WebEngine.script()  
+        scriptRoo.injectionPoint = WebEngineScript.DocumentReady
+        scriptRoo.name = "QWebInput"
+        scriptRoo.worldId = WebEngineScript.MainWorld
+        scriptRoo.runOnSubframes = true
+        scriptRoo.sourceUrl = Qt.resolvedUrl("./code/qwebinput.js")
+
+        webView.userScripts.insert(scriptRoo)
         webChannel.registerObject("foo", myObject)
     }
 
@@ -99,11 +129,12 @@ Item {
             objectName: "webengineview"
             webChannel: webChannel
             profile: Aura.GlobalSettings.adblockEnabled == 1 ? adblockProfile : defaultProfile
+        
 
             Connections {
                 target: adblockProfile
 
-                onDownloadRequested: {
+                function onDownloadRequested() {
                     download.accept()
                     download.pause()
                     var downloadFileName = download.path.split('/').pop(-1)
@@ -114,8 +145,7 @@ Item {
                     interactionBar.isRequested = true
                 }
 
-                onDownloadFinished: {
-                    console.log("In download finished")
+                function onDownloadFinished() {
                     if (download.state === WebEngineDownloadItem.DownloadCompleted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
@@ -131,12 +161,13 @@ Item {
                     }
                 }
             }
+        
 
             WebEngineProfile {
                 id: defaultProfile
                 httpUserAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
 
-                onDownloadRequested: {
+                onDownloadRequested: function(download) {
                     download.accept()
                     download.pause()
                     var downloadFileName = download.path.split('/').pop(-1)
@@ -147,7 +178,7 @@ Item {
                     interactionBar.isRequested = true
                 }
 
-                onDownloadFinished: {
+                onDownloadFinished: function(download) {
                     if (download.state === WebEngineDownloadItem.DownloadCompleted) {
                         interactionBar.interactionItem.actionsVisible = false
                         interactionBar.interactionItem.isDownloading = false
@@ -164,30 +195,15 @@ Item {
                 }
             }
 
-            userScripts: [
-                WebEngineScript {
-                    injectionPoint: WebEngineScript.DocumentCreation
-                    name: "QWebChannel"
-                    worldId: WebEngineScript.MainWorld
-                    sourceUrl: Qt.resolvedUrl("./code/qwebchannel.js")
-                },
-                WebEngineScript {
-                    injectionPoint: WebEngineScript.DocumentReady
-                    name: "QWebInput"
-                    worldId: WebEngineScript.MainWorld
-                    runOnSubframes: true
-                    sourceUrl: Qt.resolvedUrl("./code/qwebinput.js")
-                }
-            ]
-
-            onFeaturePermissionRequested: {
+            onFeaturePermissionRequested: function(securityOrigin, feature) {
                 interactionBar.setSource("FeatureRequest.qml")
                 interactionBar.interactionItem.securityOrigin = securityOrigin;
                 interactionBar.interactionItem.requestedFeature = feature;
                 interactionBar.isRequested = true;
             }
+        
 
-            onLoadingChanged: {
+            onLoadingChanged: function(loadingInfo) {
                 vMouseEnabled = true;
                 Aura.GlobalSettings.focusOffVKeyboard();
                 mouseCursor.forceActiveFocus();
@@ -199,7 +215,7 @@ Item {
                 showScrollBars: false
             }
 
-            onFullScreenRequested: {
+            onFullScreenRequested: function(request) {
                 request.accept()                
                 if (root.visibility !== Window.FullScreen) {
                     topBarPage.viewFullscreenMode = true
@@ -211,47 +227,7 @@ Item {
                 }
             }
 
-            Action {
-                shortcut: "Left"
-                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                onTriggered: {
-                    Utils.navigateKeyLeft()
-                }
-            }
-
-            Action {
-                shortcut: "Right"
-                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                onTriggered: {
-                    Utils.navigateKeyRight()
-                }
-            }
-
-            Action {
-                shortcut: "Up"
-                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                onTriggered: {
-                    Utils.navigateKeyUp()
-                }
-            }
-
-            Action {
-                shortcut: "Down"
-                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                onTriggered: {
-                    Utils.navigateKeyDown()
-                }
-            }
-
-            Action {
-                shortcut: "Return"
-                enabled: vMouseEnabled && mItem.visible && navMode == "vMouse"
-                onTriggered: {
-                    Cursor.click();
-                }
-            }
-
-            onJavaScriptConsoleMessage: {
+            onJavaScriptConsoleMessage: function(message, lineNumber, sourceID) {
                 try {
                     var jsonMessage = JSON.parse(message);
                 } catch(err) {
@@ -263,21 +239,6 @@ Item {
                     Aura.GlobalSettings.focusOnVKeyboard();
                 }
             }
-        }
-
-        Rectangle {
-            id: mouseCursor
-            width: Kirigami.Units.gridUnit * 1.5
-            height: Kirigami.Units.gridUnit * 1.5
-            radius: 100
-            border.width: Kirigami.Units.smallSpacing
-            border.color: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.9)
-            color: Qt.rgba(Kirigami.Theme.linkColor.r, Kirigami.Theme.linkColor.g, Kirigami.Theme.linkColor.b, 0.8)
-            x: Cursor.pos.x
-            y: Cursor.pos.y
-            z: 1002
-            visible: Cursor.visible
-            enabled: vMouseEnabled
         }
     }
 }

@@ -8,15 +8,15 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtWebEngine 1.7
 import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
 import QtQml.Models 2.12
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
 import "code/BookmarkStorage.js" as BookmarkStorage
 import Aura 1.0 as Aura
 import "code/Utils.js" as Utils
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Controls.Popup {
     id: bookmarkPopupArea
@@ -81,7 +81,7 @@ Controls.Popup {
 
     DelegateModel {
         id: delegateFilter
-        delegate: Kirigami.AbstractListItem {
+        delegate: Controls.ItemDelegate {
             contentItem: RowLayout {
                 id: layout
                 spacing: Kirigami.Units.largeSpacing
@@ -113,7 +113,7 @@ Controls.Popup {
                 }
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 Aura.NavigationSoundEffects.playClickedSound()
                 if(removeModeBox.checked){
                     deleteBookmarkByRowId(id);
@@ -123,8 +123,14 @@ Controls.Popup {
                 }
             }
 
-            Keys.onReturnPressed: {
-                clicked();
+            Keys.onReturnPressed: (event)=> {
+                Aura.NavigationSoundEffects.playClickedSound()
+                if(removeModeBox.checked){
+                    deleteBookmarkByRowId(id);
+                } else {
+                    createTab(recent_url);
+                    bookmarkPopupArea.close();
+                }
             }
         }
         groups: [
@@ -226,11 +232,12 @@ Controls.Popup {
                             }
                         }
 
-                        Keys.onReturnPressed: {
+                        Keys.onReturnPressed: (event)=> {
+                            Aura.NavigationSoundEffects.playClickedSound()
                             bookmarkSearchFieldChild.forceActiveFocus();
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
                     }
@@ -246,11 +253,11 @@ Controls.Popup {
                         Kirigami.Theme.inherit: false
                         Kirigami.Theme.colorSet: Kirigami.Theme.View
 
-                        Keys.onReturnPressed: {
+                        Keys.onReturnPressed: (event)=> {
                             checked = !checked
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
                     }
@@ -272,11 +279,11 @@ Controls.Popup {
                         onClicked: {
                             bookmarkManagerStackLayout.currentIndex = 1
                         }
-                        Keys.onReturnPressed: {
-                            clicked()
+                        Keys.onReturnPressed: (event)=> {
+                            bookmarkManagerStackLayout.currentIndex = 1
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
                     }
@@ -291,7 +298,7 @@ Controls.Popup {
                     keyNavigationEnabled: true
                     KeyNavigation.up: bookmarkSearchField
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
                 }
@@ -380,7 +387,7 @@ Controls.Popup {
                             border.width: 1
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
 
@@ -414,11 +421,11 @@ Controls.Popup {
                     KeyNavigation.up: nameField
                     KeyNavigation.down: catField
 
-                    Keys.onReturnPressed: {
+                    Keys.onReturnPressed: (event)=> {
                         urlFieldChild.forceActiveFocus()
                     }
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
 
@@ -433,7 +440,7 @@ Controls.Popup {
                             border.width: 1
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
 
@@ -466,11 +473,11 @@ Controls.Popup {
                     KeyNavigation.up: urlField
                     KeyNavigation.down: addBookMarkBtn
 
-                    Keys.onReturnPressed: {
+                    Keys.onReturnPressed: (event)=> {
                         catFieldChild.forceActiveFocus()
                     }
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
 
@@ -488,11 +495,11 @@ Controls.Popup {
                             border.width: 1
                         }
 
-                        Keys.onReturnPressed: {
+                        Keys.onReturnPressed: (event)=> {
                             addBookMarkBtn.forceActiveFocus()
                         }
 
-                        Keys.onPressed: {
+                        Keys.onPressed: (event)=> {
                             playKeySounds(event)
                         }
                     }
@@ -520,15 +527,16 @@ Controls.Popup {
                         border.color: Kirigami.Theme.disabledTextColor
                         radius: 2
                     }
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.NavigationSoundEffects.playClickedSound()
                         bookmarkManagerStackLayout.currentIndex = 0
                         bookmarkSearchField.forceActiveFocus()
                     }
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        bookmarkManagerStackLayout.currentIndex = 0
+                        bookmarkSearchField.forceActiveFocus()
                     }
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
                 }
@@ -547,15 +555,16 @@ Controls.Popup {
                         border.color: Kirigami.Theme.disabledTextColor
                         radius: 2
                     }
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.NavigationSoundEffects.playClickedSound()
                         Utils.insertBookmarkToManager(urlFieldChild.text, nameFieldChild.text, catFieldChild.currentText)
                         bookmarkPopupArea.close()
                     }
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        Utils.insertBookmarkToManager(urlFieldChild.text, nameFieldChild.text, catFieldChild.currentText)
+                        bookmarkPopupArea.close()
                     }
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
                 }

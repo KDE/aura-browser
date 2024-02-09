@@ -8,13 +8,13 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtWebEngine 1.7
 import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
 import QtQml.Models 2.12
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
 import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Controls.Popup {
     id: settingsPopupArea
@@ -56,7 +56,7 @@ Controls.Popup {
 
     Connections {
         target: Aura.GlobalSettings
-        onVirtualMouseSpeedChanged: {
+        function onVirtualMouseSpeedChanged() {
             Cursor.setStep(virtualMouseSpeed);
         }
     }
@@ -145,7 +145,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualMouseSpeed(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -215,7 +215,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualScrollSpeed(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -285,7 +285,7 @@ Controls.Popup {
                     Aura.GlobalSettings.setVirtualMouseSize(value);
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -343,11 +343,11 @@ Controls.Popup {
                         radius: 2
                     }
 
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        Aura.GlobalSettings.setDefaultSearchEngine("Google")
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.GlobalSettings.setDefaultSearchEngine("Google")
                     }
                 }
@@ -370,11 +370,11 @@ Controls.Popup {
                         radius: 2
                     }
 
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        Aura.GlobalSettings.setDefaultSearchEngine("DDG")
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.GlobalSettings.setDefaultSearchEngine("DDG")
                     }
                 }
@@ -414,7 +414,7 @@ Controls.Popup {
                     radius: 2
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     if(Aura.GlobalSettings.soundEffects){
                         Aura.GlobalSettings.setSoundEffects(false);
@@ -425,11 +425,18 @@ Controls.Popup {
                     }
                 }
 
-                Keys.onReturnPressed: {
-                    clicked()
+                Keys.onReturnPressed: (event)=> {
+                    Aura.NavigationSoundEffects.playClickedSound();
+                    if(Aura.GlobalSettings.soundEffects){
+                        Aura.GlobalSettings.setSoundEffects(false);
+                        text = i18n("Enable Button Sounds")
+                    } else {
+                        Aura.GlobalSettings.setSoundEffects(true);
+                        text = i18n("Disable Button Sounds")
+                    }
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }
@@ -449,16 +456,17 @@ Controls.Popup {
                     radius: 2
                 }
 
-                onClicked: {
+                onClicked: (mouse)=> {
                     Aura.NavigationSoundEffects.playClickedSound();
                     Aura.GlobalSettings.clearDefaultProfileCache();
                 }
 
-                Keys.onReturnPressed: {
-                    clicked()
+                Keys.onReturnPressed: (event)=> {
+                    Aura.NavigationSoundEffects.playClickedSound();
+                    Aura.GlobalSettings.clearDefaultProfileCache();
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }

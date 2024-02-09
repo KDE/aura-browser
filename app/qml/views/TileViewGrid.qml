@@ -11,19 +11,15 @@ import QtQuick 2.10
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.10
 import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
-import org.kde.kirigami 2.11 as Kirigami
 import Aura 1.0 as Aura
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 GridView {
     id: view
     focus: true
     signal activated
     property string title
-    property alias delegate: view.delegate
-    property alias model: view.model
-    property alias currentIndex: view.currentIndex
-    property alias currentItem: view.currentItem
     property int columns: Math.max(3, Math.floor(width / (Kirigami.Units.gridUnit * 15)))
 
     width: parent.width
@@ -115,7 +111,7 @@ GridView {
         }
     }
 
-    Keys.onPressed: {
+    Keys.onPressed: (event)=> {
         switch (event.key) {
             case Qt.Key_Down:
             case Qt.Key_Right:

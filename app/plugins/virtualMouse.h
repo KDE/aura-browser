@@ -6,10 +6,8 @@
 #include <QTest>
 #include <QGuiApplication>
 #include <QObject>
-#include <QCursor>
-#if QT_VERSION_MAJOR >= 6
-#include <QInputDevice>
-#endif
+#include <QEvent>
+#include "keyfilter.h"
 
 class FakeCursor : public QObject {
   Q_OBJECT
@@ -20,7 +18,7 @@ class FakeCursor : public QObject {
   qreal step;
   bool _visible;
 
-signals:
+Q_SIGNALS:
   void posChanged();
   void visibleChanged();
 
@@ -30,27 +28,25 @@ public:
   void setPos(QPoint p) {
           if (p != _pos) {
               _pos = p;
-              emit posChanged();
+              Q_EMIT posChanged();
             }
         }
   bool visible() const { return _visible; }
   QPoint pos() const { return _pos; }
 
 
-public slots:
+public Q_SLOTS:
       void move(int d);
       void setStep(qreal s) { if (s) step = s; }
-      void toggleVisible() { _visible = !_visible; emit visibleChanged(); }
+      void toggleVisible() { _visible = !_visible; Q_EMIT visibleChanged(); }
       void click() {
           QWindow * w = QGuiApplication::allWindows()[0];
-          QTest::mouseClick(QGuiApplication::allWindows()[0], Qt::LeftButton, Qt::NoModifier, _pos);
+          QTest::touchEvent(w, device).press(0, _pos);
+          QTest::touchEvent(w, device).release(0, _pos);
       }
+      void closeEvent();
+      void moveEvent(QEvent *event);
 
 private:
-#if QT_VERSION_MAJOR < 6
-      QTouchDevice *device;
-#else
-      QInputDevice *device;
-#endif
-      //QCursor cursor;
+      QPointingDevice *device;
 };

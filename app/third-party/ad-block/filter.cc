@@ -22,6 +22,8 @@
 #include "hashFn.h"
 #include "BloomFilter.h"
 
+#define UNUSED(x) ( (void)(x) )
+
 static HashFn h(19);
 
 const char * getUrlHost(const char *input, int *len);
@@ -437,6 +439,7 @@ bool Filter::contextDomainMatchesFilter(const char *contextDomain) {
 // which are considered.
 bool Filter::matchesOptions(const char *input, FilterOption context,
     const char *contextDomain) {
+      UNUSED(input);
   if (hasUnsupportedOptions()) {
     return false;
   }
@@ -766,7 +769,7 @@ uint32_t Filter::Deserialize(char *buffer, uint32_t bufferSize) {
   if (!hasNewlineBefore(buffer, bufferSize)) {
     return 0;
   }
-  sscanf(buffer, "%x,%x,%x,%x", &dataLen, (unsigned int*)&filterType,
+  sscanf(buffer, "%x,%x,%x,%x", (unsigned int*)&dataLen, (unsigned int*)&filterType,
       (unsigned int*)&filterOption, (unsigned int*)&antiFilterOption);
   uint32_t consumed = static_cast<uint32_t>(strlen(buffer)) + 1;
   if (consumed + dataLen >= bufferSize) {

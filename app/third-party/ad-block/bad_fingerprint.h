@@ -10,6 +10,7 @@
 #ifndef BAD_FINGERPRINT_H_
 #define BAD_FINGERPRINT_H_
 
+#define UNUSED(x) ( (void)(x) )
 #include <string.h>
 #include <math.h>
 #include "./hash_set.h"
@@ -62,6 +63,7 @@ class BadFingerprint {
   }
 
   uint32_t Deserialize(char *buffer, uint32_t bufferSize) {
+    UNUSED(bufferSize);
     uint32_t len = static_cast<uint32_t>(strlen(buffer));
     data = new char[len + 1];
     memcpy(data, buffer, len + 1);
@@ -77,6 +79,9 @@ class BadFingerprintsHashSet : public HashSet<BadFingerprint> {
   }
 
   void generateHeader(const char *filename) {
+#ifndef PERF_STATS
+    UNUSED(filename);
+#endif
 #ifdef PERF_STATS
     std::ofstream outFile;
     outFile.open(filename);

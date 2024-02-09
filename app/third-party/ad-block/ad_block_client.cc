@@ -25,6 +25,8 @@ using std::cout;
 using std::endl;
 #endif
 
+#define UNUSED(x) ( (void)(x) )
+
 std::set<std::string> unknownOptions;
 
 // Fast hash function applicable to 2 byte char checks
@@ -219,6 +221,7 @@ void parseFilter(const char *input, Filter *f, BloomFilter *bloomFilter,
     HashSet<Filter> *hostAnchoredExceptionHashSet,
     HashSet<CosmeticFilter> *simpleCosmeticFilters,
     bool preserveRules) {
+      UNUSED(preserveRules);
   const char *end = input;
   while (*end != '\0') end++;
   parseFilter(input, end, f, bloomFilter, exceptionBloomFilter,
@@ -1795,20 +1798,20 @@ bool AdBlockClient::deserialize(char *buffer) {
   int pos = 0;
   sscanf(buffer + pos,
       "%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x",
-      &numFilters,
-      &numExceptionFilters, &numCosmeticFilters, &numHtmlFilters,
-      &numNoFingerprintFilters, &numNoFingerprintExceptionFilters,
-      &numNoFingerprintDomainOnlyFilters,
-      &numNoFingerprintAntiDomainOnlyFilters,
-      &numNoFingerprintDomainOnlyExceptionFilters,
-      &numNoFingerprintAntiDomainOnlyExceptionFilters,
-      &numHostAnchoredFilters, &numHostAnchoredExceptionFilters,
-      &bloomFilterSize, &exceptionBloomFilterSize,
-      &hostAnchoredHashSetSize, &hostAnchoredExceptionHashSetSize,
-      &noFingerprintDomainHashSetSize,
-      &noFingerprintAntiDomainHashSetSize,
-      &noFingerprintDomainExceptionHashSetSize,
-      &noFingerprintAntiDomainExceptionHashSetSize);
+     (unsigned int*)&numFilters,
+      (unsigned int*)&numExceptionFilters, (unsigned int*)&numCosmeticFilters, (unsigned int*)&numHtmlFilters,
+      (unsigned int*)&numNoFingerprintFilters, (unsigned int*)&numNoFingerprintExceptionFilters,
+      (unsigned int*)&numNoFingerprintDomainOnlyFilters,
+      (unsigned int*)&numNoFingerprintAntiDomainOnlyFilters,
+      (unsigned int*)&numNoFingerprintDomainOnlyExceptionFilters,
+      (unsigned int*)&numNoFingerprintAntiDomainOnlyExceptionFilters,
+      (unsigned int*)&numHostAnchoredFilters, (unsigned int*)&numHostAnchoredExceptionFilters,
+      (unsigned int*)&bloomFilterSize, (unsigned int*)&exceptionBloomFilterSize,
+      (unsigned int*)&hostAnchoredHashSetSize, (unsigned int*)&hostAnchoredExceptionHashSetSize,
+      (unsigned int*)&noFingerprintDomainHashSetSize,
+      (unsigned int*)&noFingerprintAntiDomainHashSetSize,
+      (unsigned int*)&noFingerprintDomainExceptionHashSetSize,
+      (unsigned int*)&noFingerprintAntiDomainExceptionHashSetSize);
   pos += static_cast<int>(strlen(buffer + pos)) + 1;
 
   filters = new Filter[numFilters];
@@ -1908,8 +1911,12 @@ void AdBlockClient::enableBadFingerprintDetection() {
 
   uint64_t HashFn2Byte::operator()(const char *input, int len,
       unsigned char lastCharCode, uint64_t lastHash) {
+        UNUSED(len);
+        UNUSED(lastCharCode);
+        UNUSED(lastHash);
     return (((uint64_t)input[1]) << 8) | input[0];  }
 
   uint64_t HashFn2Byte::operator()(const char *input, int len) {
+    UNUSED(len);
     return (((uint64_t)input[1]) << 8) | input[0];
   }

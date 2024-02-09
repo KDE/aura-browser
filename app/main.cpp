@@ -15,7 +15,7 @@
 #include "plugins/virtualMouse.h"
 #include "plugins/virtualKeypress.h"
 #include "plugins/globalSettings.h"
-#include "plugins/audiorecorder.h"
+#include "plugins/keyfilter.h"
 #include <QQmlContext>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
@@ -30,6 +30,9 @@
 #include <QDebug>
 #include "third-party/ad-block/ad_block_client.h"
 
+
+
+
 class WebIntercept : public QWebEngineUrlRequestInterceptor
 {
     Q_OBJECT
@@ -37,14 +40,14 @@ public:
     WebIntercept(QObject *parent = nullptr) : QWebEngineUrlRequestInterceptor(parent)
     {
         QThread *thread = QThread::create([this]{
-            QFile file(":/third-party/easylist.txt");
+            QFile file(QStringLiteral(":/third-party/easylist.txt"));
             QString easyListTxt;
 
             if(!file.exists()) {
                 qDebug() << "No easylist.txt file found.";
             } else {
                 if (file.open(QIODevice::ReadOnly | QIODevice::Text)){
-                    easyListTxt = file.readAll();
+                    easyListTxt = QLatin1String(file.readAll());
                 }
                 file.close();
                 client.parse(easyListTxt.toStdString().c_str());
@@ -74,14 +77,6 @@ static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *s
     return new GlobalSettings;
 }
 
-static QObject *audioRecorderSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
-{
-    Q_UNUSED(engine)
-    Q_UNUSED(scriptEngine)
-
-    return new AudioRecorder;
-}
-
 int main(int argc, char *argv[])
 {
     QStringList arguments;
@@ -96,10 +91,10 @@ int main(int argc, char *argv[])
     parser.addOptions({urlOption, sandboxOption, helpOption});
     parser.process(arguments);
 
-    qputenv("QT_VIRTUALKEYBOARD_DESKTOP_DISABLE", QByteArray("0"));
+    qputenv("QT_VIRTUALKEYBOARD_DESKTOP_DISABLE", QByteArray("1"));
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
-    QCoreApplication::setOrganizationName("AuraBrowser");
-    QCoreApplication::setApplicationName("AuraBrowser");
+    QCoreApplication::setOrganizationName(QStringLiteral("AuraBrowser"));
+    QCoreApplication::setApplicationName(QStringLiteral("AuraBrowser"));
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
@@ -110,8 +105,8 @@ int main(int argc, char *argv[])
     QtWebEngineQuick::initialize();
 #endif
     QGuiApplication app(argc, argv);
-    app.setWindowIcon(QIcon(":/qml/images/logo-small.png"));
-    KLocalizedString::setApplicationDomain("aura-browser");
+    app.setWindowIcon(QIcon(QStringLiteral(":/qml/images/logo-small.png")));
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("aura-browser"));
 
     if (parser.isSet(helpOption)) {
         parser.showHelp();
@@ -125,21 +120,31 @@ int main(int argc, char *argv[])
     WebIntercept interceptor;
     QQuickWebEngineProfile adblockProfile;
     adblockProfile.setUrlRequestInterceptor(&interceptor);
-    adblockProfile.setHttpUserAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36");
-    adblockProfile.setStorageName("Profile");
+    adblockProfile.setHttpUserAgent(QStringLiteral("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"));
+    adblockProfile.setStorageName(QStringLiteral("Profile"));
     adblockProfile.setOffTheRecord(false);
-    engine.rootContext()->setContextProperty("adblockProfile", &adblockProfile);
+    engine.rootContext()->setContextProperty(QStringLiteral("adblockProfile"), &adblockProfile);
 
     FakeCursor fakeCursor;
-    engine.rootContext()->setContextProperty("Cursor", &fakeCursor);
+    engine.rootContext()->setContextProperty(QStringLiteral("Cursor"), &fakeCursor);
     QQmlContext* ctx = engine.rootContext();
     VirtualKeyPress virtualKeyPress;
-    ctx->setContextProperty("keyEmitter", &virtualKeyPress);
+    ctx->setContextProperty(QStringLiteral("keyEmitter"), &virtualKeyPress);
     auto offlineStoragePath = QUrl::fromLocalFile(engine.offlineStoragePath());
-    engine.rootContext()->setContextProperty("offlineStoragePath", offlineStoragePath);
+    engine.rootContext()->setContextProperty(QStringLiteral("offlineStoragePath"), offlineStoragePath);
     qmlRegisterSingletonType<GlobalSettings>("Aura", 1, 0, "GlobalSettings", globalSettingsSingletonProvider);
-    qmlRegisterSingletonType<AudioRecorder>("Aura", 1, 0, "AudioRecorder", audioRecorderSingletonProvider);
     qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/qml/NavigationSoundEffects.qml")), "Aura", 1, 0, "NavigationSoundEffects");
+
+    // Install Event Filter for KeyPress
+    KeyFilter keyFilter;
+    app.installEventFilter(&keyFilter);
+    engine.rootContext()->setContextProperty(QStringLiteral("keyFilter"), &keyFilter);
+
+    // Connect to keyPress signal from keyFilter
+    QObject::connect(&keyFilter, &KeyFilter::keyRelease, &app, [&fakeCursor](QEvent *event) {
+        fakeCursor.moveEvent(event);
+    });
+
 
     QString sandboxURL = parser.value(urlOption);
     bool sandboxMode = parser.isSet(sandboxOption);
@@ -154,7 +159,7 @@ int main(int argc, char *argv[])
 
     engine.rootContext()->setContextProperty(QStringLiteral("sandboxURL"), sandboxURL);
     engine.rootContext()->setContextProperty(QStringLiteral("sandboxMode"), sandboxMode);
-
+    
     // Define const QUrl url here, if the user is in sandbox mode, we want to load the sandbox qml file, if not, we want to load the main qml file
     QUrl url;
     if (sandboxMode) {

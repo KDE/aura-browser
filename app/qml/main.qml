@@ -10,16 +10,16 @@ import QtQuick.Layouts 1.12
 import QtWebEngine 1.7
 import QtQuick.Controls 2.12 as Controls
 import QtQuick.LocalStorage 2.12
-import org.kde.kirigami 2.11 as Kirigami
 import "views" as Views
 import "delegates" as Delegates
 import "code/RecentStorage.js" as RecentStorage
 import "code/BookmarkStorage.js" as BookmarkStorage
 import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
-import QtQuick.VirtualKeyboard 2.4
-import QtQuick.VirtualKeyboard.Settings 2.4
-import QtGraphicalEffects 1.0
+import QtQuick.VirtualKeyboard
+import QtQuick.VirtualKeyboard.Settings
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Kirigami.AbstractApplicationWindow {
     id: root
@@ -121,12 +121,12 @@ Kirigami.AbstractApplicationWindow {
                 }
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 root.close();
             }
 
-            Keys.onReturnPressed: {
-                clicked()
+            Keys.onReturnPressed: (event)=> {
+                root.close();
             }
         }
         Controls.Button {
@@ -154,12 +154,12 @@ Kirigami.AbstractApplicationWindow {
                 }
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 gDrawer.close();
             }
 
-            Keys.onReturnPressed: {
-                clicked()
+            Keys.onReturnPressed: (event)=> {
+                gDrawer.close();
             }
         }
     }
@@ -276,7 +276,7 @@ Kirigami.AbstractApplicationWindow {
                         radius: 20
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         Aura.NavigationSoundEffects.playClickedSound()
                         if(tabsListView.currentItem.isRemovable){
                             removeTab()
@@ -285,11 +285,16 @@ Kirigami.AbstractApplicationWindow {
                         }
                     }
 
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        Aura.NavigationSoundEffects.playClickedSound()
+                        if(tabsListView.currentItem.isRemovable){
+                            removeTab()
+                        } else {
+                            console.log("Not Removable Item")
+                        }
                     }
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         switch (event.key) {
                             case Qt.Key_Down:
                             case Qt.Key_Right:
@@ -321,12 +326,16 @@ Kirigami.AbstractApplicationWindow {
 
     Connections {
         target: Aura.GlobalSettings
-        onFocusOnVKeyboard: {
+        function onFocusOnVKeyboard() {
            mouseDeActivationRequested();
          }
-        onFocusOffVKeyboard: {
+        function onFocusOffVKeyboard() {
            ignoreInputRequested();
         }
+    }
+
+    UrlEntryBox {
+        id: urlEntryBox
     }
 
     InputPanel {
@@ -334,12 +343,16 @@ Kirigami.AbstractApplicationWindow {
         z: 99
         x: 0
         y: root.height
-        width: root.width
+        width: urlEntryBox.opened ? urlEntryBox.contentItem.width : root.width
+        parent: urlEntryBox.opened ? urlEntryBox.contentItem : root.contentItem
 
         onActiveChanged: {
             if(!active){
+                keyFilter.startFilter();
                 mouseActivationRequested()
                 blurFieldRequested();
+            } else {
+                keyFilter.stopFilter();
             }
         }
 

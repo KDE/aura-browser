@@ -10,6 +10,8 @@
 #ifndef HASHFN_H_
 #define HASHFN_H_
 
+#include <cstdint>  // Add this line for uint64_t
+#include <functional>  // Add this line for std::hash
 #include "./base.h"
 
 typedef uint64_t uint64Array[30];
@@ -21,7 +23,7 @@ inline uint64_t customPow(uint64Array *precomputedPowers, bool usePrecomputed,
     return (*precomputedPowers)[exp];
   }
 
-  // TOOD: Optimization possible here when passed in toSize which is bigger
+  // TOOD: Optimization possible here when passed intoSize which is bigger
   // than precomputedArraySize, we can start from the value of the last
   // precomputed value.
   uint64_t result = 1;
@@ -33,7 +35,6 @@ inline uint64_t customPow(uint64Array *precomputedPowers, bool usePrecomputed,
   }
   return result;
 }
-
 
 // Functor for a hashing function
 // Implements a Rabin fingerprint hash function
@@ -57,6 +58,8 @@ class HashFn {
       unsigned char lastCharCode, uint64_t lastHash);
 
   virtual uint64_t operator()(const char *input, int len);
+
+  virtual ~HashFn() {}
 
  private:
   int p;

@@ -3,7 +3,7 @@ add_executable(aura-browser ${aura_browser_SRCS}
     plugins/virtualMouse.cpp plugins/virtualMouse.h
     plugins/virtualKeypress.cpp plugins/virtualKeypress.h
     plugins/globalSettings.cpp plugins/globalSettings.h
-    plugins/audiorecorder.cpp plugins/audiorecorder.h
+    plugins/keyfilter.cpp plugins/keyfilter.h
     third-party/ad-block/ad_block_client.cc
     third-party/ad-block/no_fingerprint_domain.cc
     third-party/ad-block/filter.cc
@@ -22,18 +22,13 @@ target_link_libraries(aura-browser
     Qt::Core 
     Qt::Qml
     Qt::QuickControls2
-    #Qt::WebEngine
+    Qt::WebEngineQuick
     Qt::Test
     Qt::Multimedia
-    KF${QT_MAJOR_VERSION}::Kirigami2
-    KF${QT_MAJOR_VERSION}::I18n
+    KF6::Kirigami
+    KF6::I18n
     ${CMAKE_THREAD_LIBS_INIT}
 )
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(aura-browser Qt::WebEngineQuick)
-else ()
-    target_link_libraries(aura-browser Qt::WebEngine)
-endif()
 
 install(TARGETS aura-browser ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

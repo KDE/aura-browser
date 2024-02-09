@@ -9,9 +9,9 @@ import QtQuick 2.10
 import QtQuick.Layouts 1.3
 import QtQuick.Window 2.10
 import QtQuick.Controls 2.10 as Controls
-import QtGraphicalEffects 1.0
 import Aura 1.0 as Aura
-import org.kde.kirigami 2.11 as Kirigami
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 FocusScope {
     id: root
@@ -165,7 +165,7 @@ FocusScope {
         KeyNavigation.left: root
         KeyNavigation.right: root
 
-        Keys.onDownPressed:  {
+        Keys.onDownPressed: (event)=> {
             Aura.NavigationSoundEffects.playMovingSound();
             if (!navigationDown) {
                 return;
@@ -181,7 +181,7 @@ FocusScope {
             navigationDown.forceActiveFocus();
         }
 
-        Keys.onUpPressed:  {
+        Keys.onUpPressed: (event)=> {
             Aura.NavigationSoundEffects.playMovingSound();
             if (!navigationUp) {
                 return;
@@ -197,7 +197,7 @@ FocusScope {
             navigationUp.forceActiveFocus();
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event)=> {
             switch (event.key) {
                 case Qt.Key_Right:
                 case Qt.Key_Left:

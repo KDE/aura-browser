@@ -10,7 +10,6 @@ function dbInit()
     var db = LocalStorage.openDatabaseSync("RecentPages_Tracker_DB", "1.0", "RecentPageStorage", 1000000)
     try {
         db.transaction(function (tx) {
-            console.log("here")
             tx.executeSql('CREATE TABLE IF NOT EXISTS recent_log (date text,recent_url text,recent_name text,rand_color text)')
         })
     } catch (err) {

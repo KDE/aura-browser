@@ -11,7 +11,6 @@
 #define BASE_H_
 
 #if !defined(nullptr) && !defined(_MSC_VER)
-#define nullptr 0
 #endif
 
 #include <stdint.h>

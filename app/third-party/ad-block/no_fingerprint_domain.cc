@@ -83,7 +83,7 @@ uint32_t NoFingerprintDomain::Serialize(char *buffer) {
 
 uint32_t NoFingerprintDomain::Deserialize(char *buffer, uint32_t bufferSize) {
   dataLen = 0;
-  sscanf(buffer, "%x", &dataLen);
+  sscanf(buffer, "%x", (unsigned int*)&dataLen);
   uint32_t consumed = static_cast<uint32_t>(strlen(buffer)) + 1;
   if (consumed + dataLen >= bufferSize) {
     return 0;

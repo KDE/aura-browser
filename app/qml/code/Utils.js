@@ -9,63 +9,7 @@ function updateTabName(){
 
 function genRandomColor() {
     var color = Qt.rgba(Math.random(),Math.random(),Math.random(),1);
-    console.log(color)
     return color
-}
-
-function navigateKeyRight(){
-    if(navMode == "vMouse"){
-       Cursor.move(3);
-    }
-    if(navMode == "vKey"){
-        mItem.moveRight()
-    }
-}
-
-function navigateKeyLeft(){
-    if(navMode == "vMouse"){
-       Cursor.move(2);
-    }
-    if(navMode == "vKey"){
-        mItem.moveLeft()
-    }
-}
-
-function navigateKeyUp(){
-    if(navMode == "vMouse"){
-       Cursor.move(0);
-        var topH = webView.height * (30/100)
-        if(Cursor.pos.y < topH) {
-            webView.runJavaScript("window.scrollBy(0, -" + currentScrollSpeed + ");")
-        }
-    }
-    if(navMode == "vKey"){
-       mItem.moveUp()
-    }
-}
-
-function navigateKeyDown(){
-    if(navMode == "vMouse"){
-        Cursor.move(1);
-        var bottomH = webView.height - (webView.height * 30/100)
-        if(Cursor.pos.y > bottomH) {
-            webView.runJavaScript("window.scrollBy(0, " + currentScrollSpeed + ");")
-        }
-    }
-    if(navMode == "vKey"){
-        mItem.moveDown()
-    }
-}
-
-function navigateKeyClick(){
-    console.log(navMode)
-    if(navMode == "vMouse"){
-       Cursor.click()
-    }
-    if(navMode == "vKey"){
-        console.log("inClickNavClick")
-        moveClick()
-    }
 }
 
 function insertRecentToStorage(pUrl, pTitle){

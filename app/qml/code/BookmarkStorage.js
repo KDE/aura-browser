@@ -20,7 +20,6 @@ function dbInit()
     var db = LocalStorage.openDatabaseSync("Bookmark_Tracker_DB", "1.0", "BookmarkStorage", 1000000)
     try {
         db.transaction(function (tx) {
-            console.log("here in bookmarks init")
             tx.executeSql('CREATE TABLE IF NOT EXISTS bookmark_log (date text,recent_url text,recent_name text,rand_color text,category text)')
         })
     } catch (err) {

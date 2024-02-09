@@ -29,7 +29,7 @@ void GlobalSettings::setFirstRun(bool firstRun)
     }
 
     m_settings.setValue(QStringLiteral("firstRun"), firstRun);
-    emit firstRunChanged();
+    Q_EMIT firstRunChanged();
 }
 
 int GlobalSettings::virtualMouseSpeed() const
@@ -44,7 +44,7 @@ void GlobalSettings::setVirtualMouseSpeed(int virtualMouseSpeed)
     }
 
     m_settings.setValue(QStringLiteral("virtualMouseSpeed"), virtualMouseSpeed);
-    emit virtualMouseSpeedChanged(virtualMouseSpeed);
+    Q_EMIT virtualMouseSpeedChanged(virtualMouseSpeed);
 }
 
 int GlobalSettings::virtualScrollSpeed() const
@@ -59,7 +59,7 @@ void GlobalSettings::setVirtualScrollSpeed(int virtualScrollSpeed)
     }
 
     m_settings.setValue(QStringLiteral("virtualScrollSpeed"), virtualScrollSpeed);
-    emit virtualScrollSpeedChanged(virtualScrollSpeed);
+    Q_EMIT virtualScrollSpeedChanged(virtualScrollSpeed);
 }
 
 double GlobalSettings::virtualMouseSize() const
@@ -74,7 +74,7 @@ void GlobalSettings::setVirtualMouseSize(double virtualMouseSize)
     }
 
     m_settings.setValue(QStringLiteral("virtualMouseSize"), virtualMouseSize);
-    emit virtualMouseSizeChanged(virtualMouseSize);
+    Q_EMIT virtualMouseSizeChanged(virtualMouseSize);
 }
 
 void GlobalSettings::clearDefaultProfileCache()
@@ -96,12 +96,12 @@ void GlobalSettings::setSoundEffects(bool soundEffects)
     }
 
     m_settings.setValue(QStringLiteral("soundEffects"), soundEffects);
-    emit soundEffectsChanged();
+    Q_EMIT soundEffectsChanged();
 }
 
 QString GlobalSettings::defaultSearchEngine() const
 {
-    return m_settings.value(QStringLiteral("defaultSearchEgnine"), "Google").toString();
+    return QStringLiteral("Google");
 }
 
 void GlobalSettings::setDefaultSearchEngine(QString defaultSearchEngine)
@@ -110,7 +110,7 @@ void GlobalSettings::setDefaultSearchEngine(QString defaultSearchEngine)
         return;
     }
     m_settings.setValue(QStringLiteral("defaultSearchEgnine"), defaultSearchEngine);
-    emit defaultSearchEngineChanged();
+    Q_EMIT defaultSearchEngineChanged();
 }
 
 bool GlobalSettings::adblockEnabled() const
@@ -125,5 +125,5 @@ void GlobalSettings::setAdblockEnabled(bool adblockEnabled)
     }
 
     m_settings.setValue(QStringLiteral("adblockEnabled"), adblockEnabled);
-    emit adBlockEnabledChanged();
+    Q_EMIT adBlockEnabledChanged();
 }

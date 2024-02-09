@@ -9,6 +9,7 @@
 
 #ifndef COSMETIC_FILTER_H_
 #define COSMETIC_FILTER_H_
+#define UNUSED(x) ( (void)(x) )
 
 #include <math.h>
 #include <string.h>
@@ -59,6 +60,7 @@ class CosmeticFilter {
   }
 
   uint32_t Deserialize(char *buffer, uint32_t bufferSize) {
+    UNUSED(bufferSize);
     int len = static_cast<int>(strlen(buffer));
     data = new char[len + 1];
     memcpy(data, buffer, len + 1);

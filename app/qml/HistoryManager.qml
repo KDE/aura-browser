@@ -8,14 +8,14 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtWebEngine 1.7
 import QtQuick.Layouts 1.12
-import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.12 as Controls
-import QtGraphicalEffects 1.0
 import QtQml.Models 2.12
 import QtQuick.LocalStorage 2.12
 import QtQuick.VirtualKeyboard 2.4
 import Aura 1.0 as Aura
 import "code/RecentStorage.js" as RecentStorage
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Controls.Popup {
     id: historyPopupArea
@@ -62,7 +62,7 @@ Controls.Popup {
 
     DelegateModel {
         id: delegateFilter
-        delegate: Kirigami.AbstractListItem {
+        delegate: Controls.ItemDelegate {
             contentItem: RowLayout {
                 id: layout
                 spacing: Kirigami.Units.largeSpacing
@@ -94,13 +94,13 @@ Controls.Popup {
                 }
             }
 
-            onClicked: {
+            onClicked: (mouse)=> {
                 Aura.NavigationSoundEffects.playClickedSound()
                 createTab(recent_url);
                 historyPopupArea.close();
             }
 
-            Keys.onReturnPressed: {
+            Keys.onReturnPressed: (event)=> {
                 clicked();
             }
         }
@@ -197,11 +197,11 @@ Controls.Popup {
                         }
                     }
 
-                    Keys.onReturnPressed: {
+                    Keys.onReturnPressed: (event)=> {
                         historySearchFieldChild.forceActiveFocus();
                     }
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
                 }
@@ -220,14 +220,14 @@ Controls.Popup {
                         radius: 20
                     }
 
-                    onClicked: {
+                    onClicked: (mouse)=> {
                         RecentStorage.dbClearTable();
                     }
-                    Keys.onReturnPressed: {
-                        clicked()
+                    Keys.onReturnPressed: (event)=> {
+                        RecentStorage.dbClearTable();
                     }
 
-                    Keys.onPressed: {
+                    Keys.onPressed: (event)=> {
                         playKeySounds(event)
                     }
                 }
@@ -244,7 +244,7 @@ Controls.Popup {
                 visible: genericModel.count > 0 ? 1 : 0
                 enabled: genericModel.count > 0 ? 1 : 0
 
-                Keys.onPressed: {
+                Keys.onPressed: (event)=> {
                     playKeySounds(event)
                 }
             }

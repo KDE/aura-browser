@@ -6,6 +6,8 @@
         <file>plugins/virtualKeypress.cpp</file>
         <file>plugins/globalSettings.cpp</file>
         <file>plugins/globalSettings.h</file>
+        <file>plugins/keyfilter.cpp</file>
+        <file>plugins/keyfilter.h</file>
         <file>qml/delegates/RecentDelegate.qml</file>
         <file>qml/delegates/background.svg</file>
         <file>qml/views/TileView.qml</file>
@@ -40,15 +42,10 @@
         <file>qml/sounds/moving.wav</file>
         <file>qml/SuggestionsBox.qml</file>
         <file>qml/SuggestionsLogic.qml</file>
-        <file>qml/InputLoader.qml</file>
-        <file>qml/MycroftInput.qml</file>
-        <file>plugins/audiorecorder.h</file>
-        <file>plugins/audiorecorder.cpp</file>
-        <file>qml/AudioBox.qml</file>
-        <file>qml/images/microphone.svg</file>
         <file>third-party/easylist.txt</file>
         <file>qml/mainSandbox.qml</file>
         <file>qml/SandboxLoader.qml</file>
         <file>qml/TopBarSandbox.qml</file>
+        <file>qml/UrlEntryBox.qml</file>
     </qresource>
 </RCC>

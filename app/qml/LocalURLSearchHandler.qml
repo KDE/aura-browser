@@ -10,13 +10,13 @@ import QtQuick.Window 2.12
 import QtWebEngine 1.7
 import QtWebChannel 1.0
 import QtQuick.Layouts 1.12
-import QtGraphicalEffects 1.0
 import QtQuick.LocalStorage 2.12
-import org.kde.kirigami 2.11 as Kirigami
 import "code/RecentStorage.js" as RecentStorage
 import "code/Utils.js" as Utils
 import Aura 1.0 as Aura
 import QtQuick.VirtualKeyboard 2.4
+import Qt5Compat.GraphicalEffects
+import org.kde.kirigami as Kirigami
 
 Popup {
     id: webpageUrlEntryDrawer
@@ -120,7 +120,6 @@ Popup {
 
             onAccepted: {
                 var evaluateExist = webpageUrlEntryDrawer.autoAppend(completionItems, function(item) { return item.name === localurlEntrie.text }, localurlEntrie.text)
-                console.log(evaluateExist)
                 if(evaluateExist === null){
                     completionItems.append({"name": localurlEntrie.text, "randcolor": Utils.genRandomColor().toString()});
                 }
@@ -143,7 +142,7 @@ Popup {
                 webpageUrlEntryDrawer.evalAutoLogic();
             }
 
-            Keys.onDownPressed: {
+            Keys.onDownPressed: (event)=> {
                 if(!inputPanel.active && suggestionsBox.visible){
                     suggestionsBox.forceActiveFocus()
                 }
