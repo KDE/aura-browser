@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:36+0000\n"
-"PO-Revision-Date: 2023-06-11 21:36+0300\n"
+"POT-Creation-Date: 2024-02-10 01:53+0000\n"
+"PO-Revision-Date: 2024-02-09 18:00+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,72 +15,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 24.01.95\n"
 
-#: qml/AudioBox.qml:43
-#, kde-format
-msgid "Listening"
-msgstr "Dinleniyor"
-
-#: qml/AudioBox.qml:87
-#, kde-format
-msgid "Performing Search With Mycroft"
-msgstr "Mycroft ile Arama Gerçekleştiriliyor"
-
-#: qml/AudioBox.qml:141
-#, kde-format
-msgid "Close"
-msgstr "Kapat"
-
-#: qml/BookmarkManager.qml:170
+#: qml/BookmarkManager.qml:176
 #, kde-format
 msgid "Bookmarks Manager"
 msgstr "Yer İmleri Yöneticisi"
 
-#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/BookmarkManager.qml:185 qml/BookmarkManager.qml:337 qml/HelpTab.qml:63
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
 #: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
-#: qml/StartPage.qml:525
+#: qml/UrlEntryBox.qml:76
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr "Kapatmak için Esc'ye veya Geri [←] düğmesine basın"
+msgstr "Kapatmak için Esc’ye veya Geri [←] düğmesine basın"
 
-#: qml/BookmarkManager.qml:213
+#: qml/BookmarkManager.qml:219
 #, kde-format
 msgid "Search Bookmarks"
 msgstr "Yer İmlerinde Ara"
 
-#: qml/BookmarkManager.qml:242
+#: qml/BookmarkManager.qml:249
 #, kde-format
 msgid "Remove Mode"
 msgstr "Kaldırma Kipi"
 
-#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#: qml/BookmarkManager.qml:267 qml/BookmarkManager.qml:546
 #, kde-format
 msgid "Add"
 msgstr "Ekle"
 
-#: qml/BookmarkManager.qml:321
+#: qml/BookmarkManager.qml:328
 #, kde-format
 msgid "Add Bookmark"
 msgstr "Yer İmi Ekle"
 
-#: qml/BookmarkManager.qml:352
+#: qml/BookmarkManager.qml:359
 #, kde-format
 msgid "Name: "
 msgstr "Ad:"
 
-#: qml/BookmarkManager.qml:404
+#: qml/BookmarkManager.qml:411
 #, kde-format
 msgid "Url: "
 msgstr "URL:"
 
-#: qml/BookmarkManager.qml:456
+#: qml/BookmarkManager.qml:463
 #, kde-format
 msgid "Category: "
 msgstr "Kategori:"
 
-#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#: qml/BookmarkManager.qml:518 qml/StartPage.qml:205 qml/StartPage.qml:447
 #, kde-format
 msgid "Bookmarks"
 msgstr "Yer İmleri"
@@ -110,12 +95,12 @@ msgstr "Kabul Et"
 msgid "Deny"
 msgstr "Reddet"
 
-#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#: qml/HelpTab.qml:54 qml/StartPage.qml:273
 #, kde-format
 msgid "Help"
 msgstr "Yardım"
 
-#: qml/HelpTab.qml:84
+#: qml/HelpTab.qml:88
 #, kde-format
 msgid ""
 "Aura Browser adapts the traditional web browser UI for a fully immersed "
@@ -127,16 +112,16 @@ msgstr ""
 "arayüzü, interneti yalnızca uzaktan kumandanızla dolaşabilmeniz için yalın "
 "ve sezgisel olarak tasarlanmıştır."
 
-#: qml/HelpTab.qml:106
+#: qml/HelpTab.qml:110
 #, kde-format
 msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
-"Aura Tarayıcı'yı kullanmaya başlayabilmeniz için gerekli olan tüm düğmeleri "
+"Aura Tarayıcı’yı kullanmaya başlayabilmeniz için gerekli olan tüm düğmeleri "
 "burada bulabilirsiniz"
 
-#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:172
 #, kde-format
 msgid "History"
 msgstr "Geçmiş"
@@ -156,12 +141,12 @@ msgstr "Geçmişi Temizle"
 msgid "No Recent History"
 msgstr "Geçmiş Yok"
 
-#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#: qml/LocalURLSearchHandler.qml:84 qml/UrlEntryBox.qml:67
 #, kde-format
 msgid "Enter URL / Search Term"
 msgstr "URL/Arama Terimi Girin"
 
-#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#: qml/LocalURLSearchHandler.qml:112 qml/UrlEntryBox.qml:96
 #, kde-format
 msgid "Enter Search Term or URL"
 msgstr "Arama Terimi veya URL Girin"
@@ -191,14 +176,14 @@ msgstr "Sekmeyi Kaldır"
 msgid "Quit"
 msgstr "Çık"
 
-#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
-#: qml/WebLoader.qml:168
+#: qml/SandboxLoader.qml:152 qml/SandboxLoader.qml:185 qml/WebLoader.qml:165
+#: qml/WebLoader.qml:197
 #, kde-format
 msgid "Download finished"
 msgstr "İndirme bitti"
 
-#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
-#: qml/WebLoader.qml:173
+#: qml/SandboxLoader.qml:157 qml/SandboxLoader.qml:190 qml/WebLoader.qml:170
+#: qml/WebLoader.qml:202
 #, kde-format
 msgid "Download failed: %1"
 msgstr "İndirme başarısız: %1"
@@ -263,47 +248,47 @@ msgstr "DuckDuckGo"
 msgid "General"
 msgstr "Genel"
 
-#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424 qml/SettingsTab.qml:435
 #, kde-format
 msgid "Disable Button Sounds"
 msgstr "Düğme Seslerini Devre Dışı Bırak"
 
-#: qml/SettingsTab.qml:421
+#: qml/SettingsTab.qml:421 qml/SettingsTab.qml:432
 #, kde-format
 msgid "Enable Button Sounds"
 msgstr "Düğme Seslerini Etkinleştir"
 
-#: qml/SettingsTab.qml:442
+#: qml/SettingsTab.qml:449
 #, kde-format
 msgid "Clear Cache"
 msgstr "Önbelleği Temizle"
 
-#: qml/StartPage.qml:137
+#: qml/StartPage.qml:138
 #, kde-format
 msgid "Tabs"
 msgstr "Sekmeler"
 
-#: qml/StartPage.qml:238
+#: qml/StartPage.qml:240
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: qml/StartPage.qml:318
+#: qml/StartPage.qml:320
 #, kde-format
 msgid "Aura Browser - Start Page"
 msgstr "Aura Tarayıcı - Başlangıç Sayfası"
 
-#: qml/StartPage.qml:362
+#: qml/StartPage.qml:363
 #, kde-format
 msgid "Search or type url"
 msgstr "URL girin veya arayın"
 
-#: qml/StartPage.qml:401
+#: qml/StartPage.qml:395
 #, kde-format
 msgid "Recent Pages"
 msgstr "Son Kullanılan Sayfalar"
 
-#: qml/StartPage.qml:411
+#: qml/StartPage.qml:405
 #, kde-format
 msgid "Clear"
 msgstr "Temizle"
@@ -317,3 +302,12 @@ msgstr "Öneriler:"
 #, kde-format
 msgid "A"
 msgstr "A"
+
+#~ msgid "Listening"
+#~ msgstr "Dinleniyor"
+
+#~ msgid "Performing Search With Mycroft"
+#~ msgstr "Mycroft ile Arama Gerçekleştiriliyor"
+
+#~ msgid "Close"
+#~ msgstr "Kapat"

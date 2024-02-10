@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:36+0000\n"
+"POT-Creation-Date: 2024-02-10 01:53+0000\n"
 "PO-Revision-Date: 2022-11-02 16:49+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -18,70 +18,55 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 22.04.3\n"
 
-#: qml/AudioBox.qml:43
-#, kde-format
-msgid "Listening"
-msgstr "Ожидание данных"
-
-#: qml/AudioBox.qml:87
-#, kde-format
-msgid "Performing Search With Mycroft"
-msgstr "Выполнение поиска с помощью Mycroft"
-
-#: qml/AudioBox.qml:141
-#, kde-format
-msgid "Close"
-msgstr "Закрыть"
-
-#: qml/BookmarkManager.qml:170
+#: qml/BookmarkManager.qml:176
 #, kde-format
 msgid "Bookmarks Manager"
 msgstr "Диспетчер закладок"
 
-#: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
+#: qml/BookmarkManager.qml:185 qml/BookmarkManager.qml:337 qml/HelpTab.qml:63
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
 #: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
-#: qml/StartPage.qml:525
+#: qml/UrlEntryBox.qml:76
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
 msgstr "Нажмите «Esc» или [←] для закрытия"
 
-#: qml/BookmarkManager.qml:213
+#: qml/BookmarkManager.qml:219
 #, kde-format
 msgid "Search Bookmarks"
 msgstr "Поиск в закладках"
 
-#: qml/BookmarkManager.qml:242
+#: qml/BookmarkManager.qml:249
 #, kde-format
 msgid "Remove Mode"
 msgstr "Режим удаления"
 
-#: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
+#: qml/BookmarkManager.qml:267 qml/BookmarkManager.qml:546
 #, kde-format
 msgid "Add"
 msgstr "Добавить"
 
-#: qml/BookmarkManager.qml:321
+#: qml/BookmarkManager.qml:328
 #, kde-format
 msgid "Add Bookmark"
 msgstr "Добавить закладку"
 
-#: qml/BookmarkManager.qml:352
+#: qml/BookmarkManager.qml:359
 #, kde-format
 msgid "Name: "
 msgstr "Название: "
 
-#: qml/BookmarkManager.qml:404
+#: qml/BookmarkManager.qml:411
 #, kde-format
 msgid "Url: "
 msgstr "URL-адрес: "
 
-#: qml/BookmarkManager.qml:456
+#: qml/BookmarkManager.qml:463
 #, kde-format
 msgid "Category: "
 msgstr "Категория: "
 
-#: qml/BookmarkManager.qml:511 qml/StartPage.qml:204 qml/StartPage.qml:453
+#: qml/BookmarkManager.qml:518 qml/StartPage.qml:205 qml/StartPage.qml:447
 #, kde-format
 msgid "Bookmarks"
 msgstr "Закладки"
@@ -111,12 +96,12 @@ msgstr "Принять"
 msgid "Deny"
 msgstr "Отклонить"
 
-#: qml/HelpTab.qml:50 qml/StartPage.qml:271
+#: qml/HelpTab.qml:54 qml/StartPage.qml:273
 #, kde-format
 msgid "Help"
 msgstr "Справка"
 
-#: qml/HelpTab.qml:84
+#: qml/HelpTab.qml:88
 #, kde-format
 msgid ""
 "Aura Browser adapts the traditional web browser UI for a fully immersed "
@@ -128,7 +113,7 @@ msgstr ""
 "Aura позволяет сделать навигацию в Интернете с помощью пульта ДУ максимально "
 "комфортной."
 
-#: qml/HelpTab.qml:106
+#: qml/HelpTab.qml:110
 #, kde-format
 msgid ""
 "Here are all the buttons required to help you get started with using aura "
@@ -136,7 +121,7 @@ msgid ""
 msgstr ""
 "Здесь находятся все кнопки, которые помогут начать работу с браузером Aura"
 
-#: qml/HistoryManager.qml:140 qml/StartPage.qml:171
+#: qml/HistoryManager.qml:140 qml/StartPage.qml:172
 #, kde-format
 msgid "History"
 msgstr "Журнал"
@@ -156,12 +141,12 @@ msgstr "Очистить журнал"
 msgid "No Recent History"
 msgstr "В журнале нет недавних записей"
 
-#: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
+#: qml/LocalURLSearchHandler.qml:84 qml/UrlEntryBox.qml:67
 #, kde-format
 msgid "Enter URL / Search Term"
 msgstr "Введите URL-адрес или поисковый запрос"
 
-#: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
+#: qml/LocalURLSearchHandler.qml:112 qml/UrlEntryBox.qml:96
 #, kde-format
 msgid "Enter Search Term or URL"
 msgstr "Введите поисковый запрос или URL-адрес"
@@ -191,14 +176,14 @@ msgstr "Удалить вкладку"
 msgid "Quit"
 msgstr "Выход"
 
-#: qml/SandboxLoader.qml:122 qml/SandboxLoader.qml:154 qml/WebLoader.qml:136
-#: qml/WebLoader.qml:168
+#: qml/SandboxLoader.qml:152 qml/SandboxLoader.qml:185 qml/WebLoader.qml:165
+#: qml/WebLoader.qml:197
 #, kde-format
 msgid "Download finished"
 msgstr "Загрузка завершена"
 
-#: qml/SandboxLoader.qml:127 qml/SandboxLoader.qml:159 qml/WebLoader.qml:141
-#: qml/WebLoader.qml:173
+#: qml/SandboxLoader.qml:157 qml/SandboxLoader.qml:190 qml/WebLoader.qml:170
+#: qml/WebLoader.qml:202
 #, kde-format
 msgid "Download failed: %1"
 msgstr "Ошибка загрузки: %1"
@@ -263,47 +248,47 @@ msgstr "Duck Duck Go"
 msgid "General"
 msgstr "Общие"
 
-#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
+#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424 qml/SettingsTab.qml:435
 #, kde-format
 msgid "Disable Button Sounds"
 msgstr "Отключить звук кнопок"
 
-#: qml/SettingsTab.qml:421
+#: qml/SettingsTab.qml:421 qml/SettingsTab.qml:432
 #, kde-format
 msgid "Enable Button Sounds"
 msgstr "Включить звук кнопок"
 
-#: qml/SettingsTab.qml:442
+#: qml/SettingsTab.qml:449
 #, kde-format
 msgid "Clear Cache"
 msgstr "Очистить кэш"
 
-#: qml/StartPage.qml:137
+#: qml/StartPage.qml:138
 #, kde-format
 msgid "Tabs"
 msgstr "Вкладки"
 
-#: qml/StartPage.qml:238
+#: qml/StartPage.qml:240
 #, kde-format
 msgid "Settings"
 msgstr "Параметры"
 
-#: qml/StartPage.qml:318
+#: qml/StartPage.qml:320
 #, kde-format
 msgid "Aura Browser - Start Page"
 msgstr "Браузер Aura — начальная страница"
 
-#: qml/StartPage.qml:362
+#: qml/StartPage.qml:363
 #, kde-format
 msgid "Search or type url"
 msgstr "Поиск или ввод URL-адреса"
 
-#: qml/StartPage.qml:401
+#: qml/StartPage.qml:395
 #, kde-format
 msgid "Recent Pages"
 msgstr "Недавно посещённые страницы"
 
-#: qml/StartPage.qml:411
+#: qml/StartPage.qml:405
 #, kde-format
 msgid "Clear"
 msgstr "Очистить"
@@ -317,3 +302,12 @@ msgstr "Предложения:"
 #, kde-format
 msgid "A"
 msgstr "A"
+
+#~ msgid "Listening"
+#~ msgstr "Ожидание данных"
+
+#~ msgid "Performing Search With Mycroft"
+#~ msgstr "Выполнение поиска с помощью Mycroft"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
