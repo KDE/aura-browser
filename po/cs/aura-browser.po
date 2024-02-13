@@ -295,13 +295,4 @@ msgstr "Návrhy:"
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr ""
-
-#~ msgid "Listening"
-#~ msgstr "Poslouchám"
-
-#~ msgid "Performing Search With Mycroft"
-#~ msgstr "Provádím hledání pomocí Mycroft"
-
-#~ msgid "Close"
-#~ msgstr "Zavřít"
+msgstr "A"
