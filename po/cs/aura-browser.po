@@ -310,4 +310,4 @@ msgstr "Návrhy:"
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr ""
+msgstr "A"
