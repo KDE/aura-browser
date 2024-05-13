@@ -95,7 +95,7 @@ msgstr "Voleu baixar el fitxer %1?"
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr "S'està baixant... %1"
+msgstr "S'està baixant… %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
