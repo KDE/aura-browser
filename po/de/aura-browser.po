@@ -1,7 +1,7 @@
 # German translations for aura-browser package.
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
-# Alois Spitzbart <spitz234@hotmail.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Alois Spitzbart <spitz234@hotmail.com>
 #
 # Automatically generated, 2022.
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-07 00:50+0000\n"
-"PO-Revision-Date: 2022-10-24 17:39+0200\n"
+"PO-Revision-Date: 2024-06-12 22:41+0200\n"
 "Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 24.05.0\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -95,7 +95,7 @@ msgstr "Möchten Sie die Datei %1 herunterladen?"
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr "Wird heruntergeladen.. %1"
+msgstr "Wird heruntergeladen ... %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
