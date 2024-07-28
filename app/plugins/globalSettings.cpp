@@ -5,11 +5,7 @@
 
 #include <QDebug>
 #include <QFile>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <QtWebEngine/QQuickWebEngineProfile>
-#else
 #include <QtWebEngineQuick/QQuickWebEngineProfile>
-#endif
 #include "globalSettings.h"
 
 GlobalSettings::GlobalSettings(QObject *parent) :
