@@ -27,6 +27,7 @@
   <name xml:lang="pt-BR">Navegador Aura</name>
   <name xml:lang="ro">Navigator Aura</name>
   <name xml:lang="ru">Браузер Aura</name>
+  <name xml:lang="sa">आभा ब्राउज़र</name>
   <name xml:lang="sk">Prehliadač Aura</name>
   <name xml:lang="sl">Brskalnik Aura</name>
   <name xml:lang="sv">Aura webbläsare</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="pt-BR">Navegador para uma experiência de tela grande totalmente imersa que permite a você navegar na rede mundial de computadores usando apenas o controle remoto</summary>
   <summary xml:lang="ro">Navigator pentru o experiență deplină pe ecran mare ce vă permite să navigați pe web folosind doar telecomanda</summary>
   <summary xml:lang="ru">Оптимизированный для больших экранов браузер, которым можно управлять просто с пульта ДУ</summary>
+  <summary xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</summary>
   <summary xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</summary>
   <summary xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</summary>
   <summary xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</summary>
@@ -102,6 +104,7 @@
     <p xml:lang="pt-BR">Navegador para uma experiência de tela grande totalmente imersa que permite a você navegar na rede mundial de computadores usando apenas o controle remoto</p>
     <p xml:lang="ro">Navigator pentru o experiență deplină pe ecran mare ce vă permite să navigați pe web folosind doar telecomanda</p>
     <p xml:lang="ru">Оптимизированный для больших экранов браузер, которым можно управлять просто с пульта ДУ</p>
+    <p xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</p>
     <p xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</p>
     <p xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</p>
     <p xml:lang="tr">Tümüyle içine dalınmış bir Büyük Ekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
@@ -140,6 +143,7 @@
       <caption xml:lang="pt-BR">Navegador Aura</caption>
       <caption xml:lang="ro">Navigator Aura</caption>
       <caption xml:lang="ru">Браузер Aura</caption>
+      <caption xml:lang="sa">आभा ब्राउज़र</caption>
       <caption xml:lang="sk">Prehliadač Aura</caption>
       <caption xml:lang="sl">Brskalnik Aura</caption>
       <caption xml:lang="sv">Aura webbläsare</caption>
