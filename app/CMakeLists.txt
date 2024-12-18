@@ -27,6 +27,7 @@ target_link_libraries(aura-browser
     Qt::Multimedia
     KF6::Kirigami
     KF6::I18n
+    KF6::I18nQml
     ${CMAKE_THREAD_LIBS_INIT}
 )
 

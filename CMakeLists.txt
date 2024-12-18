@@ -20,6 +20,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(FeatureSummary)
+include(ECMDeprecationSettings)
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS
     Core
@@ -39,6 +40,9 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED
 
 find_package(Threads)
 
+ecm_set_disabled_deprecation_versions(QT 6.8.1
+    KF 6.9.0
+)
 
 add_subdirectory(app)
 add_subdirectory(icons)
