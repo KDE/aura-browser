@@ -16,8 +16,8 @@
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 
-#include <KLocalizedContext>
 #include <KLocalizedString>
+#include <KLocalizedQmlContext>
 
 
 // Add Adblock Implementation
@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    engine.rootContext()->setContextObject(new KLocalizedQmlContext(&engine));
 
     // Adblock Implementation
     WebIntercept interceptor;
