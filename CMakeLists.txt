@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.16.0)
 
 project(aura-browser)
 set(PROJECT_VERSION "6.0.80")
-set(PROJECT_VERSION_MAJOR 6)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
