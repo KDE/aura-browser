@@ -45,7 +45,7 @@ msgstr "Gestor d'adreces d'interés"
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr "Premeu «Esc» o el botó Arrere [←] per a tancar"
+msgstr "Premeu «Esc» o el botó «Arrere» [←] per a tancar"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
@@ -259,7 +259,7 @@ msgstr "Google"
 #: qml/SettingsTab.qml:360
 #, kde-format
 msgid "Duck Duck Go"
-msgstr "Duck Duck Go"
+msgstr "DuckDuckGo"
 
 #: qml/SettingsTab.qml:391
 #, kde-format
