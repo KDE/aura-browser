@@ -146,7 +146,7 @@ msgstr "ابحث في التأريخ"
 #: qml/HistoryManager.qml:211
 #, kde-format
 msgid "Clear History"
-msgstr "امسح التاريخ"
+msgstr "امحُ التاريخ"
 
 #: qml/HistoryManager.qml:254
 #, kde-format
@@ -303,7 +303,7 @@ msgstr "الصفحات الحديثة"
 #: qml/StartPage.qml:411
 #, kde-format
 msgid "Clear"
-msgstr "امسح"
+msgstr "امحُ"
 
 #: qml/SuggestionsBox.qml:44
 #, kde-format
