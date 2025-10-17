@@ -3,7 +3,7 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2022, 2024.
+# SPDX-FileCopyrightText: 2022, 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
@@ -136,7 +136,7 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
-"Ací hi ha tots els botons necessaris per a ajudar-vos a començar a utilitzar "
+"Ací hi ha tots els botons necessaris per ajudar-vos a començar a utilitzar "
 "el navegador Aura"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
