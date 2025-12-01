@@ -22,6 +22,7 @@ Name[nl]=Aura-browser
 Name[pl]=Przeglądarka Aura
 Name[pt]=Navegador Aura
 Name[pt_BR]=Navegador Aura
+Name[ro]=Navigator Aura
 Name[ru]=Браузер Aura
 Name[sk]=Prehliadač Aura
 Name[sl]=Brskalnik Aura
