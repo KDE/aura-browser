@@ -39,8 +39,8 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED
 
 find_package(Threads)
 
-ecm_set_disabled_deprecation_versions(QT 6.8.1
-    KF 6.9.0
+ecm_set_disabled_deprecation_versions(QT 6.11.0
+    KF 6.23.0
 )
 
 add_subdirectory(app)
