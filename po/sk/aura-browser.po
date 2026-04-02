@@ -23,7 +23,7 @@ msgstr "Počúva sa"
 #: qml/AudioBox.qml:87
 #, kde-format
 msgid "Performing Search With Mycroft"
-msgstr ""
+msgstr "Vyhľadáva sa pomocou Mycroft"
 
 #: qml/AudioBox.qml:141
 #, kde-format
@@ -33,7 +33,7 @@ msgstr "Zavrieť"
 #: qml/BookmarkManager.qml:170
 #, kde-format
 msgid "Bookmarks Manager"
-msgstr ""
+msgstr "Správca záložiek"
 
 #: qml/BookmarkManager.qml:179 qml/BookmarkManager.qml:330 qml/HelpTab.qml:59
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
@@ -41,17 +41,17 @@ msgstr ""
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "Stlačte 'esc' alebo tlačidlo [←] Späť na zatvorenie"
 
 #: qml/BookmarkManager.qml:213
-#, fuzzy, kde-format
+#, kde-format
 msgid "Search Bookmarks"
 msgstr "Hľadať v záložkách…"
 
 #: qml/BookmarkManager.qml:242
 #, kde-format
 msgid "Remove Mode"
-msgstr ""
+msgstr "Režim odstraňovania"
 
 #: qml/BookmarkManager.qml:260 qml/BookmarkManager.qml:538
 #, kde-format
@@ -86,7 +86,7 @@ msgstr "Záložky"
 #: qml/DownloadRequest.qml:40
 #, kde-format
 msgid "Do you want to download %1 file ?"
-msgstr ""
+msgstr "Chcete stiahnuť súbor %1?"
 
 #: qml/DownloadRequest.qml:60
 #, kde-format
@@ -120,6 +120,10 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"Prehliadač Aura prispôsobuje tradičné rozhranie webového prehliadača pre "
+"plne pohlcujúci zážitok na veľkej obrazovke. Rozhranie prehliadača Aura je "
+"čo najjemnejšie a najintuitívnejšie pre prehliadanie webu pomocou diaľkového "
+"ovládača."
 
 #: qml/HelpTab.qml:106
 #, kde-format
@@ -127,6 +131,8 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"Tu sú všetky tlačidlá potrebné na to, aby ste mohli začať používať "
+"prehliadač Aura"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
@@ -134,7 +140,7 @@ msgid "History"
 msgstr "História"
 
 #: qml/HistoryManager.qml:184
-#, fuzzy, kde-format
+#, kde-format
 msgid "Search History"
 msgstr "Hľadať v histórii..."
 
@@ -146,17 +152,17 @@ msgstr "Vyčistiť históriu"
 #: qml/HistoryManager.qml:254
 #, kde-format
 msgid "No Recent History"
-msgstr ""
+msgstr "Žiadna nedávna história"
 
 #: qml/LocalURLSearchHandler.qml:84 qml/StartPage.qml:516
 #, kde-format
 msgid "Enter URL / Search Term"
-msgstr ""
+msgstr "Zadajte URL / hľadaný výraz"
 
 #: qml/LocalURLSearchHandler.qml:112 qml/StartPage.qml:545
 #, kde-format
 msgid "Enter Search Term or URL"
-msgstr ""
+msgstr "Zadajte hľadaný výraz alebo URL"
 
 #: qml/main.qml:29 qml/mainSandbox.qml:28
 #, kde-format
@@ -166,17 +172,17 @@ msgstr "Prehliadač Aura"
 #: qml/main.qml:153
 #, kde-format
 msgid "Close Menu"
-msgstr ""
+msgstr "Zavrieť ponuku"
 
 #: qml/main.qml:223
 #, kde-format
 msgid "Current Tabs"
-msgstr ""
+msgstr "Aktuálne karty"
 
 #: qml/main.qml:269
 #, kde-format
 msgid "Remove Tab"
-msgstr ""
+msgstr "Odstrániť kartu"
 
 #: qml/mainSandbox.qml:75
 #, kde-format
@@ -198,7 +204,7 @@ msgstr "Sťahovanie zlyhalo: %1"
 #: qml/SettingsTab.qml:105
 #, kde-format
 msgid "Virtual Cursor Speed Control"
-msgstr ""
+msgstr "Ovládanie rýchlosti virtuálneho kurzora"
 
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
@@ -208,12 +214,12 @@ msgstr "Aktuálna rýchlosť: %1"
 #: qml/SettingsTab.qml:174
 #, kde-format
 msgid "Virtual Scroll Speed Control"
-msgstr ""
+msgstr "Ovládanie rýchlosti virtuálneho posúvania"
 
 #: qml/SettingsTab.qml:244
 #, kde-format
 msgid "Virtual Cursor Size Control"
-msgstr ""
+msgstr "Ovládanie veľkosti virtuálneho kurzora"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
@@ -258,12 +264,12 @@ msgstr "Všeobecné"
 #: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424
 #, kde-format
 msgid "Disable Button Sounds"
-msgstr ""
+msgstr "Vypnúť zvuky tlačidiel"
 
 #: qml/SettingsTab.qml:421
 #, kde-format
 msgid "Enable Button Sounds"
-msgstr ""
+msgstr "Zapnúť zvuky tlačidiel"
 
 #: qml/SettingsTab.qml:442
 #, kde-format
@@ -283,17 +289,17 @@ msgstr "Nastavenia"
 #: qml/StartPage.qml:318
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr ""
+msgstr "Prehliadač Aura - Úvodná stránka"
 
 #: qml/StartPage.qml:362
 #, kde-format
 msgid "Search or type url"
-msgstr ""
+msgstr "Hľadajte alebo zadajte URL"
 
 #: qml/StartPage.qml:401
 #, kde-format
 msgid "Recent Pages"
-msgstr ""
+msgstr "Nedávne stránky"
 
 #: qml/StartPage.qml:411
 #, kde-format
