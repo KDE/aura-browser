@@ -1,21 +1,22 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 # Vit Pelcak <vit@pelcak.org>, 2023.
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2023-03-03 16:13+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-12 22:05+0200\n"
+"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -43,7 +44,7 @@ msgstr "Správce záložek"
 #: qml/StartPage.qml:525
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "Stiskněte klávesu \"Esc\" nebo tlačítko [←] Zpět pro zavření"
 
 #: qml/BookmarkManager.qml:213
 #, kde-format
@@ -122,6 +123,11 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"Prohlížeč Aura přizpůsobuje tradiční uživatelské rozhraní webového "
+"prohlížeče tak, aby poskytoval plně pohlcující zážitek na velkoplošné "
+"obrazovce. Uživatelské rozhraní prohlížeče Aura je navrženo tak, aby bylo co "
+"nejjednodušší a nejintuitivnější, a umožňovalo tak procházení internetu "
+"pouze pomocí dálkového ovladače."
 
 #: qml/HelpTab.qml:106
 #, kde-format
@@ -129,6 +135,8 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"Zde najdete všechna tlačítka, která vám pomohou začít s používáním "
+"prohlížeče Aura"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:171
 #, kde-format
@@ -200,7 +208,7 @@ msgstr "Stažení bylo neúspěšné: %1"
 #: qml/SettingsTab.qml:105
 #, kde-format
 msgid "Virtual Cursor Speed Control"
-msgstr ""
+msgstr "Ovládání rychlosti virtuálního kurzoru"
 
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
@@ -210,12 +218,12 @@ msgstr "Aktuální rychlost: %1"
 #: qml/SettingsTab.qml:174
 #, kde-format
 msgid "Virtual Scroll Speed Control"
-msgstr ""
+msgstr "Ovládání rychlosti virtuálního posunu"
 
 #: qml/SettingsTab.qml:244
 #, kde-format
 msgid "Virtual Cursor Size Control"
-msgstr ""
+msgstr "Ovládání velikosti virtuálního kurzoru"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
