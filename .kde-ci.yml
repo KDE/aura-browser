@@ -24,4 +24,4 @@ Dependencies:
     'plasma/plasma-workspace': '@same'
 
 Options:
-    enable-lsan: True
+ enable-lsan: True
