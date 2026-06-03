@@ -33,6 +33,7 @@
   <name xml:lang="sl">Brskalnik Aura</name>
   <name xml:lang="sv">Aura webbläsare</name>
   <name xml:lang="tr">Aura Tarayıcı</name>
+  <name xml:lang="ug">Aura كۆرگۈ</name>
   <name xml:lang="uk">Браузер Aura</name>
   <name xml:lang="zh-CN">Aura 浏览器</name>
   <name xml:lang="zh-TW">Aura 瀏覽器</name>
@@ -153,6 +154,7 @@
       <caption xml:lang="sl">Brskalnik Aura</caption>
       <caption xml:lang="sv">Aura webbläsare</caption>
       <caption xml:lang="tr">Aura Tarayıcı</caption>
+      <caption xml:lang="ug">Aura كۆرگۈ</caption>
       <caption xml:lang="uk">Браузер Aura</caption>
       <caption xml:lang="zh-CN">Aura 浏览器</caption>
       <caption xml:lang="zh-TW">Aura 瀏覽器</caption>
