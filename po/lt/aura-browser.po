@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2022-09-07 00:50+0000\n"
+"PO-Revision-Date: 2026-06-07 23:36+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,11 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.9\n"
 
 #: qml/BookmarkManager.qml:176
 #, kde-format
 msgid "Bookmarks Manager"
-msgstr ""
+msgstr "Žymelių tvarkytuvė"
 
 #: qml/BookmarkManager.qml:185 qml/BookmarkManager.qml:337 qml/HelpTab.qml:63
 #: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
@@ -29,77 +30,77 @@ msgstr ""
 #: qml/UrlEntryBox.qml:76
 #, kde-format
 msgid "Press 'esc' or the [←] Back button to close"
-msgstr ""
+msgstr "Paspauskite „Esc“ (Gr) arba mygtuką [←] „Atgal“ norėdami užverti"
 
 #: qml/BookmarkManager.qml:219
 #, kde-format
 msgid "Search Bookmarks"
-msgstr ""
+msgstr "Ieškoti žymelių"
 
 #: qml/BookmarkManager.qml:249
 #, kde-format
 msgid "Remove Mode"
-msgstr ""
+msgstr "Šalinimo veiksena"
 
 #: qml/BookmarkManager.qml:267 qml/BookmarkManager.qml:546
 #, kde-format
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
 
 #: qml/BookmarkManager.qml:328
 #, kde-format
 msgid "Add Bookmark"
-msgstr ""
+msgstr "Pridėti žymelę"
 
 #: qml/BookmarkManager.qml:359
 #, kde-format
 msgid "Name: "
-msgstr ""
+msgstr "Pavadinimas: "
 
 #: qml/BookmarkManager.qml:411
 #, kde-format
 msgid "Url: "
-msgstr ""
+msgstr "Url: "
 
 #: qml/BookmarkManager.qml:463
 #, kde-format
 msgid "Category: "
-msgstr ""
+msgstr "Kategorija: "
 
 #: qml/BookmarkManager.qml:518 qml/StartPage.qml:205 qml/StartPage.qml:447
 #, kde-format
 msgid "Bookmarks"
-msgstr ""
+msgstr "Žymelės"
 
 #: qml/DownloadRequest.qml:40
 #, kde-format
 msgid "Do you want to download %1 file ?"
-msgstr ""
+msgstr "Ar norite atsisiųsti failą %1?"
 
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr ""
+msgstr "Atsiunčiama... %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: qml/FeatureRequest.qml:49
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Priimti"
 
 #: qml/FeatureRequest.qml:69
 #, kde-format
 msgid "Deny"
-msgstr ""
+msgstr "Atmesti"
 
 #: qml/HelpTab.qml:54 qml/StartPage.qml:273
 #, kde-format
 msgid "Help"
-msgstr ""
+msgstr "Pagalba"
 
 #: qml/HelpTab.qml:88
 #, kde-format
@@ -108,6 +109,10 @@ msgid ""
 "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
 "possible for navigating the world wide web using just your remote control."
 msgstr ""
+"Aura naršyklė pritaiko tradicinę saityno naršyklės naudotojo sąsają, kad "
+"jums pateiktų pilnavertį Bigscreen patyrimą. Aura naršyklės naudotojo sąsaja "
+"sukurta taip, kad saityno naršymas, naudojant nuotolinį valdymo pultą, būtų "
+"kuo labiau subtilus ir intuityvus."
 
 #: qml/HelpTab.qml:110
 #, kde-format
@@ -115,185 +120,187 @@ msgid ""
 "Here are all the buttons required to help you get started with using aura "
 "browser"
 msgstr ""
+"Čia yra visi mygtukai, kurių gali prireikti darbo pradžiai naudojant Aura "
+"naršyklę"
 
 #: qml/HistoryManager.qml:140 qml/StartPage.qml:172
 #, kde-format
 msgid "History"
-msgstr ""
+msgstr "Istorija"
 
 #: qml/HistoryManager.qml:184
 #, kde-format
 msgid "Search History"
-msgstr ""
+msgstr "Paieškos istorija"
 
 #: qml/HistoryManager.qml:211
 #, kde-format
 msgid "Clear History"
-msgstr ""
+msgstr "Išvalyti istoriją"
 
 #: qml/HistoryManager.qml:254
 #, kde-format
 msgid "No Recent History"
-msgstr ""
+msgstr "Nėra paskiausios istorijos"
 
 #: qml/LocalURLSearchHandler.qml:84 qml/UrlEntryBox.qml:67
 #, kde-format
 msgid "Enter URL / Search Term"
-msgstr ""
+msgstr "Įvesti URL / ieškomus žodžius"
 
 #: qml/LocalURLSearchHandler.qml:112 qml/UrlEntryBox.qml:96
 #, kde-format
 msgid "Enter Search Term or URL"
-msgstr ""
+msgstr "Įveskite ieškomus žodžius ar URL"
 
 #: qml/main.qml:29 qml/mainSandbox.qml:28
 #, kde-format
 msgid "Aura-Browser"
-msgstr ""
+msgstr "Aura naršyklė"
 
 #: qml/main.qml:153
 #, kde-format
 msgid "Close Menu"
-msgstr ""
+msgstr "Užverti meniu"
 
 #: qml/main.qml:223
 #, kde-format
 msgid "Current Tabs"
-msgstr ""
+msgstr "Dabartinės kortelės"
 
 #: qml/main.qml:269
 #, kde-format
 msgid "Remove Tab"
-msgstr ""
+msgstr "Šalinti kortelę"
 
 #: qml/mainSandbox.qml:75
 #, kde-format
 msgid "Quit"
-msgstr ""
+msgstr "Išjungti"
 
 #: qml/SandboxLoader.qml:152 qml/SandboxLoader.qml:185 qml/WebLoader.qml:165
 #: qml/WebLoader.qml:197
 #, kde-format
 msgid "Download finished"
-msgstr ""
+msgstr "Atsiuntimas užbaigtas"
 
 #: qml/SandboxLoader.qml:157 qml/SandboxLoader.qml:190 qml/WebLoader.qml:170
 #: qml/WebLoader.qml:202
 #, kde-format
 msgid "Download failed: %1"
-msgstr ""
+msgstr "Nepavyko atsisiųsti: %1"
 
 #: qml/SettingsTab.qml:105
 #, kde-format
 msgid "Virtual Cursor Speed Control"
-msgstr ""
+msgstr "Virtualaus žymeklio greičio valdymas"
 
 #: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
 #, kde-format
 msgid "Current Speed: %1"
-msgstr ""
+msgstr "Dabartinis greitis: %1"
 
 #: qml/SettingsTab.qml:174
 #, kde-format
 msgid "Virtual Scroll Speed Control"
-msgstr ""
+msgstr "Virtualaus slinkimo greičio valdymas"
 
 #: qml/SettingsTab.qml:244
 #, kde-format
 msgid "Virtual Cursor Size Control"
-msgstr ""
+msgstr "Virtualaus žymeklio dydžio valdymas"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Current Size: "
-msgstr ""
+msgstr "Dabartinis dydis: "
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Large"
-msgstr ""
+msgstr "Didelis"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Medium"
-msgstr ""
+msgstr "Vidutinis"
 
 #: qml/SettingsTab.qml:296
 #, kde-format
 msgid "Small"
-msgstr ""
+msgstr "Mažas"
 
 #: qml/SettingsTab.qml:314
 #, kde-format
 msgid "Search Engine"
-msgstr ""
+msgstr "Paieškos sistema"
 
 #: qml/SettingsTab.qml:333
 #, kde-format
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: qml/SettingsTab.qml:360
 #, kde-format
 msgid "Duck Duck Go"
-msgstr ""
+msgstr "Duck Duck Go"
 
 #: qml/SettingsTab.qml:391
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Bendra"
 
 #: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424 qml/SettingsTab.qml:435
 #, kde-format
 msgid "Disable Button Sounds"
-msgstr ""
+msgstr "Išjungti mygtukų garsus"
 
 #: qml/SettingsTab.qml:421 qml/SettingsTab.qml:432
 #, kde-format
 msgid "Enable Button Sounds"
-msgstr ""
+msgstr "Įjungti mygtukų garsus"
 
 #: qml/SettingsTab.qml:449
 #, kde-format
 msgid "Clear Cache"
-msgstr ""
+msgstr "Išvalyti podėlį"
 
 #: qml/StartPage.qml:138
 #, kde-format
 msgid "Tabs"
-msgstr ""
+msgstr "Kortelės"
 
 #: qml/StartPage.qml:240
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #: qml/StartPage.qml:320
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr ""
+msgstr "Aura naršyklė - Pradinis puslapis"
 
 #: qml/StartPage.qml:363
 #, kde-format
 msgid "Search or type url"
-msgstr ""
+msgstr "Atlikite paiešką arba įrašykite URL"
 
 #: qml/StartPage.qml:395
 #, kde-format
 msgid "Recent Pages"
-msgstr ""
+msgstr "Paskiausi puslapiai"
 
 #: qml/StartPage.qml:405
 #, kde-format
 msgid "Clear"
-msgstr ""
+msgstr "Išvalyti"
 
 #: qml/SuggestionsBox.qml:44
 #, kde-format
 msgid "Suggestions:"
-msgstr ""
+msgstr "Pasiūlymai:"
 
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr ""
+msgstr "A"
