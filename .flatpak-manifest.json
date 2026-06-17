@@ -1,0 +1,58 @@
+{
+    "id": "org.kde.aura-browser",
+    "branch": "master",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.10",
+    "sdk": "org.kde.Sdk",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "6.10",
+    "command": "aura-browser",
+    "tags": [
+        "nightly"
+    ],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland"
+    ],
+    "modules": [
+        {
+            "name": "aura-browser",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ],
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DENABLE_TESTING=OFF"
+            ]
+        },
+        {
+            "name": "qt6-virtualkeyboard",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.qt.io/official_releases/qt/6.10/6.10.3/submodules/qtvirtualkeyboard-everywhere-src-6.10.3.tar.xz",
+                    "sha256": "3298e26dfa4fad2363e3dfb2b55079c54fc8115a4a040d9616e5619f095d8fb5"
+                }
+            ],
+            "post-install": [
+                "rm -rd ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/cmake",
+                "rm -rd ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/pkgconfig",
+                "mv ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu/* /app/lib/",
+                "rmdir ${FLATPAK_DEST}/lib/${FLATPAK_ARCH}-linux-gnu"
+            ],
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ]
+        }
+    ]
+}
