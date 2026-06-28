@@ -294,7 +294,7 @@ msgstr "Configuració"
 #: qml/StartPage.qml:318
 #, kde-format
 msgid "Aura Browser - Start Page"
-msgstr "Navegador Aura - Pàgina d'inici"
+msgstr "Navegador Aura – Pàgina d'inici"
 
 #: qml/StartPage.qml:362
 #, kde-format
