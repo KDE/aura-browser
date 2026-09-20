@@ -23,6 +23,7 @@
   <name xml:lang="lt">Aura naršyklė</name>
   <name xml:lang="lv">Aura Browser</name>
   <name xml:lang="nl">Aura-bladerprogramma</name>
+  <name xml:lang="nn">Aura nettlesar</name>
   <name xml:lang="pl">Przeglądarka Aura</name>
   <name xml:lang="pt">Navegador Aura</name>
   <name xml:lang="pt-BR">Navegador Aura</name>
@@ -147,6 +148,7 @@
       <caption xml:lang="lt">Aura naršyklė</caption>
       <caption xml:lang="lv">Aura Browser</caption>
       <caption xml:lang="nl">Aura-bladerprogramma</caption>
+      <caption xml:lang="nn">Aura nettlesar</caption>
       <caption xml:lang="pl">Przeglądarka Aura</caption>
       <caption xml:lang="pt">Navegador Aura</caption>
       <caption xml:lang="pt-BR">Navegador Aura</caption>
