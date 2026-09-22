@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2026-05-28 17:12-0400\n"
+"PO-Revision-Date: 2026-09-22 18:02+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -231,7 +231,7 @@ msgstr ""
 #: qml/SettingsTab.qml:333
 #, kde-format
 msgid "Google"
-msgstr "Google"
+msgstr ""
 
 #: qml/SettingsTab.qml:360
 #, kde-format
@@ -296,4 +296,4 @@ msgstr ""
 #: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
 #, kde-format
 msgid "A"
-msgstr "A"
+msgstr "قوشۇمچە ئاتنىڭ بىرىنچى ھەرپى"
