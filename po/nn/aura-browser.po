@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2026-08-08 13:06+0200\n"
+"PO-Revision-Date: 2026-10-27 20:01+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -51,7 +51,7 @@ msgstr ""
 #: qml/BookmarkManager.qml:213
 #, kde-format
 msgid "Search Bookmarks"
-msgstr ""
+msgstr "Søk i bokmerke"
 
 #: qml/BookmarkManager.qml:242
 #, kde-format
@@ -91,12 +91,12 @@ msgstr "Bokmerke"
 #: qml/DownloadRequest.qml:40
 #, kde-format
 msgid "Do you want to download %1 file ?"
-msgstr ""
+msgstr "Vil du lasta ned %1 fil?"
 
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr ""
+msgstr "Lastar ned … %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
