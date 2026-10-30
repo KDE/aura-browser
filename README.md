@@ -1,12 +1,13 @@
 # Aura Browser
 
-Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control.
+Web browser for Plasma Bigscreen, designed to be used with remotes.
 
-#### Installation
+* Project page: https://invent.kde.org/plasma-bigscreen/aura-browser
+* File issues: https://invent.kde.org/plasma-bigscreen/aura-browser/-/work-items
+* Development channel: https://matrix.to/#/#plasma-bigscreen:kde.org
 
-  + cd aura-browser
-  + mkdir build
-  + cd build
-  + cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LIBDIR=lib -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
-  + make
-  + sudo make install
+## Dependencies
+
+* [bigscreen-ui](https://invent.kde.org/libraries/bigscreen-ui) (org.kde.bigscreen.ui)
+* Qt 6 (WebEngine, Quick Controls)
+* Kirigami, KI18n

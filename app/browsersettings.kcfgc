@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: CC0-1.0
+
+File=browsersettings.kcfg
+ClassName=BrowserSettings
+Mutators=true
+DefaultValueGetters=true
+GenerateProperties=true
+ParentInConstructor=true
+Singleton=true
+Notifiers=true
+QmlRegistration=true

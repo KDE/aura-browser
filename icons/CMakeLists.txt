@@ -1,7 +1,1 @@
-ecm_install_icons( 
-    ICONS
-        128-apps-aura-browser.png
-        256-apps-aura-browser.png
-    DESTINATION ${KDE_INSTALL_ICONDIR}
-    THEME hicolor
-) 
+install(FILES org.kde.aura-browser.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)

@@ -13,8 +13,12 @@ Files: app/third-party/*
 Copyright: 2015 Brian R. Bondy
 License: MPL-2.0
 
-Files: icons/*
+Files: icons/CMakeLists.txt
 Copyright: 2022 Aditya Mehra
+License: CC0-1.0
+
+Files: icons/org.kde.aura-browser.svg logo.png
+Copyright: 2026 Devin Lin <devin@kde.org>
 License: CC0-1.0
 
 Files: app/qml/sounds/*
@@ -53,7 +57,7 @@ Files: app/Messages.sh
 Copyright: 2022 Aditya Mehra
 License: CC0-1.0
 
-Files: org.kde.invent.aura_browser.metainfo.xml
+Files: org.kde.aura-browser.metainfo.xml
 Copyright: 2022 Aditya Mehra
 License: CC0-1.0
 

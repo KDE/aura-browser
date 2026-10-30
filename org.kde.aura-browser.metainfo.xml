@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>org.kde.aura-browser</id>
+  <name>Aura Browser</name>
+  <name xml:lang="ar">متصفح أورا</name>
+  <name xml:lang="ast">Restolador Aura</name>
+  <name xml:lang="ca">Navegador Aura</name>
+  <name xml:lang="ca-valencia">Navegador Aura</name>
+  <name xml:lang="cs">Prohlížeč Aura</name>
+  <name xml:lang="de">Aura Browser</name>
+  <name xml:lang="en-GB">Aura Browser</name>
+  <name xml:lang="eo">Aura Browser</name>
+  <name xml:lang="es">Navegador Aura</name>
+  <name xml:lang="eu">Aura arakatzailea</name>
+  <name xml:lang="fi">Aura-selain</name>
+  <name xml:lang="fr">Navigateur Aura</name>
+  <name xml:lang="gl">Navegador Aura</name>
+  <name xml:lang="he">דפדפן הילה</name>
+  <name xml:lang="ia">Aura Browser (Navigator Aura)</name>
+  <name xml:lang="it">Aura Browser</name>
+  <name xml:lang="ka">Aura ბრაუზერი</name>
+  <name xml:lang="ko">Aura 브라우저</name>
+  <name xml:lang="lt">Aura naršyklė</name>
+  <name xml:lang="lv">Aura Browser</name>
+  <name xml:lang="nl">Aura-bladerprogramma</name>
+  <name xml:lang="nn">Aura nettlesar</name>
+  <name xml:lang="pl">Przeglądarka Aura</name>
+  <name xml:lang="pt">Navegador Aura</name>
+  <name xml:lang="pt-BR">Navegador Aura</name>
+  <name xml:lang="ro">Navigator Aura</name>
+  <name xml:lang="ru">Браузер Aura</name>
+  <name xml:lang="sa">आभा ब्राउज़र</name>
+  <name xml:lang="sk">Prehliadač Aura</name>
+  <name xml:lang="sl">Brskalnik Aura</name>
+  <name xml:lang="sv">Aura webbläsare</name>
+  <name xml:lang="tr">Aura Tarayıcı</name>
+  <name xml:lang="ug">Aura كۆرگۈ</name>
+  <name xml:lang="uk">Браузер Aura</name>
+  <name xml:lang="zh-CN">Aura 浏览器</name>
+  <name xml:lang="zh-TW">Aura 瀏覽器</name>
+  <summary>Browse the web from your couch</summary>
+  <summary xml:lang="ar">متصفح لتجربة شاشة كبيرة رائعة مما يتيح لك التنقل في شبكة الويب العالمية باستخدام جهاز التحكم عن بُعد فقط</summary>
+  <summary xml:lang="ast">Un restolador pa tener una esperiencia Bigscreen inmersiva al completu que te permite restolar per internet con namás el mandu a distancia</summary>
+  <summary xml:lang="ca">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web usant només el comandament a distància</summary>
+  <summary xml:lang="ca-valencia">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web utilitzant només el comandament a distància</summary>
+  <summary xml:lang="cs">Prohlížeč pro dokonalý zážitek z velkoplošného zobrazení, který vám umožní procházet internet pouze pomocí dálkového ovladače</summary>
+  <summary xml:lang="de">Browser für ein ganzheitliches Big-Screen-Erlebnis, bei dem Sie mit Ihrer Fernbedienung durch das World Wide Web navigieren können</summary>
+  <summary xml:lang="en-GB">Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</summary>
+  <summary xml:lang="eo">Retumilo por plene mergita Grand-Ekrana sperto ebligante vin navigi la tutmondan reton uzante nur vian teleregilon</summary>
+  <summary xml:lang="es">Navegador para una experiencia inmersiva completa a gran pantalla, que le permite navegar por la web usando solo el mando a distancia</summary>
+  <summary xml:lang="eu">Pantaila handian erabat murgiltzeko arakatze esperientzia bat, urruneko agintea bakarrik erabiliz mundu zabaleko amaraunean nabigatzeko</summary>
+  <summary xml:lang="fi">Elämyksellisen suurnäyttökokemuksen selain, jolla verkkoa voi selata, vaikka käytössä olisi vain kaukosäädin</summary>
+  <summary xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</summary>
+  <summary xml:lang="gl">Navegador para unha experiencia completamente absorbente con Big Screen que permite navegar Internet cun mando a distancia</summary>
+  <summary xml:lang="he">דפדפן שמשולב לחלוטין כחלק מהחוויה של מסכים גדולים כדי לאפשר לך לנווט באינטרנט באמצעות השלט בלבד</summary>
+  <summary xml:lang="ia">Navigator per un plen experientia de Bigscreen permittente a te navigar le world wide web solmente usante  tu controlo remote</summary>
+  <summary xml:lang="it">Browser per un'esperienza Big Screen completamente immersa che ti consente di navigare nel World Wide Web usando solo il tuo telecomando</summary>
+  <summary xml:lang="ka">ბრაუზერი, რომელი დიდი ეკრანებისთვისაა შექმნილი და საშუალებას გაძლევთ, ინტერნეტში თქვენი პულტით იმუშაოთ</summary>
+  <summary xml:lang="ko">리모콘을 사용하여 웹을 탐색할 수 있는 큰 화면용 몰입형 웹 브라우저</summary>
+  <summary xml:lang="lt">Naršyklė, skirta visiškam „Big Screen“ patyrimui, leidžianti jums naršyti saityną naudojant nuotolinį valdymo pultą</summary>
+  <summary xml:lang="lv">Pārlūks pilnībā imersīvai lielā ekrāna pieredzei, ļaujot aplūkot globālo tīmekli ar tikai tālvadības pulti.</summary>
+  <summary xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</summary>
+  <summary xml:lang="pl">Przeglądarka dająca pełnię doświadczeń na Dużym Ekranie, która umożliwia przeglądanie internetu przy użyciu tylko pilota</summary>
+  <summary xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</summary>
+  <summary xml:lang="pt-BR">Navegador para uma experiência de tela grande totalmente imersa que permite a você navegar na rede mundial de computadores usando apenas o controle remoto</summary>
+  <summary xml:lang="ro">Navigator pentru o experiență deplină pe ecran mare ce vă permite să navigați pe web folosind doar telecomanda</summary>
+  <summary xml:lang="ru">Оптимизированный для больших экранов браузер, которым можно управлять просто с пульта ДУ</summary>
+  <summary xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</summary>
+  <summary xml:lang="sk">Prehliadač pre plne pohlcujúci zážitok na veľkej obrazovke umožňujúci prehliadanie webu pomocou diaľkového ovládača</summary>
+  <summary xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</summary>
+  <summary xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</summary>
+  <summary xml:lang="tr">Tümüyle içine dalınmış bir Büyükekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</summary>
+  <summary xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</summary>
+  <summary xml:lang="zh-CN">浏览器提供完全沉浸式大屏幕体验，让您只需使用遥控器即可浏览全球网络</summary>
+  <summary xml:lang="zh-TW">大螢幕用的瀏覽器，提供在大螢幕上的沉浸體驗，讓您透過您的遙控器瀏覽網際網路</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <recommends>
+    <control>gamepad</control>
+    <control>tv-remote</control>
+  </recommends>
+  <description>
+    <p>
+      Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control
+    </p>
+    <p xml:lang="ar">متصفح لتجربة شاشة كبيرة رائعة مما يتيح لك التنقل في شبكة الويب العالمية باستخدام جهاز التحكم عن بُعد فقط</p>
+    <p xml:lang="ast">Un restolador pa tener una esperiencia Bigscreen inmersiva al completu que te permite restolar per internet con namás el mandu a distancia</p>
+    <p xml:lang="ca">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web usant només el comandament a distància</p>
+    <p xml:lang="ca-valencia">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar per la web utilitzant només el comandament a distància</p>
+    <p xml:lang="cs">Prohlížeč pro dokonalý zážitek z velkoplošného zobrazení, který vám umožní procházet internet pouze pomocí dálkového ovladače</p>
+    <p xml:lang="de">Browser für ein ganzheitliches Big-Screen-Erlebnis, bei dem Sie mit Ihrer Fernbedienung durch das World Wide Web navigieren können</p>
+    <p xml:lang="en-GB">Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</p>
+    <p xml:lang="eo">Retumilo por plene mergita Grand-Ekrana sperto ebligante vin navigi la tutmondan reton uzante nur vian teleregilon</p>
+    <p xml:lang="es">Navegador para una experiencia inmersiva completa a gran pantalla, que le permite navegar por la web usando solo el mando a distancia</p>
+    <p xml:lang="eu">Pantaila handian erabat murgiltzeko arakatze esperientzia bat, urruneko agintea bakarrik erabiliz mundu zabaleko amaraunean nabigatzeko</p>
+    <p xml:lang="fi">Elämyksellisen suurnäyttökokemuksen selain, jolla verkkoa voi selata, vaikka käytössä olisi vain kaukosäädin</p>
+    <p xml:lang="fr">Navigateur pour une immersion totale sur grand écran, vous permettant de naviguer sur Internet à l'aide de votre télécommande.</p>
+    <p xml:lang="gl">Navegador para unha experiencia completamente absorbente con Big Screen que permite navegar Internet cun mando a distancia</p>
+    <p xml:lang="he">דפדפן שמשולב לחלוטין כחלק מהחוויה של מסכים גדולים כדי לאפשר לך לנווט באינטרנט באמצעות השלט בלבד</p>
+    <p xml:lang="ia">Navigator per un plen experientia de Bigscreen permittente a te navigar le world wide web solmente usante  tu controlo remote</p>
+    <p xml:lang="it">Browser per un'esperienza Big Screen completamente immersa che ti consente di navigare nel World Wide Web usando solo il tuo telecomando</p>
+    <p xml:lang="ka">ბრაუზერი, რომელი დიდი ეკრანებისთვისაა შექმნილი და საშუალებას გაძლევთ, ინტერნეტში თქვენი პულტით იმუშაოთ</p>
+    <p xml:lang="ko">리모콘을 사용하여 웹을 탐색할 수 있는 큰 화면용 몰입형 웹 브라우저</p>
+    <p xml:lang="lt">Naršyklė, skirta visiškam „Big Screen“ patyrimui, leidžianti jums naršyti saityną naudojant nuotolinį valdymo pultą</p>
+    <p xml:lang="lv">Pārlūks pilnībā imersīvai lielā ekrāna pieredzei, ļaujot aplūkot globālo tīmekli ar tikai tālvadības pulti.</p>
+    <p xml:lang="nl">Bladerprogramma voor een volledig ondergedompelde ervaring met een groot scherm die u laat navigeren in het world wide web met alleen uw afstandsbediening</p>
+    <p xml:lang="pl">Przeglądarka dająca pełnię doświadczeń na Dużym Ekranie, która umożliwia przeglądanie internetu przy użyciu tylko pilota</p>
+    <p xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</p>
+    <p xml:lang="pt-BR">Navegador para uma experiência de tela grande totalmente imersa que permite a você navegar na rede mundial de computadores usando apenas o controle remoto</p>
+    <p xml:lang="ro">Navigator pentru o experiență deplină pe ecran mare ce vă permite să navigați pe web folosind doar telecomanda</p>
+    <p xml:lang="ru">Оптимизированный для больших экранов браузер, которым можно управлять просто с пульта ДУ</p>
+    <p xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</p>
+    <p xml:lang="sk">Prehliadač pre plne pohlcujúci zážitok na veľkej obrazovke umožňujúci prehliadanie webu pomocou diaľkového ovládača</p>
+    <p xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</p>
+    <p xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</p>
+    <p xml:lang="tr">Tümüyle içine dalınmış bir Büyükekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
+    <p xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</p>
+    <p xml:lang="zh-CN">浏览器提供完全沉浸式大屏幕体验，让您只需使用遥控器即可浏览全球网络</p>
+    <p xml:lang="zh-TW">大螢幕用的瀏覽器，提供在大螢幕上的沉浸體驗，讓您透過您的遙控器瀏覽網際網路</p>
+  </description>
+  <project_group>KDE</project_group>
+  <developer id="org.kde">
+    <name>KDE</name>
+  </developer>
+  <url type="homepage">https://invent.kde.org/plasma/aura-browser</url>
+  <content_rating type="oars-1.1"/>
+  <launchable type="desktop-id">org.kde.aura-browser.desktop</launchable>
+  <provides>
+    <binary>aura-browser</binary>
+    <id>org.kde.invent.aura_browser</id>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Aura Browser</caption>
+      <caption xml:lang="ar">متصفح أورا</caption>
+      <caption xml:lang="ast">Restolador Aura</caption>
+      <caption xml:lang="ca">Navegador Aura</caption>
+      <caption xml:lang="ca-valencia">Navegador Aura</caption>
+      <caption xml:lang="cs">Prohlížeč Aura</caption>
+      <caption xml:lang="de">Aura Browser</caption>
+      <caption xml:lang="en-GB">Aura Browser</caption>
+      <caption xml:lang="eo">Aura Browser</caption>
+      <caption xml:lang="es">Navegador Aura</caption>
+      <caption xml:lang="eu">Aura arakatzailea</caption>
+      <caption xml:lang="fi">Aura-selain</caption>
+      <caption xml:lang="fr">Navigateur Aura</caption>
+      <caption xml:lang="gl">Navegador Aura</caption>
+      <caption xml:lang="he">דפדפן הילה</caption>
+      <caption xml:lang="ia">Aura Browser (Navigator Aura)</caption>
+      <caption xml:lang="it">Aura Browser</caption>
+      <caption xml:lang="ka">Aura ბრაუზერი</caption>
+      <caption xml:lang="ko">Aura 브라우저</caption>
+      <caption xml:lang="lt">Aura naršyklė</caption>
+      <caption xml:lang="lv">Aura Browser</caption>
+      <caption xml:lang="nl">Aura-bladerprogramma</caption>
+      <caption xml:lang="nn">Aura nettlesar</caption>
+      <caption xml:lang="pl">Przeglądarka Aura</caption>
+      <caption xml:lang="pt">Navegador Aura</caption>
+      <caption xml:lang="pt-BR">Navegador Aura</caption>
+      <caption xml:lang="ro">Navigator Aura</caption>
+      <caption xml:lang="ru">Браузер Aura</caption>
+      <caption xml:lang="sa">आभा ब्राउज़र</caption>
+      <caption xml:lang="sk">Prehliadač Aura</caption>
+      <caption xml:lang="sl">Brskalnik Aura</caption>
+      <caption xml:lang="sv">Aura webbläsare</caption>
+      <caption xml:lang="tr">Aura Tarayıcı</caption>
+      <caption xml:lang="ug">Aura كۆرگۈ</caption>
+      <caption xml:lang="uk">Браузер Aura</caption>
+      <caption xml:lang="zh-CN">Aura 浏览器</caption>
+      <caption xml:lang="zh-TW">Aura 瀏覽器</caption>
+      <image>https://cdn.kde.org/screenshots/aura-browser/aura-browser.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="5.27.12" date="2025-01-06"/>
+    <release version="5.27.11" date="2024-03-06"/>
+    <release version="5.27.10" date="2023-12-05"/>
+  </releases>
+</component>

@@ -1,170 +1,111 @@
-/*
-    SPDX-FileCopyrightText: 2022 Aditya Mehra <aix.m@outlook.com>
-    SPDX-License-Identifier: LGPL-2.0-or-later
-*/
+// SPDX-FileCopyrightText: 2022 Aditya Mehra <aix.m@outlook.com>
+// SPDX-FileCopyrightText: 2026 Devin Lin <devin@kde.org>
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
-//#include <qtwebengineglobal.h>
-#include <QtWebEngineQuick/QQuickWebEngineProfile>
-#include <QtWebEngineCore/qwebengineurlrequestinterceptor.h>
-#include "plugins/virtualMouse.h"
-#include "plugins/virtualKeypress.h"
-#include "plugins/globalSettings.h"
-#include "plugins/keyfilter.h"
-#include <QQmlContext>
-#include <QCommandLineParser>
-#include <QCommandLineOption>
+#include "browsersettings.h"
+#include "version.h"
 
-#include <KLocalizedString>
+#include <KAboutData>
+#include <KCrash>
+#include <KDBusService>
 #include <KLocalizedQmlContext>
+#include <KLocalizedString>
 
+#include <QCommandLineParser>
+#include <QDir>
+#include <QGuiApplication>
+#include <QIcon>
+#include <QQmlApplicationEngine>
+#include <QQuickWindow>
+#include <QtWebEngineQuick>
 
-// Add Adblock Implementation
-#include <QThread>
-#include <QFile>
-#include <QDebug>
-#include "third-party/ad-block/ad_block_client.h"
+using namespace Qt::StringLiterals;
 
-
-
-
-class WebIntercept : public QWebEngineUrlRequestInterceptor
+static QStringList urlsFromArguments(const QStringList &arguments, const QString &workingDirectory)
 {
-    Q_OBJECT
-public:
-    WebIntercept(QObject *parent = nullptr) : QWebEngineUrlRequestInterceptor(parent)
-    {
-        QThread *thread = QThread::create([this]{
-            QFile file(QStringLiteral(":/third-party/easylist.txt"));
-            QString easyListTxt;
-
-            if(!file.exists()) {
-                qDebug() << "No easylist.txt file found.";
-            } else {
-                if (file.open(QIODevice::ReadOnly | QIODevice::Text)){
-                    easyListTxt = QLatin1String(file.readAll());
-                }
-                file.close();
-                client.parse(easyListTxt.toStdString().c_str());
-            }
-        });
-        thread->start();
-    }
-
-    void interceptRequest(QWebEngineUrlRequestInfo &info) override
-    {
-        if (client.matches(info.requestUrl().toString().toStdString().c_str(),
-                           FONoFilterOption, info.requestUrl().host().toStdString().c_str())) {
-            qDebug() << "Blocked: " << info.requestUrl();
-            info.block(true);
+    QStringList urls;
+    for (const QString &argument : arguments) {
+        const QUrl url = QUrl::fromUserInput(argument, workingDirectory, QUrl::AssumeLocalFile);
+        if (url.isValid()) {
+            urls.append(url.toString());
         }
     }
-
-private:
-    AdBlockClient client;
-};
-
-static QObject *globalSettingsSingletonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
-{
-    Q_UNUSED(engine)
-    Q_UNUSED(scriptEngine)
-
-    return new GlobalSettings;
+    return urls;
 }
 
 int main(int argc, char *argv[])
 {
-    QStringList arguments;
-    for (int a = 0; a < argc; ++a) {
-        arguments << QString::fromLocal8Bit(argv[a]);
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        qputenv("QT_QUICK_CONTROLS_STYLE", "org.kde.desktop");
     }
 
-    QCommandLineParser parser;
-    auto urlOption = QCommandLineOption(QStringLiteral("url"), QStringLiteral("Single url to load in sandbox"), QStringLiteral("url"));
-    auto sandboxOption = QCommandLineOption(QStringLiteral("sandbox"), QStringLiteral("Sandbox Mode"));
-    auto helpOption = QCommandLineOption(QStringLiteral("help"), QStringLiteral("Show this help message"));
-    parser.addOptions({urlOption, sandboxOption, helpOption});
-    parser.process(arguments);
-
-    qputenv("QT_VIRTUALKEYBOARD_DESKTOP_DISABLE", QByteArray("1"));
-    qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
-    QCoreApplication::setOrganizationName(QStringLiteral("AuraBrowser"));
-    QCoreApplication::setApplicationName(QStringLiteral("AuraBrowser"));
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     QtWebEngineQuick::initialize();
-    QGuiApplication app(argc, argv);
-    app.setWindowIcon(QIcon(QStringLiteral(":/qml/images/logo-small.png")));
-    KLocalizedString::setApplicationDomain(QByteArrayLiteral("aura-browser"));
 
-    if (parser.isSet(helpOption)) {
-        parser.showHelp();
-        return 0;
-    }
+    QGuiApplication application(argc, argv);
+
+    KLocalizedString::setApplicationDomain("aura-browser");
+    KAboutData aboutData(u"aura-browser"_s,
+                         i18n("Aura Browser"),
+                         QStringLiteral(AURA_VERSION_STRING),
+                         i18n("Browse the web from your couch"),
+                         KAboutLicense::GPL_V2,
+                         i18n("© 2022-2026 KDE Community"));
+    aboutData.addAuthor(i18n("Aditya Mehra"), QString(), u"aix.m@outlook.com"_s);
+    aboutData.addAuthor(i18n("Devin Lin"), QString(), u"devin@kde.org"_s);
+    aboutData.setLicense(KAboutLicense::GPL_V2, KAboutLicense::OrLaterVersions);
+    aboutData.setDesktopFileName(u"org.kde.aura-browser"_s);
+    KAboutData::setApplicationData(aboutData);
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(u"org.kde.aura-browser"_s, QIcon(u":/org.kde.aura-browser.svg"_s)));
+
+    KCrash::initialize();
+
+    QCommandLineParser parser;
+    aboutData.setupCommandLine(&parser);
+    parser.addPositionalArgument(u"urls"_s, i18n("Web pages to open"), u"[urls...]"_s);
+    parser.process(application);
+    aboutData.processCommandLine(&parser);
+
+    KDBusService service(KDBusService::Unique);
 
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextObject(new KLocalizedQmlContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
+    engine.loadFromModule("org.kde.aura", "Main");
 
-    // Adblock Implementation
-    WebIntercept interceptor;
-    QQuickWebEngineProfile adblockProfile;
-    adblockProfile.setUrlRequestInterceptor(&interceptor);
-    adblockProfile.setHttpUserAgent(QStringLiteral("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"));
-    adblockProfile.setStorageName(QStringLiteral("Profile"));
-    adblockProfile.setOffTheRecord(false);
-    engine.rootContext()->setContextProperty(QStringLiteral("adblockProfile"), &adblockProfile);
+    if (engine.rootObjects().isEmpty()) {
+        return 1;
+    }
 
-    FakeCursor fakeCursor;
-    engine.rootContext()->setContextProperty(QStringLiteral("Cursor"), &fakeCursor);
-    QQmlContext* ctx = engine.rootContext();
-    VirtualKeyPress virtualKeyPress;
-    ctx->setContextProperty(QStringLiteral("keyEmitter"), &virtualKeyPress);
-    auto offlineStoragePath = QUrl::fromLocalFile(engine.offlineStoragePath());
-    engine.rootContext()->setContextProperty(QStringLiteral("offlineStoragePath"), offlineStoragePath);
-    qmlRegisterSingletonType<GlobalSettings>("Aura", 1, 0, "GlobalSettings", globalSettingsSingletonProvider);
-    qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/qml/NavigationSoundEffects.qml")), "Aura", 1, 0, "NavigationSoundEffects");
+    QObject *window = engine.rootObjects().constFirst();
+    auto openUrls = [window](const QStringList &urls) {
+        for (const QString &url : urls) {
+            QMetaObject::invokeMethod(window, "openUrl", Q_ARG(QString, url));
+        }
+    };
 
-    // Install Event Filter for KeyPress
-    KeyFilter keyFilter;
-    app.installEventFilter(&keyFilter);
-    engine.rootContext()->setContextProperty(QStringLiteral("keyFilter"), &keyFilter);
+    openUrls(urlsFromArguments(parser.positionalArguments(), QDir::currentPath()));
 
-    // Connect to keyPress signal from keyFilter
-    QObject::connect(&keyFilter, &KeyFilter::keyRelease, &app, [&fakeCursor](QEvent *event) {
-        fakeCursor.moveEvent(event);
+    QObject::connect(&service,
+                     &KDBusService::activateRequested,
+                     &engine,
+                     [&parser, window, openUrls](const QStringList &arguments, const QString &workingDirectory) {
+                         if (auto quickWindow = qobject_cast<QQuickWindow *>(window)) {
+                             // show() would leave full screen for a normal window
+                             quickWindow->setWindowStates(quickWindow->windowStates() & ~Qt::WindowMinimized);
+                             quickWindow->setVisible(true);
+                             quickWindow->raise();
+                             quickWindow->requestActivate();
+                         }
+                         if (arguments.isEmpty()) {
+                             return;
+                         }
+                         parser.parse(arguments);
+                         openUrls(urlsFromArguments(parser.positionalArguments(), workingDirectory));
+                     });
+
+    QObject::connect(&application, &QCoreApplication::aboutToQuit, BrowserSettings::self(), [] {
+        BrowserSettings::self()->save();
     });
 
-
-    QString sandboxURL = parser.value(urlOption);
-    bool sandboxMode = parser.isSet(sandboxOption);
-    
-    if (arguments.count() > 1) {
-        QUrl url = QUrl::fromUserInput(arguments.at(1));
-        if (url.isValid()) {
-            sandboxURL = url.toString();
-            sandboxMode = true;
-        }
-    }
-
-    engine.rootContext()->setContextProperty(QStringLiteral("sandboxURL"), sandboxURL);
-    engine.rootContext()->setContextProperty(QStringLiteral("sandboxMode"), sandboxMode);
-    
-    // Define const QUrl url here, if the user is in sandbox mode, we want to load the sandbox qml file, if not, we want to load the main qml file
-    QUrl url;
-    if (sandboxMode) {
-        url = QUrl(QStringLiteral("qrc:/qml/mainSandbox.qml"));
-    } else {
-        url = QUrl(QStringLiteral("qrc:/qml/main.qml"));
-    }
-
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app, [url](QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
-    engine.load(url);
-
-    return app.exec();
+    return application.exec();
 }
-
-#include "main.moc"
