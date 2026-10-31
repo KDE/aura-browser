@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-10-31 00:53+0000\n"
 "PO-Revision-Date: 2022-10-03 14:38+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-i18n-doc@kde.org>\n"
@@ -17,294 +17,605 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: qml/BookmarkManager.qml:176
 #, kde-format
-msgid "Bookmarks Manager"
-msgstr "책갈피 관리자"
-
-#: qml/BookmarkManager.qml:185 qml/BookmarkManager.qml:337 qml/HelpTab.qml:63
-#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
-#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
-#: qml/UrlEntryBox.qml:76
-#, kde-format
-msgid "Press 'esc' or the [←] Back button to close"
-msgstr "닫으려면 'Esc'나 [←] 뒤로 단추를 누르십시오"
-
-#: qml/BookmarkManager.qml:219
-#, kde-format
-msgid "Search Bookmarks"
-msgstr "책갈피 검색"
-
-#: qml/BookmarkManager.qml:249
-#, kde-format
-msgid "Remove Mode"
-msgstr "삭제 모드"
-
-#: qml/BookmarkManager.qml:267 qml/BookmarkManager.qml:546
-#, kde-format
-msgid "Add"
-msgstr "추가"
-
-#: qml/BookmarkManager.qml:328
-#, kde-format
-msgid "Add Bookmark"
-msgstr "책갈피 추가"
-
-#: qml/BookmarkManager.qml:359
-#, kde-format
-msgid "Name: "
-msgstr "이름: "
-
-#: qml/BookmarkManager.qml:411
-#, kde-format
-msgid "Url: "
-msgstr "URL:"
-
-#: qml/BookmarkManager.qml:463
-#, kde-format
-msgid "Category: "
-msgstr "분류:"
-
-#: qml/BookmarkManager.qml:518 qml/StartPage.qml:205 qml/StartPage.qml:447
-#, kde-format
-msgid "Bookmarks"
-msgstr "책갈피"
-
-#: qml/DownloadRequest.qml:40
-#, kde-format
-msgid "Do you want to download %1 file ?"
-msgstr "%1 파일을 다운로드하시겠습니까?"
-
-#: qml/DownloadRequest.qml:60
-#, kde-format
-msgid "Downloading.. %1"
-msgstr "다운로드 중... %1"
-
-#: qml/DownloadRequest.qml:83
-#, kde-format
-msgid "Cancel"
-msgstr "취소"
-
-#: qml/FeatureRequest.qml:49
-#, kde-format
-msgid "Accept"
-msgstr "수락"
-
-#: qml/FeatureRequest.qml:69
-#, kde-format
-msgid "Deny"
-msgstr "거부"
-
-#: qml/HelpTab.qml:54 qml/StartPage.qml:273
-#, kde-format
-msgid "Help"
-msgstr "도움말"
-
-#: qml/HelpTab.qml:88
-#, kde-format
-msgid ""
-"Aura Browser adapts the traditional web browser UI for a fully immersed "
-"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
-"possible for navigating the world wide web using just your remote control."
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
 msgstr ""
-"Aura 브라우저는 전통적인 웹 브라우저 UI를 큰 화면에 맞게 통합합니다. Aura 브"
-"라우저 UI는 최대한 단순하고 직관적으로 유지되며, 리모콘만으로 웹을 탐색할 수 "
-"있습니다."
 
-#: qml/HelpTab.qml:110
 #, kde-format
-msgid ""
-"Here are all the buttons required to help you get started with using aura "
-"browser"
-msgstr "Aura 브라우저의 사용을 시작할 때 필요한 모든 단추입니다"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
 
-#: qml/HistoryManager.qml:140 qml/StartPage.qml:172
-#, kde-format
-msgid "History"
-msgstr "과거 기록"
-
-#: qml/HistoryManager.qml:184
-#, kde-format
-msgid "Search History"
-msgstr "과거 기록 검색"
-
-#: qml/HistoryManager.qml:211
-#, kde-format
-msgid "Clear History"
-msgstr "과거 기록 비우기"
-
-#: qml/HistoryManager.qml:254
-#, kde-format
-msgid "No Recent History"
-msgstr "최근 기록 없음"
-
-#: qml/LocalURLSearchHandler.qml:84 qml/UrlEntryBox.qml:67
-#, kde-format
-msgid "Enter URL / Search Term"
-msgstr "URL/검색 항목 입력"
-
-#: qml/LocalURLSearchHandler.qml:112 qml/UrlEntryBox.qml:96
-#, kde-format
-msgid "Enter Search Term or URL"
-msgstr "검색할 항목이나 URL 입력"
-
-#: qml/main.qml:29 qml/mainSandbox.qml:28
-#, kde-format
-msgid "Aura-Browser"
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
+#, fuzzy, kde-format
+#| msgid "Aura-Browser"
+msgid "Aura Browser"
 msgstr "Aura-브라우저"
 
-#: qml/main.qml:153
+#: main.cpp:51
 #, kde-format
-msgid "Close Menu"
-msgstr "메뉴 닫기"
+msgid "Browse the web from your couch"
+msgstr ""
 
-#: qml/main.qml:223
+#: main.cpp:53
 #, kde-format
-msgid "Current Tabs"
-msgstr "현재 탭"
+msgid "© 2022-2026 KDE Community"
+msgstr ""
 
-#: qml/main.qml:269
+#: main.cpp:54
 #, kde-format
-msgid "Remove Tab"
-msgstr "탭 삭제"
+msgid "Aditya Mehra"
+msgstr ""
 
-#: qml/mainSandbox.qml:75
+#: main.cpp:55
 #, kde-format
-msgid "Quit"
-msgstr "끝내기"
+msgid "Devin Lin"
+msgstr ""
 
-#: qml/SandboxLoader.qml:152 qml/SandboxLoader.qml:185 qml/WebLoader.qml:165
-#: qml/WebLoader.qml:197
+#: main.cpp:65
 #, kde-format
-msgid "Download finished"
-msgstr "다운로드 완료됨"
+msgid "Web pages to open"
+msgstr ""
 
-#: qml/SandboxLoader.qml:157 qml/SandboxLoader.qml:190 qml/WebLoader.qml:170
-#: qml/WebLoader.qml:202
+#: qml/AddressDialog.qml:36
+#, fuzzy, kde-format
+#| msgid "Search History"
+msgid "Search for \"%1\""
+msgstr "과거 기록 검색"
+
+#: qml/AddressDialog.qml:36
 #, kde-format
-msgid "Download failed: %1"
-msgstr "다운로드 실패: %1"
+msgid "Go to %1"
+msgstr ""
 
-#: qml/SettingsTab.qml:105
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
+#: qml/TabsPage.qml:108
 #, kde-format
-msgid "Virtual Cursor Speed Control"
-msgstr "가상 커서 속도 제어"
+msgid "New tab"
+msgstr ""
 
-#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
+#, fuzzy, kde-format
+#| msgid "Search or type url"
+msgid "Search or enter address"
+msgstr "검색하거나 URL 입력"
+
+#: qml/AddressDialog.qml:119
+#, fuzzy, kde-format
+#| msgid "Search or type url"
+msgid "Search the web, or type an address"
+msgstr "검색하거나 URL 입력"
+
+#: qml/BrowserControls.qml:125
+#, fuzzy, kde-format
+#| msgid "Downloading.. %1"
+msgid "Loading… %1%"
+msgstr "다운로드 중... %1"
+
+#: qml/BrowserControls.qml:128
 #, kde-format
-msgid "Current Speed: %1"
-msgstr "현재 속도: %1"
+msgid "Zoom %1%"
+msgstr ""
 
-#: qml/SettingsTab.qml:174
+#: qml/BrowserControls.qml:156
 #, kde-format
-msgid "Virtual Scroll Speed Control"
-msgstr "가상 스크롤 속도 제어"
+msgid "Back"
+msgstr ""
 
-#: qml/SettingsTab.qml:244
+#: qml/BrowserControls.qml:170
 #, kde-format
-msgid "Virtual Cursor Size Control"
-msgstr "가상 커서 크기 제어"
+msgid "Forward"
+msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
-msgid "Current Size: "
-msgstr "현재 크기:"
+msgid "Home"
+msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:198
 #, kde-format
-msgid "Large"
-msgstr "크게"
+msgid "Address: %1"
+msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:206
 #, kde-format
-msgid "Medium"
-msgstr "중간"
+msgid "Stop"
+msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:206
 #, kde-format
-msgid "Small"
-msgstr "작게"
+msgid "Reload"
+msgstr ""
 
-#: qml/SettingsTab.qml:314
+#: qml/BrowserControls.qml:212
 #, kde-format
-msgid "Search Engine"
-msgstr "검색 엔진"
+msgid "Zoom out"
+msgstr ""
 
-#: qml/SettingsTab.qml:333
+#: qml/BrowserControls.qml:217
 #, kde-format
-msgid "Google"
-msgstr "Google"
+msgid "Zoom in"
+msgstr ""
 
-#: qml/SettingsTab.qml:360
+#: qml/BrowserControls.qml:227
+#, fuzzy, kde-format
+#| msgid "Close"
+msgid "Close tab"
+msgstr "닫기"
+
+#: qml/BrowserControls.qml:256
 #, kde-format
-msgid "Duck Duck Go"
-msgstr "Duck Duck Go"
+msgid "1 tab"
+msgid_plural "%1 tabs"
+msgstr[0] ""
 
-#: qml/SettingsTab.qml:391
+#: qml/BrowserPage.qml:37
 #, kde-format
-msgid "General"
-msgstr "일반"
+msgid "Pointer: move with the arrows, press OK to click"
+msgstr ""
 
-#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424 qml/SettingsTab.qml:435
+#: qml/BrowserPage.qml:39
 #, kde-format
-msgid "Disable Button Sounds"
-msgstr "단추 소리 비활성화"
+msgid "Links: the arrows move between links"
+msgstr ""
 
-#: qml/SettingsTab.qml:421 qml/SettingsTab.qml:432
+#: qml/BrowserPage.qml:168
 #, kde-format
-msgid "Enable Button Sounds"
-msgstr "단추 소리 활성화"
+msgid "Let %1 use your microphone?"
+msgstr ""
 
-#: qml/SettingsTab.qml:449
+#: qml/BrowserPage.qml:170
 #, kde-format
-msgid "Clear Cache"
-msgstr "캐시 지우기"
+msgid "Let %1 use your camera?"
+msgstr ""
 
-#: qml/StartPage.qml:138
+#: qml/BrowserPage.qml:172
+#, kde-format
+msgid "Let %1 use your camera and microphone?"
+msgstr ""
+
+#: qml/BrowserPage.qml:175
+#, kde-format
+msgid "Let %1 see your screen?"
+msgstr ""
+
+#: qml/BrowserPage.qml:177
+#, kde-format
+msgid "Let %1 show notifications?"
+msgstr ""
+
+#: qml/BrowserPage.qml:179
+#, kde-format
+msgid "Let %1 know your location?"
+msgstr ""
+
+#: qml/BrowserPage.qml:181
+#, kde-format
+msgid "Let %1 use the clipboard?"
+msgstr ""
+
+#: qml/BrowserPage.qml:183
+#, kde-format
+msgid "Let %1 use this feature?"
+msgstr ""
+
+#: qml/BrowserPage.qml:190
+#, kde-format
+msgid "You can change your mind by clearing site data in the settings."
+msgstr ""
+
+#: qml/BrowserPage.qml:196
+#, kde-format
+msgid "Allow"
+msgstr ""
+
+#: qml/BrowserPage.qml:197
+#, kde-format
+msgid "Don't Allow"
+msgstr ""
+
+#: qml/HomePage.qml:59
+#, kde-format
+msgid "Browse the web"
+msgstr ""
+
+#: qml/HomePage.qml:80
+#, kde-format
+msgid "Continue browsing"
+msgstr ""
+
+#: qml/Main.qml:36 qml/TabsPage.qml:19
 #, kde-format
 msgid "Tabs"
 msgstr "탭"
 
-#: qml/StartPage.qml:240
+#: qml/Main.qml:41 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: qml/StartPage.qml:320
-#, kde-format
-msgid "Aura Browser - Start Page"
-msgstr "Aura 브라우저 - 시작 페이지"
+#: qml/Main.qml:246
+#, fuzzy, kde-format
+#| msgid "Downloading.. %1"
+msgid "Downloading %1"
+msgstr "다운로드 중... %1"
 
-#: qml/StartPage.qml:363
+#: qml/Main.qml:251
 #, kde-format
-msgid "Search or type url"
-msgstr "검색하거나 URL 입력"
+msgid "Saved %1 to Downloads"
+msgstr ""
 
-#: qml/StartPage.qml:395
+#: qml/Main.qml:253
+#, fuzzy, kde-format
+#| msgid "Do you want to download %1 file ?"
+msgid "Could not download %1: %2"
+msgstr "%1 파일을 다운로드하시겠습니까?"
+
+#: qml/SettingsPage.qml:31
 #, kde-format
-msgid "Recent Pages"
-msgstr "최근 페이지"
+msgid "Automatic (%1%)"
+msgstr ""
 
-#: qml/StartPage.qml:405
+#: qml/SettingsPage.qml:32
+#, kde-format
+msgid "100%"
+msgstr ""
+
+#: qml/SettingsPage.qml:33
+#, kde-format
+msgid "125%"
+msgstr ""
+
+#: qml/SettingsPage.qml:34
+#, kde-format
+msgid "150%"
+msgstr ""
+
+#: qml/SettingsPage.qml:35
+#, kde-format
+msgid "175%"
+msgstr ""
+
+#: qml/SettingsPage.qml:36
+#, kde-format
+msgid "200%"
+msgstr ""
+
+#: qml/SettingsPage.qml:40
+#, kde-format
+msgid "Slow"
+msgstr ""
+
+#: qml/SettingsPage.qml:41
+#, kde-format
+msgid "Normal"
+msgstr ""
+
+#: qml/SettingsPage.qml:42
+#, kde-format
+msgid "Fast"
+msgstr ""
+
+#: qml/SettingsPage.qml:43
+#, kde-format
+msgid "Fastest"
+msgstr ""
+
+#: qml/SettingsPage.qml:69
+#, kde-format
+msgid "Browsing"
+msgstr ""
+
+#: qml/SettingsPage.qml:75
+#, fuzzy, kde-format
+#| msgid "Search Engine"
+msgid "Search engine"
+msgstr "검색 엔진"
+
+#: qml/SettingsPage.qml:92
+#, kde-format
+msgid "Block ads"
+msgstr ""
+
+#: qml/SettingsPage.qml:93
+#, kde-format
+msgid "Hides ads and trackers on most sites"
+msgstr ""
+
+#: qml/SettingsPage.qml:104
+#, kde-format
+msgid "Dark pages"
+msgstr ""
+
+#: qml/SettingsPage.qml:105
+#, kde-format
+msgid "Shows light pages in dark colors"
+msgstr ""
+
+#: qml/SettingsPage.qml:116
+#, kde-format
+msgid "Page zoom"
+msgstr ""
+
+#: qml/SettingsPage.qml:130
+#, kde-format
+msgid "Reopen tabs"
+msgstr ""
+
+#: qml/SettingsPage.qml:131
+#, kde-format
+msgid "Brings back the tabs that were open when the browser last closed"
+msgstr ""
+
+#: qml/SettingsPage.qml:141
+#, kde-format
+msgid "Remote control"
+msgstr ""
+
+#: qml/SettingsPage.qml:146
+#, kde-format
+msgid "Arrow keys on pages"
+msgstr ""
+
+#: qml/SettingsPage.qml:148
+#, kde-format
+msgid "Move between links"
+msgstr ""
+
+#: qml/SettingsPage.qml:148
+#, kde-format
+msgid "Move a pointer"
+msgstr ""
+
+#: qml/SettingsPage.qml:158
+#, kde-format
+msgid "Pointer speed"
+msgstr ""
+
+#: qml/SettingsPage.qml:171
+#, kde-format
+msgid "Privacy"
+msgstr ""
+
+#: qml/SettingsPage.qml:178
+#, kde-format
+msgid "Clear site data…"
+msgstr ""
+
+#: qml/SettingsPage.qml:179
+#, kde-format
+msgid "Signs you out of sites, and forgets cached pages and permissions"
+msgstr ""
+
+#: qml/SettingsPage.qml:185
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: qml/SettingsPage.qml:197
+#, kde-format
+msgid "Clear site data?"
+msgstr ""
+
+#: qml/SettingsPage.qml:202
+#, kde-format
+msgid "You will be signed out of sites."
+msgstr ""
+
+#: qml/SettingsPage.qml:206
 #, kde-format
 msgid "Clear"
 msgstr "지우기"
 
-#: qml/SuggestionsBox.qml:44
+#: qml/SettingsPage.qml:209
 #, kde-format
-msgid "Suggestions:"
-msgstr "제안:"
+msgid "Site data cleared"
+msgstr ""
 
-#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
+#, fuzzy, kde-format
+#| msgid "Current Tabs"
+msgid "Current tab"
+msgstr "현재 탭"
+
+#: qml/SiteCard.qml:59
+#, fuzzy, kde-format
+#| msgid "Current Tabs"
+msgctxt "@info:status the tab being shown"
+msgid "Current"
+msgstr "현재 탭"
+
+#: qml/TabsPage.qml:52
 #, kde-format
-msgid "A"
-msgstr "A"
+msgid "Close all tabs"
+msgstr ""
+
+#: qml/TabsPage.qml:106
+#, kde-format
+msgid "No open tabs"
+msgstr ""
+
+#: qml/TabsPage.qml:121
+#, kde-format
+msgid "Close this tab?"
+msgstr ""
+
+#: qml/TabsPage.qml:134
+#, fuzzy, kde-format
+#| msgid "Close"
+msgid "Close Tab"
+msgstr "닫기"
+
+#: qml/TabsPage.qml:142
+#, kde-format
+msgid "Close all tabs?"
+msgstr ""
+
+#: qml/TabsPage.qml:147
+#, kde-format
+msgid "1 tab will be closed."
+msgid_plural "%1 tabs will be closed."
+msgstr[0] ""
+
+#: qml/TabsPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Close"
+msgid "Close All"
+msgstr "닫기"
+
+#: qml/WebView.qml:125
+#, kde-format
+msgid "Blocked a pop-up window"
+msgstr ""
+
+#: qml/WebView.qml:146
+#, kde-format
+msgid "This page keeps crashing, so it was stopped"
+msgstr ""
+
+#~ msgid "Bookmarks Manager"
+#~ msgstr "책갈피 관리자"
+
+#~ msgid "Press 'esc' or the [←] Back button to close"
+#~ msgstr "닫으려면 'Esc'나 [←] 뒤로 단추를 누르십시오"
+
+#~ msgid "Search Bookmarks"
+#~ msgstr "책갈피 검색"
+
+#~ msgid "Remove Mode"
+#~ msgstr "삭제 모드"
+
+#~ msgid "Add"
+#~ msgstr "추가"
+
+#~ msgid "Add Bookmark"
+#~ msgstr "책갈피 추가"
+
+#~ msgid "Name: "
+#~ msgstr "이름: "
+
+#~ msgid "Url: "
+#~ msgstr "URL:"
+
+#~ msgid "Category: "
+#~ msgstr "분류:"
+
+#~ msgid "Bookmarks"
+#~ msgstr "책갈피"
+
+#~ msgid "Cancel"
+#~ msgstr "취소"
+
+#~ msgid "Accept"
+#~ msgstr "수락"
+
+#~ msgid "Deny"
+#~ msgstr "거부"
+
+#~ msgid "Help"
+#~ msgstr "도움말"
+
+#~ msgid ""
+#~ "Aura Browser adapts the traditional web browser UI for a fully immersed "
+#~ "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
+#~ "possible for navigating the world wide web using just your remote control."
+#~ msgstr ""
+#~ "Aura 브라우저는 전통적인 웹 브라우저 UI를 큰 화면에 맞게 통합합니다. Aura "
+#~ "브라우저 UI는 최대한 단순하고 직관적으로 유지되며, 리모콘만으로 웹을 탐색"
+#~ "할 수 있습니다."
+
+#~ msgid ""
+#~ "Here are all the buttons required to help you get started with using aura "
+#~ "browser"
+#~ msgstr "Aura 브라우저의 사용을 시작할 때 필요한 모든 단추입니다"
+
+#~ msgid "History"
+#~ msgstr "과거 기록"
+
+#~ msgid "Clear History"
+#~ msgstr "과거 기록 비우기"
+
+#~ msgid "No Recent History"
+#~ msgstr "최근 기록 없음"
+
+#~ msgid "Enter URL / Search Term"
+#~ msgstr "URL/검색 항목 입력"
+
+#~ msgid "Enter Search Term or URL"
+#~ msgstr "검색할 항목이나 URL 입력"
+
+#~ msgid "Close Menu"
+#~ msgstr "메뉴 닫기"
+
+#~ msgid "Remove Tab"
+#~ msgstr "탭 삭제"
+
+#~ msgid "Quit"
+#~ msgstr "끝내기"
+
+#~ msgid "Download finished"
+#~ msgstr "다운로드 완료됨"
+
+#~ msgid "Download failed: %1"
+#~ msgstr "다운로드 실패: %1"
+
+#~ msgid "Virtual Cursor Speed Control"
+#~ msgstr "가상 커서 속도 제어"
+
+#~ msgid "Current Speed: %1"
+#~ msgstr "현재 속도: %1"
+
+#~ msgid "Virtual Scroll Speed Control"
+#~ msgstr "가상 스크롤 속도 제어"
+
+#~ msgid "Virtual Cursor Size Control"
+#~ msgstr "가상 커서 크기 제어"
+
+#~ msgid "Current Size: "
+#~ msgstr "현재 크기:"
+
+#~ msgid "Large"
+#~ msgstr "크게"
+
+#~ msgid "Medium"
+#~ msgstr "중간"
+
+#~ msgid "Small"
+#~ msgstr "작게"
+
+#~ msgid "Google"
+#~ msgstr "Google"
+
+#~ msgid "Duck Duck Go"
+#~ msgstr "Duck Duck Go"
+
+#~ msgid "General"
+#~ msgstr "일반"
+
+#~ msgid "Disable Button Sounds"
+#~ msgstr "단추 소리 비활성화"
+
+#~ msgid "Enable Button Sounds"
+#~ msgstr "단추 소리 활성화"
+
+#~ msgid "Clear Cache"
+#~ msgstr "캐시 지우기"
+
+#~ msgid "Aura Browser - Start Page"
+#~ msgstr "Aura 브라우저 - 시작 페이지"
+
+#~ msgid "Recent Pages"
+#~ msgstr "최근 페이지"
+
+#~ msgid "Suggestions:"
+#~ msgstr "제안:"
+
+#~ msgid "A"
+#~ msgstr "A"
 
 #~ msgid "Listening"
 #~ msgstr "재생 중"
 
 #~ msgid "Performing Search With Mycroft"
 #~ msgstr "Mycroft로 검색"
-
-#~ msgid "Close"
-#~ msgstr "닫기"

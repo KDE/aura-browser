@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-10-31 00:53+0000\n"
 "PO-Revision-Date: 2026-09-23 06:56+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -18,282 +18,500 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: qml/BookmarkManager.qml:176
 #, kde-format
-msgid "Bookmarks Manager"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
 msgstr ""
 
-#: qml/BookmarkManager.qml:185 qml/BookmarkManager.qml:337 qml/HelpTab.qml:63
-#: qml/HistoryManager.qml:149 qml/LocalURLSearchHandler.qml:93 qml/main.qml:89
-#: qml/main.qml:228 qml/mainSandbox.qml:47 qml/SettingsTab.qml:85
-#: qml/UrlEntryBox.qml:76
 #, kde-format
-msgid "Press 'esc' or the [←] Back button to close"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
 msgstr ""
 
-#: qml/BookmarkManager.qml:219
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
 #, kde-format
-msgid "Search Bookmarks"
+msgid "Aura Browser"
 msgstr ""
 
-#: qml/BookmarkManager.qml:249
+#: main.cpp:51
 #, kde-format
-msgid "Remove Mode"
+msgid "Browse the web from your couch"
 msgstr ""
 
-#: qml/BookmarkManager.qml:267 qml/BookmarkManager.qml:546
+#: main.cpp:53
 #, kde-format
-msgid "Add"
-msgstr "قوش"
-
-#: qml/BookmarkManager.qml:328
-#, kde-format
-msgid "Add Bookmark"
-msgstr "خەتكۈش قوش"
-
-#: qml/BookmarkManager.qml:359
-#, kde-format
-msgid "Name: "
-msgstr "ئاتى: "
-
-#: qml/BookmarkManager.qml:411
-#, kde-format
-msgid "Url: "
-msgstr "تور ئادرېسى: "
-
-#: qml/BookmarkManager.qml:463
-#, kde-format
-msgid "Category: "
-msgstr "سەھىپە: "
-
-#: qml/BookmarkManager.qml:518 qml/StartPage.qml:205 qml/StartPage.qml:447
-#, kde-format
-msgid "Bookmarks"
-msgstr "خەتكۈش"
-
-#: qml/DownloadRequest.qml:40
-#, kde-format
-msgid "Do you want to download %1 file ?"
+msgid "© 2022-2026 KDE Community"
 msgstr ""
 
-#: qml/DownloadRequest.qml:60
+#: main.cpp:54
 #, kde-format
-msgid "Downloading.. %1"
+msgid "Aditya Mehra"
 msgstr ""
 
-#: qml/DownloadRequest.qml:83
+#: main.cpp:55
 #, kde-format
-msgid "Cancel"
-msgstr "ۋاز كەچ"
-
-#: qml/FeatureRequest.qml:49
-#, kde-format
-msgid "Accept"
-msgstr "قوشۇل"
-
-#: qml/FeatureRequest.qml:69
-#, kde-format
-msgid "Deny"
-msgstr "رەت قىل"
-
-#: qml/HelpTab.qml:54 qml/StartPage.qml:273
-#, kde-format
-msgid "Help"
-msgstr "ياردەم"
-
-#: qml/HelpTab.qml:88
-#, kde-format
-msgid ""
-"Aura Browser adapts the traditional web browser UI for a fully immersed "
-"Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
-"possible for navigating the world wide web using just your remote control."
+msgid "Devin Lin"
 msgstr ""
 
-#: qml/HelpTab.qml:110
+#: main.cpp:65
 #, kde-format
-msgid ""
-"Here are all the buttons required to help you get started with using aura "
-"browser"
+msgid "Web pages to open"
 msgstr ""
 
-#: qml/HistoryManager.qml:140 qml/StartPage.qml:172
+#: qml/AddressDialog.qml:36
 #, kde-format
-msgid "History"
-msgstr "تارىخ"
-
-#: qml/HistoryManager.qml:184
-#, kde-format
-msgid "Search History"
+msgid "Search for \"%1\""
 msgstr ""
 
-#: qml/HistoryManager.qml:211
+#: qml/AddressDialog.qml:36
 #, kde-format
-msgid "Clear History"
-msgstr "تارىخنى تازىلا"
-
-#: qml/HistoryManager.qml:254
-#, kde-format
-msgid "No Recent History"
+msgid "Go to %1"
 msgstr ""
 
-#: qml/LocalURLSearchHandler.qml:84 qml/UrlEntryBox.qml:67
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
+#: qml/TabsPage.qml:108
 #, kde-format
-msgid "Enter URL / Search Term"
+msgid "New tab"
 msgstr ""
 
-#: qml/LocalURLSearchHandler.qml:112 qml/UrlEntryBox.qml:96
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
 #, kde-format
-msgid "Enter Search Term or URL"
+msgid "Search or enter address"
 msgstr ""
 
-#: qml/main.qml:29 qml/mainSandbox.qml:28
+#: qml/AddressDialog.qml:119
 #, kde-format
-msgid "Aura-Browser"
+msgid "Search the web, or type an address"
 msgstr ""
 
-#: qml/main.qml:153
+#: qml/BrowserControls.qml:125
 #, kde-format
-msgid "Close Menu"
+msgid "Loading… %1%"
 msgstr ""
 
-#: qml/main.qml:223
+#: qml/BrowserControls.qml:128
 #, kde-format
-msgid "Current Tabs"
+msgid "Zoom %1%"
 msgstr ""
 
-#: qml/main.qml:269
+#: qml/BrowserControls.qml:156
 #, kde-format
-msgid "Remove Tab"
+msgid "Back"
 msgstr ""
 
-#: qml/mainSandbox.qml:75
+#: qml/BrowserControls.qml:170
 #, kde-format
-msgid "Quit"
-msgstr "چىكىن"
-
-#: qml/SandboxLoader.qml:152 qml/SandboxLoader.qml:185 qml/WebLoader.qml:165
-#: qml/WebLoader.qml:197
-#, kde-format
-msgid "Download finished"
+msgid "Forward"
 msgstr ""
 
-#: qml/SandboxLoader.qml:157 qml/SandboxLoader.qml:190 qml/WebLoader.qml:170
-#: qml/WebLoader.qml:202
+#: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
-msgid "Download failed: %1"
+msgid "Home"
 msgstr ""
 
-#: qml/SettingsTab.qml:105
+#: qml/BrowserControls.qml:198
 #, kde-format
-msgid "Virtual Cursor Speed Control"
+msgid "Address: %1"
 msgstr ""
 
-#: qml/SettingsTab.qml:156 qml/SettingsTab.qml:226
+#: qml/BrowserControls.qml:206
 #, kde-format
-msgid "Current Speed: %1"
+msgid "Stop"
 msgstr ""
 
-#: qml/SettingsTab.qml:174
+#: qml/BrowserControls.qml:206
 #, kde-format
-msgid "Virtual Scroll Speed Control"
+msgid "Reload"
 msgstr ""
 
-#: qml/SettingsTab.qml:244
+#: qml/BrowserControls.qml:212
 #, kde-format
-msgid "Virtual Cursor Size Control"
+msgid "Zoom out"
 msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:217
 #, kde-format
-msgid "Current Size: "
+msgid "Zoom in"
 msgstr ""
 
-#: qml/SettingsTab.qml:296
+#: qml/BrowserControls.qml:227
 #, kde-format
-msgid "Large"
-msgstr "چوڭ"
-
-#: qml/SettingsTab.qml:296
-#, kde-format
-msgid "Medium"
-msgstr "ئوتتۇراھال"
-
-#: qml/SettingsTab.qml:296
-#, kde-format
-msgid "Small"
-msgstr "كىچىك"
-
-#: qml/SettingsTab.qml:314
-#, kde-format
-msgid "Search Engine"
+msgid "Close tab"
 msgstr ""
 
-#: qml/SettingsTab.qml:333
+#: qml/BrowserControls.qml:256
 #, kde-format
-msgid "Google"
+msgid "1 tab"
+msgid_plural "%1 tabs"
+msgstr[0] ""
+
+#: qml/BrowserPage.qml:37
+#, kde-format
+msgid "Pointer: move with the arrows, press OK to click"
 msgstr ""
 
-#: qml/SettingsTab.qml:360
+#: qml/BrowserPage.qml:39
 #, kde-format
-msgid "Duck Duck Go"
+msgid "Links: the arrows move between links"
 msgstr ""
 
-#: qml/SettingsTab.qml:391
+#: qml/BrowserPage.qml:168
 #, kde-format
-msgid "General"
-msgstr "ئادەتتىكى"
-
-#: qml/SettingsTab.qml:406 qml/SettingsTab.qml:424 qml/SettingsTab.qml:435
-#, kde-format
-msgid "Disable Button Sounds"
+msgid "Let %1 use your microphone?"
 msgstr ""
 
-#: qml/SettingsTab.qml:421 qml/SettingsTab.qml:432
+#: qml/BrowserPage.qml:170
 #, kde-format
-msgid "Enable Button Sounds"
+msgid "Let %1 use your camera?"
 msgstr ""
 
-#: qml/SettingsTab.qml:449
+#: qml/BrowserPage.qml:172
 #, kde-format
-msgid "Clear Cache"
+msgid "Let %1 use your camera and microphone?"
 msgstr ""
 
-#: qml/StartPage.qml:138
+#: qml/BrowserPage.qml:175
+#, kde-format
+msgid "Let %1 see your screen?"
+msgstr ""
+
+#: qml/BrowserPage.qml:177
+#, kde-format
+msgid "Let %1 show notifications?"
+msgstr ""
+
+#: qml/BrowserPage.qml:179
+#, kde-format
+msgid "Let %1 know your location?"
+msgstr ""
+
+#: qml/BrowserPage.qml:181
+#, kde-format
+msgid "Let %1 use the clipboard?"
+msgstr ""
+
+#: qml/BrowserPage.qml:183
+#, kde-format
+msgid "Let %1 use this feature?"
+msgstr ""
+
+#: qml/BrowserPage.qml:190
+#, kde-format
+msgid "You can change your mind by clearing site data in the settings."
+msgstr ""
+
+#: qml/BrowserPage.qml:196
+#, kde-format
+msgid "Allow"
+msgstr ""
+
+#: qml/BrowserPage.qml:197
+#, kde-format
+msgid "Don't Allow"
+msgstr ""
+
+#: qml/HomePage.qml:59
+#, kde-format
+msgid "Browse the web"
+msgstr ""
+
+#: qml/HomePage.qml:80
+#, kde-format
+msgid "Continue browsing"
+msgstr ""
+
+#: qml/Main.qml:36 qml/TabsPage.qml:19
 #, kde-format
 msgid "Tabs"
 msgstr "بەتكۈچ"
 
-#: qml/StartPage.qml:240
+#: qml/Main.qml:41 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "تەڭشەك"
 
-#: qml/StartPage.qml:320
+#: qml/Main.qml:246
 #, kde-format
-msgid "Aura Browser - Start Page"
+msgid "Downloading %1"
 msgstr ""
 
-#: qml/StartPage.qml:363
+#: qml/Main.qml:251
 #, kde-format
-msgid "Search or type url"
+msgid "Saved %1 to Downloads"
 msgstr ""
 
-#: qml/StartPage.qml:395
+#: qml/Main.qml:253
 #, kde-format
-msgid "Recent Pages"
+msgid "Could not download %1: %2"
 msgstr ""
 
-#: qml/StartPage.qml:405
+#: qml/SettingsPage.qml:31
+#, kde-format
+msgid "Automatic (%1%)"
+msgstr ""
+
+#: qml/SettingsPage.qml:32
+#, kde-format
+msgid "100%"
+msgstr ""
+
+#: qml/SettingsPage.qml:33
+#, kde-format
+msgid "125%"
+msgstr ""
+
+#: qml/SettingsPage.qml:34
+#, kde-format
+msgid "150%"
+msgstr ""
+
+#: qml/SettingsPage.qml:35
+#, kde-format
+msgid "175%"
+msgstr ""
+
+#: qml/SettingsPage.qml:36
+#, kde-format
+msgid "200%"
+msgstr ""
+
+#: qml/SettingsPage.qml:40
+#, kde-format
+msgid "Slow"
+msgstr ""
+
+#: qml/SettingsPage.qml:41
+#, kde-format
+msgid "Normal"
+msgstr ""
+
+#: qml/SettingsPage.qml:42
+#, kde-format
+msgid "Fast"
+msgstr ""
+
+#: qml/SettingsPage.qml:43
+#, kde-format
+msgid "Fastest"
+msgstr ""
+
+#: qml/SettingsPage.qml:69
+#, kde-format
+msgid "Browsing"
+msgstr ""
+
+#: qml/SettingsPage.qml:75
+#, kde-format
+msgid "Search engine"
+msgstr ""
+
+#: qml/SettingsPage.qml:92
+#, kde-format
+msgid "Block ads"
+msgstr ""
+
+#: qml/SettingsPage.qml:93
+#, kde-format
+msgid "Hides ads and trackers on most sites"
+msgstr ""
+
+#: qml/SettingsPage.qml:104
+#, kde-format
+msgid "Dark pages"
+msgstr ""
+
+#: qml/SettingsPage.qml:105
+#, kde-format
+msgid "Shows light pages in dark colors"
+msgstr ""
+
+#: qml/SettingsPage.qml:116
+#, kde-format
+msgid "Page zoom"
+msgstr ""
+
+#: qml/SettingsPage.qml:130
+#, kde-format
+msgid "Reopen tabs"
+msgstr ""
+
+#: qml/SettingsPage.qml:131
+#, kde-format
+msgid "Brings back the tabs that were open when the browser last closed"
+msgstr ""
+
+#: qml/SettingsPage.qml:141
+#, kde-format
+msgid "Remote control"
+msgstr ""
+
+#: qml/SettingsPage.qml:146
+#, kde-format
+msgid "Arrow keys on pages"
+msgstr ""
+
+#: qml/SettingsPage.qml:148
+#, kde-format
+msgid "Move between links"
+msgstr ""
+
+#: qml/SettingsPage.qml:148
+#, kde-format
+msgid "Move a pointer"
+msgstr ""
+
+#: qml/SettingsPage.qml:158
+#, kde-format
+msgid "Pointer speed"
+msgstr ""
+
+#: qml/SettingsPage.qml:171
+#, kde-format
+msgid "Privacy"
+msgstr ""
+
+#: qml/SettingsPage.qml:178
+#, kde-format
+msgid "Clear site data…"
+msgstr ""
+
+#: qml/SettingsPage.qml:179
+#, kde-format
+msgid "Signs you out of sites, and forgets cached pages and permissions"
+msgstr ""
+
+#: qml/SettingsPage.qml:185
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: qml/SettingsPage.qml:197
+#, kde-format
+msgid "Clear site data?"
+msgstr ""
+
+#: qml/SettingsPage.qml:202
+#, kde-format
+msgid "You will be signed out of sites."
+msgstr ""
+
+#: qml/SettingsPage.qml:206
 #, kde-format
 msgid "Clear"
 msgstr "تازىلا"
 
-#: qml/SuggestionsBox.qml:44
+#: qml/SettingsPage.qml:209
 #, kde-format
-msgid "Suggestions:"
+msgid "Site data cleared"
 msgstr ""
 
-#: qml/TopBar.qml:247 qml/TopBarSandbox.qml:165
+#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
 #, kde-format
-msgid "A"
-msgstr "قوشۇمچە ئاتنىڭ بىرىنچى ھەرپى"
+msgid "Current tab"
+msgstr ""
+
+#: qml/SiteCard.qml:59
+#, kde-format
+msgctxt "@info:status the tab being shown"
+msgid "Current"
+msgstr ""
+
+#: qml/TabsPage.qml:52
+#, kde-format
+msgid "Close all tabs"
+msgstr ""
+
+#: qml/TabsPage.qml:106
+#, kde-format
+msgid "No open tabs"
+msgstr ""
+
+#: qml/TabsPage.qml:121
+#, kde-format
+msgid "Close this tab?"
+msgstr ""
+
+#: qml/TabsPage.qml:134
+#, kde-format
+msgid "Close Tab"
+msgstr ""
+
+#: qml/TabsPage.qml:142
+#, kde-format
+msgid "Close all tabs?"
+msgstr ""
+
+#: qml/TabsPage.qml:147
+#, kde-format
+msgid "1 tab will be closed."
+msgid_plural "%1 tabs will be closed."
+msgstr[0] ""
+
+#: qml/TabsPage.qml:151
+#, kde-format
+msgid "Close All"
+msgstr ""
+
+#: qml/WebView.qml:125
+#, kde-format
+msgid "Blocked a pop-up window"
+msgstr ""
+
+#: qml/WebView.qml:146
+#, kde-format
+msgid "This page keeps crashing, so it was stopped"
+msgstr ""
+
+#~ msgid "Add"
+#~ msgstr "قوش"
+
+#~ msgid "Add Bookmark"
+#~ msgstr "خەتكۈش قوش"
+
+#~ msgid "Name: "
+#~ msgstr "ئاتى: "
+
+#~ msgid "Url: "
+#~ msgstr "تور ئادرېسى: "
+
+#~ msgid "Category: "
+#~ msgstr "سەھىپە: "
+
+#~ msgid "Bookmarks"
+#~ msgstr "خەتكۈش"
+
+#~ msgid "Cancel"
+#~ msgstr "ۋاز كەچ"
+
+#~ msgid "Accept"
+#~ msgstr "قوشۇل"
+
+#~ msgid "Deny"
+#~ msgstr "رەت قىل"
+
+#~ msgid "Help"
+#~ msgstr "ياردەم"
+
+#~ msgid "History"
+#~ msgstr "تارىخ"
+
+#~ msgid "Clear History"
+#~ msgstr "تارىخنى تازىلا"
+
+#~ msgid "Quit"
+#~ msgstr "چىكىن"
+
+#~ msgid "Large"
+#~ msgstr "چوڭ"
+
+#~ msgid "Medium"
+#~ msgstr "ئوتتۇراھال"
+
+#~ msgid "Small"
+#~ msgstr "كىچىك"
+
+#~ msgid "General"
+#~ msgstr "ئادەتتىكى"
+
+#~ msgid "A"
+#~ msgstr "قوشۇمچە ئاتنىڭ بىرىنچى ھەرپى"
