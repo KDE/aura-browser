@@ -57,11 +57,13 @@ BigscreenUI.Page {
                     Layout.fillWidth: true
                     Layout.bottomMargin: Kirigami.Units.gridUnit
                     text: i18n("Browse the web")
-                    type: BigscreenUI.Label.Display
+                    type: BigscreenUI.Label.Title
                     elide: Text.ElideRight
                 }
 
                 BigscreenUI.ButtonDelegate {
+                    id: searchButton
+
                     Layout.preferredWidth: Math.min(hero.width, Kirigami.Units.gridUnit * 45)
                     focus: true
                     icon.name: "search"
@@ -77,7 +79,9 @@ BigscreenUI.Page {
         }
 
         BigscreenUI.ContentRail {
-            title: i18n("Continue browsing")
+            id: tabsRail
+
+            title: i18np("1 open tab", "%1 open tabs", count)
             model: root.window?.tabs ?? null
             currentIndex: Math.max(0, root.window?.currentTab ?? 0)
 
@@ -89,8 +93,40 @@ BigscreenUI.Page {
                 url: model.url
                 title: model.title
                 iconUrl: model.iconUrl
+                current: index === root.window?.currentTab
                 onClicked: root.window.selectTab(index)
+                onPressAndHold: {
+                    closeDialog.index = index;
+                    closeDialog.open();
+                }
             }
         }
+    }
+
+    function restoreFocus(): void {
+        (tabsRail.count > 0 ? tabsRail : searchButton).forceActiveFocus();
+    }
+
+    BigscreenUI.Dialog {
+        id: closeDialog
+
+        property int index: -1
+
+        title: i18n("Close this tab?")
+        standardButtons: T.Dialog.Cancel | T.Dialog.Ok
+        openFocusItem: standardButton(T.Dialog.Ok)
+
+        contentItem: BigscreenUI.Label {
+            text: {
+                const tab = root.window?.tabs.get(closeDialog.index);
+                return tab ? (tab.title || tab.url) : "";
+            }
+            wrapMode: Text.Wrap
+            color: Kirigami.Theme.disabledTextColor
+        }
+
+        Component.onCompleted: standardButton(T.Dialog.Ok).text = i18n("Close Tab")
+        onAccepted: root.window.closeTab(index)
+        onClosed: root.restoreFocus()
     }
 }

@@ -44,7 +44,6 @@ ecm_target_qml_sources(aura-browser SOURCES
     qml/SettingsPage.qml
     qml/SiteCard.qml
     qml/SiteTile.qml
-    qml/TabsPage.qml
     qml/WebView.qml
     qml/utils.js
 )

@@ -33,11 +33,6 @@ BigscreenUI.ApplicationWindow {
             page: HomePage {}
         },
         Section {
-            text: i18n("Tabs")
-            icon.name: "tab-duplicate-symbolic"
-            page: TabsPage {}
-        },
-        Section {
             text: i18n("Settings")
             icon.name: "configure-symbolic"
             page: SettingsPage {}
@@ -81,14 +76,6 @@ BigscreenUI.ApplicationWindow {
             }
         } else if (index < currentTab || currentTab >= tabs.count) {
             currentTab = Math.max(0, currentTab - 1);
-        }
-    }
-
-    function closeAllTabs() {
-        currentTab = -1;
-        tabs.clear();
-        if (browsing) {
-            showHome();
         }
     }
 
