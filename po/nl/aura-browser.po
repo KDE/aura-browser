@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2022.
+# SPDX-FileCopyrightText: 2022, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-31 00:53+0000\n"
-"PO-Revision-Date: 2022-09-07 11:31+0200\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"PO-Revision-Date: 2026-10-31 13:17+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,394 +15,396 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Freek de Kruijf - 2026"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "freekdekruijf@kde.nl"
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
+#, kde-format
 msgid "Aura Browser"
 msgstr "Aura-browser"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Surf op het internet vanaf uw bank"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022-2026 KDE-gemeenschap"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Te openen webpagina's"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgid "Search for \"%1\""
-msgstr "Zoeken in geschiedenis"
+msgstr "Zoeken naar \"%1\""
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgid "Go to %1"
-msgstr ""
+msgstr "Ga naar %1"
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
-#: qml/TabsPage.qml:108
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
 #, kde-format
 msgid "New tab"
-msgstr ""
+msgstr "Nieuw tabblad"
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
+#, kde-format
 msgid "Search or enter address"
-msgstr "URL zoeken of typen"
+msgstr "Zoeken of een adres invoeren"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgid "Search the web, or type an address"
-msgstr "URL zoeken of typen"
+msgstr "Zoek op het web of typ een adres"
 
 #: qml/BrowserControls.qml:125
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgid "Loading… %1%"
-msgstr "Bezig met downloaden.. %1"
+msgstr "Bezig met laden… %1%"
 
 #: qml/BrowserControls.qml:128
 #, kde-format
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Zoomen %1%"
 
 #: qml/BrowserControls.qml:156
 #, kde-format
 msgid "Back"
-msgstr ""
+msgstr "Terug"
 
 #: qml/BrowserControls.qml:170
 #, kde-format
 msgid "Forward"
-msgstr ""
+msgstr "Vooruit"
 
 #: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: qml/BrowserControls.qml:198
 #, kde-format
 msgid "Address: %1"
-msgstr ""
+msgstr "Adres: %1"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Stoppen"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Reload"
-msgstr ""
+msgstr "Herladen"
 
 #: qml/BrowserControls.qml:212
 #, kde-format
 msgid "Zoom out"
-msgstr ""
+msgstr "Uitzoomen"
 
 #: qml/BrowserControls.qml:217
 #, kde-format
 msgid "Zoom in"
-msgstr ""
+msgstr "Inzoomen"
 
 #: qml/BrowserControls.qml:227
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgid "Close tab"
-msgstr "Sluiten"
+msgstr "Tabblad sluiten"
 
 #: qml/BrowserControls.qml:256
 #, kde-format
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Tab"
+msgstr[1] "%1 tabbladen"
 
 #: qml/BrowserPage.qml:37
 #, kde-format
 msgid "Pointer: move with the arrows, press OK to click"
-msgstr ""
+msgstr "Aanwijzer: beweeg met de pijltjestoetsen, druk op OK om te klikken"
 
 #: qml/BrowserPage.qml:39
 #, kde-format
 msgid "Links: the arrows move between links"
-msgstr ""
+msgstr "Koppelingen: de pijlen verplaatsen zich tussen koppelingen"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Mag %1 uw microfoon gebruiken?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Mag %1 uw camera gebruiken?"
 
 #: qml/BrowserPage.qml:172
 #, kde-format
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Mag %1 uw camera en microfoon gebruiken?"
 
 #: qml/BrowserPage.qml:175
 #, kde-format
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Mag %1 uw scherm zien?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Mag %1 meldingen zien?"
 
 #: qml/BrowserPage.qml:179
 #, kde-format
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Mag %1 uw locatie weten?"
 
 #: qml/BrowserPage.qml:181
 #, kde-format
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Mag %1 het klembord gebruiken?"
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Mag %1 deze functie gebruiken?"
 
 #: qml/BrowserPage.qml:190
 #, kde-format
 msgid "You can change your mind by clearing site data in the settings."
 msgstr ""
+"U kunt van gedachten veranderen door in de instellingen de sitegegevens te "
+"wissen."
 
 #: qml/BrowserPage.qml:196
 #, kde-format
 msgid "Allow"
-msgstr ""
+msgstr "Toestaan"
 
 #: qml/BrowserPage.qml:197
 #, kde-format
 msgid "Don't Allow"
-msgstr ""
+msgstr "Niet toestaan"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgid "Browse the web"
-msgstr ""
+msgstr "Surf op het web"
 
-#: qml/HomePage.qml:80
+#: qml/HomePage.qml:84
+#, fuzzy, kde-format
+#| msgid "No open tabs"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] "Geen open tabbladen"
+msgstr[1] "Geen open tabbladen"
+
+#: qml/HomePage.qml:115
 #, kde-format
-msgid "Continue browsing"
-msgstr ""
+msgid "Close this tab?"
+msgstr "Dit tabblad sluiten?"
 
-#: qml/Main.qml:36 qml/TabsPage.qml:19
+#: qml/HomePage.qml:128
 #, kde-format
-msgid "Tabs"
-msgstr "Tabbladen"
+msgid "Close Tab"
+msgstr "Tabblad sluiten"
 
-#: qml/Main.qml:41 qml/SettingsPage.qml:58
+#: qml/Main.qml:36 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "Instellingen"
 
-#: qml/Main.qml:246
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#: qml/Main.qml:233
+#, kde-format
 msgid "Downloading %1"
-msgstr "Bezig met downloaden.. %1"
+msgstr "Bezig met downloaden van %1"
 
-#: qml/Main.qml:251
+#: qml/Main.qml:238
 #, kde-format
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "%1 opgeslagen naar Downloads"
 
-#: qml/Main.qml:253
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#: qml/Main.qml:240
+#, kde-format
 msgid "Could not download %1: %2"
-msgstr "Wilt u %1 bestand downloaden?"
+msgstr "Kon %1 niet downloaden: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automatisch (%1%)"
 
 #: qml/SettingsPage.qml:32
 #, kde-format
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: qml/SettingsPage.qml:33
 #, kde-format
 msgid "125%"
-msgstr ""
+msgstr "125%"
 
 #: qml/SettingsPage.qml:34
 #, kde-format
 msgid "150%"
-msgstr ""
+msgstr "150%"
 
 #: qml/SettingsPage.qml:35
 #, kde-format
 msgid "175%"
-msgstr ""
+msgstr "175%"
 
 #: qml/SettingsPage.qml:36
 #, kde-format
 msgid "200%"
-msgstr ""
+msgstr "200%"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgid "Slow"
-msgstr ""
+msgstr "Traag"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgid "Normal"
-msgstr ""
+msgstr "Normaal"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgid "Fast"
-msgstr ""
+msgstr "Snel"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgid "Fastest"
-msgstr ""
+msgstr "Snelste"
 
 #: qml/SettingsPage.qml:69
 #, kde-format
 msgid "Browsing"
-msgstr ""
+msgstr "Bladeren"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search engine"
 msgstr "Zoekmachine"
 
 #: qml/SettingsPage.qml:92
 #, kde-format
 msgid "Block ads"
-msgstr ""
+msgstr "Ads blokkeren"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Verbergt ads en volgers op de meeste websites"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgid "Dark pages"
-msgstr ""
+msgstr "Donkere pagina's"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Toont lichte pagina's in donkere kleuren"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgid "Page zoom"
-msgstr ""
+msgstr "Zoomen van pagina"
 
 #: qml/SettingsPage.qml:130
 #, kde-format
 msgid "Reopen tabs"
-msgstr ""
+msgstr "Tabbladen opnieuw openen"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Brengt de tabbladen terug die geopend waren toen de browser voor het laatst "
+"werd afgesloten"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Remote control"
-msgstr ""
+msgstr "Afstandsbediening"
 
 #: qml/SettingsPage.qml:146
 #, kde-format
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Pijltjestoetsen op pagina's"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move between links"
-msgstr ""
+msgstr "Verplaats tussen koppelingen"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move a pointer"
-msgstr ""
+msgstr "Verplaats een aanwijzer"
 
 #: qml/SettingsPage.qml:158
 #, kde-format
 msgid "Pointer speed"
-msgstr ""
+msgstr "Snelheid van aanwijzer"
 
 #: qml/SettingsPage.qml:171
 #, kde-format
 msgid "Privacy"
-msgstr ""
+msgstr "Privacy"
 
 #: qml/SettingsPage.qml:178
 #, kde-format
 msgid "Clear site data…"
-msgstr ""
+msgstr "Sitegegevens wissen…"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
-msgstr ""
+msgstr "Meldt u af bij websites en vergeet gecachte pagina's en machtigingen"
 
 #: qml/SettingsPage.qml:185
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Info over"
 
 #: qml/SettingsPage.qml:197
 #, kde-format
 msgid "Clear site data?"
-msgstr ""
+msgstr "Sitegegevens wissen?"
 
 #: qml/SettingsPage.qml:202
 #, kde-format
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "U wordt afgemeld bij websites."
 
 #: qml/SettingsPage.qml:206
 #, kde-format
@@ -412,69 +414,49 @@ msgstr "Wissen"
 #: qml/SettingsPage.qml:209
 #, kde-format
 msgid "Site data cleared"
-msgstr ""
+msgstr "Sitegegevens gewist"
 
-#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#: qml/SiteCard.qml:27
+#, kde-format
 msgid "Current tab"
-msgstr "Huidige tabbladen"
+msgstr "Huidig tabblad"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Huidige tabbladen"
-
-#: qml/TabsPage.qml:52
-#, kde-format
-msgid "Close all tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:106
-#, kde-format
-msgid "No open tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:121
-#, kde-format
-msgid "Close this tab?"
-msgstr ""
-
-#: qml/TabsPage.qml:134
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close Tab"
-msgstr "Sluiten"
-
-#: qml/TabsPage.qml:142
-#, kde-format
-msgid "Close all tabs?"
-msgstr ""
-
-#: qml/TabsPage.qml:147
-#, kde-format
-msgid "1 tab will be closed."
-msgid_plural "%1 tabs will be closed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: qml/TabsPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close All"
-msgstr "Sluiten"
+msgstr "Huidige"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "Een pop-up-venster is geblokkeerd"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Deze pagina blijft crashen en is daarom gestopt."
+
+#~ msgid "Continue browsing"
+#~ msgstr "Doorgaan met surfen"
+
+#~ msgid "Tabs"
+#~ msgstr "Tabbladen"
+
+#~ msgid "Close all tabs"
+#~ msgstr "Alle tabbladen sluiten"
+
+#~ msgid "Close all tabs?"
+#~ msgstr "Alle tabbladen sluiten?"
+
+#~ msgid "1 tab will be closed."
+#~ msgid_plural "%1 tabs will be closed."
+#~ msgstr[0] "1 tabblad zal gesloten worden."
+#~ msgstr[1] "%1 tabbladen zullen gesloten worden."
+
+#~| msgid "Close"
+#~ msgid "Close All"
+#~ msgstr "Alles sluiten"
 
 #~ msgid "Bookmarks Manager"
 #~ msgstr "Beheerder van bladwijzers"

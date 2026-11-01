@@ -1,15 +1,15 @@
 # Translation of aura-browser.po to Catalan
-# Copyright (C) 2022-2024 This_file_is_part_of_KDE
+# Copyright (C) 2022-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2022, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-31 00:53+0000\n"
-"PO-Revision-Date: 2024-01-28 18:27+0100\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"PO-Revision-Date: 2026-10-31 18:22+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,394 +17,396 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Josep M. Ferrer"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "txemaq@gmail.com"
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
+#, kde-format
 msgid "Aura Browser"
 msgstr "Navegador Aura"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Navegueu pel web des del sofà"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022-2026 KDE Community"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Pàgines web a obrir"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgid "Search for \"%1\""
-msgstr "Cerca a l'historial"
+msgstr "Cerca %1"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgid "Go to %1"
-msgstr ""
+msgstr "Ves a %1"
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
-#: qml/TabsPage.qml:108
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
 #, kde-format
 msgid "New tab"
-msgstr ""
+msgstr "Pestanya nova"
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
+#, kde-format
 msgid "Search or enter address"
-msgstr "Cerca o teclegeu un URL"
+msgstr "Cerqueu o introduïu una adreça"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgid "Search the web, or type an address"
-msgstr "Cerca o teclegeu un URL"
+msgstr "Cerqueu el web o teclegeu una adreça"
 
 #: qml/BrowserControls.qml:125
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgid "Loading… %1%"
-msgstr "S'està baixant... %1"
+msgstr "S'està carregant… %1%"
 
 #: qml/BrowserControls.qml:128
 #, kde-format
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Zoom %1%"
 
 #: qml/BrowserControls.qml:156
 #, kde-format
 msgid "Back"
-msgstr ""
+msgstr "Enrere"
 
 #: qml/BrowserControls.qml:170
 #, kde-format
 msgid "Forward"
-msgstr ""
+msgstr "Endavant"
 
 #: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
 msgid "Home"
-msgstr ""
+msgstr "Inici"
 
 #: qml/BrowserControls.qml:198
 #, kde-format
 msgid "Address: %1"
-msgstr ""
+msgstr "Adreça: %1"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Atura"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Reload"
-msgstr ""
+msgstr "Torna a carregar"
 
 #: qml/BrowserControls.qml:212
 #, kde-format
 msgid "Zoom out"
-msgstr ""
+msgstr "Allunya"
 
 #: qml/BrowserControls.qml:217
 #, kde-format
 msgid "Zoom in"
-msgstr ""
+msgstr "Apropa"
 
 #: qml/BrowserControls.qml:227
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgid "Close tab"
-msgstr "Tanca"
+msgstr "Tanca la pestanya"
 
 #: qml/BrowserControls.qml:256
 #, kde-format
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 pestanya"
+msgstr[1] "%1 pestanyes"
 
 #: qml/BrowserPage.qml:37
 #, kde-format
 msgid "Pointer: move with the arrows, press OK to click"
-msgstr ""
+msgstr "Punter: moveu amb les fletxes, premeu D'acord per a fer clic"
 
 #: qml/BrowserPage.qml:39
 #, kde-format
 msgid "Links: the arrows move between links"
-msgstr ""
+msgstr "Enllaços: les fletxes es mouen entre els enllaços"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Permeteu que %1 faci servir el micròfon?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Permeteu que %1 faci servir la càmera?"
 
 #: qml/BrowserPage.qml:172
 #, kde-format
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Permeteu que %1 faci servir la càmera i el micròfon?"
 
 #: qml/BrowserPage.qml:175
 #, kde-format
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Permeteu que %1 vegi la pantalla?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Permeteu que %1 mostri notificacions?"
 
 #: qml/BrowserPage.qml:179
 #, kde-format
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Permeteu que %1 conegui aquesta ubicació?"
 
 #: qml/BrowserPage.qml:181
 #, kde-format
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Permeteu que %1 faci servir el porta-retalls?"
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Permeteu que %1 faci servir aquesta funcionalitat?"
 
 #: qml/BrowserPage.qml:190
 #, kde-format
 msgid "You can change your mind by clearing site data in the settings."
-msgstr ""
+msgstr "Podeu canviar d'opinió netejant les dades del lloc a la configuració."
 
 #: qml/BrowserPage.qml:196
 #, kde-format
 msgid "Allow"
-msgstr ""
+msgstr "Permet"
 
 #: qml/BrowserPage.qml:197
 #, kde-format
 msgid "Don't Allow"
-msgstr ""
+msgstr "No ho permetis"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgid "Browse the web"
-msgstr ""
+msgstr "Navegueu el web"
 
-#: qml/HomePage.qml:80
+#: qml/HomePage.qml:84
+#, fuzzy, kde-format
+#| msgid "No open tabs"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] "No hi ha pestanyes obertes"
+msgstr[1] "No hi ha pestanyes obertes"
+
+#: qml/HomePage.qml:115
 #, kde-format
-msgid "Continue browsing"
-msgstr ""
+msgid "Close this tab?"
+msgstr "Tanco aquesta pestanya?"
 
-#: qml/Main.qml:36 qml/TabsPage.qml:19
+#: qml/HomePage.qml:128
 #, kde-format
-msgid "Tabs"
-msgstr "Pestanyes"
+msgid "Close Tab"
+msgstr "Tanca la pestanya"
 
-#: qml/Main.qml:41 qml/SettingsPage.qml:58
+#: qml/Main.qml:36 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: qml/Main.qml:246
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#: qml/Main.qml:233
+#, kde-format
 msgid "Downloading %1"
-msgstr "S'està baixant... %1"
+msgstr "S'està baixant %1"
 
-#: qml/Main.qml:251
+#: qml/Main.qml:238
 #, kde-format
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "S'ha desat %1 a les baixades"
 
-#: qml/Main.qml:253
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#: qml/Main.qml:240
+#, kde-format
 msgid "Could not download %1: %2"
-msgstr "Voleu baixar el fitxer %1?"
+msgstr "No s'han pogut baixar %1: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automàtic (%1%)"
 
 #: qml/SettingsPage.qml:32
 #, kde-format
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: qml/SettingsPage.qml:33
 #, kde-format
 msgid "125%"
-msgstr ""
+msgstr "125%"
 
 #: qml/SettingsPage.qml:34
 #, kde-format
 msgid "150%"
-msgstr ""
+msgstr "150%"
 
 #: qml/SettingsPage.qml:35
 #, kde-format
 msgid "175%"
-msgstr ""
+msgstr "175%"
 
 #: qml/SettingsPage.qml:36
 #, kde-format
 msgid "200%"
-msgstr ""
+msgstr "200%"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgid "Slow"
-msgstr ""
+msgstr "Lenta"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgid "Fast"
-msgstr ""
+msgstr "Ràpida"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgid "Fastest"
-msgstr ""
+msgstr "Més ràpida"
 
 #: qml/SettingsPage.qml:69
 #, kde-format
 msgid "Browsing"
-msgstr ""
+msgstr "Navegació"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search engine"
 msgstr "Motor de cerca"
 
 #: qml/SettingsPage.qml:92
 #, kde-format
 msgid "Block ads"
-msgstr ""
+msgstr "Bloqueja els anuncis"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Oculta els anuncis i seguidors a la majoria dels llocs"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgid "Dark pages"
-msgstr ""
+msgstr "Pàgines fosques"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Mostra les pàgines clares amb colors foscos"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgid "Page zoom"
-msgstr ""
+msgstr "Zoom de la pàgina"
 
 #: qml/SettingsPage.qml:130
 #, kde-format
 msgid "Reopen tabs"
-msgstr ""
+msgstr "Reobre les pestanyes"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Retorna les pestanyes que estaven obertes quan es va tancar la darrera "
+"vegada el navegador"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Remote control"
-msgstr ""
+msgstr "Control remot"
 
 #: qml/SettingsPage.qml:146
 #, kde-format
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Tecles de cursor a les pàgines"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move between links"
-msgstr ""
+msgstr "Mou entre els enllaços"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move a pointer"
-msgstr ""
+msgstr "Mou un punter"
 
 #: qml/SettingsPage.qml:158
 #, kde-format
 msgid "Pointer speed"
-msgstr ""
+msgstr "Velocitat del punter"
 
 #: qml/SettingsPage.qml:171
 #, kde-format
 msgid "Privacy"
-msgstr ""
+msgstr "Privadesa"
 
 #: qml/SettingsPage.qml:178
 #, kde-format
 msgid "Clear site data…"
-msgstr ""
+msgstr "Neteja les dades del lloc…"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Tanca la sessió els llocs i oblida les pàgines de la memòria cau i els "
+"permisos"
 
 #: qml/SettingsPage.qml:185
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #: qml/SettingsPage.qml:197
 #, kde-format
 msgid "Clear site data?"
-msgstr ""
+msgstr "Netejo les dades del lloc?"
 
 #: qml/SettingsPage.qml:202
 #, kde-format
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Es tancaran les sessions dels llocs."
 
 #: qml/SettingsPage.qml:206
 #, kde-format
@@ -414,69 +416,49 @@ msgstr "Neteja"
 #: qml/SettingsPage.qml:209
 #, kde-format
 msgid "Site data cleared"
-msgstr ""
+msgstr "S'han netejat les dades"
 
-#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#: qml/SiteCard.qml:27
+#, kde-format
 msgid "Current tab"
-msgstr "Pestanyes actuals"
+msgstr "Pestanya actual"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Pestanyes actuals"
-
-#: qml/TabsPage.qml:52
-#, kde-format
-msgid "Close all tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:106
-#, kde-format
-msgid "No open tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:121
-#, kde-format
-msgid "Close this tab?"
-msgstr ""
-
-#: qml/TabsPage.qml:134
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close Tab"
-msgstr "Tanca"
-
-#: qml/TabsPage.qml:142
-#, kde-format
-msgid "Close all tabs?"
-msgstr ""
-
-#: qml/TabsPage.qml:147
-#, kde-format
-msgid "1 tab will be closed."
-msgid_plural "%1 tabs will be closed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: qml/TabsPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close All"
-msgstr "Tanca"
+msgstr "Actual"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "S'ha bloquejat una finestra emergent"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Aquesta pàgina continua fallant, de manera que s'ha aturat"
+
+#~ msgid "Continue browsing"
+#~ msgstr "Continueu navegant"
+
+#~ msgid "Tabs"
+#~ msgstr "Pestanyes"
+
+#~ msgid "Close all tabs"
+#~ msgstr "Tanca totes les pestanyes"
+
+#~ msgid "Close all tabs?"
+#~ msgstr "Tanco totes les pestanyes?"
+
+#~ msgid "1 tab will be closed."
+#~ msgid_plural "%1 tabs will be closed."
+#~ msgstr[0] "Es tancarà 1 pestanya."
+#~ msgstr[1] "Es tancaran %1 pestanyes."
+
+#~| msgid "Close"
+#~ msgid "Close All"
+#~ msgstr "Tanca-ho tot"
 
 #~ msgid "Bookmarks Manager"
 #~ msgstr "Gestor d'adreces d'interès"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-31 00:53+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-09-23 06:56+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -28,7 +28,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
 #, kde-format
 msgid "Aura Browser"
 msgstr ""
@@ -68,13 +68,12 @@ msgstr ""
 msgid "Go to %1"
 msgstr ""
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
-#: qml/TabsPage.qml:108
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
 #, kde-format
 msgid "New tab"
 msgstr ""
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
 #, kde-format
 msgid "Search or enter address"
 msgstr ""
@@ -215,32 +214,38 @@ msgstr ""
 msgid "Browse the web"
 msgstr ""
 
-#: qml/HomePage.qml:80
+#: qml/HomePage.qml:84
 #, kde-format
-msgid "Continue browsing"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] ""
+
+#: qml/HomePage.qml:115
+#, kde-format
+msgid "Close this tab?"
 msgstr ""
 
-#: qml/Main.qml:36 qml/TabsPage.qml:19
+#: qml/HomePage.qml:128
 #, kde-format
-msgid "Tabs"
-msgstr "بەتكۈچ"
+msgid "Close Tab"
+msgstr ""
 
-#: qml/Main.qml:41 qml/SettingsPage.qml:58
+#: qml/Main.qml:36 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "تەڭشەك"
 
-#: qml/Main.qml:246
+#: qml/Main.qml:233
 #, kde-format
 msgid "Downloading %1"
 msgstr ""
 
-#: qml/Main.qml:251
+#: qml/Main.qml:238
 #, kde-format
 msgid "Saved %1 to Downloads"
 msgstr ""
 
-#: qml/Main.qml:253
+#: qml/Main.qml:240
 #, kde-format
 msgid "Could not download %1: %2"
 msgstr ""
@@ -405,7 +410,7 @@ msgstr "تازىلا"
 msgid "Site data cleared"
 msgstr ""
 
-#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
+#: qml/SiteCard.qml:27
 #, kde-format
 msgid "Current tab"
 msgstr ""
@@ -414,42 +419,6 @@ msgstr ""
 #, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr ""
-
-#: qml/TabsPage.qml:52
-#, kde-format
-msgid "Close all tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:106
-#, kde-format
-msgid "No open tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:121
-#, kde-format
-msgid "Close this tab?"
-msgstr ""
-
-#: qml/TabsPage.qml:134
-#, kde-format
-msgid "Close Tab"
-msgstr ""
-
-#: qml/TabsPage.qml:142
-#, kde-format
-msgid "Close all tabs?"
-msgstr ""
-
-#: qml/TabsPage.qml:147
-#, kde-format
-msgid "1 tab will be closed."
-msgid_plural "%1 tabs will be closed."
-msgstr[0] ""
-
-#: qml/TabsPage.qml:151
-#, kde-format
-msgid "Close All"
 msgstr ""
 
 #: qml/WebView.qml:125
@@ -461,6 +430,9 @@ msgstr ""
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
 msgstr ""
+
+#~ msgid "Tabs"
+#~ msgstr "بەتكۈچ"
 
 #~ msgid "Add"
 #~ msgstr "قوش"

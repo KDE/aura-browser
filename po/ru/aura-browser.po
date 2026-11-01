@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-31 00:53+0000\n"
-"PO-Revision-Date: 2022-11-02 16:49+0300\n"
-"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"PO-Revision-Date: 2026-10-31 12:02+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -21,391 +21,394 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Олеся Герасименко, Александр Яворский"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "translation-team@basealt.ru, kekcuha@gmail.com"
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
+#, kde-format
 msgid "Aura Browser"
 msgstr "Браузер Aura"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Просмотр веб-страниц, не вставая с дивана"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© Сообщество KDE, 2022–2026"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Открываемые веб-страницы"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgid "Search for \"%1\""
-msgstr "Поиск в журнале"
+msgstr "Искать «%1»"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgid "Go to %1"
-msgstr ""
+msgstr "Перейти на %1"
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
-#: qml/TabsPage.qml:108
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
 #, kde-format
 msgid "New tab"
-msgstr ""
+msgstr "Новая вкладка"
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
+#, kde-format
 msgid "Search or enter address"
-msgstr "Поиск или ввод URL-адреса"
+msgstr "Поиск или адрес"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgid "Search the web, or type an address"
-msgstr "Поиск или ввод URL-адреса"
+msgstr "Введите поисковый запрос или адрес"
 
 #: qml/BrowserControls.qml:125
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgid "Loading… %1%"
-msgstr "Загрузка... %1"
+msgstr "Загрузка… %1%"
 
 #: qml/BrowserControls.qml:128
 #, kde-format
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Масштаб %1%"
 
 #: qml/BrowserControls.qml:156
 #, kde-format
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: qml/BrowserControls.qml:170
 #, kde-format
 msgid "Forward"
-msgstr ""
+msgstr "Вперёд"
 
 #: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: qml/BrowserControls.qml:198
 #, kde-format
 msgid "Address: %1"
-msgstr ""
+msgstr "Адрес: %1"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Остановить"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Reload"
-msgstr ""
+msgstr "Обновить"
 
 #: qml/BrowserControls.qml:212
 #, kde-format
 msgid "Zoom out"
-msgstr ""
+msgstr "Уменьшить масштаб"
 
 #: qml/BrowserControls.qml:217
 #, kde-format
 msgid "Zoom in"
-msgstr ""
+msgstr "Увеличить масштаб"
 
 #: qml/BrowserControls.qml:227
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgid "Close tab"
-msgstr "Закрыть"
+msgstr "Закрыть вкладку"
 
 #: qml/BrowserControls.qml:256
 #, kde-format
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%1 вкладка"
+msgstr[1] "%1 вкладки"
+msgstr[2] "%1 вкладок"
+msgstr[3] "1 вкладка"
 
 #: qml/BrowserPage.qml:37
 #, kde-format
 msgid "Pointer: move with the arrows, press OK to click"
-msgstr ""
+msgstr "Указатель: перемещайте стрелками, нажмите ОК для щелчка"
 
 #: qml/BrowserPage.qml:39
 #, kde-format
 msgid "Links: the arrows move between links"
-msgstr ""
+msgstr "Ссылки: стрелки переключают ссылки"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Разрешить %1 использовать микрофон?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Разрешить %1 использовать камеру?"
 
 #: qml/BrowserPage.qml:172
 #, kde-format
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Разрешить %1 использовать камеру и микрофон?"
 
 #: qml/BrowserPage.qml:175
 #, kde-format
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Разрешить %1 видеть экран?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Разрешить %1 показывать уведомления?"
 
 #: qml/BrowserPage.qml:179
 #, kde-format
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Разрешить %1 определять ваше местоположение?"
 
 #: qml/BrowserPage.qml:181
 #, kde-format
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Разрешить %1 использовать буфер обмена?"
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Разрешить %1 использовать эту функцию?"
 
 #: qml/BrowserPage.qml:190
 #, kde-format
 msgid "You can change your mind by clearing site data in the settings."
-msgstr ""
+msgstr "Решение можно изменить, удалив данные сайтов в параметрах."
 
 #: qml/BrowserPage.qml:196
 #, kde-format
 msgid "Allow"
-msgstr ""
+msgstr "Разрешить"
 
 #: qml/BrowserPage.qml:197
 #, kde-format
 msgid "Don't Allow"
-msgstr ""
+msgstr "Не разрешать"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgid "Browse the web"
-msgstr ""
+msgstr "Просмотр веб-страниц"
 
-#: qml/HomePage.qml:80
+#: qml/HomePage.qml:84
+#, fuzzy, kde-format
+#| msgid "No open tabs"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] "Нет открытых вкладок"
+msgstr[1] "Нет открытых вкладок"
+msgstr[2] "Нет открытых вкладок"
+msgstr[3] "Нет открытых вкладок"
+
+#: qml/HomePage.qml:115
 #, kde-format
-msgid "Continue browsing"
-msgstr ""
+msgid "Close this tab?"
+msgstr "Закрыть эту вкладку?"
 
-#: qml/Main.qml:36 qml/TabsPage.qml:19
+#: qml/HomePage.qml:128
 #, kde-format
-msgid "Tabs"
-msgstr "Вкладки"
+msgid "Close Tab"
+msgstr "Закрыть вкладку"
 
-#: qml/Main.qml:41 qml/SettingsPage.qml:58
+#: qml/Main.qml:36 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "Параметры"
 
-#: qml/Main.qml:246
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#: qml/Main.qml:233
+#, kde-format
 msgid "Downloading %1"
-msgstr "Загрузка... %1"
+msgstr "Загрузка %1"
 
-#: qml/Main.qml:251
+#: qml/Main.qml:238
 #, kde-format
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "Файл %1 сохранён в папку «Загрузки»"
 
-#: qml/Main.qml:253
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#: qml/Main.qml:240
+#, kde-format
 msgid "Could not download %1: %2"
-msgstr "Загрузить файл %1?"
+msgstr "Не удалось загрузить %1: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Автоматически (%1%)"
 
 #: qml/SettingsPage.qml:32
 #, kde-format
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: qml/SettingsPage.qml:33
 #, kde-format
 msgid "125%"
-msgstr ""
+msgstr "125%"
 
 #: qml/SettingsPage.qml:34
 #, kde-format
 msgid "150%"
-msgstr ""
+msgstr "150%"
 
 #: qml/SettingsPage.qml:35
 #, kde-format
 msgid "175%"
-msgstr ""
+msgstr "175%"
 
 #: qml/SettingsPage.qml:36
 #, kde-format
 msgid "200%"
-msgstr ""
+msgstr "200%"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgid "Slow"
-msgstr ""
+msgstr "Медленно"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgid "Normal"
-msgstr ""
+msgstr "Обычно"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgid "Fast"
-msgstr ""
+msgstr "Быстро"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgid "Fastest"
-msgstr ""
+msgstr "Очень быстро"
 
 #: qml/SettingsPage.qml:69
 #, kde-format
 msgid "Browsing"
-msgstr ""
+msgstr "Просмотр"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search engine"
 msgstr "Поисковая система"
 
 #: qml/SettingsPage.qml:92
 #, kde-format
 msgid "Block ads"
-msgstr ""
+msgstr "Блокировать рекламу"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Скрывает рекламу и трекеры на большинстве сайтов"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgid "Dark pages"
-msgstr ""
+msgstr "Тёмные страницы"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Показывает светлые страницы в тёмных тонах"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgid "Page zoom"
-msgstr ""
+msgstr "Масштаб страниц"
 
 #: qml/SettingsPage.qml:130
 #, kde-format
 msgid "Reopen tabs"
-msgstr ""
+msgstr "Восстанавливать вкладки"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Открывает вкладки, которые были открыты при последнем закрытии браузера"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Remote control"
-msgstr ""
+msgstr "Пульт управления"
 
 #: qml/SettingsPage.qml:146
 #, kde-format
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Клавиши со стрелками на страницах"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move between links"
-msgstr ""
+msgstr "Переключают ссылки"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move a pointer"
-msgstr ""
+msgstr "Перемещают указатель"
 
 #: qml/SettingsPage.qml:158
 #, kde-format
 msgid "Pointer speed"
-msgstr ""
+msgstr "Скорость указателя"
 
 #: qml/SettingsPage.qml:171
 #, kde-format
 msgid "Privacy"
-msgstr ""
+msgstr "Конфиденциальность"
 
 #: qml/SettingsPage.qml:178
 #, kde-format
 msgid "Clear site data…"
-msgstr ""
+msgstr "Удалить данные сайтов…"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Выполняет выход из учётных записей на сайтах и удаляет кэш страниц и "
+"разрешения"
 
 #: qml/SettingsPage.qml:185
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 #: qml/SettingsPage.qml:197
 #, kde-format
 msgid "Clear site data?"
-msgstr ""
+msgstr "Удалить данные сайтов?"
 
 #: qml/SettingsPage.qml:202
 #, kde-format
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Будет выполнен выход из учётных записей на сайтах."
 
 #: qml/SettingsPage.qml:206
 #, kde-format
@@ -415,71 +418,50 @@ msgstr "Очистить"
 #: qml/SettingsPage.qml:209
 #, kde-format
 msgid "Site data cleared"
-msgstr ""
+msgstr "Данные сайтов удалены"
 
-#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#: qml/SiteCard.qml:27
+#, kde-format
 msgid "Current tab"
-msgstr "Текущие вкладки"
+msgstr "Текущая вкладка"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Текущие вкладки"
-
-#: qml/TabsPage.qml:52
-#, kde-format
-msgid "Close all tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:106
-#, kde-format
-msgid "No open tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:121
-#, kde-format
-msgid "Close this tab?"
-msgstr ""
-
-#: qml/TabsPage.qml:134
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close Tab"
-msgstr "Закрыть"
-
-#: qml/TabsPage.qml:142
-#, kde-format
-msgid "Close all tabs?"
-msgstr ""
-
-#: qml/TabsPage.qml:147
-#, kde-format
-msgid "1 tab will be closed."
-msgid_plural "%1 tabs will be closed."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: qml/TabsPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close All"
-msgstr "Закрыть"
+msgstr "Текущая"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "Всплывающее окно заблокировано"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Страница постоянно аварийно завершается, поэтому она остановлена"
+
+#~ msgid "Continue browsing"
+#~ msgstr "Продолжить просмотр"
+
+#~ msgid "Tabs"
+#~ msgstr "Вкладки"
+
+#~ msgid "Close all tabs"
+#~ msgstr "Закрыть все вкладки"
+
+#~ msgid "Close all tabs?"
+#~ msgstr "Закрыть все вкладки?"
+
+#~ msgid "1 tab will be closed."
+#~ msgid_plural "%1 tabs will be closed."
+#~ msgstr[0] "Будет закрыта %1 вкладка."
+#~ msgstr[1] "Будут закрыты %1 вкладки."
+#~ msgstr[2] "Будут закрыты %1 вкладок."
+#~ msgstr[3] "Будет закрыта 1 вкладка."
+
+#~ msgid "Close All"
+#~ msgstr "Закрыть все"
 
 #~ msgid "Bookmarks Manager"
 #~ msgstr "Диспетчер закладок"

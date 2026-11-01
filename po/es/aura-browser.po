@@ -1,15 +1,15 @@
 # Spanish translations for aura-browser.po package.
-# Copyright (C) 2022 This file is copyright:
+# Copyright (C) 2022-2026 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
-#
 # Automatically generated, 2022.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2022.
+#
+# SPDX-FileCopyrightText: 2022, 2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-31 00:53+0000\n"
-"PO-Revision-Date: 2022-09-13 14:59+0200\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"PO-Revision-Date: 2026-11-01 00:53+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,394 +17,398 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Eloy Cuadra"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ecuadra@eloihr.net"
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:175
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
+#, kde-format
 msgid "Aura Browser"
 msgstr "Navegador Aura"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Explore la web desde el sofá"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022-2026 La comunidad KDE"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Páginas web que se van a abrir"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgid "Search for \"%1\""
-msgstr "Buscar en el historial"
+msgstr "Buscar «%1»"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgid "Go to %1"
-msgstr ""
+msgstr "Ir a %1"
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222 qml/TabsPage.qml:47
-#: qml/TabsPage.qml:108
+#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
 #, kde-format
 msgid "New tab"
-msgstr ""
+msgstr "Nueva pestaña"
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:70
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
+#, kde-format
 msgid "Search or enter address"
-msgstr "Busque o escriba una URL"
+msgstr "Busque o introduzca una dirección"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgid "Search the web, or type an address"
-msgstr "Busque o escriba una URL"
+msgstr "Busque en la web o escriba una dirección"
 
 #: qml/BrowserControls.qml:125
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgid "Loading… %1%"
-msgstr "Descargando... %1"
+msgstr "Cargando… %1 %"
 
 #: qml/BrowserControls.qml:128
 #, kde-format
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Ampliar al %1 %"
 
 #: qml/BrowserControls.qml:156
 #, kde-format
 msgid "Back"
-msgstr ""
+msgstr "Volver"
 
 #: qml/BrowserControls.qml:170
 #, kde-format
 msgid "Forward"
-msgstr ""
+msgstr "Avanzar"
 
 #: qml/BrowserControls.qml:182 qml/Main.qml:31
 #, kde-format
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: qml/BrowserControls.qml:198
 #, kde-format
 msgid "Address: %1"
-msgstr ""
+msgstr "Dirección: %1"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Stop"
-msgstr ""
+msgstr "Detener"
 
 #: qml/BrowserControls.qml:206
 #, kde-format
 msgid "Reload"
-msgstr ""
+msgstr "Volver a cargar"
 
 #: qml/BrowserControls.qml:212
 #, kde-format
 msgid "Zoom out"
-msgstr ""
+msgstr "Reducir"
 
 #: qml/BrowserControls.qml:217
 #, kde-format
 msgid "Zoom in"
-msgstr ""
+msgstr "Ampliar"
 
 #: qml/BrowserControls.qml:227
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgid "Close tab"
-msgstr "Cerrar"
+msgstr "Cerrar pestaña"
 
 #: qml/BrowserControls.qml:256
 #, kde-format
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 pestaña"
+msgstr[1] "%1 pestañas"
 
 #: qml/BrowserPage.qml:37
 #, kde-format
 msgid "Pointer: move with the arrows, press OK to click"
-msgstr ""
+msgstr "Puntero: mueva con las flechas, pulse Aceptar para clic"
 
 #: qml/BrowserPage.qml:39
 #, kde-format
 msgid "Links: the arrows move between links"
-msgstr ""
+msgstr "Enlaces: las flechas mueven entre enlaces"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "¿Permitir que %1 use su micrófono?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "¿Permitir que %1 use su cámara?"
 
 #: qml/BrowserPage.qml:172
 #, kde-format
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "¿Permitir que %1 use su cámara y su micrófono?"
 
 #: qml/BrowserPage.qml:175
 #, kde-format
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "¿Permitir que %1 vea su pantalla?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "¿Permitir que %1 muestre notificaciones?"
 
 #: qml/BrowserPage.qml:179
 #, kde-format
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "¿Permitir que %1 conozca su ubicación?"
 
 #: qml/BrowserPage.qml:181
 #, kde-format
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "¿Permitir que %1 use el portapapeles?"
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "¿Permitir que %1 use esta función?"
 
 #: qml/BrowserPage.qml:190
 #, kde-format
 msgid "You can change your mind by clearing site data in the settings."
 msgstr ""
+"Puede cambiar de opinión borrando los datos de los sitios en la "
+"configuración."
 
 #: qml/BrowserPage.qml:196
 #, kde-format
 msgid "Allow"
-msgstr ""
+msgstr "Permitir"
 
 #: qml/BrowserPage.qml:197
 #, kde-format
 msgid "Don't Allow"
-msgstr ""
+msgstr "No permitir"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgid "Browse the web"
-msgstr ""
+msgstr "Explorar la web"
 
-#: qml/HomePage.qml:80
+#: qml/HomePage.qml:84
+#, fuzzy, kde-format
+#| msgid "No open tabs"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] "No hay pestañas abiertas"
+msgstr[1] "No hay pestañas abiertas"
+
+#: qml/HomePage.qml:115
 #, kde-format
-msgid "Continue browsing"
-msgstr ""
+msgid "Close this tab?"
+msgstr "¿Cerrar esta pestaña?"
 
-#: qml/Main.qml:36 qml/TabsPage.qml:19
+#: qml/HomePage.qml:128
 #, kde-format
-msgid "Tabs"
-msgstr "Pestañas"
+msgid "Close Tab"
+msgstr "Cerrar pestaña"
 
-#: qml/Main.qml:41 qml/SettingsPage.qml:58
+#: qml/Main.qml:36 qml/SettingsPage.qml:58
 #, kde-format
 msgid "Settings"
 msgstr "Preferencias"
 
-#: qml/Main.qml:246
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#: qml/Main.qml:233
+#, kde-format
 msgid "Downloading %1"
-msgstr "Descargando... %1"
+msgstr "Descargando %1"
 
-#: qml/Main.qml:251
+#: qml/Main.qml:238
 #, kde-format
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "Se ha guardado %1 en «Descargas»"
 
-#: qml/Main.qml:253
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#: qml/Main.qml:240
+#, kde-format
 msgid "Could not download %1: %2"
-msgstr "¿Desea descargar el archivo %1?"
+msgstr "No se ha podido descargar %1: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automática (%1 %)"
 
 #: qml/SettingsPage.qml:32
 #, kde-format
 msgid "100%"
-msgstr ""
+msgstr "100 %"
 
 #: qml/SettingsPage.qml:33
 #, kde-format
 msgid "125%"
-msgstr ""
+msgstr "125 %"
 
 #: qml/SettingsPage.qml:34
 #, kde-format
 msgid "150%"
-msgstr ""
+msgstr "150 %"
 
 #: qml/SettingsPage.qml:35
 #, kde-format
 msgid "175%"
-msgstr ""
+msgstr "175 %"
 
 #: qml/SettingsPage.qml:36
 #, kde-format
 msgid "200%"
-msgstr ""
+msgstr "200 %"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgid "Slow"
-msgstr ""
+msgstr "Lenta"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgid "Fast"
-msgstr ""
+msgstr "Rápida"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgid "Fastest"
-msgstr ""
+msgstr "Más rápida"
 
 #: qml/SettingsPage.qml:69
 #, kde-format
 msgid "Browsing"
-msgstr ""
+msgstr "Navegación"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search engine"
 msgstr "Motor de búsqueda"
 
 #: qml/SettingsPage.qml:92
 #, kde-format
 msgid "Block ads"
-msgstr ""
+msgstr "Bloquear publicidad"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Oculta publicidad y rastreadores en la mayoría de los sitios"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgid "Dark pages"
-msgstr ""
+msgstr "Páginas oscuras"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Muestra las páginas claras con colores oscuros"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgid "Page zoom"
-msgstr ""
+msgstr "Ampliación de la página"
 
 #: qml/SettingsPage.qml:130
 #, kde-format
 msgid "Reopen tabs"
-msgstr ""
+msgstr "Volver a abrir pestañas"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Recupera las pestañas que estaban abiertas la última vez que se cerró el "
+"navegador"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Remote control"
-msgstr ""
+msgstr "Mando a distancia"
 
 #: qml/SettingsPage.qml:146
 #, kde-format
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Teclas de flecha en las páginas"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move between links"
-msgstr ""
+msgstr "Mover entre enlaces"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move a pointer"
-msgstr ""
+msgstr "Mover un puntero"
 
 #: qml/SettingsPage.qml:158
 #, kde-format
 msgid "Pointer speed"
-msgstr ""
+msgstr "Velocidad del puntero"
 
 #: qml/SettingsPage.qml:171
 #, kde-format
 msgid "Privacy"
-msgstr ""
+msgstr "Privacidad"
 
 #: qml/SettingsPage.qml:178
 #, kde-format
 msgid "Clear site data…"
-msgstr ""
+msgstr "Borrar datos de sitios…"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Cierra su sesión en los sitios web y descarta las páginas guardadas en caché "
+"y sus permisos"
 
 #: qml/SettingsPage.qml:185
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: qml/SettingsPage.qml:197
 #, kde-format
 msgid "Clear site data?"
-msgstr ""
+msgstr "¿Borrar datos de sitios?"
 
 #: qml/SettingsPage.qml:202
 #, kde-format
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Se cerrará su sesión en los sitios."
 
 #: qml/SettingsPage.qml:206
 #, kde-format
@@ -414,215 +418,46 @@ msgstr "Borrar todo"
 #: qml/SettingsPage.qml:209
 #, kde-format
 msgid "Site data cleared"
-msgstr ""
+msgstr "Datos de sitios borrados"
 
-#: qml/SiteCard.qml:27 qml/TabsPage.qml:84
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#: qml/SiteCard.qml:27
+#, kde-format
 msgid "Current tab"
-msgstr "Pestañas actuales"
+msgstr "Pestaña actual"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Pestañas actuales"
-
-#: qml/TabsPage.qml:52
-#, kde-format
-msgid "Close all tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:106
-#, kde-format
-msgid "No open tabs"
-msgstr ""
-
-#: qml/TabsPage.qml:121
-#, kde-format
-msgid "Close this tab?"
-msgstr ""
-
-#: qml/TabsPage.qml:134
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close Tab"
-msgstr "Cerrar"
-
-#: qml/TabsPage.qml:142
-#, kde-format
-msgid "Close all tabs?"
-msgstr ""
-
-#: qml/TabsPage.qml:147
-#, kde-format
-msgid "1 tab will be closed."
-msgid_plural "%1 tabs will be closed."
-msgstr[0] ""
-msgstr[1] ""
-
-#: qml/TabsPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Close"
-msgid "Close All"
-msgstr "Cerrar"
+msgstr "Actual"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "Se ha bloqueado una ventana emergente"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Esta página sigue fallando, por lo que se ha detenido"
 
-#~ msgid "Bookmarks Manager"
-#~ msgstr "Gestor de marcadores"
+#~ msgid "Continue browsing"
+#~ msgstr "Continuar navegando"
 
-#~ msgid "Press 'esc' or the [←] Back button to close"
-#~ msgstr "Pulse «Esc» o el botón «Retroceso» [←] para cerrar"
+#~ msgid "Tabs"
+#~ msgstr "Pestañas"
 
-#~ msgid "Search Bookmarks"
-#~ msgstr "Buscar en marcadores"
+#~ msgid "Close all tabs"
+#~ msgstr "Cerrar todas las pestañas"
 
-#~ msgid "Remove Mode"
-#~ msgstr "Modo eliminar"
+#~ msgid "Close all tabs?"
+#~ msgstr "¿Cerrar todas las pestañas?"
 
-#~ msgid "Add"
-#~ msgstr "Añadir"
+#~ msgid "1 tab will be closed."
+#~ msgid_plural "%1 tabs will be closed."
+#~ msgstr[0] "Se cerrará 1 pestaña."
+#~ msgstr[1] "Se cerrarán %1 pestañas."
 
-#~ msgid "Add Bookmark"
-#~ msgstr "Añadir marcador"
-
-#~ msgid "Name: "
-#~ msgstr "Nombre: "
-
-#~ msgid "Url: "
-#~ msgstr "URL: "
-
-#~ msgid "Category: "
-#~ msgstr "Categoría: "
-
-#~ msgid "Bookmarks"
-#~ msgstr "Marcadores"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "Accept"
-#~ msgstr "Aceptar"
-
-#~ msgid "Deny"
-#~ msgstr "Denegar"
-
-#~ msgid "Help"
-#~ msgstr "Ayuda"
-
-#~ msgid ""
-#~ "Aura Browser adapts the traditional web browser UI for a fully immersed "
-#~ "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
-#~ "possible for navigating the world wide web using just your remote control."
-#~ msgstr ""
-#~ "El navegador Aura adapta la interfaz de usuario de navegador web "
-#~ "tradicional para una experiencia totalmente inmersiva en pantalla grande. "
-#~ "La interfaz del navegador Aura se mantiene lo más sutil e intuitiva "
-#~ "posible para navegar por Internet usando solo el mando a distancia."
-
-#~ msgid ""
-#~ "Here are all the buttons required to help you get started with using aura "
-#~ "browser"
-#~ msgstr ""
-#~ "Estos son todos los botones necesarios para ayudarle a empezar a usar el "
-#~ "navegador Aura"
-
-#~ msgid "History"
-#~ msgstr "Historial"
-
-#~ msgid "Clear History"
-#~ msgstr "Borrar el historial"
-
-#~ msgid "No Recent History"
-#~ msgstr "No hay historial reciente"
-
-#~ msgid "Enter URL / Search Term"
-#~ msgstr "Introduzca URL o palabra a buscar"
-
-#~ msgid "Enter Search Term or URL"
-#~ msgstr "Introduzca palabra a buscar o URL"
-
-#~ msgid "Close Menu"
-#~ msgstr "Cerrar menú"
-
-#~ msgid "Remove Tab"
-#~ msgstr "Eliminar pestaña"
-
-#~ msgid "Quit"
-#~ msgstr "Salir"
-
-#~ msgid "Download finished"
-#~ msgstr "Descarga terminada"
-
-#~ msgid "Download failed: %1"
-#~ msgstr "La descarga ha fallado: %1"
-
-#~ msgid "Virtual Cursor Speed Control"
-#~ msgstr "Control de velocidad del cursor virtual"
-
-#~ msgid "Current Speed: %1"
-#~ msgstr "Velocidad actual: %1"
-
-#~ msgid "Virtual Scroll Speed Control"
-#~ msgstr "Control de velocidad del desplazamiento virtual"
-
-#~ msgid "Virtual Cursor Size Control"
-#~ msgstr "Control de tamaño del cursor virtual"
-
-#~ msgid "Current Size: "
-#~ msgstr "Tamaño actual: "
-
-#~ msgid "Large"
-#~ msgstr "Grande"
-
-#~ msgid "Medium"
-#~ msgstr "Medio"
-
-#~ msgid "Small"
-#~ msgstr "Pequeño"
-
-#~ msgid "Google"
-#~ msgstr "Google"
-
-#~ msgid "Duck Duck Go"
-#~ msgstr "Duck Duck Go"
-
-#~ msgid "General"
-#~ msgstr "General"
-
-#~ msgid "Disable Button Sounds"
-#~ msgstr "Desactivar sonidos de los botones"
-
-#~ msgid "Enable Button Sounds"
-#~ msgstr "Activar sonidos de los botones"
-
-#~ msgid "Clear Cache"
-#~ msgstr "Borrar la caché"
-
-#~ msgid "Aura Browser - Start Page"
-#~ msgstr "Navegador Aura - Página de inicio"
-
-#~ msgid "Recent Pages"
-#~ msgstr "Páginas recientes"
-
-#~ msgid "Suggestions:"
-#~ msgstr "Sugerencias:"
-
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "Listening"
-#~ msgstr "Escuchando"
-
-#~ msgid "Performing Search With Mycroft"
-#~ msgstr "Realizando búsqueda con Mycroft"
+#~| msgid "Close"
+#~ msgid "Close All"
+#~ msgstr "Cerrar todo"
