@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2026-04-12 22:05+0200\n"
-"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2026-11-02 01:36+0100\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
 msgid "Listening"
-msgstr "Poslouchám"
+msgstr "Naslouchání"
 
 #: qml/AudioBox.qml:87
 #, kde-format
 msgid "Performing Search With Mycroft"
-msgstr "Provádím hledání pomocí Mycroft"
+msgstr "Vyhledávání pomocí Mycroftu"
 
 #: qml/AudioBox.qml:141
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "Přejete si stáhnout soubor %1?"
 #: qml/DownloadRequest.qml:60
 #, kde-format
 msgid "Downloading.. %1"
-msgstr "Stahuji.. %1"
+msgstr "Stahování.. %1"
 
 #: qml/DownloadRequest.qml:83
 #, kde-format
@@ -151,7 +151,7 @@ msgstr "Hledat v historii"
 #: qml/HistoryManager.qml:211
 #, kde-format
 msgid "Clear History"
-msgstr "Vyprázdnit historii"
+msgstr "Vymazat historii"
 
 #: qml/HistoryManager.qml:254
 #, kde-format
@@ -248,7 +248,7 @@ msgstr "Malá"
 #: qml/SettingsTab.qml:314
 #, kde-format
 msgid "Search Engine"
-msgstr "Vyhledávací stroj"
+msgstr "Vyhledávací služba"
 
 #: qml/SettingsTab.qml:333
 #, kde-format
@@ -308,7 +308,7 @@ msgstr "Nedávné stránky"
 #: qml/StartPage.qml:411
 #, kde-format
 msgid "Clear"
-msgstr "Vyprázdnit"
+msgstr "Vymazat"
 
 #: qml/SuggestionsBox.qml:44
 #, kde-format
