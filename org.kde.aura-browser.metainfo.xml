@@ -2,7 +2,29 @@
 <component type="desktop-application">
   <id>org.kde.aura-browser</id>
   <name>Aura Browser</name>
+  <name xml:lang="ast">Restolador Aura</name>
+  <name xml:lang="ca">Navegador Aura</name>
+  <name xml:lang="en-GB">Aura Browser</name>
+  <name xml:lang="eo">Aura Browser</name>
+  <name xml:lang="es">Navegador Aura</name>
+  <name xml:lang="eu">Aura arakatzailea</name>
+  <name xml:lang="gl">Navegador Aura</name>
+  <name xml:lang="he">דפדפן הילה</name>
+  <name xml:lang="ia">Aura Browser (Navigator Aura)</name>
+  <name xml:lang="nl">Aura-browser</name>
+  <name xml:lang="nn">Aura nettlesar</name>
+  <name xml:lang="pt">Navegador Aura</name>
+  <name xml:lang="pt-BR">Navegador Aura</name>
+  <name xml:lang="sa">आभा ब्राउज़र</name>
+  <name xml:lang="tr">Aura Tarayıcı</name>
+  <name xml:lang="uk">Браузер Aura</name>
+  <name xml:lang="zh-TW">Aura 瀏覽器</name>
   <summary>Browse the web from your couch</summary>
+  <summary xml:lang="ca">Navegueu pel web des del sofà</summary>
+  <summary xml:lang="es">Explore la web desde el sofá</summary>
+  <summary xml:lang="nl">Surf op het internet vanaf uw bank</summary>
+  <summary xml:lang="pt-BR">Navegue pela internet do seu sofá</summary>
+  <summary xml:lang="uk">Перегляд інтернету з вашого дивана</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <supports>
@@ -17,6 +39,22 @@
     <p>
       Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control
     </p>
+    <p xml:lang="ast">Un restolador pa tener una esperiencia Bigscreen inmersiva al completu que te permite restolar per internet con namás el mandu a distancia</p>
+    <p xml:lang="ca">Navegador per a una experiència de la Big Screen completament immersiva que permet navegar pel web usant només el comandament a distància</p>
+    <p xml:lang="en-GB">Browser for a fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control</p>
+    <p xml:lang="eo">Retumilo por plene mergita Grand-Ekrana sperto ebligante vin navigi la tutmondan reton uzante nur vian teleregilon</p>
+    <p xml:lang="es">Navegador para una experiencia de inmersión completa en la gran pantalla que permite explorar la web con el mando a distancia</p>
+    <p xml:lang="eu">Pantaila handian erabat murgiltzeko arakatze esperientzia bat, urruneko agintea bakarrik erabiliz mundu zabaleko amaraunean nabigatzeko</p>
+    <p xml:lang="gl">Navegador para unha experiencia completamente absorbente con Big Screen que permite navegar Internet cun mando a distancia</p>
+    <p xml:lang="he">דפדפן שמשולב לחלוטין כחלק מהחוויה של מסכים גדולים כדי לאפשר לך לנווט באינטרנט באמצעות השלט בלבד</p>
+    <p xml:lang="ia">Navigator per un plen experientia de Bigscreen permittente a te navigar le world wide web solmente usante  tu controlo remote</p>
+    <p xml:lang="nl">Browser voor een volledig meeslepende ervaring op een groot scherm, waarmee u met enkel uw afstandsbediening door het wereldwijde web kunt navigeren.</p>
+    <p xml:lang="pt">Navegador para uma experiência em ecrãs grandes totalmente imersiva, permitindo-lhe navegar na World Wide Web apenas com o seu comando à distância</p>
+    <p xml:lang="pt-BR">Navegador para uma experiência em tela grande totalmente imersiva, que permite explorar a internet usando apenas o seu controle remoto</p>
+    <p xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</p>
+    <p xml:lang="tr">Tümüyle içine dalınmış bir Büyükekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
+    <p xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</p>
+    <p xml:lang="zh-TW">大螢幕用的瀏覽器，提供在大螢幕上的沉浸體驗，讓您透過您的遙控器瀏覽網際網路</p>
   </description>
   <project_group>KDE</project_group>
   <developer id="org.kde">
@@ -32,6 +70,23 @@
   <screenshots>
     <screenshot type="default">
       <caption>Aura Browser</caption>
+      <caption xml:lang="ast">Restolador Aura</caption>
+      <caption xml:lang="ca">Navegador Aura</caption>
+      <caption xml:lang="en-GB">Aura Browser</caption>
+      <caption xml:lang="eo">Aura Browser</caption>
+      <caption xml:lang="es">Navegador Aura</caption>
+      <caption xml:lang="eu">Aura arakatzailea</caption>
+      <caption xml:lang="gl">Navegador Aura</caption>
+      <caption xml:lang="he">דפדפן הילה</caption>
+      <caption xml:lang="ia">Aura Browser (Navigator Aura)</caption>
+      <caption xml:lang="nl">Aura-browser</caption>
+      <caption xml:lang="nn">Aura nettlesar</caption>
+      <caption xml:lang="pt">Navegador Aura</caption>
+      <caption xml:lang="pt-BR">Navegador Aura</caption>
+      <caption xml:lang="sa">आभा ब्राउज़र</caption>
+      <caption xml:lang="tr">Aura Tarayıcı</caption>
+      <caption xml:lang="uk">Браузер Aura</caption>
+      <caption xml:lang="zh-TW">Aura 瀏覽器</caption>
       <image>https://cdn.kde.org/screenshots/aura-browser/aura-browser.png</image>
     </screenshot>
   </screenshots>
