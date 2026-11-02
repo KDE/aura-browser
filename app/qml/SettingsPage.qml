@@ -138,6 +138,14 @@ BigscreenUI.ScrollablePage {
         }
 
         SectionHeading {
+            text: i18n("Appearance")
+        }
+
+        BigscreenUI.ColorSchemeDelegate {
+            Layout.fillWidth: true
+        }
+
+        SectionHeading {
             text: i18n("Remote control")
         }
 
