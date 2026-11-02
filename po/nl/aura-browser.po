@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-10-31 13:17+0100\n"
+"PO-Revision-Date: 2026-11-01 14:45+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -217,12 +217,11 @@ msgid "Browse the web"
 msgstr "Surf op het web"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "No open tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Geen open tabbladen"
-msgstr[1] "Geen open tabbladen"
+msgstr[0] "1 open tabblad"
+msgstr[1] "%1 open tabbladen"
 
 #: qml/HomePage.qml:115
 #, kde-format

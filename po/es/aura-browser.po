@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-11-01 00:53+0100\n"
+"PO-Revision-Date: 2026-11-01 03:42+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -219,12 +219,11 @@ msgid "Browse the web"
 msgstr "Explorar la web"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "No open tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "No hay pestañas abiertas"
-msgstr[1] "No hay pestañas abiertas"
+msgstr[0] "1 pestaña abierta"
+msgstr[1] "%1 pestañas abiertas"
 
 #: qml/HomePage.qml:115
 #, kde-format
@@ -440,24 +439,3 @@ msgstr "Se ha bloqueado una ventana emergente"
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
 msgstr "Esta página sigue fallando, por lo que se ha detenido"
-
-#~ msgid "Continue browsing"
-#~ msgstr "Continuar navegando"
-
-#~ msgid "Tabs"
-#~ msgstr "Pestañas"
-
-#~ msgid "Close all tabs"
-#~ msgstr "Cerrar todas las pestañas"
-
-#~ msgid "Close all tabs?"
-#~ msgstr "¿Cerrar todas las pestañas?"
-
-#~ msgid "1 tab will be closed."
-#~ msgid_plural "%1 tabs will be closed."
-#~ msgstr[0] "Se cerrará 1 pestaña."
-#~ msgstr[1] "Se cerrarán %1 pestañas."
-
-#~| msgid "Close"
-#~ msgid "Close All"
-#~ msgstr "Cerrar todo"

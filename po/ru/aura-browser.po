@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-10-31 12:02+0200\n"
+"PO-Revision-Date: 2026-11-01 07:44+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -218,14 +218,13 @@ msgid "Browse the web"
 msgstr "Просмотр веб-страниц"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "No open tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Нет открытых вкладок"
-msgstr[1] "Нет открытых вкладок"
-msgstr[2] "Нет открытых вкладок"
-msgstr[3] "Нет открытых вкладок"
+msgstr[0] "%1 открытая вкладка"
+msgstr[1] "%1 открытые вкладки"
+msgstr[2] "%1 открытых вкладок"
+msgstr[3] "Одна открытая вкладка"
 
 #: qml/HomePage.qml:115
 #, kde-format

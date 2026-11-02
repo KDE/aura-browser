@@ -443,11 +443,3 @@ msgstr ""
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
 msgstr ""
-
-#~ msgid "Tabs"
-#~ msgstr "Faner"
-
-#, fuzzy
-#~| msgid "Close Menu"
-#~ msgid "Close All"
-#~ msgstr "Lukk meny"

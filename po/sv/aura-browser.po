@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-10-31 20:42+0100\n"
+"PO-Revision-Date: 2026-11-01 09:48+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -197,7 +197,7 @@ msgstr "Låt %1 använda funktionen?"
 #: qml/BrowserPage.qml:190
 #, kde-format
 msgid "You can change your mind by clearing site data in the settings."
-msgstr ""
+msgstr "Du kan ändra dig genom att rensa webbplatsdata i inställningarna."
 
 #: qml/BrowserPage.qml:196
 #, kde-format
@@ -215,17 +215,16 @@ msgid "Browse the web"
 msgstr "Bläddra på webben"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "Reopen tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Öppna flikar igen"
-msgstr[1] "Öppna flikar igen"
+msgstr[0] "1 öppen flik"
+msgstr[1] "%1 öppna flikar"
 
 #: qml/HomePage.qml:115
 #, kde-format
 msgid "Close this tab?"
-msgstr ""
+msgstr "Stäng den här fliken?"
 
 #: qml/HomePage.qml:128
 #, kde-format
@@ -320,22 +319,22 @@ msgstr "Blockera reklam"
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Döljer reklam och spårning för de flesta webbplatser"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgid "Dark pages"
-msgstr ""
+msgstr "Mörka sidor"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Visar ljusa sidor med mörka färger"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgid "Page zoom"
-msgstr ""
+msgstr "Zooma till sida"
 
 #: qml/SettingsPage.qml:130
 #, kde-format
@@ -345,62 +344,62 @@ msgstr "Öppna flikar igen"
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgid "Brings back the tabs that were open when the browser last closed"
-msgstr ""
+msgstr "Återställer flikarna som var öppna när webbläsaren senast stängdes"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Remote control"
-msgstr ""
+msgstr "Fjärrkontroll"
 
 #: qml/SettingsPage.qml:146
 #, kde-format
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Piltangenter på sidor"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move between links"
-msgstr ""
+msgstr "Går mellan länkar"
 
 #: qml/SettingsPage.qml:148
 #, kde-format
 msgid "Move a pointer"
-msgstr ""
+msgstr "Flyttar en pekare"
 
 #: qml/SettingsPage.qml:158
 #, kde-format
 msgid "Pointer speed"
-msgstr ""
+msgstr "Pekarhastighet"
 
 #: qml/SettingsPage.qml:171
 #, kde-format
 msgid "Privacy"
-msgstr ""
+msgstr "Integritet"
 
 #: qml/SettingsPage.qml:178
 #, kde-format
 msgid "Clear site data…"
-msgstr ""
+msgstr "Rensa webbplatsdata…"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
-msgstr ""
+msgstr "Loggar ut från webbplatser, och glömmer lagrade sidor och rättigheter"
 
 #: qml/SettingsPage.qml:185
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: qml/SettingsPage.qml:197
 #, kde-format
 msgid "Clear site data?"
-msgstr ""
+msgstr "Rensa webbplatsdata?"
 
 #: qml/SettingsPage.qml:202
 #, kde-format
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Du loggas ut från webbplatser."
 
 #: qml/SettingsPage.qml:206
 #, kde-format
@@ -410,7 +409,7 @@ msgstr "Rensa"
 #: qml/SettingsPage.qml:209
 #, kde-format
 msgid "Site data cleared"
-msgstr ""
+msgstr "Webbplatsdata rensad"
 
 #: qml/SiteCard.qml:27
 #, kde-format
@@ -426,12 +425,12 @@ msgstr "Aktuell"
 #: qml/WebView.qml:125
 #, kde-format
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "Blockerade ett meddelandefönster"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Sidan kraschar hela tiden, så den stoppades"
 
 #~ msgid "Continue browsing"
 #~ msgstr "Fortsätt bläddra"

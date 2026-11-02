@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-10-31 18:22+0100\n"
+"PO-Revision-Date: 2026-11-01 22:30+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -217,12 +217,11 @@ msgid "Browse the web"
 msgstr "Navegueu el web"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "No open tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "No hi ha pestanyes obertes"
-msgstr[1] "No hi ha pestanyes obertes"
+msgstr[0] "1 pestanya oberta"
+msgstr[1] "%1 pestanyes obertes"
 
 #: qml/HomePage.qml:115
 #, kde-format
