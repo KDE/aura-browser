@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2026-11-02 01:36+0100\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -351,67 +351,72 @@ msgstr "Obnoví karty, které byly otevřené při posledním zavření prohlí�
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: qml/SettingsPage.qml:149
+#, kde-format
 msgid "Remote control"
 msgstr "Dálkové ovládání"
 
-#: qml/SettingsPage.qml:146
+#: qml/SettingsPage.qml:154
 #, kde-format
 msgid "Arrow keys on pages"
 msgstr "Šipky na stránkách"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move between links"
 msgstr "Přechod mezi odkazy"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move a pointer"
 msgstr "Posun ukazatele"
 
-#: qml/SettingsPage.qml:158
+#: qml/SettingsPage.qml:166
 #, kde-format
 msgid "Pointer speed"
 msgstr "Rychlost ukazatele"
 
-#: qml/SettingsPage.qml:171
+#: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Privacy"
 msgstr "Soukromí"
 
-#: qml/SettingsPage.qml:178
+#: qml/SettingsPage.qml:186
 #, kde-format
 msgid "Clear site data…"
 msgstr "Vymazat data o webu…"
 
-#: qml/SettingsPage.qml:179
+#: qml/SettingsPage.qml:187
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
 "Odhlásí vás z webových stránek a vymaže stránky uložené v mezipaměti i "
 "oprávnění"
 
-#: qml/SettingsPage.qml:185
+#: qml/SettingsPage.qml:193
 #, kde-format
 msgid "About"
 msgstr "O aplikaci"
 
-#: qml/SettingsPage.qml:197
+#: qml/SettingsPage.qml:205
 #, kde-format
 msgid "Clear site data?"
 msgstr "Vymazat data o webu?"
 
-#: qml/SettingsPage.qml:202
+#: qml/SettingsPage.qml:210
 #, kde-format
 msgid "You will be signed out of sites."
 msgstr "Budete odhlášeni ze stránek."
 
-#: qml/SettingsPage.qml:206
+#: qml/SettingsPage.qml:214
 #, kde-format
 msgid "Clear"
 msgstr "Vymazat"
 
-#: qml/SettingsPage.qml:209
+#: qml/SettingsPage.qml:217
 #, kde-format
 msgid "Site data cleared"
 msgstr "Data o webu byly vymazány"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2026-11-01 22:30+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -352,67 +352,72 @@ msgstr ""
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: qml/SettingsPage.qml:149
+#, kde-format
 msgid "Remote control"
 msgstr "Control remot"
 
-#: qml/SettingsPage.qml:146
+#: qml/SettingsPage.qml:154
 #, kde-format
 msgid "Arrow keys on pages"
 msgstr "Tecles de cursor a les pàgines"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move between links"
 msgstr "Mou entre els enllaços"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move a pointer"
 msgstr "Mou un punter"
 
-#: qml/SettingsPage.qml:158
+#: qml/SettingsPage.qml:166
 #, kde-format
 msgid "Pointer speed"
 msgstr "Velocitat del punter"
 
-#: qml/SettingsPage.qml:171
+#: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Privacy"
 msgstr "Privadesa"
 
-#: qml/SettingsPage.qml:178
+#: qml/SettingsPage.qml:186
 #, kde-format
 msgid "Clear site data…"
 msgstr "Neteja les dades del lloc…"
 
-#: qml/SettingsPage.qml:179
+#: qml/SettingsPage.qml:187
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
 "Tanca la sessió els llocs i oblida les pàgines de la memòria cau i els "
 "permisos"
 
-#: qml/SettingsPage.qml:185
+#: qml/SettingsPage.qml:193
 #, kde-format
 msgid "About"
 msgstr "Quant a"
 
-#: qml/SettingsPage.qml:197
+#: qml/SettingsPage.qml:205
 #, kde-format
 msgid "Clear site data?"
 msgstr "Netejo les dades del lloc?"
 
-#: qml/SettingsPage.qml:202
+#: qml/SettingsPage.qml:210
 #, kde-format
 msgid "You will be signed out of sites."
 msgstr "Es tancaran les sessions dels llocs."
 
-#: qml/SettingsPage.qml:206
+#: qml/SettingsPage.qml:214
 #, kde-format
 msgid "Clear"
 msgstr "Neteja"
 
-#: qml/SettingsPage.qml:209
+#: qml/SettingsPage.qml:217
 #, kde-format
 msgid "Site data cleared"
 msgstr "S'han netejat les dades"

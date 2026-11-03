@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-10-31 07:18-0300\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
+"PO-Revision-Date: 2026-11-02 08:02-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -216,12 +216,11 @@ msgid "Browse the web"
 msgstr "Navegar na web"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "No open tabs"
+#, kde-format
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Nenhuma aba aberta"
-msgstr[1] "Nenhuma aba aberta"
+msgstr[0] "1 aba aberta"
+msgstr[1] "%1 abas abertas"
 
 #: qml/HomePage.qml:115
 #, kde-format
@@ -352,65 +351,70 @@ msgstr ""
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: qml/SettingsPage.qml:149
+#, kde-format
 msgid "Remote control"
 msgstr "Controle remoto"
 
-#: qml/SettingsPage.qml:146
+#: qml/SettingsPage.qml:154
 #, kde-format
 msgid "Arrow keys on pages"
 msgstr "Teclas de seta nas páginas"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move between links"
 msgstr "Mover entre links"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move a pointer"
 msgstr "Mover um ponteiro"
 
-#: qml/SettingsPage.qml:158
+#: qml/SettingsPage.qml:166
 #, kde-format
 msgid "Pointer speed"
 msgstr "Velocidade do ponteiro"
 
-#: qml/SettingsPage.qml:171
+#: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Privacy"
 msgstr "Privacidade"
 
-#: qml/SettingsPage.qml:178
+#: qml/SettingsPage.qml:186
 #, kde-format
 msgid "Clear site data…"
 msgstr "Limpar dados do site…"
 
-#: qml/SettingsPage.qml:179
+#: qml/SettingsPage.qml:187
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr "Desconecta você de sites e descarta páginas em cache e permissões"
 
-#: qml/SettingsPage.qml:185
+#: qml/SettingsPage.qml:193
 #, kde-format
 msgid "About"
 msgstr "Sobre"
 
-#: qml/SettingsPage.qml:197
+#: qml/SettingsPage.qml:205
 #, kde-format
 msgid "Clear site data?"
 msgstr "Limpar dados do site?"
 
-#: qml/SettingsPage.qml:202
+#: qml/SettingsPage.qml:210
 #, kde-format
 msgid "You will be signed out of sites."
 msgstr "Você será desconectado dos sites."
 
-#: qml/SettingsPage.qml:206
+#: qml/SettingsPage.qml:214
 #, kde-format
 msgid "Clear"
 msgstr "Limpar"
 
-#: qml/SettingsPage.qml:209
+#: qml/SettingsPage.qml:217
 #, kde-format
 msgid "Site data cleared"
 msgstr "Dados do site limpos"

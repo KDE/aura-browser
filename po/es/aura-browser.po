@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2026-11-01 03:42+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -354,67 +354,72 @@ msgstr ""
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: qml/SettingsPage.qml:149
+#, kde-format
 msgid "Remote control"
 msgstr "Mando a distancia"
 
-#: qml/SettingsPage.qml:146
+#: qml/SettingsPage.qml:154
 #, kde-format
 msgid "Arrow keys on pages"
 msgstr "Teclas de flecha en las páginas"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move between links"
 msgstr "Mover entre enlaces"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move a pointer"
 msgstr "Mover un puntero"
 
-#: qml/SettingsPage.qml:158
+#: qml/SettingsPage.qml:166
 #, kde-format
 msgid "Pointer speed"
 msgstr "Velocidad del puntero"
 
-#: qml/SettingsPage.qml:171
+#: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: qml/SettingsPage.qml:178
+#: qml/SettingsPage.qml:186
 #, kde-format
 msgid "Clear site data…"
 msgstr "Borrar datos de sitios…"
 
-#: qml/SettingsPage.qml:179
+#: qml/SettingsPage.qml:187
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
 "Cierra su sesión en los sitios web y descarta las páginas guardadas en caché "
 "y sus permisos"
 
-#: qml/SettingsPage.qml:185
+#: qml/SettingsPage.qml:193
 #, kde-format
 msgid "About"
 msgstr "Acerca de"
 
-#: qml/SettingsPage.qml:197
+#: qml/SettingsPage.qml:205
 #, kde-format
 msgid "Clear site data?"
 msgstr "¿Borrar datos de sitios?"
 
-#: qml/SettingsPage.qml:202
+#: qml/SettingsPage.qml:210
 #, kde-format
 msgid "You will be signed out of sites."
 msgstr "Se cerrará su sesión en los sitios."
 
-#: qml/SettingsPage.qml:206
+#: qml/SettingsPage.qml:214
 #, kde-format
 msgid "Clear"
 msgstr "Borrar todo"
 
-#: qml/SettingsPage.qml:209
+#: qml/SettingsPage.qml:217
 #, kde-format
 msgid "Site data cleared"
 msgstr "Datos de sitios borrados"

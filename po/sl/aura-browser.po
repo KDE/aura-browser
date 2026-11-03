@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2026-11-01 06:48+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -352,66 +352,71 @@ msgstr "Ponovno odpre zavihke, ki so bili odprti ob zadnjem zaprtju brskalnika"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgid "Appearance"
+msgstr ""
+
+#: qml/SettingsPage.qml:149
+#, kde-format
 msgid "Remote control"
 msgstr "Daljinsko upravljanje"
 
-#: qml/SettingsPage.qml:146
+#: qml/SettingsPage.qml:154
 #, kde-format
 msgid "Arrow keys on pages"
 msgstr "Puščične tipke na straneh"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move between links"
 msgstr "Premikanje med povezavami"
 
-#: qml/SettingsPage.qml:148
+#: qml/SettingsPage.qml:156
 #, kde-format
 msgid "Move a pointer"
 msgstr "Premikanje kazalca"
 
-#: qml/SettingsPage.qml:158
+#: qml/SettingsPage.qml:166
 #, kde-format
 msgid "Pointer speed"
 msgstr "Hitrost kazalca"
 
-#: qml/SettingsPage.qml:171
+#: qml/SettingsPage.qml:179
 #, kde-format
 msgid "Privacy"
 msgstr "Zasebnost"
 
-#: qml/SettingsPage.qml:178
+#: qml/SettingsPage.qml:186
 #, kde-format
 msgid "Clear site data…"
 msgstr "Počisti podatke spletnih mest …"
 
-#: qml/SettingsPage.qml:179
+#: qml/SettingsPage.qml:187
 #, kde-format
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
 "Odjavi vas s spletnih mest ter izbriše predpomnjene strani in dovoljenja"
 
-#: qml/SettingsPage.qml:185
+#: qml/SettingsPage.qml:193
 #, kde-format
 msgid "About"
 msgstr "O programu"
 
-#: qml/SettingsPage.qml:197
+#: qml/SettingsPage.qml:205
 #, kde-format
 msgid "Clear site data?"
 msgstr "Naj počistim podatke spletišča?"
 
-#: qml/SettingsPage.qml:202
+#: qml/SettingsPage.qml:210
 #, kde-format
 msgid "You will be signed out of sites."
 msgstr "Odjavljeni boste s spletišč."
 
-#: qml/SettingsPage.qml:206
+#: qml/SettingsPage.qml:214
 #, kde-format
 msgid "Clear"
 msgstr "Počisti"
 
-#: qml/SettingsPage.qml:209
+#: qml/SettingsPage.qml:217
 #, kde-format
 msgid "Site data cleared"
 msgstr "Podatki spletišč so bili počiščeni"
