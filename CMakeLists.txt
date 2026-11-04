@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-project(aura-browser VERSION 6.0.80)
+project(aura-browser VERSION 26.11.0)
 
 set(QT_MIN_VERSION "6.11.0")
 set(KF_MIN_VERSION "6.14.0")

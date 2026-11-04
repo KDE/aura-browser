@@ -28,18 +28,6 @@ FocusScope {
         currentView?.pauseMedia();
     }
 
-    function setPointerNavigation(enabled: bool) {
-        if (!currentView || currentView.pointerNavigation === enabled) {
-            return;
-        }
-        currentView.pointerNavigation = enabled;
-        if (enabled) {
-            window.showMessage(i18n("Pointer: move with the arrows, press OK to click"), "input-mouse");
-        } else {
-            window.showMessage(i18n("Links: the arrows move between links"), "link");
-        }
-    }
-
     function focusPage() {
         currentView?.forceActiveFocus();
     }
@@ -142,7 +130,6 @@ FocusScope {
         anchors.fill: parent
         view: root.currentView
         onClosed: root.focusPage()
-        onPointerNavigationToggled: root.setPointerNavigation(!root.currentView.pointerNavigation)
     }
 
     BigscreenUI.Dialog {
@@ -165,36 +152,36 @@ FocusScope {
         title: {
             switch (permission.permissionType) {
             case WebEnginePermission.PermissionType.MediaAudioCapture:
-                return i18n("Let %1 use your microphone?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 use your microphone?", host);
             case WebEnginePermission.PermissionType.MediaVideoCapture:
-                return i18n("Let %1 use your camera?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 use your camera?", host);
             case WebEnginePermission.PermissionType.MediaAudioVideoCapture:
-                return i18n("Let %1 use your camera and microphone?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 use your camera and microphone?", host);
             case WebEnginePermission.PermissionType.DesktopVideoCapture:
             case WebEnginePermission.PermissionType.DesktopAudioVideoCapture:
-                return i18n("Let %1 see your screen?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 see your screen?", host);
             case WebEnginePermission.PermissionType.Notifications:
-                return i18n("Let %1 show notifications?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 show notifications?", host);
             case WebEnginePermission.PermissionType.Geolocation:
-                return i18n("Let %1 know your location?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 know your location?", host);
             case WebEnginePermission.PermissionType.ClipboardReadWrite:
-                return i18n("Let %1 use the clipboard?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 use the clipboard?", host);
             default:
-                return i18n("Let %1 use this feature?", host);
+                return i18nc("@title:window %1 is a website host name", "Let %1 use this feature?", host);
             }
         }
         standardButtons: T.Dialog.Ok | T.Dialog.Cancel
         openFocusItem: standardButton(T.Dialog.Ok)
 
         contentItem: BigscreenUI.Label {
-            text: i18n("You can change your mind by clearing site data in the settings.")
+            text: i18nc("@info", "You can change your mind by clearing site data in the settings.")
             wrapMode: Text.Wrap
             color: Kirigami.Theme.disabledTextColor
         }
 
         Component.onCompleted: {
-            standardButton(T.Dialog.Ok).text = i18n("Allow");
-            standardButton(T.Dialog.Cancel).text = i18n("Don't Allow");
+            standardButton(T.Dialog.Ok).text = i18nc("@action:button grant a site permission", "Allow");
+            standardButton(T.Dialog.Cancel).text = i18nc("@action:button deny a site permission", "Don't Allow");
         }
 
         onAccepted: permission.grant()

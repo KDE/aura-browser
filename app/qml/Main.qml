@@ -20,7 +20,7 @@ BigscreenUI.ApplicationWindow {
     minimumWidth: 500
     minimumHeight: 500
     visibility: Window.Windowed
-    title: i18n("Aura Browser")
+    title: i18nc("@title:window", "Aura Browser")
 
     component Section: Kirigami.Action {
         required property Item page
@@ -28,12 +28,12 @@ BigscreenUI.ApplicationWindow {
 
     readonly property list<Section> sections: [
         Section {
-            text: i18n("Home")
+            text: i18nc("@action:button sidebar page", "Home")
             icon.name: "go-home-symbolic"
             page: HomePage {}
         },
         Section {
-            text: i18n("Settings")
+            text: i18nc("@action:button sidebar page", "Settings")
             icon.name: "configure-symbolic"
             page: SettingsPage {}
         }
@@ -159,7 +159,7 @@ BigscreenUI.ApplicationWindow {
     sidebar: BigscreenUI.Sidebar {
         id: sidebar
 
-        title: i18n("Aura Browser")
+        title: i18nc("@title sidebar header", "Aura Browser")
         iconName: "org.kde.aura-browser"
         actions: root.sections
         onActivated: index => root.showSection(index)
@@ -230,14 +230,14 @@ BigscreenUI.ApplicationWindow {
 
         function onDownloadRequested(download: WebEngineDownloadRequest): void {
             download.accept();
-            root.showMessage(i18n("Downloading %1", download.downloadFileName), "download");
+            root.showMessage(i18nc("@info:status %1 is a file name", "Downloading %1", download.downloadFileName), "download");
         }
 
         function onDownloadFinished(download: WebEngineDownloadRequest): void {
             if (download.state === WebEngineDownloadRequest.DownloadCompleted) {
-                root.showMessage(i18n("Saved %1 to Downloads", download.downloadFileName), "dialog-ok");
+                root.showMessage(i18nc("@info:status %1 is a file name", "Saved %1 to Downloads", download.downloadFileName), "dialog-ok");
             } else if (download.state === WebEngineDownloadRequest.DownloadInterrupted) {
-                root.showMessage(i18n("Could not download %1: %2", download.downloadFileName, download.interruptReasonString), "dialog-warning");
+                root.showMessage(i18nc("@info:status %1 is a file name, %2 is the error reason", "Could not download %1: %2", download.downloadFileName, download.interruptReasonString), "dialog-warning");
             }
         }
     }

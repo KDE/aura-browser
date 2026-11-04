@@ -122,7 +122,7 @@ WebEngineView {
     onNewWindowRequested: request => {
         // HACK: prevent auto open tabs
         if (!request.userInitiated || !window) {
-            window?.showMessage(i18n("Blocked a pop-up window"), "dialog-information");
+            window?.showMessage(i18nc("@info:status", "Blocked a pop-up window"), "dialog-information");
             return;
         }
         window.newTab("");
@@ -143,7 +143,7 @@ WebEngineView {
             return;
         }
         if (crashTimer.running) {
-            window?.showMessage(i18n("This page keeps crashing, so it was stopped"), "dialog-warning");
+            window?.showMessage(i18nc("@info:status", "This page keeps crashing, so it was stopped"), "dialog-warning");
             return;
         }
         crashTimer.start();

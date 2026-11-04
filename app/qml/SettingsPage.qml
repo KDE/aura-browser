@@ -28,19 +28,19 @@ BigscreenUI.ScrollablePage {
     ]
 
     readonly property var zoomLevels: [
-        { text: i18n("Automatic (%1%)", Math.round((window?.zoomFactor ?? 1) * 100)), value: 0 },
-        { text: i18n("100%"), value: 1 },
-        { text: i18n("125%"), value: 1.25 },
-        { text: i18n("150%"), value: 1.5 },
-        { text: i18n("175%"), value: 1.75 },
-        { text: i18n("200%"), value: 2 }
+        { text: i18nc("@item:inlistbox page zoom, %1 is the current zoom in percent", "Automatic (%1%)", Math.round((window?.zoomFactor ?? 1) * 100)), value: 0 },
+        { text: i18nc("@item:inlistbox page zoom, %1 is a percentage", "%1%", 100), value: 1 },
+        { text: i18nc("@item:inlistbox page zoom, %1 is a percentage", "%1%", 125), value: 1.25 },
+        { text: i18nc("@item:inlistbox page zoom, %1 is a percentage", "%1%", 150), value: 1.5 },
+        { text: i18nc("@item:inlistbox page zoom, %1 is a percentage", "%1%", 175), value: 1.75 },
+        { text: i18nc("@item:inlistbox page zoom, %1 is a percentage", "%1%", 200), value: 2 }
     ]
 
     readonly property var pointerSpeeds: [
-        { text: i18n("Slow"), value: 2 },
-        { text: i18n("Normal"), value: 5 },
-        { text: i18n("Fast"), value: 8 },
-        { text: i18n("Fastest"), value: 10 }
+        { text: i18nc("@item:inlistbox pointer speed", "Slow"), value: 2 },
+        { text: i18nc("@item:inlistbox pointer speed", "Normal"), value: 5 },
+        { text: i18nc("@item:inlistbox pointer speed", "Fast"), value: 8 },
+        { text: i18nc("@item:inlistbox pointer speed", "Fastest"), value: 10 }
     ]
 
     function indexOf(options: var, value: var): int {
@@ -55,7 +55,7 @@ BigscreenUI.ScrollablePage {
         color: Kirigami.Theme.disabledTextColor
     }
 
-    title: i18n("Settings")
+    title: i18nc("@title", "Settings")
     background: BigscreenUI.AmbientBackground {}
 
     ColumnLayout {
@@ -66,13 +66,13 @@ BigscreenUI.ScrollablePage {
 
         SectionHeading {
             Layout.topMargin: 0
-            text: i18n("Browsing")
+            text: i18nc("@title:group", "Browsing")
         }
 
         BigscreenUI.ComboBoxDelegate {
             Layout.fillWidth: true
             focus: true
-            text: i18n("Search engine")
+            text: i18nc("@label:listbox", "Search engine")
             icon.name: "search"
             model: root.searchEngines
             textRole: "text"
@@ -89,8 +89,8 @@ BigscreenUI.ScrollablePage {
 
         BigscreenUI.SwitchDelegate {
             Layout.fillWidth: true
-            text: i18n("Block ads")
-            description: i18n("Hides ads and trackers on most sites")
+            text: i18nc("@option:check", "Block ads")
+            description: i18nc("@info", "Hides ads and trackers on most sites")
             icon.name: "security-high"
             checked: BrowserSettings.adblockEnabled
             onToggled: {
@@ -101,8 +101,8 @@ BigscreenUI.ScrollablePage {
 
         BigscreenUI.SwitchDelegate {
             Layout.fillWidth: true
-            text: i18n("Dark pages")
-            description: i18n("Shows light pages in dark colors")
+            text: i18nc("@option:check", "Dark pages")
+            description: i18nc("@info", "Shows light pages in dark colors")
             icon.name: "lighttable"
             checked: BrowserSettings.forceDarkMode
             onToggled: {
@@ -113,7 +113,7 @@ BigscreenUI.ScrollablePage {
 
         BigscreenUI.ComboBoxDelegate {
             Layout.fillWidth: true
-            text: i18n("Page zoom")
+            text: i18nc("@label:listbox", "Page zoom")
             icon.name: "zoom"
             model: root.zoomLevels
             textRole: "text"
@@ -127,8 +127,8 @@ BigscreenUI.ScrollablePage {
 
         BigscreenUI.SwitchDelegate {
             Layout.fillWidth: true
-            text: i18n("Reopen tabs")
-            description: i18n("Brings back the tabs that were open when the browser last closed")
+            text: i18nc("@option:check", "Reopen tabs")
+            description: i18nc("@info", "Brings back the tabs that were open when the browser last closed")
             icon.name: "tab-duplicate"
             checked: BrowserSettings.restoreTabs
             onToggled: {
@@ -138,7 +138,7 @@ BigscreenUI.ScrollablePage {
         }
 
         SectionHeading {
-            text: i18n("Appearance")
+            text: i18nc("@title:group", "Appearance")
         }
 
         BigscreenUI.ColorSchemeDelegate {
@@ -146,14 +146,14 @@ BigscreenUI.ScrollablePage {
         }
 
         SectionHeading {
-            text: i18n("Remote control")
+            text: i18nc("@title:group", "Remote control")
         }
 
         BigscreenUI.ComboBoxDelegate {
             Layout.fillWidth: true
-            text: i18n("Arrow keys on pages")
+            text: i18nc("@label:listbox", "Arrow keys on pages")
             icon.name: "input-gamepad"
-            model: [i18n("Move between links"), i18n("Move a pointer")]
+            model: [i18nc("@item:inlistbox what the arrow keys do on pages", "Move between links"), i18nc("@item:inlistbox what the arrow keys do on pages", "Move a pointer")]
             currentIndex: BrowserSettings.pointerNavigation ? 1 : 0
             onActivated: index => {
                 BrowserSettings.pointerNavigation = index === 1;
@@ -163,7 +163,7 @@ BigscreenUI.ScrollablePage {
 
         BigscreenUI.ComboBoxDelegate {
             Layout.fillWidth: true
-            text: i18n("Pointer speed")
+            text: i18nc("@label:listbox", "Pointer speed")
             icon.name: "input-mouse"
             model: root.pointerSpeeds
             textRole: "text"
@@ -176,21 +176,21 @@ BigscreenUI.ScrollablePage {
         }
 
         SectionHeading {
-            text: i18n("Privacy")
+            text: i18nc("@title:group", "Privacy")
         }
 
         BigscreenUI.ButtonDelegate {
             id: clearDataButton
 
             Layout.fillWidth: true
-            text: i18n("Clear site data…")
-            description: i18n("Signs you out of sites, and forgets cached pages and permissions")
+            text: i18nc("@action:button", "Clear site data…")
+            description: i18nc("@info", "Signs you out of sites, and forgets cached pages and permissions")
             icon.name: "edit-clear"
             onClicked: clearDataDialog.open()
         }
 
         SectionHeading {
-            text: i18n("About")
+            text: i18nc("@title:group", "About")
         }
 
         BigscreenUI.AboutDelegate {
@@ -202,19 +202,19 @@ BigscreenUI.ScrollablePage {
     BigscreenUI.Dialog {
         id: clearDataDialog
 
-        title: i18n("Clear site data?")
+        title: i18nc("@title:window", "Clear site data?")
         standardButtons: T.Dialog.Cancel | T.Dialog.Ok
         openFocusItem: standardButton(T.Dialog.Cancel)
 
         contentItem: BigscreenUI.Label {
-            text: i18n("You will be signed out of sites.")
+            text: i18nc("@info", "You will be signed out of sites.")
             wrapMode: Text.Wrap
         }
 
-        Component.onCompleted: standardButton(T.Dialog.Ok).text = i18n("Clear")
+        Component.onCompleted: standardButton(T.Dialog.Ok).text = i18nc("@action:button", "Clear")
         onAccepted: {
             WebProfile.clearSiteData();
-            root.window.showMessage(i18n("Site data cleared"), "edit-clear");
+            root.window.showMessage(i18nc("@info:status", "Site data cleared"), "edit-clear");
         }
         onClosed: clearDataButton.forceActiveFocus()
     }

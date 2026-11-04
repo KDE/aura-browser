@@ -23,7 +23,6 @@ FocusScope {
     readonly property Main window: T.ApplicationWindow.window as Main
 
     signal closed()
-    signal pointerNavigationToggled()
 
     function open() {
         opened = true;
@@ -122,10 +121,10 @@ FocusScope {
                     text: {
                         const parts = [addressButton.host];
                         if (root.view?.loading) {
-                            parts.push(i18n("Loading… %1%", root.view.loadProgress));
+                            parts.push(i18nc("@info:status %1 is the page load progress in percent", "Loading… %1%", root.view.loadProgress));
                         }
                         if (root.view && Math.abs(root.view.zoomFactor - (root.window?.zoomFactor ?? 1)) > 0.01) {
-                            parts.push(i18n("Zoom %1%", Math.round(root.view.zoomFactor * 100)));
+                            parts.push(i18nc("@info:status %1 is the page zoom in percent", "Zoom %1%", Math.round(root.view.zoomFactor * 100)));
                         }
                         return parts.join("  ·  ");
                     }
@@ -153,7 +152,7 @@ FocusScope {
 
                 ControlButton {
                     id: backButton
-                    text: i18n("Back")
+                    text: i18nc("@action:button go back in page history", "Back")
                     icon.name: "go-previous"
                     enabled: root.view?.canGoBack ?? false
                     onClicked: root.view.goBack()
@@ -167,7 +166,7 @@ FocusScope {
                 }
                 ControlButton {
                     id: forwardButton
-                    text: i18n("Forward")
+                    text: i18nc("@action:button go forward in page history", "Forward")
                     icon.name: "go-next"
                     enabled: root.view?.canGoForward ?? false
                     onClicked: root.view.goForward()
@@ -179,7 +178,7 @@ FocusScope {
                 }
                 ControlButton {
                     id: homeButton
-                    text: i18n("Home")
+                    text: i18nc("@action:button leave the page and show the home screen", "Home")
                     icon.name: "go-home-symbolic"
                     onClicked: {
                         root.close();
@@ -195,7 +194,7 @@ FocusScope {
                     Layout.fillWidth: true
                     icon.name: root.view?.url.toString().startsWith("https:") ? "lock" : "globe"
                     text: root.view?.url.toString() ?? ""
-                    Accessible.name: i18n("Address: %1", text)
+                    Accessible.name: i18nc("@info accessible name, %1 is the page address", "Address: %1", text)
                     onClicked: {
                         const url = root.view?.url.toString() ?? "";
                         root.run(() => root.window.openAddress(url, false));
@@ -203,28 +202,28 @@ FocusScope {
                 }
 
                 ControlButton {
-                    text: root.view?.loading ? i18n("Stop") : i18n("Reload")
+                    text: root.view?.loading ? i18nc("@action:button stop loading the page", "Stop") : i18nc("@action:button reload the page", "Reload")
                     icon.name: root.view?.loading ? "process-stop" : "view-refresh"
                     onClicked: root.view.loading ? root.view.stop() : root.view.reload()
                 }
 
                 ControlButton {
-                    text: i18n("Zoom out")
+                    text: i18nc("@action:button", "Zoom out")
                     icon.name: "zoom-out"
                     onClicked: root.view.zoomFactor = Math.max(0.5, root.view.zoomFactor - 0.1)
                 }
                 ControlButton {
-                    text: i18n("Zoom in")
+                    text: i18nc("@action:button", "Zoom in")
                     icon.name: "zoom-in"
                     onClicked: root.view.zoomFactor = Math.min(3, root.view.zoomFactor + 0.1)
                 }
                 ControlButton {
-                    text: i18n("New tab")
+                    text: i18nc("@action:button", "New tab")
                     icon.name: "tab-new"
                     onClicked: root.run(() => root.window.openAddress("", true))
                 }
                 ControlButton {
-                    text: i18n("Close tab")
+                    text: i18nc("@action:button", "Close tab")
                     icon.name: "tab-close"
                     onClicked: root.run(() => root.window.closeTab(root.window.currentTab))
                 }
@@ -253,7 +252,7 @@ FocusScope {
             leftPadding: panel.anchors.leftMargin
             rightPadding: panel.anchors.rightMargin
 
-            title: i18np("1 tab", "%1 tabs", count)
+            title: i18ncp("@title:group", "1 tab", "%1 tabs", count)
             model: root.window?.tabs ?? null
             currentIndex: root.window?.currentTab ?? 0
             KeyNavigation.up: actions

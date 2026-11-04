@@ -56,7 +56,7 @@ BigscreenUI.Page {
                 BigscreenUI.Label {
                     Layout.fillWidth: true
                     Layout.bottomMargin: Kirigami.Units.gridUnit
-                    text: i18n("Browse the web")
+                    text: i18nc("@title", "Browse the web")
                     type: BigscreenUI.Label.Title
                     elide: Text.ElideRight
                 }
@@ -69,7 +69,7 @@ BigscreenUI.Page {
                     icon.name: "search"
                     icon.width: Kirigami.Units.iconSizes.medium
                     icon.height: Kirigami.Units.iconSizes.medium
-                    text: i18n("Search or enter address")
+                    text: i18nc("@action:button opens the address dialog", "Search or enter address")
                     textFont.pixelSize: BigscreenUI.Units.headingFontPixelSize
                     topPadding: Kirigami.Units.gridUnit * 1.25
                     bottomPadding: Kirigami.Units.gridUnit * 1.25
@@ -81,7 +81,7 @@ BigscreenUI.Page {
         BigscreenUI.ContentRail {
             id: tabsRail
 
-            title: i18np("1 open tab", "%1 open tabs", count)
+            title: i18ncp("@title:group", "1 open tab", "%1 open tabs", count)
             model: root.window?.tabs ?? null
             currentIndex: Math.max(0, root.window?.currentTab ?? 0)
 
@@ -112,7 +112,7 @@ BigscreenUI.Page {
 
         property int index: -1
 
-        title: i18n("Close this tab?")
+        title: i18nc("@title:window", "Close this tab?")
         standardButtons: T.Dialog.Cancel | T.Dialog.Ok
         openFocusItem: standardButton(T.Dialog.Ok)
 
@@ -125,7 +125,7 @@ BigscreenUI.Page {
             color: Kirigami.Theme.disabledTextColor
         }
 
-        Component.onCompleted: standardButton(T.Dialog.Ok).text = i18n("Close Tab")
+        Component.onCompleted: standardButton(T.Dialog.Ok).text = i18nc("@action:button", "Close Tab")
         onAccepted: root.window.closeTab(index)
         onClosed: root.restoreFocus()
     }

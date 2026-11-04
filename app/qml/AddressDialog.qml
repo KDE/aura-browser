@@ -33,7 +33,7 @@ T.Popup {
         const url = Utils.urlFromInput(input, BrowserSettings.searchEngine);
         const isSearch = url.startsWith(BrowserSettings.searchEngine);
         return [{
-            text: isSearch ? i18n("Search for \"%1\"", input) : i18n("Go to %1", input),
+            text: isSearch ? i18nc("@action:button suggestion, %1 is the typed text", "Search for \"%1\"", input) : i18nc("@action:button suggestion, %1 is the typed address", "Go to %1", input),
             description: isSearch ? "" : url,
             icon: isSearch ? "search" : "globe",
             input: input
@@ -106,7 +106,7 @@ T.Popup {
 
             BigscreenUI.Label {
                 Layout.fillWidth: true
-                text: root.inNewTab ? i18n("New tab") : i18n("Search or enter address")
+                text: root.inNewTab ? i18nc("@title address dialog, opening a new tab", "New tab") : i18nc("@title address dialog", "Search or enter address")
                 type: BigscreenUI.Label.Title
             }
 
@@ -116,7 +116,7 @@ T.Popup {
                 Layout.fillWidth: true
                 focus: true
                 font.pixelSize: BigscreenUI.Units.sectionFontPixelSize
-                placeholderText: i18n("Search the web, or type an address")
+                placeholderText: i18nc("@info:placeholder", "Search the web, or type an address")
                 inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText | Qt.ImhPreferLowercase
                 EnterKey.type: Qt.EnterKeyGo
                 KeyNavigation.down: suggestionList
