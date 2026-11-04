@@ -352,7 +352,7 @@ msgstr "Obnoví karty, které byly otevřené při posledním zavření prohlí�
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "Vzhled"
 
 #: qml/SettingsPage.qml:149
 #, kde-format

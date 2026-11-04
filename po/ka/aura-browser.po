@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-11-01 05:16+0100\n"
+"PO-Revision-Date: 2026-11-03 03:39+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -352,7 +352,7 @@ msgstr "დააბრუნებს ჩანართებს, რომლ
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgid "Appearance"
-msgstr ""
+msgstr "გარეგნობა"
 
 #: qml/SettingsPage.qml:149
 #, kde-format
