@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-03 00:57+0000\n"
+"POT-Creation-Date: 2026-11-05 00:58+0000\n"
 "PO-Revision-Date: 2026-11-01 09:48+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@gmail.com"
 
-#: main.cpp:49 qml/Main.qml:23 qml/Main.qml:162
+#: main.cpp:49
 #, kde-format
 msgid "Aura Browser"
 msgstr "Aura webbläsare"
@@ -58,361 +58,504 @@ msgid "Web pages to open"
 msgstr "Webbsidor att öppna"
 
 #: qml/AddressDialog.qml:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search for \"%1\""
+msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
 msgstr "Sök efter \"%1\""
 
 #: qml/AddressDialog.qml:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Go to %1"
+msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
 msgstr "Gå till %1"
 
-#: qml/AddressDialog.qml:109 qml/BrowserControls.qml:222
-#, kde-format
+#: qml/AddressDialog.qml:109
+#, fuzzy, kde-format
+#| msgid "New tab"
+msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
 msgstr "Ny flik"
 
-#: qml/AddressDialog.qml:109 qml/HomePage.qml:72
-#, kde-format
+#: qml/AddressDialog.qml:109
+#, fuzzy, kde-format
+#| msgid "Search or enter address"
+msgctxt "@title address dialog"
 msgid "Search or enter address"
 msgstr "Sök eller skriv in adress"
 
 #: qml/AddressDialog.qml:119
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search the web, or type an address"
+msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
 msgstr "Sök på webben eller skriv in en adress"
 
-#: qml/BrowserControls.qml:125
-#, kde-format
+#: qml/BrowserControls.qml:124
+#, fuzzy, kde-format
+#| msgid "Loading… %1%"
+msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
 msgstr "Laddar… %1 %"
 
-#: qml/BrowserControls.qml:128
-#, kde-format
+#: qml/BrowserControls.qml:127
+#, fuzzy, kde-format
+#| msgid "Zoom %1%"
+msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
 msgstr "Zooma %1 %"
 
-#: qml/BrowserControls.qml:156
-#, kde-format
+#: qml/BrowserControls.qml:155
+#, fuzzy, kde-format
+#| msgid "Back"
+msgctxt "@action:button go back in page history"
 msgid "Back"
 msgstr "Bakåt"
 
-#: qml/BrowserControls.qml:170
-#, kde-format
+#: qml/BrowserControls.qml:169
+#, fuzzy, kde-format
+#| msgid "Forward"
+msgctxt "@action:button go forward in page history"
 msgid "Forward"
 msgstr "Framåt"
 
-#: qml/BrowserControls.qml:182 qml/Main.qml:31
-#, kde-format
+#: qml/BrowserControls.qml:181
+#, fuzzy, kde-format
+#| msgid "Home"
+msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
 msgstr "Hem"
 
-#: qml/BrowserControls.qml:198
-#, kde-format
+#: qml/BrowserControls.qml:197
+#, fuzzy, kde-format
+#| msgid "Address: %1"
+msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
 msgstr "Adress: %1"
 
-#: qml/BrowserControls.qml:206
-#, kde-format
+#: qml/BrowserControls.qml:205
+#, fuzzy, kde-format
+#| msgid "Stop"
+msgctxt "@action:button stop loading the page"
 msgid "Stop"
 msgstr "Stoppa"
 
-#: qml/BrowserControls.qml:206
-#, kde-format
+#: qml/BrowserControls.qml:205
+#, fuzzy, kde-format
+#| msgid "Reload"
+msgctxt "@action:button reload the page"
 msgid "Reload"
 msgstr "Uppdatera"
 
-#: qml/BrowserControls.qml:212
-#, kde-format
+#: qml/BrowserControls.qml:211
+#, fuzzy, kde-format
+#| msgid "Zoom out"
+msgctxt "@action:button"
 msgid "Zoom out"
 msgstr "Zooma ut"
 
-#: qml/BrowserControls.qml:217
-#, kde-format
+#: qml/BrowserControls.qml:216
+#, fuzzy, kde-format
+#| msgid "Zoom in"
+msgctxt "@action:button"
 msgid "Zoom in"
 msgstr "Zooma in"
 
-#: qml/BrowserControls.qml:227
-#, kde-format
+#: qml/BrowserControls.qml:221
+#, fuzzy, kde-format
+#| msgid "New tab"
+msgctxt "@action:button"
+msgid "New tab"
+msgstr "Ny flik"
+
+#: qml/BrowserControls.qml:226
+#, fuzzy, kde-format
+#| msgid "Close tab"
+msgctxt "@action:button"
 msgid "Close tab"
 msgstr "Stäng flik"
 
-#: qml/BrowserControls.qml:256
-#, kde-format
+#: qml/BrowserControls.qml:255
+#, fuzzy, kde-format
+#| msgid "1 tab"
+#| msgid_plural "%1 tabs"
+msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
 msgstr[0] "1 flik"
 msgstr[1] "%1 flikar"
 
-#: qml/BrowserPage.qml:37
-#, kde-format
-msgid "Pointer: move with the arrows, press OK to click"
-msgstr "Pekare: flytta med pilarna, tryck på Ok för att klicka"
-
-#: qml/BrowserPage.qml:39
-#, kde-format
-msgid "Links: the arrows move between links"
-msgstr "Länkar: pilarna går mellan länkar"
-
-#: qml/BrowserPage.qml:168
-#, kde-format
+#: qml/BrowserPage.qml:155
+#, fuzzy, kde-format
+#| msgid "Let %1 use your microphone?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
 msgstr "Låt %1 använda mikrofonen?"
 
-#: qml/BrowserPage.qml:170
-#, kde-format
+#: qml/BrowserPage.qml:157
+#, fuzzy, kde-format
+#| msgid "Let %1 use your camera?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
 msgstr "Låt %1 använd kameran?"
 
-#: qml/BrowserPage.qml:172
-#, kde-format
+#: qml/BrowserPage.qml:159
+#, fuzzy, kde-format
+#| msgid "Let %1 use your camera and microphone?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
 msgstr "Låt %1 använda kameran och mikrofonen?"
 
-#: qml/BrowserPage.qml:175
-#, kde-format
+#: qml/BrowserPage.qml:162
+#, fuzzy, kde-format
+#| msgid "Let %1 see your screen?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
 msgstr "Låt %1 se skärmen?"
 
-#: qml/BrowserPage.qml:177
-#, kde-format
+#: qml/BrowserPage.qml:164
+#, fuzzy, kde-format
+#| msgid "Let %1 show notifications?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
 msgstr "Låt %1 visa underrättelser?"
 
-#: qml/BrowserPage.qml:179
-#, kde-format
+#: qml/BrowserPage.qml:166
+#, fuzzy, kde-format
+#| msgid "Let %1 know your location?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
 msgstr "Låt %1 få veta var du befinner dig?"
 
-#: qml/BrowserPage.qml:181
-#, kde-format
+#: qml/BrowserPage.qml:168
+#, fuzzy, kde-format
+#| msgid "Let %1 use the clipboard?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
 msgstr "Låt %1 använda klippbordet?"
 
-#: qml/BrowserPage.qml:183
-#, kde-format
+#: qml/BrowserPage.qml:170
+#, fuzzy, kde-format
+#| msgid "Let %1 use this feature?"
+msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
 msgstr "Låt %1 använda funktionen?"
 
-#: qml/BrowserPage.qml:190
-#, kde-format
+#: qml/BrowserPage.qml:177
+#, fuzzy, kde-format
+#| msgid "You can change your mind by clearing site data in the settings."
+msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
 msgstr "Du kan ändra dig genom att rensa webbplatsdata i inställningarna."
 
-#: qml/BrowserPage.qml:196
-#, kde-format
+#: qml/BrowserPage.qml:183
+#, fuzzy, kde-format
+#| msgid "Allow"
+msgctxt "@action:button grant a site permission"
 msgid "Allow"
 msgstr "Tillåt"
 
-#: qml/BrowserPage.qml:197
-#, kde-format
+#: qml/BrowserPage.qml:184
+#, fuzzy, kde-format
+#| msgid "Don't Allow"
+msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
 msgstr "Tillåt inte"
 
 #: qml/HomePage.qml:59
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Browse the web"
+msgctxt "@title"
 msgid "Browse the web"
 msgstr "Bläddra på webben"
 
+#: qml/HomePage.qml:72
+#, fuzzy, kde-format
+#| msgid "Search or enter address"
+msgctxt "@action:button opens the address dialog"
+msgid "Search or enter address"
+msgstr "Sök eller skriv in adress"
+
 #: qml/HomePage.qml:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1 open tab"
+#| msgid_plural "%1 open tabs"
+msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
 msgstr[0] "1 öppen flik"
 msgstr[1] "%1 öppna flikar"
 
 #: qml/HomePage.qml:115
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Close this tab?"
+msgctxt "@title:window"
 msgid "Close this tab?"
 msgstr "Stäng den här fliken?"
 
 #: qml/HomePage.qml:128
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Close Tab"
+msgctxt "@action:button"
 msgid "Close Tab"
 msgstr "Stäng flik"
 
-#: qml/Main.qml:36 qml/SettingsPage.qml:58
-#, kde-format
+#: qml/Main.qml:23
+#, fuzzy, kde-format
+#| msgid "Aura Browser"
+msgctxt "@title:window"
+msgid "Aura Browser"
+msgstr "Aura webbläsare"
+
+#: qml/Main.qml:31
+#, fuzzy, kde-format
+#| msgid "Home"
+msgctxt "@action:button sidebar page"
+msgid "Home"
+msgstr "Hem"
+
+#: qml/Main.qml:36
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Inställningar"
 
+#: qml/Main.qml:162
+#, fuzzy, kde-format
+#| msgid "Aura Browser"
+msgctxt "@title sidebar header"
+msgid "Aura Browser"
+msgstr "Aura webbläsare"
+
 #: qml/Main.qml:233
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Downloading %1"
+msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
 msgstr "Laddar ner %1"
 
 #: qml/Main.qml:238
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Saved %1 to Downloads"
+msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
 msgstr "Sparade %1 i Nerladdningar"
 
 #: qml/Main.qml:240
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Could not download %1: %2"
+msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
 msgstr "Kunde inte ladda ner %1: %2"
 
 #: qml/SettingsPage.qml:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Automatic (%1%)"
+msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
 msgstr "Automatisk (%1 %)"
 
-#: qml/SettingsPage.qml:32
+#: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
+#: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
 #, kde-format
-msgid "100%"
-msgstr "100 %"
-
-#: qml/SettingsPage.qml:33
-#, kde-format
-msgid "125%"
-msgstr "125 %"
-
-#: qml/SettingsPage.qml:34
-#, kde-format
-msgid "150%"
-msgstr "150 %"
-
-#: qml/SettingsPage.qml:35
-#, kde-format
-msgid "175%"
-msgstr "175 %"
-
-#: qml/SettingsPage.qml:36
-#, kde-format
-msgid "200%"
-msgstr "200 %"
+msgctxt "@item:inlistbox page zoom, %1 is a percentage"
+msgid "%1%"
+msgstr ""
 
 #: qml/SettingsPage.qml:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Slow"
+msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
 msgstr "Långsam"
 
 #: qml/SettingsPage.qml:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Normal"
+msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
 msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Fast"
+msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
 msgstr "Snabb"
 
 #: qml/SettingsPage.qml:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Fastest"
+msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
 msgstr "Snabbast"
 
+#: qml/SettingsPage.qml:58
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@title"
+msgid "Settings"
+msgstr "Inställningar"
+
 #: qml/SettingsPage.qml:69
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Browsing"
+msgctxt "@title:group"
 msgid "Browsing"
 msgstr "Bläddrar"
 
 #: qml/SettingsPage.qml:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search engine"
+msgctxt "@label:listbox"
 msgid "Search engine"
 msgstr "Söktjänst"
 
 #: qml/SettingsPage.qml:92
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Block ads"
+msgctxt "@option:check"
 msgid "Block ads"
 msgstr "Blockera reklam"
 
 #: qml/SettingsPage.qml:93
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hides ads and trackers on most sites"
+msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
 msgstr "Döljer reklam och spårning för de flesta webbplatser"
 
 #: qml/SettingsPage.qml:104
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Dark pages"
+msgctxt "@option:check"
 msgid "Dark pages"
 msgstr "Mörka sidor"
 
 #: qml/SettingsPage.qml:105
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shows light pages in dark colors"
+msgctxt "@info"
 msgid "Shows light pages in dark colors"
 msgstr "Visar ljusa sidor med mörka färger"
 
 #: qml/SettingsPage.qml:116
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Page zoom"
+msgctxt "@label:listbox"
 msgid "Page zoom"
 msgstr "Zooma till sida"
 
 #: qml/SettingsPage.qml:130
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Reopen tabs"
+msgctxt "@option:check"
 msgid "Reopen tabs"
 msgstr "Öppna flikar igen"
 
 #: qml/SettingsPage.qml:131
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Brings back the tabs that were open when the browser last closed"
+msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr "Återställer flikarna som var öppna när webbläsaren senast stängdes"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
+msgctxt "@title:group"
 msgid "Appearance"
 msgstr ""
 
 #: qml/SettingsPage.qml:149
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Remote control"
+msgctxt "@title:group"
 msgid "Remote control"
 msgstr "Fjärrkontroll"
 
 #: qml/SettingsPage.qml:154
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Arrow keys on pages"
+msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
 msgstr "Piltangenter på sidor"
 
 #: qml/SettingsPage.qml:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Move between links"
+msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
 msgstr "Går mellan länkar"
 
 #: qml/SettingsPage.qml:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Move a pointer"
+msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
 msgstr "Flyttar en pekare"
 
 #: qml/SettingsPage.qml:166
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Pointer speed"
+msgctxt "@label:listbox"
 msgid "Pointer speed"
 msgstr "Pekarhastighet"
 
 #: qml/SettingsPage.qml:179
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Privacy"
+msgctxt "@title:group"
 msgid "Privacy"
 msgstr "Integritet"
 
 #: qml/SettingsPage.qml:186
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clear site data…"
+msgctxt "@action:button"
 msgid "Clear site data…"
 msgstr "Rensa webbplatsdata…"
 
 #: qml/SettingsPage.qml:187
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Signs you out of sites, and forgets cached pages and permissions"
+msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr "Loggar ut från webbplatser, och glömmer lagrade sidor och rättigheter"
 
 #: qml/SettingsPage.qml:193
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "About"
+msgctxt "@title:group"
 msgid "About"
 msgstr "Om"
 
 #: qml/SettingsPage.qml:205
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clear site data?"
+msgctxt "@title:window"
 msgid "Clear site data?"
 msgstr "Rensa webbplatsdata?"
 
 #: qml/SettingsPage.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "You will be signed out of sites."
+msgctxt "@info"
 msgid "You will be signed out of sites."
 msgstr "Du loggas ut från webbplatser."
 
 #: qml/SettingsPage.qml:214
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clear"
+msgctxt "@action:button"
 msgid "Clear"
 msgstr "Rensa"
 
 #: qml/SettingsPage.qml:217
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Site data cleared"
+msgctxt "@info:status"
 msgid "Site data cleared"
 msgstr "Webbplatsdata rensad"
 
@@ -428,14 +571,39 @@ msgid "Current"
 msgstr "Aktuell"
 
 #: qml/WebView.qml:125
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Blocked a pop-up window"
+msgctxt "@info:status"
 msgid "Blocked a pop-up window"
 msgstr "Blockerade ett meddelandefönster"
 
 #: qml/WebView.qml:146
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "This page keeps crashing, so it was stopped"
+msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
 msgstr "Sidan kraschar hela tiden, så den stoppades"
+
+#~ msgid "Pointer: move with the arrows, press OK to click"
+#~ msgstr "Pekare: flytta med pilarna, tryck på Ok för att klicka"
+
+#~ msgid "Links: the arrows move between links"
+#~ msgstr "Länkar: pilarna går mellan länkar"
+
+#~ msgid "100%"
+#~ msgstr "100 %"
+
+#~ msgid "125%"
+#~ msgstr "125 %"
+
+#~ msgid "150%"
+#~ msgstr "150 %"
+
+#~ msgid "175%"
+#~ msgstr "175 %"
+
+#~ msgid "200%"
+#~ msgstr "200 %"
 
 #~ msgid "Continue browsing"
 #~ msgstr "Fortsätt bläddra"
