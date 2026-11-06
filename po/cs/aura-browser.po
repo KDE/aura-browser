@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2026-11-02 01:36+0100\n"
+"PO-Revision-Date: 2026-11-05 22:42+0100\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.08.2\n"
+"X-Generator: Poedit 3.10\n"
 
 #: qml/AudioBox.qml:43
 #, kde-format
@@ -49,7 +49,7 @@ msgstr "Stiskněte klávesu \"Esc\" nebo tlačítko [←] Zpět pro zavření"
 #: qml/BookmarkManager.qml:213
 #, kde-format
 msgid "Search Bookmarks"
-msgstr "Hledat záložky..."
+msgstr "Hledat záložky"
 
 #: qml/BookmarkManager.qml:242
 #, kde-format
