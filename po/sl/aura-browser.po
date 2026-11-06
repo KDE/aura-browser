@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2026-11-03 07:06+0100\n"
+"PO-Revision-Date: 2026-11-05 09:39+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -56,128 +56,109 @@ msgid "Web pages to open"
 msgstr "Spletne strani za odpiranje"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search for \"%1\""
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
 msgstr "Išči \"%1\""
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Go to %1"
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
 msgstr "Pojdi na %1"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "New tab"
+#, kde-format
 msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
 msgstr "Nov zavihek"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Search or enter address"
+#, kde-format
 msgctxt "@title address dialog"
 msgid "Search or enter address"
 msgstr "Išči ali vnesi naslov"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search the web, or type an address"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
 msgstr "Išči po spletu ali vnesi naslov"
 
 #: qml/BrowserControls.qml:124
-#, fuzzy, kde-format
-#| msgid "Loading… %1%"
+#, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
-msgstr "Nalaganje … %1%"
+msgstr "Nalaganje… %1%"
 
 #: qml/BrowserControls.qml:127
-#, fuzzy, kde-format
-#| msgid "Zoom %1%"
+#, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
 msgstr "Povečava %1%"
 
 #: qml/BrowserControls.qml:155
-#, fuzzy, kde-format
-#| msgid "Back"
+#, kde-format
 msgctxt "@action:button go back in page history"
 msgid "Back"
 msgstr "Nazaj"
 
 #: qml/BrowserControls.qml:169
-#, fuzzy, kde-format
-#| msgid "Forward"
+#, kde-format
 msgctxt "@action:button go forward in page history"
 msgid "Forward"
 msgstr "Naprej"
 
 #: qml/BrowserControls.qml:181
-#, fuzzy, kde-format
-#| msgid "Home"
+#, kde-format
 msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
 msgstr "Domov"
 
 #: qml/BrowserControls.qml:197
-#, fuzzy, kde-format
-#| msgid "Address: %1"
+#, kde-format
 msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
 msgstr "Naslov: %1"
 
 #: qml/BrowserControls.qml:205
-#, fuzzy, kde-format
-#| msgid "Stop"
+#, kde-format
 msgctxt "@action:button stop loading the page"
 msgid "Stop"
-msgstr "Ustavi"
+msgstr "Zaustavi"
 
 #: qml/BrowserControls.qml:205
-#, fuzzy, kde-format
-#| msgid "Reload"
+#, kde-format
 msgctxt "@action:button reload the page"
 msgid "Reload"
 msgstr "Ponovno naloži"
 
 #: qml/BrowserControls.qml:211
-#, fuzzy, kde-format
-#| msgid "Zoom out"
+#, kde-format
 msgctxt "@action:button"
 msgid "Zoom out"
 msgstr "Pomanjšaj"
 
 #: qml/BrowserControls.qml:216
-#, fuzzy, kde-format
-#| msgid "Zoom in"
+#, kde-format
 msgctxt "@action:button"
 msgid "Zoom in"
 msgstr "Povečaj"
 
 #: qml/BrowserControls.qml:221
-#, fuzzy, kde-format
-#| msgid "New tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "New tab"
 msgstr "Nov zavihek"
 
 #: qml/BrowserControls.qml:226
-#, fuzzy, kde-format
-#| msgid "Close tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close tab"
 msgstr "Zapri zavihek"
 
 #: qml/BrowserControls.qml:255
-#, fuzzy, kde-format
-#| msgid "1 tab"
-#| msgid_plural "%1 tabs"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
@@ -187,102 +168,87 @@ msgstr[2] "%1 zavihka"
 msgstr[3] "%1 zavihki"
 
 #: qml/BrowserPage.qml:155
-#, fuzzy, kde-format
-#| msgid "Let %1 use your microphone?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
-msgstr "Dovolite %1 uporabo mikrofona?"
+msgstr "Naj %1 uporabi vaš mikrofon?"
 
 #: qml/BrowserPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Let %1 use your camera?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
-msgstr "Dovolite %1 uporabo kamere?"
+msgstr "Naj %1 uporabi vašo kamero?"
 
 #: qml/BrowserPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Let %1 use your camera and microphone?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
-msgstr "Dovolite %1 uporabo kamere in mikrofona?"
+msgstr "Naj %1 uporabi vašo kamero in mikrofon?"
 
 #: qml/BrowserPage.qml:162
-#, fuzzy, kde-format
-#| msgid "Let %1 see your screen?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
-msgstr "Dovolite %1 dostop do zaslona?"
+msgstr "Naj %1 vidi vaš zaslon?"
 
 #: qml/BrowserPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Let %1 show notifications?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
-msgstr "Dovolite %1 prikazovanje obvestil?"
+msgstr "Naj %1 prikazuje obvestila?"
 
 #: qml/BrowserPage.qml:166
-#, fuzzy, kde-format
-#| msgid "Let %1 know your location?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
-msgstr "Dovolite %1 dostop do vaše lokacije?"
+msgstr "Naj %1 pozna vašo lokacijo?"
 
 #: qml/BrowserPage.qml:168
-#, fuzzy, kde-format
-#| msgid "Let %1 use the clipboard?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
-msgstr "Dovolite %1 uporabo odložišča?"
+msgstr "Naj %1 uporabi odložišče?"
 
 #: qml/BrowserPage.qml:170
-#, fuzzy, kde-format
-#| msgid "Let %1 use this feature?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
-msgstr "Dovolite %1 uporabo te funkcije?"
+msgstr "Naj %1 uporabi to zmožnost?"
 
 #: qml/BrowserPage.qml:177
-#, fuzzy, kde-format
-#| msgid "You can change your mind by clearing site data in the settings."
+#, kde-format
 msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
 msgstr ""
-"Svojo odločitev lahko spremenite tako, da v nastavitvah izbrišete podatke "
+"Svojo odločitev lahko spremenite tako, da v nastavitvah počistite podatke "
 "spletnega mesta."
 
 #: qml/BrowserPage.qml:183
-#, fuzzy, kde-format
-#| msgid "Allow"
+#, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
 msgstr "Dovoli"
 
 #: qml/BrowserPage.qml:184
-#, fuzzy, kde-format
-#| msgid "Don't Allow"
+#, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
 msgstr "Ne dovoli"
 
 #: qml/HomePage.qml:59
-#, fuzzy, kde-format
-#| msgid "Browse the web"
+#, kde-format
 msgctxt "@title"
 msgid "Browse the web"
 msgstr "Brskaj po spletu"
 
 #: qml/HomePage.qml:72
-#, fuzzy, kde-format
-#| msgid "Search or enter address"
+#, kde-format
 msgctxt "@action:button opens the address dialog"
 msgid "Search or enter address"
 msgstr "Išči ali vnesi naslov"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "1 open tab"
-#| msgid_plural "%1 open tabs"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
@@ -292,71 +258,61 @@ msgstr[2] "%1 odprta zavihka"
 msgstr[3] "%1odprti zavihki"
 
 #: qml/HomePage.qml:115
-#, fuzzy, kde-format
-#| msgid "Close this tab?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Close this tab?"
 msgstr "Naj zaprem ta zavihek?"
 
 #: qml/HomePage.qml:128
-#, fuzzy, kde-format
-#| msgid "Close Tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close Tab"
 msgstr "Zapri zavihek"
 
 #: qml/Main.qml:23
-#, fuzzy, kde-format
-#| msgid "Aura Browser"
+#, kde-format
 msgctxt "@title:window"
 msgid "Aura Browser"
 msgstr "Brskalnik Aura"
 
 #: qml/Main.qml:31
-#, fuzzy, kde-format
-#| msgid "Home"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
 msgstr "Domov"
 
 #: qml/Main.qml:36
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Nastavitve"
 
 #: qml/Main.qml:162
-#, fuzzy, kde-format
-#| msgid "Aura Browser"
+#, kde-format
 msgctxt "@title sidebar header"
 msgid "Aura Browser"
 msgstr "Brskalnik Aura"
 
 #: qml/Main.qml:233
-#, fuzzy, kde-format
-#| msgid "Downloading %1"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
-msgstr "Prenašanje.. %1"
+msgstr "Prenašanje %1"
 
 #: qml/Main.qml:238
-#, fuzzy, kde-format
-#| msgid "Saved %1 to Downloads"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
 msgstr "Shrani %1 v Prenose"
 
 #: qml/Main.qml:240
-#, fuzzy, kde-format
-#| msgid "Could not download %1: %2"
+#, kde-format
 msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
 msgstr "Ni bilo mogoče prenesti %1: %2"
 
 #: qml/SettingsPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Automatic (%1%)"
+#, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
 msgstr "Samodejno (%1%)"
@@ -366,201 +322,173 @@ msgstr "Samodejno (%1%)"
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: qml/SettingsPage.qml:40
-#, fuzzy, kde-format
-#| msgid "Slow"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
 msgstr "Počasno"
 
 #: qml/SettingsPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Normal"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
 msgstr "Normalno"
 
 #: qml/SettingsPage.qml:42
-#, fuzzy, kde-format
-#| msgid "Fast"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
 msgstr "Hitro"
 
 #: qml/SettingsPage.qml:43
-#, fuzzy, kde-format
-#| msgid "Fastest"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
 msgstr "Najhitreje"
 
 #: qml/SettingsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@title"
 msgid "Settings"
 msgstr "Nastavitve"
 
 #: qml/SettingsPage.qml:69
-#, fuzzy, kde-format
-#| msgid "Browsing"
+#, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
 msgstr "Brskanje"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search engine"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Search engine"
 msgstr "Iskalnik"
 
 #: qml/SettingsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Block ads"
+#, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
-msgstr "Blokiranje oglasov"
+msgstr "Blokiraj oglase"
 
 #: qml/SettingsPage.qml:93
-#, fuzzy, kde-format
-#| msgid "Hides ads and trackers on most sites"
+#, kde-format
 msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
 msgstr "Skrije oglase in sledilnike na večini spletnih mest"
 
 #: qml/SettingsPage.qml:104
-#, fuzzy, kde-format
-#| msgid "Dark pages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Dark pages"
 msgstr "Temne strani"
 
 #: qml/SettingsPage.qml:105
-#, fuzzy, kde-format
-#| msgid "Shows light pages in dark colors"
+#, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
 msgstr "Prikaže svetle strani v temnih barvah"
 
 #: qml/SettingsPage.qml:116
-#, fuzzy, kde-format
-#| msgid "Page zoom"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
 msgstr "Povečava strani"
 
 #: qml/SettingsPage.qml:130
-#, fuzzy, kde-format
-#| msgid "Reopen tabs"
+#, kde-format
 msgctxt "@option:check"
 msgid "Reopen tabs"
-msgstr "Ponovno odpiranje zavihkov"
+msgstr "Ponovno odpri zavihke"
 
 #: qml/SettingsPage.qml:131
-#, fuzzy, kde-format
-#| msgid "Brings back the tabs that were open when the browser last closed"
+#, kde-format
 msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr "Ponovno odpre zavihke, ki so bili odprti ob zadnjem zaprtju brskalnika"
 
 #: qml/SettingsPage.qml:141
-#, fuzzy, kde-format
-#| msgid "Appearance"
+#, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
 msgstr "Videz"
 
 #: qml/SettingsPage.qml:149
-#, fuzzy, kde-format
-#| msgid "Remote control"
+#, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
 msgstr "Daljinsko upravljanje"
 
 #: qml/SettingsPage.qml:154
-#, fuzzy, kde-format
-#| msgid "Arrow keys on pages"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
 msgstr "Puščične tipke na straneh"
 
 #: qml/SettingsPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Move between links"
+#, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
-msgstr "Premikanje med povezavami"
+msgstr "Premikaj med povezavami"
 
 #: qml/SettingsPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Move a pointer"
+#, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
-msgstr "Premikanje kazalca"
+msgstr "Premakni kazalec"
 
 #: qml/SettingsPage.qml:166
-#, fuzzy, kde-format
-#| msgid "Pointer speed"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Pointer speed"
 msgstr "Hitrost kazalca"
 
 #: qml/SettingsPage.qml:179
-#, fuzzy, kde-format
-#| msgid "Privacy"
+#, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
 msgstr "Zasebnost"
 
 #: qml/SettingsPage.qml:186
-#, fuzzy, kde-format
-#| msgid "Clear site data…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear site data…"
-msgstr "Počisti podatke spletnih mest …"
+msgstr "Počisti podatke spletnih mest…"
 
 #: qml/SettingsPage.qml:187
-#, fuzzy, kde-format
-#| msgid "Signs you out of sites, and forgets cached pages and permissions"
+#, kde-format
 msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
 "Odjavi vas s spletnih mest ter izbriše predpomnjene strani in dovoljenja"
 
 #: qml/SettingsPage.qml:193
-#, fuzzy, kde-format
-#| msgid "About"
+#, kde-format
 msgctxt "@title:group"
 msgid "About"
 msgstr "O programu"
 
 #: qml/SettingsPage.qml:205
-#, fuzzy, kde-format
-#| msgid "Clear site data?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Clear site data?"
 msgstr "Naj počistim podatke spletišča?"
 
 #: qml/SettingsPage.qml:210
-#, fuzzy, kde-format
-#| msgid "You will be signed out of sites."
+#, kde-format
 msgctxt "@info"
 msgid "You will be signed out of sites."
 msgstr "Odjavljeni boste s spletišč."
 
 #: qml/SettingsPage.qml:214
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
 msgstr "Počisti"
 
 #: qml/SettingsPage.qml:217
-#, fuzzy, kde-format
-#| msgid "Site data cleared"
+#, kde-format
 msgctxt "@info:status"
 msgid "Site data cleared"
 msgstr "Podatki spletišč so bili počiščeni"
@@ -577,18 +505,16 @@ msgid "Current"
 msgstr "Trenutni"
 
 #: qml/WebView.qml:125
-#, fuzzy, kde-format
-#| msgid "Blocked a pop-up window"
+#, kde-format
 msgctxt "@info:status"
 msgid "Blocked a pop-up window"
 msgstr "Blokirano pojavno okno"
 
 #: qml/WebView.qml:146
-#, fuzzy, kde-format
-#| msgid "This page keeps crashing, so it was stopped"
+#, kde-format
 msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
-msgstr "Ta stran se nenehno sesuva, zato je bilo ustavljeno"
+msgstr "Ta stran se nenehno sesuva, zato je bila ustavljena"
 
 #~ msgid "Pointer: move with the arrows, press OK to click"
 #~ msgstr "Kazalec: premikajte ga s puščicami, za klik pritisnite OK"
