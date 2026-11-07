@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2026-11-05 13:49+0200\n"
+"PO-Revision-Date: 2026-11-06 11:47+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -219,13 +219,13 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "לאפשר ל־%1 להשתמש בלוח הגזירים?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "לאפשר ל־%1 להשתמש ביכולת הזאת?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
@@ -237,19 +237,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
-msgstr ""
+msgstr "לאפשר"
 
 #: qml/BrowserPage.qml:184
 #, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
-msgstr ""
+msgstr "לא לאפשר"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgctxt "@title"
 msgid "Browse the web"
-msgstr ""
+msgstr "גלישה באינטרנט"
 
 #: qml/HomePage.qml:72
 #, fuzzy, kde-format
@@ -294,7 +294,7 @@ msgstr "דפדפן הילה"
 #, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
-msgstr ""
+msgstr "בית"
 
 #: qml/Main.qml:36
 #, fuzzy, kde-format
@@ -321,7 +321,7 @@ msgstr "מתבצעת הורדה… %1"
 #, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "%1 נשמר להורדות"
 
 #: qml/Main.qml:240
 #, fuzzy, kde-format
@@ -378,7 +378,7 @@ msgstr "הגדרות"
 #, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
-msgstr ""
+msgstr "דפדפוף"
 
 #: qml/SettingsPage.qml:75
 #, fuzzy, kde-format
@@ -391,7 +391,7 @@ msgstr "מנוע חיפוש"
 #, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
-msgstr ""
+msgstr "חסימת פרסומות"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
@@ -409,13 +409,13 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "הצגת עמודים בהירים בצבעים כהים"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
-msgstr ""
+msgstr "תקריב עמוד"
 
 #: qml/SettingsPage.qml:130
 #, fuzzy, kde-format
@@ -434,13 +434,13 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
-msgstr ""
+msgstr "מראה"
 
 #: qml/SettingsPage.qml:149
 #, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
-msgstr ""
+msgstr "שליטה מרחוק"
 
 #: qml/SettingsPage.qml:154
 #, kde-format
@@ -452,7 +452,7 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
-msgstr ""
+msgstr "מעבר בין קישורים"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
@@ -470,7 +470,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
-msgstr ""
+msgstr "פרטיות"
 
 #: qml/SettingsPage.qml:186
 #, kde-format
@@ -488,7 +488,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "About"
-msgstr ""
+msgstr "על אודות"
 
 #: qml/SettingsPage.qml:205
 #, kde-format

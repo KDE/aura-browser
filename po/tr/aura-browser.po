@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2026-11-03 21:25+0300\n"
+"PO-Revision-Date: 2026-11-06 19:38+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -58,194 +58,166 @@ msgid "Web pages to open"
 msgstr "Açılacak web sayfaları"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search for \"%1\""
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
 msgstr "Ara: “%1”"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Go to %1"
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
 msgstr "Git: %1"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "New tab"
+#, kde-format
 msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
 msgstr "Yeni Sekme"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Search or enter address"
+#, kde-format
 msgctxt "@title address dialog"
 msgid "Search or enter address"
-msgstr "Arama yapın veya bir adres girin"
+msgstr "Arama Yap veya Adres Gir"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search the web, or type an address"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
 msgstr "Web’de arama yapın veya bir adres girin"
 
 #: qml/BrowserControls.qml:124
-#, fuzzy, kde-format
-#| msgid "Loading… %1%"
+#, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
 msgstr "Yükleniyor… %%1"
 
 #: qml/BrowserControls.qml:127
-#, fuzzy, kde-format
-#| msgid "Zoom %1%"
+#, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
 msgstr "Yakınlaştırma: %%1"
 
 #: qml/BrowserControls.qml:155
-#, fuzzy, kde-format
-#| msgid "Back"
+#, kde-format
 msgctxt "@action:button go back in page history"
 msgid "Back"
 msgstr "Geri"
 
 #: qml/BrowserControls.qml:169
-#, fuzzy, kde-format
-#| msgid "Forward"
+#, kde-format
 msgctxt "@action:button go forward in page history"
 msgid "Forward"
 msgstr "İleri"
 
 #: qml/BrowserControls.qml:181
-#, fuzzy, kde-format
-#| msgid "Home"
+#, kde-format
 msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
 msgstr "Ana Sayfa"
 
 #: qml/BrowserControls.qml:197
-#, fuzzy, kde-format
-#| msgid "Address: %1"
+#, kde-format
 msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
 msgstr "Adres: %1"
 
 #: qml/BrowserControls.qml:205
-#, fuzzy, kde-format
-#| msgid "Stop"
+#, kde-format
 msgctxt "@action:button stop loading the page"
 msgid "Stop"
 msgstr "Durdur"
 
 #: qml/BrowserControls.qml:205
-#, fuzzy, kde-format
-#| msgid "Reload"
+#, kde-format
 msgctxt "@action:button reload the page"
 msgid "Reload"
 msgstr "Yeniden Yükle"
 
 #: qml/BrowserControls.qml:211
-#, fuzzy, kde-format
-#| msgid "Zoom out"
+#, kde-format
 msgctxt "@action:button"
 msgid "Zoom out"
 msgstr "Uzaklaştır"
 
 #: qml/BrowserControls.qml:216
-#, fuzzy, kde-format
-#| msgid "Zoom in"
+#, kde-format
 msgctxt "@action:button"
 msgid "Zoom in"
 msgstr "Yakınlaştır"
 
 #: qml/BrowserControls.qml:221
-#, fuzzy, kde-format
-#| msgid "New tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "New tab"
 msgstr "Yeni Sekme"
 
 #: qml/BrowserControls.qml:226
-#, fuzzy, kde-format
-#| msgid "Close tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close tab"
 msgstr "Sekmeyi Kapat"
 
 #: qml/BrowserControls.qml:255
-#, fuzzy, kde-format
-#| msgid "1 tab"
-#| msgid_plural "%1 tabs"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] "1 sekme"
-msgstr[1] "%1 sekme"
+msgstr[0] "1 Sekme"
+msgstr[1] "%1 Sekme"
 
 #: qml/BrowserPage.qml:155
-#, fuzzy, kde-format
-#| msgid "Let %1 use your microphone?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
 msgstr "%1 sitesinin mikrofonunuzu kullanmasına izin verilsin mi?"
 
 #: qml/BrowserPage.qml:157
-#, fuzzy, kde-format
-#| msgid "Let %1 use your camera?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
 msgstr "%1 sitesinin kameranızı kullanmasına izin verilsin mi?"
 
 #: qml/BrowserPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Let %1 use your camera and microphone?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
 msgstr ""
 "%1 sitesinin kameranızı ve mikrofonunuzu kullanmasına izin verilsin mi?"
 
 #: qml/BrowserPage.qml:162
-#, fuzzy, kde-format
-#| msgid "Let %1 see your screen?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
 msgstr "%1 sitesinin ekranınızı görmesine izin verilsin mi?"
 
 #: qml/BrowserPage.qml:164
-#, fuzzy, kde-format
-#| msgid "Let %1 show notifications?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
 msgstr "%1 sitesinin bildirimler göstermesine izin verilsin mi?"
 
 #: qml/BrowserPage.qml:166
-#, fuzzy, kde-format
-#| msgid "Let %1 know your location?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
 msgstr "%1 sitesinin konumunuzu bilmesine izin verilsin mi?"
 
 #: qml/BrowserPage.qml:168
-#, fuzzy, kde-format
-#| msgid "Let %1 use the clipboard?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
 msgstr "%1 sitesinin panonuzu kullanmasına izin verilsin mi?"
 
 #: qml/BrowserPage.qml:170
-#, fuzzy, kde-format
-#| msgid "Let %1 use this feature?"
+#, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
 msgstr "%1 sitesinin bu özelliği kullanmasına izin verilsin mi?"
 
 #: qml/BrowserPage.qml:177
-#, fuzzy, kde-format
-#| msgid "You can change your mind by clearing site data in the settings."
+#, kde-format
 msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
 msgstr ""
@@ -253,109 +225,93 @@ msgstr ""
 "bunu sıfırlayabilirsiniz."
 
 #: qml/BrowserPage.qml:183
-#, fuzzy, kde-format
-#| msgid "Allow"
+#, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
 msgstr "İzin Ver"
 
 #: qml/BrowserPage.qml:184
-#, fuzzy, kde-format
-#| msgid "Don't Allow"
+#, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
 msgstr "İzin Verme"
 
 #: qml/HomePage.qml:59
-#, fuzzy, kde-format
-#| msgid "Browse the web"
+#, kde-format
 msgctxt "@title"
 msgid "Browse the web"
-msgstr "Web’e göz at"
+msgstr "Web’e Göz At"
 
 #: qml/HomePage.qml:72
-#, fuzzy, kde-format
-#| msgid "Search or enter address"
+#, kde-format
 msgctxt "@action:button opens the address dialog"
 msgid "Search or enter address"
-msgstr "Arama yapın veya bir adres girin"
+msgstr "Arama Yap veya Adres Gir"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "1 open tab"
-#| msgid_plural "%1 open tabs"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "1 açık sekme"
-msgstr[1] "%1 açık sekme"
+msgstr[0] "1 Açık Sekme"
+msgstr[1] "%1 Açık Sekme"
 
 #: qml/HomePage.qml:115
-#, fuzzy, kde-format
-#| msgid "Close this tab?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Close this tab?"
-msgstr "Bu sekme kapatılsın mı?"
+msgstr "Sekmeyi Kapat?"
 
 #: qml/HomePage.qml:128
-#, fuzzy, kde-format
-#| msgid "Close Tab"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close Tab"
 msgstr "Sekmeyi Kapat"
 
 #: qml/Main.qml:23
-#, fuzzy, kde-format
-#| msgid "Aura Browser"
+#, kde-format
 msgctxt "@title:window"
 msgid "Aura Browser"
 msgstr "Aura Tarayıcı"
 
 #: qml/Main.qml:31
-#, fuzzy, kde-format
-#| msgid "Home"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
 msgstr "Ana Sayfa"
 
 #: qml/Main.qml:36
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Ayarlar"
 
 #: qml/Main.qml:162
-#, fuzzy, kde-format
-#| msgid "Aura Browser"
+#, kde-format
 msgctxt "@title sidebar header"
 msgid "Aura Browser"
 msgstr "Aura Tarayıcı"
 
 #: qml/Main.qml:233
-#, fuzzy, kde-format
-#| msgid "Downloading %1"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
 msgstr "İndiriliyor: %1"
 
 #: qml/Main.qml:238
-#, fuzzy, kde-format
-#| msgid "Saved %1 to Downloads"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
 msgstr "%1, İndirilenler’e kaydedildi"
 
 #: qml/Main.qml:240
-#, fuzzy, kde-format
-#| msgid "Could not download %1: %2"
+#, kde-format
 msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
 msgstr "%1 indirilemedi: %2"
 
 #: qml/SettingsPage.qml:31
-#, fuzzy, kde-format
-#| msgid "Automatic (%1%)"
+#, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
 msgstr "Otomatik (%%1)"
@@ -365,102 +321,88 @@ msgstr "Otomatik (%%1)"
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%%1"
 
 #: qml/SettingsPage.qml:40
-#, fuzzy, kde-format
-#| msgid "Slow"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
 msgstr "Yavaş"
 
 #: qml/SettingsPage.qml:41
-#, fuzzy, kde-format
-#| msgid "Normal"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
 msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
-#, fuzzy, kde-format
-#| msgid "Fast"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
 msgstr "Hızlı"
 
 #: qml/SettingsPage.qml:43
-#, fuzzy, kde-format
-#| msgid "Fastest"
+#, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
-msgstr "En hızlı"
+msgstr "En Hızlı"
 
 #: qml/SettingsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@title"
 msgid "Settings"
 msgstr "Ayarlar"
 
 #: qml/SettingsPage.qml:69
-#, fuzzy, kde-format
-#| msgid "Browsing"
+#, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
 msgstr "Tarama"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search engine"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Search engine"
 msgstr "Arama motoru"
 
 #: qml/SettingsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Block ads"
+#, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
 msgstr "Reklâmları engelle"
 
 #: qml/SettingsPage.qml:93
-#, fuzzy, kde-format
-#| msgid "Hides ads and trackers on most sites"
+#, kde-format
 msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
 msgstr "Çoğu sitedeki reklâmları ve izleyicileri gizler."
 
 #: qml/SettingsPage.qml:104
-#, fuzzy, kde-format
-#| msgid "Dark pages"
+#, kde-format
 msgctxt "@option:check"
 msgid "Dark pages"
 msgstr "Koyu sayfalar"
 
 #: qml/SettingsPage.qml:105
-#, fuzzy, kde-format
-#| msgid "Shows light pages in dark colors"
+#, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
 msgstr "Açık renkli sayfaları koyu renklerde gösterir."
 
 #: qml/SettingsPage.qml:116
-#, fuzzy, kde-format
-#| msgid "Page zoom"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
 msgstr "Sayfa yakınlaştırma"
 
 #: qml/SettingsPage.qml:130
-#, fuzzy, kde-format
-#| msgid "Reopen tabs"
+#, kde-format
 msgctxt "@option:check"
 msgid "Reopen tabs"
 msgstr "Sekmeleri yeniden aç"
 
 #: qml/SettingsPage.qml:131
-#, fuzzy, kde-format
-#| msgid "Brings back the tabs that were open when the browser last closed"
+#, kde-format
 msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
@@ -468,64 +410,55 @@ msgstr ""
 "getirir."
 
 #: qml/SettingsPage.qml:141
-#, fuzzy, kde-format
-#| msgid "Appearance"
+#, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
 msgstr "Görünüş"
 
 #: qml/SettingsPage.qml:149
-#, fuzzy, kde-format
-#| msgid "Remote control"
+#, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
-msgstr "Uzaktan kumanda"
+msgstr "Uzaktan Kumanda"
 
 #: qml/SettingsPage.qml:154
-#, fuzzy, kde-format
-#| msgid "Arrow keys on pages"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
 msgstr "Sayfalarda ok düğmeleri"
 
 #: qml/SettingsPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Move between links"
+#, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
 msgstr "Bağlantılar arasında gider"
 
 #: qml/SettingsPage.qml:156
-#, fuzzy, kde-format
-#| msgid "Move a pointer"
+#, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
 msgstr "İşaretçiyi hareket ettirir"
 
 #: qml/SettingsPage.qml:166
-#, fuzzy, kde-format
-#| msgid "Pointer speed"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Pointer speed"
 msgstr "İşaretçi hızı"
 
 #: qml/SettingsPage.qml:179
-#, fuzzy, kde-format
-#| msgid "Privacy"
+#, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
 msgstr "Gizlilik"
 
 #: qml/SettingsPage.qml:186
-#, fuzzy, kde-format
-#| msgid "Clear site data…"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear site data…"
 msgstr "Site Verisini Temizle…"
 
 #: qml/SettingsPage.qml:187
-#, fuzzy, kde-format
-#| msgid "Signs you out of sites, and forgets cached pages and permissions"
+#, kde-format
 msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
@@ -533,36 +466,31 @@ msgstr ""
 "izinleri unutur."
 
 #: qml/SettingsPage.qml:193
-#, fuzzy, kde-format
-#| msgid "About"
+#, kde-format
 msgctxt "@title:group"
 msgid "About"
 msgstr "Hakkında"
 
 #: qml/SettingsPage.qml:205
-#, fuzzy, kde-format
-#| msgid "Clear site data?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Clear site data?"
-msgstr "Site verisi temizlensin mi?"
+msgstr "Site Verisini Temizle?"
 
 #: qml/SettingsPage.qml:210
-#, fuzzy, kde-format
-#| msgid "You will be signed out of sites."
+#, kde-format
 msgctxt "@info"
 msgid "You will be signed out of sites."
 msgstr "Sitelerdeki oturumlarınız kapatılacaktır."
 
 #: qml/SettingsPage.qml:214
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
 msgstr "Temizle"
 
 #: qml/SettingsPage.qml:217
-#, fuzzy, kde-format
-#| msgid "Site data cleared"
+#, kde-format
 msgctxt "@info:status"
 msgid "Site data cleared"
 msgstr "Site verisi temizlendi"
@@ -579,15 +507,13 @@ msgid "Current"
 msgstr "Geçerli"
 
 #: qml/WebView.qml:125
-#, fuzzy, kde-format
-#| msgid "Blocked a pop-up window"
+#, kde-format
 msgctxt "@info:status"
 msgid "Blocked a pop-up window"
 msgstr "Bir açılır pencere engellendi"
 
 #: qml/WebView.qml:146
-#, fuzzy, kde-format
-#| msgid "This page keeps crashing, so it was stopped"
+#, kde-format
 msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
 msgstr "Bu sayfa çöküp duruyordu; bu nedenle durduruldu"

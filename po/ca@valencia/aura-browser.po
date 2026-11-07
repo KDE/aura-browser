@@ -1,15 +1,15 @@
 # Translation of aura-browser.po to Catalan (Valencian)
-# Copyright (C) 2022-2024 This_file_is_part_of_KDE
+# Copyright (C) 2022-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2022, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2024-01-28 18:27+0100\n"
+"PO-Revision-Date: 2026-11-05 11:44+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,271 +17,258 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Josep M. Ferrer"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "txemaq@gmail.com"
 
 #: main.cpp:49
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgid "Aura Browser"
 msgstr "Navegador Aura"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Navegueu pel web des del sofà"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022-2026 La comunitat KDE"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Pàgines web a obrir"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
-msgstr "Busca en l'historial"
+msgstr "Busca «%1»"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
-msgstr ""
+msgstr "Ves fins a %1"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
-msgstr "Tanca el menú"
+msgstr "Pestanya nova"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@title address dialog"
 msgid "Search or enter address"
-msgstr "Busca o teclegeu un URL"
+msgstr "Busqueu o introduïu una adreça"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
-msgstr "Busca o teclegeu un URL"
+msgstr "Busqueu el web o teclegeu una adreça"
 
 #: qml/BrowserControls.qml:124
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
-msgstr "S'està baixant… %1"
+msgstr "S'està carregant… %1%"
 
 #: qml/BrowserControls.qml:127
 #, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Zoom %1%"
 
 #: qml/BrowserControls.qml:155
 #, kde-format
 msgctxt "@action:button go back in page history"
 msgid "Back"
-msgstr ""
+msgstr "Arrere"
 
 #: qml/BrowserControls.qml:169
 #, kde-format
 msgctxt "@action:button go forward in page history"
 msgid "Forward"
-msgstr ""
+msgstr "Avant"
 
 #: qml/BrowserControls.qml:181
 #, kde-format
 msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
-msgstr ""
+msgstr "Inici"
 
 #: qml/BrowserControls.qml:197
 #, kde-format
 msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
-msgstr ""
+msgstr "Adreça: %1"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button stop loading the page"
 msgid "Stop"
-msgstr ""
+msgstr "Para"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button reload the page"
 msgid "Reload"
-msgstr ""
+msgstr "Torna a carregar"
 
 #: qml/BrowserControls.qml:211
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom out"
-msgstr ""
+msgstr "Allunya"
 
 #: qml/BrowserControls.qml:216
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom in"
-msgstr ""
+msgstr "Amplia"
 
 #: qml/BrowserControls.qml:221
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "New tab"
-msgstr "Tanca el menú"
+msgstr "Pestanya nova"
 
 #: qml/BrowserControls.qml:226
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close tab"
-msgstr "Tanca el menú"
+msgstr "Tanca la pestanya"
 
 #: qml/BrowserControls.qml:255
 #, kde-format
 msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 pestanya"
+msgstr[1] "%1 pestanyes"
 
 #: qml/BrowserPage.qml:155
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Permeteu que %1 faça servir el micròfon?"
 
 #: qml/BrowserPage.qml:157
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Permeteu que %1 faça servir la càmera?"
 
 #: qml/BrowserPage.qml:159
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Permeteu que %1 faça servir la càmera i el micròfon?"
 
 #: qml/BrowserPage.qml:162
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Permeteu que %1 veja la pantalla?"
 
 #: qml/BrowserPage.qml:164
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Permeteu que %1 mostre notificacions?"
 
 #: qml/BrowserPage.qml:166
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Permeteu que %1 conega esta ubicació?"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Permeteu que %1 faça servir el porta-retalls?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Permeteu que %1 faça servir esta característica?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
-msgstr ""
+msgstr "Podeu canviar d'opinió netejant les dades del lloc a la configuració."
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
-msgstr ""
+msgstr "Permet"
 
 #: qml/BrowserPage.qml:184
 #, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
-msgstr ""
+msgstr "No ho permetes"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgctxt "@title"
 msgid "Browse the web"
-msgstr ""
+msgstr "Navegueu el web"
 
 #: qml/HomePage.qml:72
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@action:button opens the address dialog"
 msgid "Search or enter address"
-msgstr "Busca o teclegeu un URL"
+msgstr "Busqueu o introduïu una adreça"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Tanca el menú"
-msgstr[1] "Tanca el menú"
+msgstr[0] "1 pestanya oberta"
+msgstr[1] "%1 pestanyes obertes"
 
 #: qml/HomePage.qml:115
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Close this tab?"
-msgstr "Tanca el menú"
+msgstr "Tanque esta pestanya?"
 
 #: qml/HomePage.qml:128
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close Tab"
-msgstr "Tanca el menú"
+msgstr "Tanca la pestanya"
 
 #: qml/Main.qml:23
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title:window"
 msgid "Aura Browser"
 msgstr "Navegador Aura"
@@ -290,82 +277,77 @@ msgstr "Navegador Aura"
 #, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
-msgstr ""
+msgstr "Inici"
 
 #: qml/Main.qml:36
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Configuració"
 
 #: qml/Main.qml:162
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title sidebar header"
 msgid "Aura Browser"
 msgstr "Navegador Aura"
 
 #: qml/Main.qml:233
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
-msgstr "S'està baixant… %1"
+msgstr "S'està baixant %1"
 
 #: qml/Main.qml:238
 #, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "S'ha guardat %1 a les baixades"
 
 #: qml/Main.qml:240
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#, kde-format
 msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
-msgstr "Voleu baixar el fitxer %1?"
+msgstr "No s'han pogut baixar %1: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automàtic (%1%)"
 
 #: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
 #: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1 %"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
-msgstr ""
+msgstr "Lenta"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
-msgstr ""
+msgstr "Ràpida"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
-msgstr ""
+msgstr "Més ràpida"
 
 #: qml/SettingsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@title"
 msgid "Settings"
 msgstr "Configuració"
@@ -374,11 +356,10 @@ msgstr "Configuració"
 #, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
-msgstr ""
+msgstr "Navegueu"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Search engine"
 msgstr "Motor de busca"
@@ -387,120 +368,122 @@ msgstr "Motor de busca"
 #, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
-msgstr ""
+msgstr "Bloqueja els anuncis"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Oculta els anuncis i seguidors a la majoria dels llocs"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgctxt "@option:check"
 msgid "Dark pages"
-msgstr ""
+msgstr "Pàgines fosques"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Mostra les pàgines clares amb colors foscos"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
-msgstr ""
+msgstr "Zoom de la pàgina"
 
 #: qml/SettingsPage.qml:130
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Reopen tabs"
-msgstr "Tanca el menú"
+msgstr "Torne a obrir les pestanyes"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Retorna les pestanyes que estaven obertes quan es va tancar l'última vegada "
+"el navegador"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
-msgstr ""
+msgstr "Aparença"
 
 #: qml/SettingsPage.qml:149
 #, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
-msgstr ""
+msgstr "Control remot"
 
 #: qml/SettingsPage.qml:154
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Tecles de cursor a les pàgines"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
-msgstr ""
+msgstr "Mou entre els enllaços"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
-msgstr ""
+msgstr "Mou un punter"
 
 #: qml/SettingsPage.qml:166
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Pointer speed"
-msgstr ""
+msgstr "Velocitat del punter"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
-msgstr ""
+msgstr "Privadesa"
 
 #: qml/SettingsPage.qml:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear site data…"
-msgstr ""
+msgstr "Neteja les dades del lloc…"
 
 #: qml/SettingsPage.qml:187
 #, kde-format
 msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Tanca la sessió els llocs i oblida les pàgines de la memòria cau i els "
+"permisos"
 
 #: qml/SettingsPage.qml:193
 #, kde-format
 msgctxt "@title:group"
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #: qml/SettingsPage.qml:205
 #, kde-format
 msgctxt "@title:window"
 msgid "Clear site data?"
-msgstr ""
+msgstr "Voleu netejar les dades del lloc?"
 
 #: qml/SettingsPage.qml:210
 #, kde-format
 msgctxt "@info"
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Es tancaran les sessions dels llocs."
 
 #: qml/SettingsPage.qml:214
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
 msgstr "Neteja"
@@ -509,173 +492,27 @@ msgstr "Neteja"
 #, kde-format
 msgctxt "@info:status"
 msgid "Site data cleared"
-msgstr ""
+msgstr "S'han netejat les dades"
 
 #: qml/SiteCard.qml:27
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgid "Current tab"
-msgstr "Pestanyes actuals"
+msgstr "Pestanya actual"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Pestanyes actuals"
+msgstr "Actual"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgctxt "@info:status"
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "S'ha bloquejat una finestra emergent"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
-
-#~ msgid "Bookmarks Manager"
-#~ msgstr "Gestor d'adreces d'interés"
-
-#~ msgid "Press 'esc' or the [←] Back button to close"
-#~ msgstr "Premeu «Esc» o el botó «Arrere» [←] per a tancar"
-
-#~ msgid "Search Bookmarks"
-#~ msgstr "Busca les adreces d'interés"
-
-#~ msgid "Remove Mode"
-#~ msgstr "Mode eliminació"
-
-#~ msgid "Add"
-#~ msgstr "Afig"
-
-#~ msgid "Add Bookmark"
-#~ msgstr "Afig una adreça d'interés"
-
-#~ msgid "Name: "
-#~ msgstr "Nom: "
-
-#~ msgid "Url: "
-#~ msgstr "URL: "
-
-#~ msgid "Category: "
-#~ msgstr "Categoria: "
-
-#~ msgid "Bookmarks"
-#~ msgstr "Adreces d'interés"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgid "Accept"
-#~ msgstr "Accepta"
-
-#~ msgid "Deny"
-#~ msgstr "Denega"
-
-#~ msgid "Help"
-#~ msgstr "Ajuda"
-
-#~ msgid ""
-#~ "Aura Browser adapts the traditional web browser UI for a fully immersed "
-#~ "Bigscreen experience. Aura Browser UI is kept as subtle and intuitive as "
-#~ "possible for navigating the world wide web using just your remote control."
-#~ msgstr ""
-#~ "El navegador Aura adapta la interfície d'usuari del navegador web "
-#~ "tradicional a una experiència de Bigscreen completament immersiva. La "
-#~ "interfície d'usuari del navegador Aura es manté tan subtil i intuïtiva "
-#~ "com siga possible per a navegar per la web de tot el món utilitzant només "
-#~ "el control remot."
-
-#~ msgid ""
-#~ "Here are all the buttons required to help you get started with using aura "
-#~ "browser"
-#~ msgstr ""
-#~ "Ací hi ha tots els botons necessaris per ajudar-vos a començar a "
-#~ "utilitzar el navegador Aura"
-
-#~ msgid "History"
-#~ msgstr "Historial"
-
-#~ msgid "Clear History"
-#~ msgstr "Neteja l'historial"
-
-#~ msgid "No Recent History"
-#~ msgstr "No hi ha historial recent"
-
-#~ msgid "Enter URL / Search Term"
-#~ msgstr "Introduïu l'URL/terme que s'ha de buscar"
-
-#~ msgid "Enter Search Term or URL"
-#~ msgstr "Introduïu un terme que calga buscar o un URL"
-
-#~ msgid "Remove Tab"
-#~ msgstr "Elimina la pestanya"
-
-#~ msgid "Quit"
-#~ msgstr "Ix"
-
-#~ msgid "Download finished"
-#~ msgstr "Ha acabat la baixada"
-
-#~ msgid "Download failed: %1"
-#~ msgstr "Ha fallat la baixada: %1"
-
-#~ msgid "Virtual Cursor Speed Control"
-#~ msgstr "Control de la velocitat del cursor virtual"
-
-#~ msgid "Current Speed: %1"
-#~ msgstr "Velocitat actual: %1"
-
-#~ msgid "Virtual Scroll Speed Control"
-#~ msgstr "Control de la velocitat del desplaçament virtual"
-
-#~ msgid "Virtual Cursor Size Control"
-#~ msgstr "Control de la mida del cursor virtual"
-
-#~ msgid "Current Size: "
-#~ msgstr "Mida actual: "
-
-#~ msgid "Large"
-#~ msgstr "Gran"
-
-#~ msgid "Medium"
-#~ msgstr "Mitjana"
-
-#~ msgid "Small"
-#~ msgstr "Xicoteta"
-
-#~ msgid "Google"
-#~ msgstr "Google"
-
-#~ msgid "Duck Duck Go"
-#~ msgstr "DuckDuckGo"
-
-#~ msgid "General"
-#~ msgstr "General"
-
-#~ msgid "Disable Button Sounds"
-#~ msgstr "Desactiva el so dels botons"
-
-#~ msgid "Enable Button Sounds"
-#~ msgstr "Activa el so dels botons"
-
-#~ msgid "Clear Cache"
-#~ msgstr "Neteja la memòria cau"
-
-#~ msgid "Tabs"
-#~ msgstr "Pestanyes"
-
-#~ msgid "Aura Browser - Start Page"
-#~ msgstr "Navegador Aura – Pàgina d'inici"
-
-#~ msgid "Recent Pages"
-#~ msgstr "Pàgines recents"
-
-#~ msgid "Suggestions:"
-#~ msgstr "Suggeriments:"
-
-#~ msgid "A"
-#~ msgstr "A"
+msgstr "Esta pàgina continua fallant, de manera que s'ha parat"
