@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2026-11-05 07:47+0200\n"
+"PO-Revision-Date: 2026-11-11 22:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -92,13 +92,13 @@ msgstr "Введите поисковый запрос или адрес"
 #, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
-msgstr "Загрузка… %1%"
+msgstr "Загрузка… %1 %"
 
 #: qml/BrowserControls.qml:127
 #, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
-msgstr "Масштаб %1%"
+msgstr "Масштаб %1 %"
 
 #: qml/BrowserControls.qml:155
 #, kde-format
@@ -316,14 +316,14 @@ msgstr "Не удалось загрузить %1: %2"
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
-msgstr "Автоматически (%1%)"
+msgstr "Автоматически (%1 %)"
 
 #: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
 #: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: qml/SettingsPage.qml:40
 #, kde-format

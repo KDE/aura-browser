@@ -1,283 +1,271 @@
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2026 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2022-2024, 2026 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2026-01-18 10:05+0100\n"
+"PO-Revision-Date: 2026-11-10 20:46+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: \n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Xavier Besnard"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "xavier.besnard@kde.org"
 
 #: main.cpp:49
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgid "Aura Browser"
 msgstr "Navigateur Aura"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Naviguez sur Internet depuis votre canapé"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022 - 2026 la communauté de KDE"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Pages Internet à ouvrir"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
-msgstr "Historique de recherche"
+msgstr "Recherche de « %1 »"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
-msgstr ""
+msgstr "Aller à %1"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
-msgstr "Fermer"
+msgstr "Nouvel onglet"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@title address dialog"
 msgid "Search or enter address"
-msgstr "Rechercher ou saisir une URL"
+msgstr "Rechercher ou saisir une adresse"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
-msgstr "Rechercher ou saisir une URL"
+msgstr "Rechercher sur Internet ou saisir une adresse"
 
 #: qml/BrowserControls.qml:124
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
-msgstr "Téléchargement... %1"
+msgstr "Chargement en cours... %1 %"
 
 #: qml/BrowserControls.qml:127
 #, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Zoomer à %1 %"
 
 #: qml/BrowserControls.qml:155
 #, kde-format
 msgctxt "@action:button go back in page history"
 msgid "Back"
-msgstr ""
+msgstr "Retour en arrière"
 
 #: qml/BrowserControls.qml:169
 #, kde-format
 msgctxt "@action:button go forward in page history"
 msgid "Forward"
-msgstr ""
+msgstr "En avant"
 
 #: qml/BrowserControls.qml:181
 #, kde-format
 msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: qml/BrowserControls.qml:197
 #, kde-format
 msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
-msgstr ""
+msgstr "Adresse : %1"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button stop loading the page"
 msgid "Stop"
-msgstr ""
+msgstr "Arrêter"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button reload the page"
 msgid "Reload"
-msgstr ""
+msgstr "Recharger"
 
 #: qml/BrowserControls.qml:211
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom out"
-msgstr ""
+msgstr "Zoom arrière"
 
 #: qml/BrowserControls.qml:216
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom in"
-msgstr ""
+msgstr "Zoom avant"
 
 #: qml/BrowserControls.qml:221
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@action:button"
 msgid "New tab"
-msgstr "Fermer"
+msgstr "Nouvel onglet"
 
 #: qml/BrowserControls.qml:226
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close tab"
-msgstr "Fermer"
+msgstr "Fermer l'onglet"
 
 #: qml/BrowserControls.qml:255
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] "Fermer"
-msgstr[1] "Fermer"
+msgstr[0] "Un onglet"
+msgstr[1] "%1 onglets"
 
 #: qml/BrowserPage.qml:155
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Autoriser %1 à utiliser votre microphone ?"
 
 #: qml/BrowserPage.qml:157
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Autoriser %1 à utiliser votre appareil photo ?"
 
 #: qml/BrowserPage.qml:159
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Autoriser %1 à utiliser votre caméra et votre microphone ?"
 
 #: qml/BrowserPage.qml:162
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Laisser %1 voir votre écran ?"
 
 #: qml/BrowserPage.qml:164
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Autoriser %1 afficher les notifications ?"
 
 #: qml/BrowserPage.qml:166
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Informer %1 de votre emplacement ?"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Laisser %1 utiliser le presse-papier ?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Laisser %1 utiliser cette fonctionnalité ?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
 msgstr ""
+"Vous pouvez changer d'avis en effaçant les données du site dans la "
+"configuration."
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
-msgstr ""
+msgstr "Autoriser"
 
 #: qml/BrowserPage.qml:184
 #, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
-msgstr ""
+msgstr "Ne pas autoriser"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgctxt "@title"
 msgid "Browse the web"
-msgstr ""
+msgstr "Naviguer sur Internet"
 
 #: qml/HomePage.qml:72
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@action:button opens the address dialog"
 msgid "Search or enter address"
-msgstr "Rechercher ou saisir une URL"
+msgstr "Rechercher ou saisir une adresse"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Fermer"
-msgstr[1] "Fermer"
+msgstr[0] "1 onglet ouvert"
+msgstr[1] "%1 onglets ouverts"
 
 #: qml/HomePage.qml:115
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@title:window"
 msgid "Close this tab?"
-msgstr "Fermer"
+msgstr "Fermer cet onglet ?"
 
 #: qml/HomePage.qml:128
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close Tab"
-msgstr "Fermer"
+msgstr "Fermer l'onglet"
 
 #: qml/Main.qml:23
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title:window"
 msgid "Aura Browser"
 msgstr "Navigateur Aura"
@@ -286,82 +274,77 @@ msgstr "Navigateur Aura"
 #, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
-msgstr ""
+msgstr "Dossier personnel"
 
 #: qml/Main.qml:36
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Configuration"
 
 #: qml/Main.qml:162
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title sidebar header"
 msgid "Aura Browser"
 msgstr "Navigateur Aura"
 
 #: qml/Main.qml:233
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
-msgstr "Téléchargement... %1"
+msgstr "Téléchargement en cours... %1"
 
 #: qml/Main.qml:238
 #, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "%1 enregistré dans les téléchargements"
 
 #: qml/Main.qml:240
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#, kde-format
 msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
-msgstr "Voulez-vous vraiment télécharger le fichier %1 ?"
+msgstr "Impossible de télécharger %1 : %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automatique (%1 %)"
 
 #: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
 #: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1 %"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
-msgstr ""
+msgstr "Lent"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
-msgstr ""
+msgstr "Rapide"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
-msgstr ""
+msgstr "Le plus rapide"
 
 #: qml/SettingsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@title"
 msgid "Settings"
 msgstr "Configuration"
@@ -370,11 +353,10 @@ msgstr "Configuration"
 #, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
-msgstr ""
+msgstr "Navigation"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Search engine"
 msgstr "Moteur de recherche"
@@ -383,120 +365,122 @@ msgstr "Moteur de recherche"
 #, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
-msgstr ""
+msgstr "Bloquer les publicités"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Masque les publicités et les mouchards sur la plupart des sites"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgctxt "@option:check"
 msgid "Dark pages"
-msgstr ""
+msgstr "Pages sombres"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Affiche les pages claires dans des couleurs sombres"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
-msgstr ""
+msgstr "Zoom de page"
 
 #: qml/SettingsPage.qml:130
-#, fuzzy, kde-format
-#| msgid "Close"
+#, kde-format
 msgctxt "@option:check"
 msgid "Reopen tabs"
-msgstr "Fermer"
+msgstr "Ré-ouvrir les onglets"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Recharge les onglets qui étaient ouverts lors de la dernière fermeture du "
+"navigateur"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
-msgstr ""
+msgstr "Apparence"
 
 #: qml/SettingsPage.qml:149
 #, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
-msgstr ""
+msgstr "Télécommande"
 
 #: qml/SettingsPage.qml:154
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Touches de flèches sur les pages"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
-msgstr ""
+msgstr "Se déplacer entre les liens"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
-msgstr ""
+msgstr "Déplacer le pointeur"
 
 #: qml/SettingsPage.qml:166
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Pointer speed"
-msgstr ""
+msgstr "Vitesse du pointeur"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
-msgstr ""
+msgstr "Confidentialité"
 
 #: qml/SettingsPage.qml:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear site data…"
-msgstr ""
+msgstr "Effacer les données du site…"
 
 #: qml/SettingsPage.qml:187
 #, kde-format
 msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Vous déconnecte des sites et oublie les pages et les autorisations mises en "
+"cache"
 
 #: qml/SettingsPage.qml:193
 #, kde-format
 msgctxt "@title:group"
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: qml/SettingsPage.qml:205
 #, kde-format
 msgctxt "@title:window"
 msgid "Clear site data?"
-msgstr ""
+msgstr "Effacer les données du site ?"
 
 #: qml/SettingsPage.qml:210
 #, kde-format
 msgctxt "@info"
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Vous serez déconnecté des sites."
 
 #: qml/SettingsPage.qml:214
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
 msgstr "Effacer"
@@ -505,32 +489,31 @@ msgstr "Effacer"
 #, kde-format
 msgctxt "@info:status"
 msgid "Site data cleared"
-msgstr ""
+msgstr "Données du site effacées"
 
 #: qml/SiteCard.qml:27
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgid "Current tab"
-msgstr "Onglets courants"
+msgstr "Onglet courant"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Onglets courants"
+msgstr "Courant"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgctxt "@info:status"
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "A bloqué une fenêtre contextuelle"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
 msgstr ""
+"Cette page continue de se planter. Par conséquent, elle a donc été arrêtée"
 
 #~ msgid "Tabs"
 #~ msgstr "Onglets"
