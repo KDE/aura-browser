@@ -1,0 +1,516 @@
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: aura-browser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-11-05 00:58+0000\n"
+"PO-Revision-Date: 2026-11-14 19:40+0100\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Немања Хиршл"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nemhirsl@gmail.com"
+
+#: main.cpp:49
+#, kde-format
+msgid "Aura Browser"
+msgstr "Aura прегледач"
+
+#: main.cpp:51
+#, kde-format
+msgid "Browse the web from your couch"
+msgstr "Прегледајте веб са свог кауча"
+
+#: main.cpp:53
+#, kde-format
+msgid "© 2022-2026 KDE Community"
+msgstr "© 2022–2026, заједница КДЕ‑а"
+
+#: main.cpp:54
+#, kde-format
+msgid "Aditya Mehra"
+msgstr "Aditya Mehra"
+
+#: main.cpp:55
+#, kde-format
+msgid "Devin Lin"
+msgstr "Devin Lin"
+
+#: main.cpp:65
+#, kde-format
+msgid "Web pages to open"
+msgstr "Веб странице које треба отворити"
+
+#: qml/AddressDialog.qml:36
+#, kde-format
+msgctxt "@action:button suggestion, %1 is the typed text"
+msgid "Search for \"%1\""
+msgstr "Тражи „%1“"
+
+#: qml/AddressDialog.qml:36
+#, kde-format
+msgctxt "@action:button suggestion, %1 is the typed address"
+msgid "Go to %1"
+msgstr "Иди на %1"
+
+#: qml/AddressDialog.qml:109
+#, kde-format
+msgctxt "@title address dialog, opening a new tab"
+msgid "New tab"
+msgstr "Нови језичак"
+
+#: qml/AddressDialog.qml:109
+#, kde-format
+msgctxt "@title address dialog"
+msgid "Search or enter address"
+msgstr "Тражи или унеси адресу"
+
+#: qml/AddressDialog.qml:119
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Search the web, or type an address"
+msgstr "Тражи на Вебу или упиши адресу"
+
+#: qml/BrowserControls.qml:124
+#, kde-format
+msgctxt "@info:status %1 is the page load progress in percent"
+msgid "Loading… %1%"
+msgstr "Учитавам… %1%"
+
+#: qml/BrowserControls.qml:127
+#, kde-format
+msgctxt "@info:status %1 is the page zoom in percent"
+msgid "Zoom %1%"
+msgstr "Увеличање %1%"
+
+#: qml/BrowserControls.qml:155
+#, kde-format
+msgctxt "@action:button go back in page history"
+msgid "Back"
+msgstr "Назад"
+
+#: qml/BrowserControls.qml:169
+#, kde-format
+msgctxt "@action:button go forward in page history"
+msgid "Forward"
+msgstr "Напред"
+
+#: qml/BrowserControls.qml:181
+#, kde-format
+msgctxt "@action:button leave the page and show the home screen"
+msgid "Home"
+msgstr "Домаћа"
+
+#: qml/BrowserControls.qml:197
+#, kde-format
+msgctxt "@info accessible name, %1 is the page address"
+msgid "Address: %1"
+msgstr "Адреса: %1"
+
+#: qml/BrowserControls.qml:205
+#, kde-format
+msgctxt "@action:button stop loading the page"
+msgid "Stop"
+msgstr "Заустави"
+
+#: qml/BrowserControls.qml:205
+#, kde-format
+msgctxt "@action:button reload the page"
+msgid "Reload"
+msgstr "Учитај поново"
+
+#: qml/BrowserControls.qml:211
+#, kde-format
+msgctxt "@action:button"
+msgid "Zoom out"
+msgstr "Умањи"
+
+#: qml/BrowserControls.qml:216
+#, kde-format
+msgctxt "@action:button"
+msgid "Zoom in"
+msgstr "Увеличај"
+
+#: qml/BrowserControls.qml:221
+#, kde-format
+msgctxt "@action:button"
+msgid "New tab"
+msgstr "Нови језичак"
+
+#: qml/BrowserControls.qml:226
+#, kde-format
+msgctxt "@action:button"
+msgid "Close tab"
+msgstr "Затвори језичак"
+
+#: qml/BrowserControls.qml:255
+#, kde-format
+msgctxt "@title:group"
+msgid "1 tab"
+msgid_plural "%1 tabs"
+msgstr[0] "%1 језичак"
+msgstr[1] "%1 језичка"
+msgstr[2] "%1 језичака"
+msgstr[3] "један језичак"
+
+#: qml/BrowserPage.qml:155
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 use your microphone?"
+msgstr "Дозволити да %1 користи ваш микрофон?"
+
+#: qml/BrowserPage.qml:157
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 use your camera?"
+msgstr "Дозволити да %1 користи вашу камеру?"
+
+#: qml/BrowserPage.qml:159
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 use your camera and microphone?"
+msgstr "Дозволити да %1 користи вашу камеру и микрофон?"
+
+#: qml/BrowserPage.qml:162
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 see your screen?"
+msgstr "Дозволити да %1 види ваш екран?"
+
+#: qml/BrowserPage.qml:164
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 show notifications?"
+msgstr "Дозволити да %1 приказује обавештења?"
+
+#: qml/BrowserPage.qml:166
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 know your location?"
+msgstr "Дозволити да %1 зна вашу локацију?"
+
+#: qml/BrowserPage.qml:168
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 use the clipboard?"
+msgstr "Дозволити да %1 користи клипборд?"
+
+#: qml/BrowserPage.qml:170
+#, kde-format
+msgctxt "@title:window %1 is a website host name"
+msgid "Let %1 use this feature?"
+msgstr "Дозволити да %1 користи ову могућност?"
+
+#: qml/BrowserPage.qml:177
+#, kde-format
+msgctxt "@info"
+msgid "You can change your mind by clearing site data in the settings."
+msgstr "Мишљење можете променити чишћењем података сајтова у поставкама."
+
+#: qml/BrowserPage.qml:183
+#, kde-format
+msgctxt "@action:button grant a site permission"
+msgid "Allow"
+msgstr "Дозволи"
+
+#: qml/BrowserPage.qml:184
+#, kde-format
+msgctxt "@action:button deny a site permission"
+msgid "Don't Allow"
+msgstr "Одбиј"
+
+#: qml/HomePage.qml:59
+#, kde-format
+msgctxt "@title"
+msgid "Browse the web"
+msgstr "Прегледајте веб"
+
+#: qml/HomePage.qml:72
+#, kde-format
+msgctxt "@action:button opens the address dialog"
+msgid "Search or enter address"
+msgstr "Тражи или унеси адресу"
+
+#: qml/HomePage.qml:84
+#, kde-format
+msgctxt "@title:group"
+msgid "1 open tab"
+msgid_plural "%1 open tabs"
+msgstr[0] "%1 отворен језичак"
+msgstr[1] "%1 отворена језичка"
+msgstr[2] "%1 отворених језичака"
+msgstr[3] "један отворен језичак"
+
+#: qml/HomePage.qml:115
+#, kde-format
+msgctxt "@title:window"
+msgid "Close this tab?"
+msgstr "Затворити овај језичак?"
+
+#: qml/HomePage.qml:128
+#, kde-format
+msgctxt "@action:button"
+msgid "Close Tab"
+msgstr "Затвори језичак"
+
+#: qml/Main.qml:23
+#, kde-format
+msgctxt "@title:window"
+msgid "Aura Browser"
+msgstr "Aura прегледач"
+
+#: qml/Main.qml:31
+#, kde-format
+msgctxt "@action:button sidebar page"
+msgid "Home"
+msgstr "Домаћа"
+
+#: qml/Main.qml:36
+#, kde-format
+msgctxt "@action:button sidebar page"
+msgid "Settings"
+msgstr "Поставке"
+
+#: qml/Main.qml:162
+#, kde-format
+msgctxt "@title sidebar header"
+msgid "Aura Browser"
+msgstr "Aura прегледач"
+
+#: qml/Main.qml:233
+#, kde-format
+msgctxt "@info:status %1 is a file name"
+msgid "Downloading %1"
+msgstr "Преузимам %1"
+
+#: qml/Main.qml:238
+#, kde-format
+msgctxt "@info:status %1 is a file name"
+msgid "Saved %1 to Downloads"
+msgstr "Сачувано у „Преузимања“: %1"
+
+#: qml/Main.qml:240
+#, kde-format
+msgctxt "@info:status %1 is a file name, %2 is the error reason"
+msgid "Could not download %1: %2"
+msgstr "Не могу да преузмем %1: %2"
+
+#: qml/SettingsPage.qml:31
+#, kde-format
+msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
+msgid "Automatic (%1%)"
+msgstr "аутоматско (%1%)"
+
+#: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
+#: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
+#, kde-format
+msgctxt "@item:inlistbox page zoom, %1 is a percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: qml/SettingsPage.qml:40
+#, kde-format
+msgctxt "@item:inlistbox pointer speed"
+msgid "Slow"
+msgstr "спора"
+
+#: qml/SettingsPage.qml:41
+#, kde-format
+msgctxt "@item:inlistbox pointer speed"
+msgid "Normal"
+msgstr "нормална"
+
+#: qml/SettingsPage.qml:42
+#, kde-format
+msgctxt "@item:inlistbox pointer speed"
+msgid "Fast"
+msgstr "брза"
+
+#: qml/SettingsPage.qml:43
+#, kde-format
+msgctxt "@item:inlistbox pointer speed"
+msgid "Fastest"
+msgstr "најбржа"
+
+#: qml/SettingsPage.qml:58
+#, kde-format
+msgctxt "@title"
+msgid "Settings"
+msgstr "Поставке"
+
+#: qml/SettingsPage.qml:69
+#, kde-format
+msgctxt "@title:group"
+msgid "Browsing"
+msgstr "Прегледање"
+
+#: qml/SettingsPage.qml:75
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Search engine"
+msgstr "Претраживач"
+
+#: qml/SettingsPage.qml:92
+#, kde-format
+msgctxt "@option:check"
+msgid "Block ads"
+msgstr "Блокирај рекламе"
+
+#: qml/SettingsPage.qml:93
+#, kde-format
+msgctxt "@info"
+msgid "Hides ads and trackers on most sites"
+msgstr "Скрива рекламе и пратиоце на већини сајтова"
+
+#: qml/SettingsPage.qml:104
+#, kde-format
+msgctxt "@option:check"
+msgid "Dark pages"
+msgstr "Тамне странице"
+
+#: qml/SettingsPage.qml:105
+#, kde-format
+msgctxt "@info"
+msgid "Shows light pages in dark colors"
+msgstr "Приказује светле странице у тамним бојама"
+
+#: qml/SettingsPage.qml:116
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Page zoom"
+msgstr "Увеличање странице"
+
+#: qml/SettingsPage.qml:130
+#, kde-format
+msgctxt "@option:check"
+msgid "Reopen tabs"
+msgstr "Поново отвори језичке"
+
+#: qml/SettingsPage.qml:131
+#, kde-format
+msgctxt "@info"
+msgid "Brings back the tabs that were open when the browser last closed"
+msgstr "Враћа језичке који су били отворени при последњем затварању прегледача"
+
+#: qml/SettingsPage.qml:141
+#, kde-format
+msgctxt "@title:group"
+msgid "Appearance"
+msgstr "Изглед"
+
+#: qml/SettingsPage.qml:149
+#, kde-format
+msgctxt "@title:group"
+msgid "Remote control"
+msgstr "Даљински управљач"
+
+#: qml/SettingsPage.qml:154
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Arrow keys on pages"
+msgstr "Тастери са стрелицама на страницама"
+
+#: qml/SettingsPage.qml:156
+#, kde-format
+msgctxt "@item:inlistbox what the arrow keys do on pages"
+msgid "Move between links"
+msgstr "кретање између веза"
+
+#: qml/SettingsPage.qml:156
+#, kde-format
+msgctxt "@item:inlistbox what the arrow keys do on pages"
+msgid "Move a pointer"
+msgstr "померање показивача"
+
+#: qml/SettingsPage.qml:166
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Pointer speed"
+msgstr "Брзина показивача"
+
+#: qml/SettingsPage.qml:179
+#, kde-format
+msgctxt "@title:group"
+msgid "Privacy"
+msgstr "Приватност"
+
+#: qml/SettingsPage.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear site data…"
+msgstr "Очисти податке сајтова…"
+
+#: qml/SettingsPage.qml:187
+#, kde-format
+msgctxt "@info"
+msgid "Signs you out of sites, and forgets cached pages and permissions"
+msgstr "Одјављује вас са сајтова и заборавља кеширане странице и дозволе"
+
+#: qml/SettingsPage.qml:193
+#, kde-format
+msgctxt "@title:group"
+msgid "About"
+msgstr "О програму"
+
+#: qml/SettingsPage.qml:205
+#, kde-format
+msgctxt "@title:window"
+msgid "Clear site data?"
+msgstr "Очистити податке сајтова?"
+
+#: qml/SettingsPage.qml:210
+#, kde-format
+msgctxt "@info"
+msgid "You will be signed out of sites."
+msgstr "Бићете одјављени са сајтова."
+
+#: qml/SettingsPage.qml:214
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear"
+msgstr "Очисти"
+
+#: qml/SettingsPage.qml:217
+#, kde-format
+msgctxt "@info:status"
+msgid "Site data cleared"
+msgstr "Подаци сајтова очишћени"
+
+#: qml/SiteCard.qml:27
+#, kde-format
+msgid "Current tab"
+msgstr "Текући језичак"
+
+#: qml/SiteCard.qml:59
+#, kde-format
+msgctxt "@info:status the tab being shown"
+msgid "Current"
+msgstr "Текући"
+
+#: qml/WebView.qml:125
+#, kde-format
+msgctxt "@info:status"
+msgid "Blocked a pop-up window"
+msgstr "Блокиран искачући прозор"
+
+#: qml/WebView.qml:146
+#, kde-format
+msgctxt "@info:status"
+msgid "This page keeps crashing, so it was stopped"
+msgstr "Ова страница се стално руши, па је заустављена"
