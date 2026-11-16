@@ -32,6 +32,10 @@
   <name xml:lang="sa">आभा ब्राउज़र</name>
   <name xml:lang="sk">Prehliadač Aura</name>
   <name xml:lang="sl">Brskalnik Aura</name>
+  <name xml:lang="sr">Aura прегледач</name>
+  <name xml:lang="sr-Latn">Aura pregledač</name>
+  <name xml:lang="sr-ijekavian">Aura прегледач</name>
+  <name xml:lang="sr-ijekavianlatin">Aura pregledač</name>
   <name xml:lang="sv">Aura webbläsare</name>
   <name xml:lang="tr">Aura Tarayıcı</name>
   <name xml:lang="ug">Aura كۆرگۈ</name>
@@ -52,6 +56,10 @@
   <summary xml:lang="pt-BR">Navegue pela internet do seu sofá</summary>
   <summary xml:lang="ru">Просмотр веб-страниц, не вставая с дивана</summary>
   <summary xml:lang="sl">Brskajte po spletu iz vašega kavča</summary>
+  <summary xml:lang="sr">Прегледајте веб са свог кауча</summary>
+  <summary xml:lang="sr-Latn">Pregledajte veb sa svog kauča</summary>
+  <summary xml:lang="sr-ijekavian">Прегледајте веб са свог кауча</summary>
+  <summary xml:lang="sr-ijekavianlatin">Pregledajte veb sa svog kauča</summary>
   <summary xml:lang="tr">Web’e kanepenizden göz atın</summary>
   <summary xml:lang="uk">Перегляд інтернету з вашого дивана</summary>
   <metadata_license>CC0-1.0</metadata_license>
@@ -97,6 +105,10 @@
     <p xml:lang="sa">पूर्णतया डुबितस्य Big Screen अनुभवस्य कृते ब्राउजर् यत् भवन्तं केवलं स्वस्य दूरनियन्त्रणस्य उपयोगेन विश्वव्यापीजालं नेविगेट् कर्तुं शक्नोति</p>
     <p xml:lang="sk">Prehliadač pre plne pohlcujúci zážitok na veľkej obrazovke umožňujúci prehliadanie webu pomocou diaľkového ovládača</p>
     <p xml:lang="sl">Brskalnik za polno celozaslonsko izkušnjo, ki vam omogoča krmarjenje po svetovnem spletu z uporabo vašega daljinskega upravljavca</p>
+    <p xml:lang="sr">Прегледач за потпуно уроњени доживљај великог екрана, који вам омогућава да се крећете кроз светски веб само даљинским управљачем</p>
+    <p xml:lang="sr-Latn">Pregledač za potpuno uronjeni doživljaj velikog ekrana, koji vam omogućava da se krećete kroz svetski veb samo daljinskim upravljačem</p>
+    <p xml:lang="sr-ijekavian">Прегледач за потпуно уроњени доживљај великог екрана, који вам омогућава да се крећете кроз свјетски веб само даљинским управљачем</p>
+    <p xml:lang="sr-ijekavianlatin">Pregledač za potpuno uronjeni doživljaj velikog ekrana, koji vam omogućava da se krećete kroz svjetski veb samo daljinskim upravljačem</p>
     <p xml:lang="sv">Webbläsare med en fullständigt uppslukande storbildsupplevelse som låter dig navigera på den världsomspännande webben genom att bara använda en fjärrkontroll</p>
     <p xml:lang="tr">Tümüyle içine dalınmış bir Büyükekran deneyimi için bir tarayıcı. İnterneti, yalnızca uzaktan kumandanızı kullanarak gezmenizi sağlar</p>
     <p xml:lang="uk">Браузер для повного занурення у Big Screen, за допомогою якого ви зможете подорожувати сторінками інтернету, користуючись лише пультом керування</p>
@@ -146,6 +158,10 @@
       <caption xml:lang="sa">आभा ब्राउज़र</caption>
       <caption xml:lang="sk">Prehliadač Aura</caption>
       <caption xml:lang="sl">Brskalnik Aura</caption>
+      <caption xml:lang="sr">Aura прегледач</caption>
+      <caption xml:lang="sr-Latn">Aura pregledač</caption>
+      <caption xml:lang="sr-ijekavian">Aura прегледач</caption>
+      <caption xml:lang="sr-ijekavianlatin">Aura pregledač</caption>
       <caption xml:lang="sv">Aura webbläsare</caption>
       <caption xml:lang="tr">Aura Tarayıcı</caption>
       <caption xml:lang="ug">Aura كۆرگۈ</caption>
