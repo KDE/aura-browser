@@ -1,14 +1,14 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the aura-browser package.
 #
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2026 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: aura-browser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-05 00:58+0000\n"
-"PO-Revision-Date: 2024-06-03 22:51+0300\n"
-"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2026-11-19 15:44+0200\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -16,358 +16,339 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 26.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "toms.trasuns@posteo.net"
 
 #: main.cpp:49
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgid "Aura Browser"
-msgstr "Aura-Browser"
+msgstr "Aura Browser"
 
 #: main.cpp:51
 #, kde-format
 msgid "Browse the web from your couch"
-msgstr ""
+msgstr "Pārlūkojiet tīmekļi tepat no dīvāna"
 
 #: main.cpp:53
 #, kde-format
 msgid "© 2022-2026 KDE Community"
-msgstr ""
+msgstr "© 2022—2026 KDE kopiena"
 
 #: main.cpp:54
 #, kde-format
 msgid "Aditya Mehra"
-msgstr ""
+msgstr "Aditya Mehra"
 
 #: main.cpp:55
 #, kde-format
 msgid "Devin Lin"
-msgstr ""
+msgstr "Devin Lin"
 
 #: main.cpp:65
 #, kde-format
 msgid "Web pages to open"
-msgstr ""
+msgstr "Atveramās tīmekļa vietnes"
 
 #: qml/AddressDialog.qml:36
-#, fuzzy, kde-format
-#| msgid "Search History"
+#, kde-format
 msgctxt "@action:button suggestion, %1 is the typed text"
 msgid "Search for \"%1\""
-msgstr "Meklēšanas vēsture"
+msgstr "Meklēt „%1“"
 
 #: qml/AddressDialog.qml:36
 #, kde-format
 msgctxt "@action:button suggestion, %1 is the typed address"
 msgid "Go to %1"
-msgstr ""
+msgstr "Iet uz „%1“"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title address dialog, opening a new tab"
 msgid "New tab"
-msgstr "Aizvērt izvēlni"
+msgstr "Jauna cilne"
 
 #: qml/AddressDialog.qml:109
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@title address dialog"
 msgid "Search or enter address"
-msgstr "Meklēt vai ierakstīt URL"
+msgstr "Meklējiet vai ierakstiet adresi"
 
 #: qml/AddressDialog.qml:119
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Search the web, or type an address"
-msgstr "Meklēt vai ierakstīt URL"
+msgstr "Meklējiet tīmeklī vai ierakstiet vietnes adresi"
 
 #: qml/BrowserControls.qml:124
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is the page load progress in percent"
 msgid "Loading… %1%"
-msgstr "Lejupielādē... %1"
+msgstr "Ielādē… %1 %"
 
 #: qml/BrowserControls.qml:127
 #, kde-format
 msgctxt "@info:status %1 is the page zoom in percent"
 msgid "Zoom %1%"
-msgstr ""
+msgstr "Tālummaiņa %1 %"
 
 #: qml/BrowserControls.qml:155
 #, kde-format
 msgctxt "@action:button go back in page history"
 msgid "Back"
-msgstr ""
+msgstr "Atpakaļ"
 
 #: qml/BrowserControls.qml:169
 #, kde-format
 msgctxt "@action:button go forward in page history"
 msgid "Forward"
-msgstr ""
+msgstr "Uz priekšu"
 
 #: qml/BrowserControls.qml:181
 #, kde-format
 msgctxt "@action:button leave the page and show the home screen"
 msgid "Home"
-msgstr ""
+msgstr "Mājas"
 
 #: qml/BrowserControls.qml:197
 #, kde-format
 msgctxt "@info accessible name, %1 is the page address"
 msgid "Address: %1"
-msgstr ""
+msgstr "Adrese: %1"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button stop loading the page"
 msgid "Stop"
-msgstr ""
+msgstr "Apturēt"
 
 #: qml/BrowserControls.qml:205
 #, kde-format
 msgctxt "@action:button reload the page"
 msgid "Reload"
-msgstr ""
+msgstr "Pārlādēt"
 
 #: qml/BrowserControls.qml:211
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom out"
-msgstr ""
+msgstr "Tālināt"
 
 #: qml/BrowserControls.qml:216
 #, kde-format
 msgctxt "@action:button"
 msgid "Zoom in"
-msgstr ""
+msgstr "Tuvināt"
 
 #: qml/BrowserControls.qml:221
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "New tab"
-msgstr "Aizvērt izvēlni"
+msgstr "Jauna cilne"
 
 #: qml/BrowserControls.qml:226
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close tab"
-msgstr "Aizvērt izvēlni"
+msgstr "Aizvērt cilni"
 
 #: qml/BrowserControls.qml:255
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 tab"
 msgid_plural "%1 tabs"
-msgstr[0] "Aizvērt izvēlni"
-msgstr[1] "Aizvērt izvēlni"
-msgstr[2] "Aizvērt izvēlni"
+msgstr[0] "%1 cilne"
+msgstr[1] "%1 cilnes"
+msgstr[2] "%1 ciļņu"
 
 #: qml/BrowserPage.qml:155
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your microphone?"
-msgstr ""
+msgstr "Vai ļaut „%1“ lietot mikrofonu?"
 
 #: qml/BrowserPage.qml:157
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera?"
-msgstr ""
+msgstr "Vai ļaut „%1“ lietot kameru?"
 
 #: qml/BrowserPage.qml:159
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use your camera and microphone?"
-msgstr ""
+msgstr "Vai ļaut „%1“ lietot kameru un mikrofonu?"
 
 #: qml/BrowserPage.qml:162
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 see your screen?"
-msgstr ""
+msgstr "Vai ļaut „%1“ redzēt ekrānu?"
 
 #: qml/BrowserPage.qml:164
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 show notifications?"
-msgstr ""
+msgstr "Vai ļaut „%1“ rādīt paziņojumus?"
 
 #: qml/BrowserPage.qml:166
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 know your location?"
-msgstr ""
+msgstr "Vai ļaut „%1“ redzēt jūsu atrašanās vietu?"
 
 #: qml/BrowserPage.qml:168
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use the clipboard?"
-msgstr ""
+msgstr "Vai ļaut „%1“ lietot starpliktuvi?"
 
 #: qml/BrowserPage.qml:170
 #, kde-format
 msgctxt "@title:window %1 is a website host name"
 msgid "Let %1 use this feature?"
-msgstr ""
+msgstr "Vai ļaut „%1“ lietot šo iespēju?"
 
 #: qml/BrowserPage.qml:177
 #, kde-format
 msgctxt "@info"
 msgid "You can change your mind by clearing site data in the settings."
-msgstr ""
+msgstr "Varat mainīt izvēli, iestatījumos dzēšot vietnes datus."
 
 #: qml/BrowserPage.qml:183
 #, kde-format
 msgctxt "@action:button grant a site permission"
 msgid "Allow"
-msgstr ""
+msgstr "Atļaut"
 
 #: qml/BrowserPage.qml:184
 #, kde-format
 msgctxt "@action:button deny a site permission"
 msgid "Don't Allow"
-msgstr ""
+msgstr "Neatļaut"
 
 #: qml/HomePage.qml:59
 #, kde-format
 msgctxt "@title"
 msgid "Browse the web"
-msgstr ""
+msgstr "Pārlūkojiet tīmekli"
 
 #: qml/HomePage.qml:72
-#, fuzzy, kde-format
-#| msgid "Search or type url"
+#, kde-format
 msgctxt "@action:button opens the address dialog"
 msgid "Search or enter address"
-msgstr "Meklēt vai ierakstīt URL"
+msgstr "Meklējiet vai ierakstiet adresi"
 
 #: qml/HomePage.qml:84
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title:group"
 msgid "1 open tab"
 msgid_plural "%1 open tabs"
-msgstr[0] "Aizvērt izvēlni"
-msgstr[1] "Aizvērt izvēlni"
-msgstr[2] "Aizvērt izvēlni"
+msgstr[0] "%1 atvērta cilne"
+msgstr[1] "%1 atvērtas cilnes"
+msgstr[2] "%1 atvērtu ciļņu"
 
 #: qml/HomePage.qml:115
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Close this tab?"
-msgstr "Aizvērt izvēlni"
+msgstr "Vai aizvērt šo cilni?"
 
 #: qml/HomePage.qml:128
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@action:button"
 msgid "Close Tab"
-msgstr "Aizvērt izvēlni"
+msgstr "Aizvērt cilni"
 
 #: qml/Main.qml:23
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title:window"
 msgid "Aura Browser"
-msgstr "Aura-Browser"
+msgstr "Aura Browser"
 
 #: qml/Main.qml:31
 #, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Home"
-msgstr ""
+msgstr "Mājas"
 
 #: qml/Main.qml:36
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:button sidebar page"
 msgid "Settings"
 msgstr "Iestatījumi"
 
 #: qml/Main.qml:162
-#, fuzzy, kde-format
-#| msgid "Aura-Browser"
+#, kde-format
 msgctxt "@title sidebar header"
 msgid "Aura Browser"
-msgstr "Aura-Browser"
+msgstr "Aura Browser"
 
 #: qml/Main.qml:233
-#, fuzzy, kde-format
-#| msgid "Downloading.. %1"
+#, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Downloading %1"
-msgstr "Lejupielādē... %1"
+msgstr "Lejupielādē „%1“"
 
 #: qml/Main.qml:238
 #, kde-format
 msgctxt "@info:status %1 is a file name"
 msgid "Saved %1 to Downloads"
-msgstr ""
+msgstr "„%1“ ir saglabāts Lejupielādēs"
 
 #: qml/Main.qml:240
-#, fuzzy, kde-format
-#| msgid "Do you want to download %1 file ?"
+#, kde-format
 msgctxt "@info:status %1 is a file name, %2 is the error reason"
 msgid "Could not download %1: %2"
-msgstr "Vai vēlaties lejupielādēt %1 datni?"
+msgstr "Neizdevās lejupielādēt „%1“: %2"
 
 #: qml/SettingsPage.qml:31
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is the current zoom in percent"
 msgid "Automatic (%1%)"
-msgstr ""
+msgstr "Automātiska (%1 %)"
 
 #: qml/SettingsPage.qml:32 qml/SettingsPage.qml:33 qml/SettingsPage.qml:34
 #: qml/SettingsPage.qml:35 qml/SettingsPage.qml:36
 #, kde-format
 msgctxt "@item:inlistbox page zoom, %1 is a percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1 %"
 
 #: qml/SettingsPage.qml:40
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Slow"
-msgstr ""
+msgstr "Lēns"
 
 #: qml/SettingsPage.qml:41
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Normal"
-msgstr ""
+msgstr "Normāls"
 
 #: qml/SettingsPage.qml:42
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fast"
-msgstr ""
+msgstr "Ātrs"
 
 #: qml/SettingsPage.qml:43
 #, kde-format
 msgctxt "@item:inlistbox pointer speed"
 msgid "Fastest"
-msgstr ""
+msgstr "Ātrākais"
 
 #: qml/SettingsPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@title"
 msgid "Settings"
 msgstr "Iestatījumi"
@@ -376,167 +357,165 @@ msgstr "Iestatījumi"
 #, kde-format
 msgctxt "@title:group"
 msgid "Browsing"
-msgstr ""
+msgstr "Pārlūkošana"
 
 #: qml/SettingsPage.qml:75
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Search engine"
-msgstr "Meklēšanas dzinis"
+msgstr "Meklētājs"
 
 #: qml/SettingsPage.qml:92
 #, kde-format
 msgctxt "@option:check"
 msgid "Block ads"
-msgstr ""
+msgstr "Bloķēt reklāmas"
 
 #: qml/SettingsPage.qml:93
 #, kde-format
 msgctxt "@info"
 msgid "Hides ads and trackers on most sites"
-msgstr ""
+msgstr "Slēpj reklāmas un okšķerējumus lielākajā daļā tīmekļa vietņu"
 
 #: qml/SettingsPage.qml:104
 #, kde-format
 msgctxt "@option:check"
 msgid "Dark pages"
-msgstr ""
+msgstr "Tumšas vietnes"
 
 #: qml/SettingsPage.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "Shows light pages in dark colors"
-msgstr ""
+msgstr "Gaišās lapas rādīt, lietojot tumšas krāsas"
 
 #: qml/SettingsPage.qml:116
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page zoom"
-msgstr ""
+msgstr "Lapas tālummaiņa"
 
 #: qml/SettingsPage.qml:130
-#, fuzzy, kde-format
-#| msgid "Close Menu"
+#, kde-format
 msgctxt "@option:check"
 msgid "Reopen tabs"
-msgstr "Aizvērt izvēlni"
+msgstr "Atvērt cilnes no jauna"
 
 #: qml/SettingsPage.qml:131
 #, kde-format
 msgctxt "@info"
 msgid "Brings back the tabs that were open when the browser last closed"
 msgstr ""
+"Atgriež cilnes, kas bija atvērtas, kad pēdējo reizi aizvērāt pārlūkprogrammu"
 
 #: qml/SettingsPage.qml:141
 #, kde-format
 msgctxt "@title:group"
 msgid "Appearance"
-msgstr ""
+msgstr "Izskats"
 
 #: qml/SettingsPage.qml:149
 #, kde-format
 msgctxt "@title:group"
 msgid "Remote control"
-msgstr ""
+msgstr "Attālā vadība"
 
 #: qml/SettingsPage.qml:154
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Arrow keys on pages"
-msgstr ""
+msgstr "Atļaut vietnes lietot bultiņu taustiņus"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move between links"
-msgstr ""
+msgstr "Pārvietoties starp saitēm"
 
 #: qml/SettingsPage.qml:156
 #, kde-format
 msgctxt "@item:inlistbox what the arrow keys do on pages"
 msgid "Move a pointer"
-msgstr ""
+msgstr "Pārvietot rādītāju"
 
 #: qml/SettingsPage.qml:166
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Pointer speed"
-msgstr ""
+msgstr "Rādītāja ātrums"
 
 #: qml/SettingsPage.qml:179
 #, kde-format
 msgctxt "@title:group"
 msgid "Privacy"
-msgstr ""
+msgstr "Privātums"
 
 #: qml/SettingsPage.qml:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear site data…"
-msgstr ""
+msgstr "Dzēst vietnes datus…"
 
 #: qml/SettingsPage.qml:187
 #, kde-format
 msgctxt "@info"
 msgid "Signs you out of sites, and forgets cached pages and permissions"
 msgstr ""
+"Izraksta jūs laukā no vietnes un aizmirst kešatmiņā glabāto vietnes "
+"informāciju un sniegtās atļaujas"
 
 #: qml/SettingsPage.qml:193
 #, kde-format
 msgctxt "@title:group"
 msgid "About"
-msgstr ""
+msgstr "Par"
 
 #: qml/SettingsPage.qml:205
 #, kde-format
 msgctxt "@title:window"
 msgid "Clear site data?"
-msgstr ""
+msgstr "Vai dzēst vietnes datus?"
 
 #: qml/SettingsPage.qml:210
 #, kde-format
 msgctxt "@info"
 msgid "You will be signed out of sites."
-msgstr ""
+msgstr "Jūs tiksit izrakstīts(-a) no šīs vietnes."
 
 #: qml/SettingsPage.qml:214
-#, fuzzy, kde-format
-#| msgid "Clear"
+#, kde-format
 msgctxt "@action:button"
 msgid "Clear"
-msgstr "Notīrīt"
+msgstr "Dzēst"
 
 #: qml/SettingsPage.qml:217
 #, kde-format
 msgctxt "@info:status"
 msgid "Site data cleared"
-msgstr ""
+msgstr "Vietnes dati ir izdzēsti"
 
 #: qml/SiteCard.qml:27
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgid "Current tab"
-msgstr "Pašreizējās cilnes"
+msgstr "Pašreizējā cilne"
 
 #: qml/SiteCard.qml:59
-#, fuzzy, kde-format
-#| msgid "Current Tabs"
+#, kde-format
 msgctxt "@info:status the tab being shown"
 msgid "Current"
-msgstr "Pašreizējās cilnes"
+msgstr "Pašreizējā"
 
 #: qml/WebView.qml:125
 #, kde-format
 msgctxt "@info:status"
 msgid "Blocked a pop-up window"
-msgstr ""
+msgstr "Bloķēts uznirstošais logs"
 
 #: qml/WebView.qml:146
 #, kde-format
 msgctxt "@info:status"
 msgid "This page keeps crashing, so it was stopped"
-msgstr ""
+msgstr "Šī vietne bieži avarē, tāpēc tā ir apturēta"
 
 #~ msgid "Tabs"
 #~ msgstr "Cilnes"
